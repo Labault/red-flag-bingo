@@ -1,0 +1,1017 @@
+theme:
+  name: "Mariage"
+  slug: "mariage"
+  emoji: "💍"
+
+red_flags:
+  # ════════════════════════════════════════════════════════════
+  # COMMONS (300) — Les classiques que tout le monde a vécus
+  # ════════════════════════════════════════════════════════════
+  - text: "Fait sa demande devant toute la belle-famille sans prévenir"
+    rarity: common
+  - text: "Choisit la bague tout seul 'pour la surprise'"
+    rarity: common
+  - text: "Annonce les fiançailles sur Instagram avant d'appeler ses parents"
+    rarity: common
+  - text: "Poste 47 stories le jour de la demande"
+    rarity: common
+  - text: "Met la photo de la bague en gros plan main posée stratégiquement"
+    rarity: common
+  - text: "Dit 'on a même pas encore commencé à organiser' deux jours après la demande"
+    rarity: common
+  - text: "Change sa photo de profil Facebook en cœur rose immédiatement"
+    rarity: common
+  - text: "Compte les likes de l'annonce toutes les 10 minutes"
+    rarity: common
+  - text: "Annonce sa date de mariage avant d'avoir réservé le lieu"
+    rarity: common
+  - text: "Dit 'je le savais' à la moindre attention reçue le mois précédent"
+    rarity: common
+  - text: "Pleure plus pour la photo que par émotion"
+    rarity: common
+  - text: "A déjà choisi le hashtag avant la demande"
+    rarity: common
+  - text: "Refait la demande pour les photos parce que la première n'était 'pas filmée'"
+    rarity: common
+  - text: "Spoile la demande à sa meilleure amie une semaine avant"
+    rarity: common
+  - text: "Sort un classeur de 200 pages au premier rendez-vous traiteur"
+    rarity: common
+  - text: "Crée un compte Pinterest 'Notre jour J' avec 1500 épingles"
+    rarity: common
+  - text: "Dit 'c'est notre jour' au moins 6 fois par jour"
+    rarity: common
+  - text: "Commence à parler du mariage à 8h du matin un dimanche"
+    rarity: common
+  - text: "Refait le plan de table 14 fois"
+    rarity: common
+  - text: "Pleure parce que la nuance de pêche n'est pas la bonne"
+    rarity: common
+  - text: "A un Excel à 12 onglets"
+    rarity: common
+  - text: "Met une alarme pour les RDV prestataires sans demander à l'autre"
+    rarity: common
+  - text: "Refuse une idée puis la propose deux semaines plus tard comme la sienne"
+    rarity: common
+  - text: "Dit 'on n'aura jamais le temps' tous les soirs"
+    rarity: common
+  - text: "Commande 47 échantillons de papier pour les faire-part"
+    rarity: common
+  - text: "Décide tout puis demande 'tu valides ?'"
+    rarity: common
+  - text: "Prend des notes pendant 'Quatre mariages pour une lune de miel'"
+    rarity: common
+  - text: "Compare son mariage à celui de la cousine tous les jours"
+    rarity: common
+  - text: "Fait des spreadsheets de spreadsheets"
+    rarity: common
+  - text: "La belle-mère propose 'juste 30 personnes en plus'"
+    rarity: common
+  - text: "Le tonton bourré annonce qu'il va faire un discours"
+    rarity: common
+  - text: "La belle-mère arrive avec 'son' menu imprimé"
+    rarity: common
+  - text: "Le père du marié n'a jamais payé un acompte de sa vie"
+    rarity: common
+  - text: "La belle-mère pleure sur le choix du fleuriste"
+    rarity: common
+  - text: "Tonton René veut absolument faire le DJ"
+    rarity: common
+  - text: "Maman réorganise le plan de table en cachette"
+    rarity: common
+  - text: "Le frère propose son ami photographe 'qui est pas mauvais'"
+    rarity: common
+  - text: "Belle-maman dit 'à mon mariage on faisait pas comme ça'"
+    rarity: common
+  - text: "Le papa critique le coût du vin"
+    rarity: common
+  - text: "La sœur veut absolument être témoin alors qu'elle te parle plus"
+    rarity: common
+  - text: "Belle-maman veut une robe blanche aussi"
+    rarity: common
+  - text: "Le tonton fait une remarque sur la nourriture végétarienne"
+    rarity: common
+  - text: "Mamie demande 'mais c'est quand le bébé ?' à l'apéro"
+    rarity: common
+  - text: "La belle-famille se présente avec 12 invités non confirmés"
+    rarity: common
+  - text: "Beau-papa veut absolument son cousin agriculteur pour les fleurs"
+    rarity: common
+  - text: "Maman appelle 3 fois par jour pour le 'détail' du jour"
+    rarity: common
+  - text: "Belle-maman pleure parce que tu n'as pas mis 'sa' marraine en VIP"
+    rarity: common
+  - text: "Le frère veut 'juste' venir avec sa nouvelle copine rencontrée la semaine d'avant"
+    rarity: common
+  - text: "La cousine demande si elle peut faire la lecture de la cérémonie"
+    rarity: common
+  - text: "'On va pas se ruiner' juste avant le devis fleuriste"
+    rarity: common
+  - text: "Le 'petit' budget de 8000€ est explosé en deux mois"
+    rarity: common
+  - text: "Découvre que le DJ coûte 2500€ et fait une syncope"
+    rarity: common
+  - text: "Chaque devis arrive avec 'la TVA en plus'"
+    rarity: common
+  - text: "Décide de payer cash 'pour pas voir passer'"
+    rarity: common
+  - text: "L'enveloppe 'urgences' a déjà servi 3 fois avant le mariage"
+    rarity: common
+  - text: "Découvre le concept du 'tarif mariage' chez le coiffeur"
+    rarity: common
+  - text: "Dit 'on rogne sur le vin' deux semaines avant le J"
+    rarity: common
+  - text: "Calcule le coût par invité en plein dîner"
+    rarity: common
+  - text: "Marchande l'arche fleurie comme au marché"
+    rarity: common
+  - text: "Dit 'on s'en fout du budget c'est notre jour' à 11k€ d'avance"
+    rarity: common
+  - text: "Choisit le moins cher partout sauf pour la robe"
+    rarity: common
+  - text: "Fait une cagnotte Leetchi avec 'lune de miel' en sous-titre"
+    rarity: common
+  - text: "Vend des trucs sur Vinted pour finir le budget"
+    rarity: common
+  - text: "Découvre que l'ouverture de bal coûte un mois de loyer"
+    rarity: common
+  - text: "Visite 22 lieux avant de revenir au premier"
+    rarity: common
+  - text: "Réserve un château sans visiter les chambres invités"
+    rarity: common
+  - text: "Choisit un lieu à 2h de route de tout le monde"
+    rarity: common
+  - text: "Découvre le supplément ménage à 800€ après signature"
+    rarity: common
+  - text: "Le lieu interdit les confettis, les pétales et les bougies"
+    rarity: common
+  - text: "Réservation cale juste après une coupure d'orage"
+    rarity: common
+  - text: "Le château est 'authentique' donc sans climatisation en juillet"
+    rarity: common
+  - text: "Le lieu impose 'son' traiteur"
+    rarity: common
+  - text: "La 'capacité 200' devient 'capacité 130 si banquet'"
+    rarity: common
+  - text: "Dit 'on est presque sur la plage' alors que c'est à 4 km"
+    rarity: common
+  - text: "Choisit un lieu sans toilettes accessibles aux personnes âgées"
+    rarity: common
+  - text: "Essaye 47 robes et finit par prendre la première"
+    rarity: common
+  - text: "Pleure devant chaque robe par principe"
+    rarity: common
+  - text: "Parle du 'régime mariage' depuis 11 mois"
+    rarity: common
+  - text: "Achète la robe d'une taille en dessous 'par motivation'"
+    rarity: common
+  - text: "Le marié essaye son costume pour la première fois la veille"
+    rarity: common
+  - text: "Le marié choisit ses chaussures sur Amazon une semaine avant"
+    rarity: common
+  - text: "Cache la robe dans un placard fermé à clé"
+    rarity: common
+  - text: "Découvre que les retouches coûtent 40% du prix de la robe"
+    rarity: common
+  - text: "La traîne fait 4 mètres pour un mariage en intimité"
+    rarity: common
+  - text: "Demande des photos avec la robe pour 'mémoriser le sentiment'"
+    rarity: common
+  - text: "Met le voile pour aller chercher du pain le samedi"
+    rarity: common
+  - text: "Le marié veut absolument une pochette assortie à sa cravate"
+    rarity: common
+  - text: "Achète une deuxième robe 'pour danser'"
+    rarity: common
+  - text: "Dit 'c'est juste une robe' tous les soirs en pleurant"
+    rarity: common
+  - text: "Demande l'avis de 14 personnes différentes"
+    rarity: common
+  - text: "Invite des gens qu'elle a vu deux fois en cinq ans"
+    rarity: common
+  - text: "Met des collègues 'pour pas faire de jaloux'"
+    rarity: common
+  - text: "Invite l'ex de son frère 'parce qu'il fait partie de la famille'"
+    rarity: common
+  - text: "Fait une 'liste B' qu'elle nie complètement"
+    rarity: common
+  - text: "Reçoit un 'plus un' qu'elle n'a jamais rencontré"
+    rarity: common
+  - text: "Un invité confirme deux jours avant la date limite"
+    rarity: common
+  - text: "Quelqu'un demande s'il peut amener ses 4 enfants en plus"
+    rarity: common
+  - text: "Un pote du marié vient sans répondre à l'invitation"
+    rarity: common
+  - text: "Une cousine envoie ses mensurations pour la robe de demoiselle d'honneur sans avoir été demoiselle d'honneur"
+    rarity: common
+  - text: "L'invité demande s'il peut ramener son chien"
+    rarity: common
+  - text: "Un couple vient en jaune fluo assorti"
+    rarity: common
+  - text: "Une invitée porte une robe blanche 'mais courte donc ça compte pas'"
+    rarity: common
+  - text: "Quelqu'un demande s'il peut amener un cadeau d'occasion"
+    rarity: common
+  - text: "Le faire-part part 8 mois avant pour 'bloquer la date'"
+    rarity: common
+  - text: "Oublie l'adresse du lieu sur le faire-part"
+    rarity: common
+  - text: "Ajoute un QR code qui mène vers une page bugguée"
+    rarity: common
+  - text: "Veut absolument 'Hallelujah' à la cérémonie"
+    rarity: common
+  - text: "Fait son entrée sur 'A Thousand Years'"
+    rarity: common
+  - text: "Demande à un ami de chanter sans qu'il sache vraiment chanter"
+    rarity: common
+  - text: "Écrit ses vœux 30 minutes avant"
+    rarity: common
+  - text: "Le maître de cérémonie est un pote 'qui a fait du théâtre au lycée'"
+    rarity: common
+  - text: "Lit un texte de 12 minutes de sa cousine sur l'amour"
+    rarity: common
+  - text: "Pleure plus à la cérémonie laïque qu'à la mairie"
+    rarity: common
+  - text: "Le marié arrive en retard à la mairie"
+    rarity: common
+  - text: "Oublie les alliances chez ses parents"
+    rarity: common
+  - text: "Confond le prénom de son partenaire dans ses vœux"
+    rarity: common
+  - text: "Pleure pendant le 'oui' à tel point qu'on n'entend rien"
+    rarity: common
+  - text: "Le maire fait des blagues qu'il a préparées"
+    rarity: common
+  - text: "L'officiante de cérémonie laïque mélange les prénoms"
+    rarity: common
+  - text: "Le menu est annoncé 'gastronomique' mais c'est blanc de poulet sauce moutarde"
+    rarity: common
+  - text: "L'apéro dînatoire dure 4h30"
+    rarity: common
+  - text: "Le traiteur 'oublie' les options végétariennes"
+    rarity: common
+  - text: "Le service traîne tellement que les enfants dorment sur la table"
+    rarity: common
+  - text: "Le pain arrive après l'entrée"
+    rarity: common
+  - text: "Le vin est servi tiède"
+    rarity: common
+  - text: "Les enfants ont tous le même menu nuggets-frites"
+    rarity: common
+  - text: "Le fromage arrive 2h après le plat"
+    rarity: common
+  - text: "Plus de café à 23h"
+    rarity: common
+  - text: "Le serveur reverse le vin sans demander"
+    rarity: common
+  - text: "Pas de bouteilles d'eau sur les tables"
+    rarity: common
+  - text: "Les enfants sont à la table 13 'parce qu'on n'avait plus de place'"
+    rarity: common
+  - text: "Le traiteur facture les 'extras' sans prévenir"
+    rarity: common
+  - text: "Le dessert est une pyramide de macarons d'industrie"
+    rarity: common
+  - text: "Les serveurs débarrassent la pièce montée avant les invités"
+    rarity: common
+  - text: "Veut absolument une 'photobooth bohème'"
+    rarity: common
+  - text: "Met des macramés partout"
+    rarity: common
+  - text: "Loue 1500 bocaux pour les centres de table"
+    rarity: common
+  - text: "Achète 12 kg de pétales sur Amazon"
+    rarity: common
+  - text: "Fait un panneau 'Choose your seat not your fate' en anglais alors que c'est en France"
+    rarity: common
+  - text: "Met un mur de fleurs qui tient avec du scotch"
+    rarity: common
+  - text: "Imprime un menu personnalisé pour chaque invité"
+    rarity: common
+  - text: "Veut un thème 'Great Gatsby' mais aussi 'champêtre' aussi 'élégant'"
+    rarity: common
+  - text: "Achète 6 livres-or différents"
+    rarity: common
+  - text: "Veut des lanternes thaïlandaises interdites par la mairie"
+    rarity: common
+  - text: "Décore les toilettes mieux que la salle"
+    rarity: common
+  - text: "Le DJ commence par 'Cotton Eye Joe'"
+    rarity: common
+  - text: "Le DJ enchaîne 'YMCA' et 'Macarena' en boucle"
+    rarity: common
+  - text: "Le DJ a oublié la liste 'à ne pas passer'"
+    rarity: common
+  - text: "Refuse Mariah Carey alors que c'est sur la playlist"
+    rarity: common
+  - text: "Coupe la musique pour 'le moment câlin de la mariée et son père'"
+    rarity: common
+  - text: "Le DJ demande 'on tape dans les mains' toutes les 4 chansons"
+    rarity: common
+  - text: "Met 'Les Lacs du Connemara' à 3h du matin"
+    rarity: common
+  - text: "Met 'Bella Ciao' parce qu'il pense que c'est festif"
+    rarity: common
+  - text: "Joue tube de l'été qu'on entend depuis 3 mois"
+    rarity: common
+  - text: "Le DJ fait son propre micro show"
+    rarity: common
+  - text: "Le DJ a 12 ans plus que prévu"
+    rarity: common
+  - text: "La sono coupe pendant l'ouverture de bal"
+    rarity: common
+  - text: "Le DJ se trompe de chanson pour l'entrée"
+    rarity: common
+  - text: "Met du Soprano alors que personne ne l'a demandé"
+    rarity: common
+  - text: "Annonce le 'concours de twerk' à 1h30"
+    rarity: common
+  - text: "Le témoin ressort une anecdote de 2007 que personne ne comprend"
+    rarity: common
+  - text: "Le frangin pleure plus que les mariés"
+    rarity: common
+  - text: "Le tonton dit 'allez la prochaine on en parle' en parlant des enfants"
+    rarity: common
+  - text: "Le témoin lit un PowerPoint sur écran"
+    rarity: common
+  - text: "Quelqu'un cite 'C'est pas tous les jours dimanche'"
+    rarity: common
+  - text: "La belle-sœur sort un fichier audio embarrassant"
+    rarity: common
+  - text: "Le discours du papa dure 22 minutes"
+    rarity: common
+  - text: "Le témoin chante a cappella 'Pour que tu m'aimes encore'"
+    rarity: common
+  - text: "Le témoin sort une blague sur l'ex sans s'en rendre compte"
+    rarity: common
+  - text: "Quelqu'un fait une vidéo 'best of de leur vie' avec la mauvaise musique"
+    rarity: common
+  - text: "Le témoin parle plus de lui que des mariés"
+    rarity: common
+  - text: "Quelqu'un dit 'comme on dit, le mariage c'est pas la mer à boire'"
+    rarity: common
+  - text: "Le frangin pleure tellement qu'il faut lui prendre le micro"
+    rarity: common
+  - text: "Cite un proverbe africain qu'il a googlé dans la voiture"
+    rarity: common
+  - text: "Le témoin commence par 'je vais pas être long'"
+    rarity: common
+  - text: "Le photographe arrive avec un seul appareil sans batterie de rechange"
+    rarity: common
+  - text: "La séance photo dure 2h pendant le cocktail"
+    rarity: common
+  - text: "Demande 14 photos de la bague"
+    rarity: common
+  - text: "Refait l'entrée 3 fois 'pour la photo'"
+    rarity: common
+  - text: "Demande des photos style 'Vogue' au photographe local"
+    rarity: common
+  - text: "Le photographe se trompe de mariés sur Instagram"
+    rarity: common
+  - text: "Veut absolument une photo en sautant"
+    rarity: common
+  - text: "La séance photo prévue dehors un jour de pluie"
+    rarity: common
+  - text: "Demande à 30 invités de poser en cercle 'pour le drone'"
+    rarity: common
+  - text: "Le drone tombe dans la fontaine"
+    rarity: common
+  - text: "Veut un 'first look' qui dure 45 minutes"
+    rarity: common
+  - text: "Refait les photos de groupe parce que tata a fermé les yeux"
+    rarity: common
+  - text: "Le vidéaste filme les pieds des invités pendant 12 minutes"
+    rarity: common
+  - text: "Le photographe propose des poses 'romantiques' embarrassantes"
+    rarity: common
+  - text: "Découvre que les photos sont retouchées au filtre Insta"
+    rarity: common
+  - text: "EVJF avec déguisement obligatoire de la mariée en tutu rose"
+    rarity: common
+  - text: "Pénis gonflable à l'EVJF qui fait fuir la grand-mère au resto"
+    rarity: common
+  - text: "Le diadème 'Bride to be' coûte 35€ chez Action"
+    rarity: common
+  - text: "EVG rugby au paintball pour des gens qui ont jamais fait de sport"
+    rarity: common
+  - text: "Le futur marié finit attaché à un poteau en string"
+    rarity: common
+  - text: "EVJF à Marrakech 'pour rester local'"
+    rarity: common
+  - text: "L'EVG tombe la veille du mariage"
+    rarity: common
+  - text: "Le challenge de l'EVG dure 14h"
+    rarity: common
+  - text: "Aux EVG le futur marié finit aux urgences"
+    rarity: common
+  - text: "Le t-shirt 'Team Bride' avec faute d'orthographe"
+    rarity: common
+  - text: "Sondage 'connais-tu vraiment ta mariée' sur 30 questions trop intimes"
+    rarity: common
+  - text: "L'EVJF est un week-end spa et tout le monde déteste"
+    rarity: common
+  - text: "Le strip-teaseur est en retard d'1h30"
+    rarity: common
+  - text: "Personne n'a payé sa part 4 mois après l'EVG"
+    rarity: common
+  - text: "EVG annoncé 'tranquille' qui devient 4 jours à Budapest"
+    rarity: common
+  - text: "Dort dans une chambre séparée 'pour la tradition'"
+    rarity: common
+  - text: "Boit trop la veille pour 'décompresser'"
+    rarity: common
+  - text: "Le coiffeur arrive 1h en retard"
+    rarity: common
+  - text: "La maquilleuse rate le faux-cil 6 fois"
+    rarity: common
+  - text: "Le marié dort 3 heures"
+    rarity: common
+  - text: "Le marié regarde le foot dans son costume"
+    rarity: common
+  - text: "Petit déj' de la mariée : café noir et stress"
+    rarity: common
+  - text: "Reçoit un SMS de son ex le matin du mariage"
+    rarity: common
+  - text: "La grand-mère arrive 2h trop tôt à la mairie"
+    rarity: common
+  - text: "Le bouquet est livré pour le mauvais mariage"
+    rarity: common
+  - text: "La voiture des mariés tombe en panne avant la mairie"
+    rarity: common
+  - text: "La mariée enlève déjà ses talons à 16h"
+    rarity: common
+  - text: "Le marié casse une dent en déballant les chocolats"
+    rarity: common
+  - text: "Les boutonnières sont en retard de 4h"
+    rarity: common
+  - text: "Pleure parce que la coiffure 'fait pas comme sur Pinterest'"
+    rarity: common
+  - text: "Choisit 'Perfect' d'Ed Sheeran 'parce que c'est notre chanson'"
+    rarity: common
+  - text: "Prend des cours de danse 4 mois et oublie tout le jour J"
+    rarity: common
+  - text: "L'ouverture de bal sur un mash-up qui change 7 fois"
+    rarity: common
+  - text: "Tombent à la première rotation"
+    rarity: common
+  - text: "Le marié regarde ses pieds toute la danse"
+    rarity: common
+  - text: "Trop ivre pour danser, ils 'tournent' juste sur place"
+    rarity: common
+  - text: "Le DJ démarre la mauvaise version"
+    rarity: common
+  - text: "L'ouverture de bal est jouée par un orchestre amateur en retard"
+    rarity: common
+  - text: "Marche sur la robe à la troisième mesure"
+    rarity: common
+  - text: "Personne ne rejoint la piste après l'ouverture"
+    rarity: common
+  - text: "Termine par un 'porté' qui ne marche pas"
+    rarity: common
+  - text: "Demande aux invités de chanter en chœur la chanson"
+    rarity: common
+  - text: "L'ouverture dure 7 minutes (deux remix collés)"
+    rarity: common
+  - text: "Le bouquet de la mariée est lancé direct sur la grand-mère"
+    rarity: common
+  - text: "La jarretière finit avec le DJ"
+    rarity: common
+  - text: "Liste de mariage à 14 000€ minimum"
+    rarity: common
+  - text: "Met un 'fauteuil massant à 2300€' dans la liste"
+    rarity: common
+  - text: "Met un service à raclette en plus de l'aspirateur"
+    rarity: common
+  - text: "Demande 'cash' uniquement sur le faire-part"
+    rarity: common
+  - text: "Cagnotte 'voyage de noces' qui finit en chambre à coucher"
+    rarity: common
+  - text: "Met une enveloppe 'pour ceux qui n'ont pas pris dans la liste'"
+    rarity: common
+  - text: "Reçoit 4 cocottes Le Creuset différentes"
+    rarity: common
+  - text: "Une tante envoie un set de couteaux à découper en cadeau"
+    rarity: common
+  - text: "Reçoit une vache en peluche grandeur nature"
+    rarity: common
+  - text: "Quelqu'un offre un cadeau 'fait main' qui ressemble à rien"
+    rarity: common
+  - text: "Reçoit un toast 'symbolique' à la place d'un cadeau"
+    rarity: common
+  - text: "Une cousine offre un livre de prénoms de bébé"
+    rarity: common
+  - text: "Reçoit 6 jours-cadeau Wonderbox identiques"
+    rarity: common
+  - text: "Quelqu'un offre une plante grasse en kit"
+    rarity: common
+  - text: "Reçoit une bouteille de vin avec une étiquette 'ours en couple'"
+    rarity: common
+  - text: "Les enfants d'honneur courent partout pendant la cérémonie"
+    rarity: common
+  - text: "Une fille d'honneur fait pipi sur sa robe pendant l'entrée"
+    rarity: common
+  - text: "Le bébé pleure à chaque 'oui'"
+    rarity: common
+  - text: "Le porteur d'alliance jette les bagues dans une fontaine"
+    rarity: common
+  - text: "Les enfants attaquent le candy-bar avant l'apéro"
+    rarity: common
+  - text: "Un enfant balance le micro pendant les vœux"
+    rarity: common
+  - text: "Trois enfants s'endorment dans la salle de réception"
+    rarity: common
+  - text: "Un parent abandonne son enfant à la baby-sitter et part danser"
+    rarity: common
+  - text: "Un enfant casse un photophore à 18h"
+    rarity: common
+  - text: "Les enfants ouvrent les cadeaux avant les mariés"
+    rarity: common
+  - text: "Un cousin de 4 ans dit 'je voudrais m'en aller' pendant la cérémonie"
+    rarity: common
+  - text: "L'animatrice enfant abandonne au bout de 30 minutes"
+    rarity: common
+  - text: "Un enfant fait une crise au moment du 'oui'"
+    rarity: common
+  - text: "Les enfants jouent à la guerre avec les bouquets"
+    rarity: common
+  - text: "Un ado boude toute la soirée sur son téléphone"
+    rarity: common
+  - text: "Lune de miel aux Maldives mais en saison des pluies"
+    rarity: common
+  - text: "Réservent les billets de noces le matin du mariage"
+    rarity: common
+  - text: "Pas de Wi-Fi à l'hôtel donc engueulade dès le 2e jour"
+    rarity: common
+  - text: "Choisissent un 'all inclusive' mais tu paies les boissons"
+    rarity: common
+  - text: "Lune de miel en Italie en plein août sans climatisation"
+    rarity: common
+  - text: "Veulent visiter 5 pays en 7 jours"
+    rarity: common
+  - text: "Lune de miel transformée en 'staycation' faute de budget"
+    rarity: common
+  - text: "Sont malades dès le premier jour de la lune de miel"
+    rarity: common
+  - text: "Choisissent une lune de miel 'aventure' avec randonnée 8h/jour"
+    rarity: common
+  - text: "Bagages perdus au début du voyage"
+    rarity: common
+  - text: "Reçoivent une chambre 'standard' au lieu de la 'suite réservée'"
+    rarity: common
+  - text: "Annoncent leur lune de miel en story toutes les heures"
+    rarity: common
+  - text: "Décalent la lune de miel 'pour faire des économies'"
+    rarity: common
+  - text: "Choisissent un voyage 'solidaire' qui finit en chantier"
+    rarity: common
+  - text: "Postent un selfie au coucher de soleil avec un texte sur 'l'éternité'"
+    rarity: common
+  - text: "Veut un 'flash mob' qui n'a jamais été répété"
+    rarity: common
+  - text: "Une soirée à thème 'années 80' qui finit en années 90"
+    rarity: common
+  - text: "Préparent un 'ice cream truck' qui tombe en panne"
+    rarity: common
+  - text: "La pièce montée s'effondre sur la deuxième présentation"
+    rarity: common
+  - text: "Le feu d'artifice est annulé pour cause d'orage"
+    rarity: common
+  - text: "Loue une calèche qui sent le cheval"
+    rarity: common
+  - text: "Veut faire un 'envol de colombes' interdit par la commune"
+    rarity: common
+  - text: "Le vin d'honneur dure 4h tellement les mariés sont en retard"
+    rarity: common
+  - text: "Le mariage a lieu pendant un Euro de foot"
+    rarity: common
+  - text: "Le marié regarde le match dans le costumier"
+    rarity: common
+  - text: "Le buffet est dévalisé en 12 minutes"
+    rarity: common
+  - text: "Le candy-bar finit par terre"
+    rarity: common
+  - text: "Une grand-mère endort un nourrisson dans la pièce montée"
+    rarity: common
+  - text: "Un témoin perd les alliances dans la voiture"
+    rarity: common
+  - text: "Tonton finit dans le bassin du château"
+    rarity: common
+  - text: "Pluie diluvienne pile au moment du 'oui' en plein air"
+    rarity: common
+  - text: "Le costumier livre un costume au mauvais nom"
+    rarity: common
+  - text: "Une invitée enceinte a des contractions à 22h"
+    rarity: common
+  - text: "Une invitée se présente en robe de mariée par erreur"
+    rarity: common
+  - text: "Le bouquet final tombe sur les enfants"
+    rarity: common
+
+  # ════════════════════════════════════════════════════════════
+  # RARES (140) — Les situations bien spécifiques
+  # ════════════════════════════════════════════════════════════
+  - text: "La belle-mère vient en robe blanche 'cassée'"
+    rarity: rare
+  - text: "Le père de la mariée refuse de prononcer le prénom du marié"
+    rarity: rare
+  - text: "La belle-famille parle en italien à table sans traduire"
+    rarity: rare
+  - text: "Tonton arrive en costume des années 80 avec épaulettes"
+    rarity: rare
+  - text: "Le frère du marié ramène une 'date Tinder' du jour"
+    rarity: rare
+  - text: "Belle-maman demande à inscrire son nom de jeune fille sur le faire-part"
+    rarity: rare
+  - text: "Beau-papa fait une remarque sur le coût du fromage à 3 reprises"
+    rarity: rare
+  - text: "Le tonton drague la photographe pendant 3h"
+    rarity: rare
+  - text: "Belle-maman pleure parce qu'on n'a pas mis sa chanson préférée"
+    rarity: rare
+  - text: "Tata Monique demande aux mariés s'ils 'comptent vraiment rester ensemble'"
+    rarity: rare
+  - text: "Une cousine éloignée porte la même robe que la maman du marié"
+    rarity: rare
+  - text: "Belle-maman demande au DJ de baisser pendant 'son' moment"
+    rarity: rare
+  - text: "La belle-soeur déballe un secret de famille pendant son discours"
+    rarity: rare
+  - text: "Le neveu vomit sur le costume du marié pendant les photos"
+    rarity: rare
+  - text: "Les beaux-parents amènent leur propre nappe 'pour leur table'"
+    rarity: rare
+  - text: "Belle-maman boude la photo de famille parce qu'elle 'sort mal'"
+    rarity: rare
+  - text: "Belle-maman annonce qu'elle paiera 'que sa partie' à 22h"
+    rarity: rare
+  - text: "Invite son ex 'parce que c'est comme un frère'"
+    rarity: rare
+  - text: "Reçoit un coup de fil de son ex dans la voiture"
+    rarity: rare
+  - text: "L'ex envoie des fleurs anonymes au lieu de réception"
+    rarity: rare
+  - text: "Une copine d'enfance avoue son amour au témoin pendant le slow"
+    rarity: rare
+  - text: "Le DJ est l'ex de la mariée"
+    rarity: rare
+  - text: "Une cousine dit 'je le trouve toujours trop bien pour toi'"
+    rarity: rare
+  - text: "Quelqu'un crashe la cérémonie en disant 'j'ai un truc à dire'"
+    rarity: rare
+  - text: "Le témoin annonce qu'il quitte sa femme pendant son discours"
+    rarity: rare
+  - text: "Une invitée pleure tellement que la mariée croit qu'elle est triste pour elle"
+    rarity: rare
+  - text: "Le marié reçoit un SMS 'tu fais une erreur' à 14h"
+    rarity: rare
+  - text: "Une invitée embrasse le marié 'amicalement' devant la mariée"
+    rarity: rare
+  - text: "Une cousine tente de chopper le témoin de l'autre côté de la famille"
+    rarity: rare
+  - text: "La wedding planner est sa cousine bénévole"
+    rarity: rare
+  - text: "La wedding planner annule 3 semaines avant"
+    rarity: rare
+  - text: "Découvre que le lieu loue aussi une autre salle pour une autre noce le même jour"
+    rarity: rare
+  - text: "Le thème 'minimaliste' coûte 25 000€"
+    rarity: rare
+  - text: "Les mariés demandent aux invités de venir 6h plus tôt 'pour aider'"
+    rarity: rare
+  - text: "Un témoin part à l'étranger 2 mois avant"
+    rarity: rare
+  - text: "Le traiteur fait faillite 6 semaines avant"
+    rarity: rare
+  - text: "Le lieu de réception est inondé la veille"
+    rarity: rare
+  - text: "Le buffet est livré au mauvais lieu de réception"
+    rarity: rare
+  - text: "Le photographe envoie un assistant qu'on n'a jamais vu"
+    rarity: rare
+  - text: "Décide d'organiser le mariage en 6 semaines"
+    rarity: rare
+  - text: "Réserve la mauvaise date à la mairie"
+    rarity: rare
+  - text: "Le fleuriste se trompe de bouquet et livre un bouquet d'enterrement"
+    rarity: rare
+  - text: "Les invitations partent 3 jours avant le mariage"
+    rarity: rare
+  - text: "Une invitée sort une crème solaire pendant la cérémonie en plein air"
+    rarity: rare
+  - text: "Un invité ronfle pendant le discours du papa"
+    rarity: rare
+  - text: "Quelqu'un poste les photos avant les mariés"
+    rarity: rare
+  - text: "Un invité lâche un selfie 'avec la mariée' pendant les vœux"
+    rarity: rare
+  - text: "Le pote du marié arrive en t-shirt 'I survived divorce'"
+    rarity: rare
+  - text: "Une amie demande si elle peut 'juste passer pour le repas'"
+    rarity: rare
+  - text: "L'invité ramène un cadeau en lui-même : sa présence et son livre photo"
+    rarity: rare
+  - text: "Quelqu'un porte un kilt sans culotte qu'on découvre à la pinata"
+    rarity: rare
+  - text: "Une invitée allaite à table pendant le plat principal"
+    rarity: rare
+  - text: "Une invitée prend une part du gâteau 'pour la route' à 17h"
+    rarity: rare
+  - text: "Le pote glisse 50€ dans l'enveloppe et fait une vidéo de l'envoi"
+    rarity: rare
+  - text: "Une cousine fait des stories de la robe avant l'entrée"
+    rarity: rare
+  - text: "Un invité crée un 'TikTok du mariage' sans demander"
+    rarity: rare
+  - text: "Quelqu'un poste un avis Google 'décevant' sur le lieu pendant la noce"
+    rarity: rare
+  - text: "L'invité demande 'bon, c'est quand qu'on mange' au cocktail"
+    rarity: rare
+  - text: "Quelqu'un sort sa flûte pour faire un solo improvisé"
+    rarity: rare
+  - text: "Un copain du marié fait des pompes en plein milieu de la piste"
+    rarity: rare
+  - text: "Pleure pendant 4h avant la cérémonie sans raison"
+    rarity: rare
+  - text: "Garde sa robe de mariée pour la lune de miel à l'aéroport"
+    rarity: rare
+  - text: "Refait son maquillage en pleine cérémonie"
+    rarity: rare
+  - text: "Le marié finit la soirée en short"
+    rarity: rare
+  - text: "Le marié vomit sur la traîne pendant l'ouverture de bal"
+    rarity: rare
+  - text: "La mariée jette son bouquet sur sa belle-soeur volontairement"
+    rarity: rare
+  - text: "Le marié dit 'on ne fera pas ça à mon anniversaire' à propos de tout"
+    rarity: rare
+  - text: "Le marié refait un tour de magie au repas"
+    rarity: rare
+  - text: "Le marié met un t-shirt 'enfin libre' sous sa chemise"
+    rarity: rare
+  - text: "La mariée allume une cigarette sur la photo officielle"
+    rarity: rare
+  - text: "La mariée se dispute avec sa demoiselle d'honneur juste avant la cérémonie"
+    rarity: rare
+  - text: "Le marié appelle sa mère 'Maman' dans ses vœux"
+    rarity: rare
+  - text: "La mariée engueule le serveur juste avant le 'oui'"
+    rarity: rare
+  - text: "La mariée demande la météo toutes les 4 minutes"
+    rarity: rare
+  - text: "Le marié calcule encore le ROI du cocktail à 21h"
+    rarity: rare
+  - text: "Loue une voiture de collection qui ne démarre pas le jour J"
+    rarity: rare
+  - text: "La traîne se prend dans un râteau de jardin pendant les photos"
+    rarity: rare
+  - text: "Des fausses cils tombent dans la soupe d'entrée"
+    rarity: rare
+  - text: "Le costume du marié ne ferme plus à 22h"
+    rarity: rare
+  - text: "Veut une 'piñata géante' qui blesse un invité"
+    rarity: rare
+  - text: "Demande aux invités de chanter 'Joyeux Anniversaire' à un mariage"
+    rarity: rare
+  - text: "Le DJ fait un karaoké imposé à tous les témoins"
+    rarity: rare
+  - text: "Découvre que le 'champagne' est en fait du crémant"
+    rarity: rare
+  - text: "Le marié s'étouffe sur la pièce montée pendant la photo"
+    rarity: rare
+  - text: "Les invités végé reçoivent des nuggets aux légumes congelés"
+    rarity: rare
+  - text: "L'open bar 'jusqu'à 1h' ferme à 23h45"
+    rarity: rare
+  - text: "Un invité allergique aux noix reçoit un dessert aux noix"
+    rarity: rare
+  - text: "L'EVG dérape en boîte de strip à la sortie d'un bar"
+    rarity: rare
+  - text: "Le futur marié finit avec les sourcils rasés"
+    rarity: rare
+  - text: "L'EVG part au ski en juin"
+    rarity: rare
+  - text: "Le futur marié atterrit à Las Vegas à 3 jours du mariage"
+    rarity: rare
+  - text: "Le mariage tombe le même jour que la finale de Roland-Garros"
+    rarity: rare
+  - text: "Le maire confond les noms et marie le mauvais couple sur le registre"
+    rarity: rare
+  - text: "Un invité demande au marié de signer un autographe 'au cas où il devient célèbre'"
+    rarity: rare
+  - text: "Le pasteur a oublié les noms et improvise 'Pierre et Paule'"
+    rarity: rare
+  - text: "Une voiture de la noce klaxonne devant la mairie pendant 12 minutes"
+    rarity: rare
+  - text: "Un cousin enregistre tout pour une chaîne YouTube"
+    rarity: rare
+  - text: "Quelqu'un appelle les pompiers à 23h pour 'fausse alerte'"
+    rarity: rare
+  - text: "Le clown engagé fait pleurer un enfant"
+    rarity: rare
+  - text: "L'apiculteur du domaine débarque parce qu'on a 'volé une ruche'"
+    rarity: rare
+  - text: "Un témoin avoue avoir 'failli épouser' le ou la mariée à 17 ans"
+    rarity: rare
+  - text: "Une invitée fait une crise d'angoisse et demande son ex au téléphone"
+    rarity: rare
+  - text: "Quelqu'un publie un live Facebook de toute la cérémonie sans autorisation"
+    rarity: rare
+  - text: "Le mariage tombe le jour d'une grève SNCF nationale"
+    rarity: rare
+  - text: "Le DJ joue par erreur la playlist 'enterrement' du même jour"
+    rarity: rare
+  - text: "Le costumier livre un costume avec une étiquette de location"
+    rarity: rare
+  - text: "Le wedding hashtag a déjà été utilisé pour un autre mariage la même année"
+    rarity: rare
+  - text: "Le drone du voisin filme tout sans autorisation"
+    rarity: rare
+  - text: "Une chèvre du domaine s'invite au cocktail"
+    rarity: rare
+  - text: "Le voiture des mariés a un 'just married' déjà à moitié décollé"
+    rarity: rare
+  - text: "Un invité montre le replay du match pendant le repas"
+    rarity: rare
+  - text: "Quelqu'un offre un cadeau encore emballé du sien (recyclé)"
+    rarity: rare
+  - text: "Un témoin demande aux invités de financer son tatouage 'souvenir'"
+    rarity: rare
+  - text: "Une invitée fait une lecture de tarot improvisée à 23h"
+    rarity: rare
+  - text: "Le pote bourré annonce être amoureux du témoin"
+    rarity: rare
+  - text: "Le tonton déballe son téléphone pour montrer ses photos de pêche pendant le slow"
+    rarity: rare
+  - text: "Le marié range le buffet à 23h 'parce qu'on a payé pour'"
+    rarity: rare
+  - text: "La mariée compte les enveloppes à 22h dans le vestiaire"
+    rarity: rare
+  - text: "Refait le plan de table à minuit en pleine soirée"
+    rarity: rare
+  - text: "Cherche désespérément un 'meilleur angle' pendant l'ouverture de bal"
+    rarity: rare
+  - text: "Refuse les bisous des invités pour ne pas froisser le maquillage"
+    rarity: rare
+  - text: "Demande aux invités d'évaluer le buffet sur Google avis pendant le repas"
+    rarity: rare
+  - text: "Demande à tous les invités d'écrire un mot 'pour les futurs enfants'"
+    rarity: rare
+  - text: "Met une boîte 'compliments uniquement' à l'entrée"
+    rarity: rare
+  - text: "Annonce qu'il y aura 'un live sur Twitch' du mariage"
+    rarity: rare
+  - text: "Pleure à chaque chanson du DJ par 'pure émotion'"
+    rarity: rare
+  - text: "Sort sa propre playlist Spotify pour 'sauver l'ambiance'"
+    rarity: rare
+  - text: "Reproche au DJ de ne pas 'lire la salle'"
+    rarity: rare
+  - text: "Engueule un témoin pour une histoire de 2014"
+    rarity: rare
+  - text: "Annonce un 'second mariage' dans 5 ans à la fin du discours"
+    rarity: rare
+  - text: "S'endort tout habillé dans la baignoire de la suite"
+    rarity: rare
+  - text: "Refuse de retirer la robe avant minuit pile"
+    rarity: rare
+  - text: "Demande aux invités leur retour avant de partir au lit"
+    rarity: rare
+  - text: "Fait l'inventaire des cadeaux à 4h du matin"
+    rarity: rare
+  - text: "Reçoit un SMS du DJ qui demande à être payé en cash dans la chambre"
+    rarity: rare
+  - text: "Découvre la liste des choses 'à réclamer aux invités' le lendemain"
+    rarity: rare
+  - text: "Le marié rentre dans la mauvaise chambre à 2h"
+    rarity: rare
+  - text: "Fait un live Insta 'on est mariés' avec un filtre de chien"
+    rarity: rare
+  - text: "Termine la nuit de noces sur le canapé avec son téléphone"
+    rarity: rare
+  - text: "Engage un débat sur 'qui paye la chambre' à minuit"
+    rarity: rare
+
+  # ════════════════════════════════════════════════════════════
+  # LEGENDARIES (60) — Les drames cultes, les classiques absolus
+  # ════════════════════════════════════════════════════════════
+  - text: "Annule deux jours avant et garde les acomptes"
+    rarity: legendary
+  - text: "Découvre la veille que le marié n'a pas divorcé"
+    rarity: legendary
+  - text: "L'ex débarque à la cérémonie en pleurs et fait un esclandre devant l'autel"
+    rarity: legendary
+  - text: "Le maire reconnaît le marié comme 'son ex de la fac'"
+    rarity: legendary
+  - text: "La mariée dit le prénom de l'ex au moment du 'oui'"
+    rarity: legendary
+  - text: "Le témoin avoue avoir trompé le marié avec la mariée pendant son discours"
+    rarity: legendary
+  - text: "Le DJ met 'Adieu' de Slimane à 23h"
+    rarity: legendary
+  - text: "Belle-maman annonce qu'elle est enceinte du papa du marié pendant le toast"
+    rarity: legendary
+  - text: "Le marié reconnaît une cousine éloignée comme 'date de Tinder' dans la queue du buffet"
+    rarity: legendary
+  - text: "Le pasteur se met à pleurer parce qu'il est aussi le grand-père secret"
+    rarity: legendary
+  - text: "Le test ADN remis 'pour rire' devient sérieux après le dessert"
+    rarity: legendary
+  - text: "Le maire propose à la mariée à la fin de la cérémonie"
+    rarity: legendary
+  - text: "Le marié refait sa demande à une autre invitée à la fin de la soirée"
+    rarity: legendary
+  - text: "La mariée embrasse le témoin sur la photo officielle"
+    rarity: legendary
+  - text: "L'ex s'incruste au cocktail en disant qu'il/elle est un cousin éloigné"
+    rarity: legendary
+  - text: "Quelqu'un crie 'JE M'OPPOSE' et c'est papa"
+    rarity: legendary
+  - text: "Le DJ avoue être en réalité l'ex du marié"
+    rarity: legendary
+  - text: "Le photographe efface tout par erreur le lundi"
+    rarity: legendary
+  - text: "Le traiteur empoisonne 30 invités au saumon"
+    rarity: legendary
+  - text: "La pièce montée s'effondre sur la robe de la mariée"
+    rarity: legendary
+  - text: "Le château prend feu à 1h du matin"
+    rarity: legendary
+  - text: "L'invitée devient mariée d'un autre lors du même weekend"
+    rarity: legendary
+  - text: "Le mariage est payé en cryptos qui s'effondrent la veille"
+    rarity: legendary
+  - text: "Belle-maman débranche le DJ pour 'imposer' une chanson"
+    rarity: legendary
+  - text: "Quelqu'un poste un live de la dispute des mariés à 23h sur TikTok"
+    rarity: legendary
+  - text: "Tonton tombe dans la pièce montée avec un fauteuil"
+    rarity: legendary
+  - text: "Le drone décapite le bouquet de la mariée"
+    rarity: legendary
+  - text: "Le marié signe le registre avec le mauvais nom"
+    rarity: legendary
+  - text: "La mariée découvre le compte Snap de son fiancé pendant la sieste"
+    rarity: legendary
+  - text: "Quelqu'un se lève au moment des 'oppositions' et personne ne savait"
+    rarity: legendary
+  - text: "Le marié arrive en hélicoptère qui se pose sur la voiture des invités"
+    rarity: legendary
+  - text: "Le pasteur s'évanouit pendant la bénédiction"
+    rarity: legendary
+  - text: "La mariée découvre qu'elle a la même robe qu'une serveuse"
+    rarity: legendary
+  - text: "Le marié déclare son amour à la wedding-planner pendant le slow"
+    rarity: legendary
+  - text: "Le grand-père termine en string sur la piste pendant 'Y a une fille qu'habite chez moi'"
+    rarity: legendary
+  - text: "Une cousine fait un strip improvisé pendant l'ouverture de bal"
+    rarity: legendary
+  - text: "Le marié tombe à genoux devant la maman de la mariée et déclame un poème"
+    rarity: legendary
+  - text: "Le témoin déballe les frais de l'EVG en chèque cadeau pendant son speech"
+    rarity: legendary
+  - text: "La mariée annonce qu'elle est enceinte du témoin en plein vœu"
+    rarity: legendary
+  - text: "Le DJ avoue à la fin qu'il a confondu le mariage avec un autre client"
+    rarity: legendary
+  - text: "Le wedding planner prend la mariée pour la mère de la mariée et s'embrouille en photos"
+    rarity: legendary
+  - text: "L'invité spécial 'people' annoncé n'arrive jamais"
+    rarity: legendary
+  - text: "Le maire demande à la mariée 'voulez-vous prendre cet inconnu pour époux ?'"
+    rarity: legendary
+  - text: "Le marié est livré dans un cercueil 'pour rire' par les amis et reste coincé 1h"
+    rarity: legendary
+  - text: "L'orchestre arrive à 22h alors qu'il était engagé à 16h"
+    rarity: legendary
+  - text: "L'invité célèbre se trompe de prénom des mariés sur scène"
+    rarity: legendary
+  - text: "Belle-maman appelle la police 'pour vérifier les papiers' du marié à la mairie"
+    rarity: legendary
+  - text: "Le frère du marié monte sur scène et annonce 'qu'il s'oppose'"
+    rarity: legendary
+  - text: "Tonton fait un AVC modéré pendant la pièce montée"
+    rarity: legendary
+  - text: "Une grand-tante fait un malaise dans la fontaine à champagne"
+    rarity: legendary
+  - text: "Quelqu'un mange la pièce montée avant l'arrivée des mariés"
+    rarity: legendary
+  - text: "Un voleur rentre dans la salle pendant le bal et part avec les enveloppes"
+    rarity: legendary
+  - text: "La nuit de noces se passe dans un commissariat suite à une bagarre"
+    rarity: legendary
+  - text: "Le marié envoie un texto à son ex à 4h depuis la suite nuptiale"
+    rarity: legendary
+  - text: "Le mariage est diffusé en direct sur la TV régionale par erreur"
+    rarity: legendary
+  - text: "Le drone projette par erreur les vidéos du caméraman précédent (très intimes)"
+    rarity: legendary
+  - text: "Une orchestre fait une version 'mortuaire' de la marche nuptiale"
+    rarity: legendary
+  - text: "Le voiturier vole la voiture des mariés"
+    rarity: legendary
+  - text: "Le pasteur révèle qu'il a oublié sa cravate, sa formation et ses notes"
+    rarity: legendary
+  - text: "Les mariés divorcent légalement avant le retour de lune de miel"
+    rarity: legendary

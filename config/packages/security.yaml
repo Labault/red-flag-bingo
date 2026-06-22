@@ -1,0 +1,46 @@
+security:
+    # Hashers : on déclare un hasher "admin" pour bcrypt
+    password_hashers:
+        admin:
+            algorithm: bcrypt
+            cost: 12
+
+    # Aucun provider nécessaire (pas d'entité User)
+    providers:
+        # Provider vide, requis par Symfony mais inutilisé
+        admin_in_memory:
+            memory:
+                users:
+                    admin:
+                        password: ''
+                        roles: ['ROLE_ADMIN']
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        # Firewall principal couvrant toute l'app
+        main:
+            lazy: true
+            provider: admin_in_memory
+            custom_authenticators:
+                - App\Security\AdminAuthenticator
+            entry_point: App\Security\AdminAuthenticator
+            logout:
+                path: app_admin_logout
+                target: app_admin_login
+
+    # Règles d'accès : tout /admin nécessite ROLE_ADMIN
+    access_control:
+        - { path: ^/admin/login, roles: PUBLIC_ACCESS }
+        - { path: ^/admin, roles: ROLE_ADMIN }
+
+when@test:
+    security:
+        password_hashers:
+            admin:
+                algorithm: auto
+                cost: 4
+                time_cost: 3
+                memory_cost: 10

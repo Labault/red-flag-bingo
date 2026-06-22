@@ -1,0 +1,123 @@
+{% extends 'admin/_layout.html.twig' %}
+
+{% block title %}Éditer "{{ theme.name }}" — RFB Admin{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .pop-button {
+            background: #db2777;
+            color: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s;
+            font-weight: 800;
+            padding: 12px 28px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+        }
+        .pop-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #1f2937;
+        }
+        .pop-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1f2937;
+        }
+        .pop-input {
+            background: #fdf6f0;
+            border: 2px solid #1f2937;
+            padding: 10px 14px;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: 500;
+            transition: all 0.15s;
+        }
+        .pop-input:focus {
+            outline: none;
+            background: white;
+            box-shadow: 4px 4px 0 #db2777;
+            transform: translate(-2px, -2px);
+        }
+        .pop-button-secondary {
+            background: white;
+            color: #1f2937;
+            border: 2px solid #1f2937;
+            transition: all 0.15s;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .pop-button-secondary:hover {
+            background: #1f2937;
+            color: white;
+        }
+    </style>
+{% endblock %}
+
+{% block admin_content %}
+<header class="mb-8 sm:mb-12">
+    <div class="flex items-center gap-3 mb-5 sm:mb-6">
+        <a href="{{ path('app_admin_themes_index') }}" class="pop-button-secondary">
+            ← Retour aux thèmes
+        </a>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-black text-gray-900">
+        ✏️ Éditer le thème
+    </h1>
+</header>
+
+<div class="bg-white border-2 border-gray-900 rounded-2xl p-5 sm:p-8 shadow-lg max-w-xl">
+    <div class="flex items-center gap-3 mb-5 sm:mb-6 pb-5 sm:pb-6 border-b border-gray-100">
+        <div class="text-3xl sm:text-4xl">{{ theme.emoji }}</div>
+        <div class="min-w-0">
+            <p class="text-xs text-gray-500 uppercase tracking-wider">Thème actuel</p>
+            <p class="font-black text-gray-900 truncate">{{ theme.name }}</p>
+        </div>
+    </div>
+
+    {{ form_start(form, { attr: { class: 'space-y-4' } }) }}
+
+        <div>
+            {{ form_label(form.name, null, { label_attr: { class: 'block font-bold text-gray-700 mb-1 text-sm' } }) }}
+            {{ form_widget(form.name) }}
+            {{ form_errors(form.name) }}
+        </div>
+
+        <div>
+            {{ form_label(form.slug, null, { label_attr: { class: 'block font-bold text-gray-700 mb-1 text-sm' } }) }}
+            {{ form_widget(form.slug) }}
+            {% if form.slug.vars.help %}
+                <p class="text-xs text-gray-500 mt-1">{{ form.slug.vars.help }}</p>
+            {% endif %}
+            {{ form_errors(form.slug) }}
+        </div>
+
+        <div>
+            {{ form_label(form.emoji, null, { label_attr: { class: 'block font-bold text-gray-700 mb-1 text-sm' } }) }}
+            {{ form_widget(form.emoji) }}
+            {{ form_errors(form.emoji) }}
+        </div>
+
+        <div class="flex justify-between items-center pt-4">
+            <a href="{{ path('app_admin_themes_index') }}"
+               class="pop-button-secondary">
+                Annuler
+            </a>
+            <button type="submit" class="pop-button">
+                Sauvegarder
+            </button>
+        </div>
+
+    {{ form_end(form) }}
+</div>
+{% endblock %}

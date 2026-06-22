@@ -1,0 +1,1204 @@
+theme:
+  name: "Réunion de travail"
+  slug: "reunion-de-travail"
+  description: "Tous les red flags qu'on rencontre en réunion, du micro coupé au manager qui découvre le sujet en direct. Si tu coches plus de 5 cases, c'est que tu as une réunion là maintenant."
+  emoji: "📅"
+
+red_flags:
+  # ============================================================
+  # COMMON (≈ 300) — l'universel, ce que tout le monde a vécu
+  # ============================================================
+
+  # --- Démarrage de réunion ---
+  - text: "La réunion commence avec 7 minutes de retard"
+    rarity: common
+  - text: "« On attend encore deux personnes »"
+    rarity: common
+  - text: "« Tout le monde m'entend ? »"
+    rarity: common
+  - text: "« Je crois qu'il y a un souci avec mon micro »"
+    rarity: common
+  - text: "« Tu peux répéter ? J'étais en muet »"
+    rarity: common
+  - text: "Quelqu'un rejoint la réunion 12 minutes en retard sans s'excuser"
+    rarity: common
+  - text: "« Désolé je sors d'une autre réunion »"
+    rarity: common
+  - text: "L'organisateur arrive en dernier"
+    rarity: common
+  - text: "Personne ne sait qui doit lancer"
+    rarity: common
+  - text: "« Bon, on commence ou on attend ? »"
+    rarity: common
+  - text: "Le lien Teams ne fonctionne pas"
+    rarity: common
+  - text: "« Je n'ai pas reçu l'invitation »"
+    rarity: common
+  - text: "L'invit' calendrier n'a pas d'ordre du jour"
+    rarity: common
+  - text: "Personne ne sait pourquoi cette réunion existe"
+    rarity: common
+  - text: "« Du coup c'est qui qui anime ? »"
+    rarity: common
+
+  # --- Visio & technique ---
+  - text: "« Vous voyez mon écran ? »"
+    rarity: common
+  - text: "« Attends je partage le mauvais écran »"
+    rarity: common
+  - text: "Le partage d'écran rame"
+    rarity: common
+  - text: "« Tu m'entends ? Je t'entends pas »"
+    rarity: common
+  - text: "« Coupez vos micros s'il vous plaît »"
+    rarity: common
+  - text: "Quelqu'un n'a pas coupé son micro et on entend tout"
+    rarity: common
+  - text: "Larsen monumental dès la première minute"
+    rarity: common
+  - text: "« Je vais devoir me reconnecter »"
+    rarity: common
+  - text: "Caméras toutes coupées sauf une"
+    rarity: common
+  - text: "Personne n'allume sa caméra"
+    rarity: common
+  - text: "« On peut allumer les caméras s'il vous plaît »"
+    rarity: common
+  - text: "Le fond flou qui bug et révèle le bazar"
+    rarity: common
+  - text: "Quelqu'un a un fond Hawaii très peu professionnel"
+    rarity: common
+  - text: "« Désolé j'ai pas de caméra aujourd'hui »"
+    rarity: common
+  - text: "« J'ai pas eu le temps de me préparer ce matin »"
+    rarity: common
+
+  # --- Jargon corporate ---
+  - text: "Quelqu'un dit « synergies »"
+    rarity: common
+  - text: "Quelqu'un dit « roadmap »"
+    rarity: common
+  - text: "« Il faut qu'on s'aligne »"
+    rarity: common
+  - text: "« On va prendre du recul »"
+    rarity: common
+  - text: "« C'est un sujet structurant »"
+    rarity: common
+  - text: "« Faisons un quick win »"
+    rarity: common
+  - text: "« On manque de bande passante »"
+    rarity: common
+  - text: "« On va challenger ça »"
+    rarity: common
+  - text: "« Touchons base la semaine prochaine »"
+    rarity: common
+  - text: "« Il faut driver le sujet »"
+    rarity: common
+  - text: "« On est sur la même longueur d'onde ? »"
+    rarity: common
+  - text: "« Ça fait sens »"
+    rarity: common
+  - text: "« On va prioriser »"
+    rarity: common
+  - text: "« On verra ça en off »"
+    rarity: common
+  - text: "« On va dérouler le sujet »"
+    rarity: common
+  - text: "Une phrase entière sans un seul mot français"
+    rarity: common
+  - text: "« C'est un nice to have »"
+    rarity: common
+  - text: "« Il faut qu'on se synchronise »"
+    rarity: common
+  - text: "« Je rebondis sur ce que tu disais »"
+    rarity: common
+  - text: "« Il y a un go ou pas ? »"
+    rarity: common
+
+  # --- Archétypes humains ---
+  - text: "Le mec qui parle pendant 12 minutes sans virgule"
+    rarity: common
+  - text: "Celui qui n'a rien préparé et improvise"
+    rarity: common
+  - text: "Le silencieux qui ne dit rien de toute la réunion"
+    rarity: common
+  - text: "Celle qui répète exactement ce que tu viens de dire"
+    rarity: common
+  - text: "Le contradicteur systématique"
+    rarity: common
+  - text: "Celui qui pose une question dont la réponse a été donnée 5 minutes avant"
+    rarity: common
+  - text: "Le « j'ai juste une question rapide » qui dure 8 minutes"
+    rarity: common
+  - text: "Celui qui pose une question pour montrer qu'il était là"
+    rarity: common
+  - text: "Le stagiaire qui n'a pas le droit de parler"
+    rarity: common
+  - text: "Celui qui mange en réunion micro allumé"
+    rarity: common
+  - text: "Quelqu'un qui répond clairement à un autre mail pendant la réunion"
+    rarity: common
+  - text: "Le boomer qui ne maîtrise pas Teams"
+    rarity: common
+  - text: "Celui qui dit « moi de toute façon je suis pas du métier mais... »"
+    rarity: common
+  - text: "Celle qui prend la parole juste pour exister"
+    rarity: common
+  - text: "Le mec qui mansplaine ton propre projet"
+    rarity: common
+
+  # --- Présentations & slides ---
+  - text: "PowerPoint avec 47 slides"
+    rarity: common
+  - text: "« Je vais juste survoler ces slides »"
+    rarity: common
+  - text: "Le présentateur lit littéralement ses slides"
+    rarity: common
+  - text: "Une slide avec 12 graphiques illisibles"
+    rarity: common
+  - text: "Le texte est trop petit pour être lu"
+    rarity: common
+  - text: "« Vous arrivez à voir au fond ? »"
+    rarity: common
+  - text: "Slide « Merci pour votre attention » suivi de 30 minutes de questions"
+    rarity: common
+  - text: "Le sommaire est lui-même sur 3 slides"
+    rarity: common
+  - text: "Slide remplie d'acronymes que personne ne connaît"
+    rarity: common
+  - text: "« Ce slide n'est pas très clair je vais l'expliquer »"
+    rarity: common
+
+  # --- Organisation & déroulement ---
+  - text: "Aucun ordre du jour partagé"
+    rarity: common
+  - text: "La réunion déborde de 20 minutes"
+    rarity: common
+  - text: "« On va devoir continuer rapidement »"
+    rarity: common
+  - text: "« Désolé je dois partir, j'ai une autre réunion »"
+    rarity: common
+  - text: "On parle pendant 30 minutes sans prendre de décision"
+    rarity: common
+  - text: "« Bon, on a beaucoup avancé aujourd'hui »"
+    rarity: common
+  - text: "Personne ne prend de notes"
+    rarity: common
+  - text: "« Quelqu'un peut faire le compte-rendu ? »"
+    rarity: common
+  - text: "« On fait un point la semaine prochaine ? »"
+    rarity: common
+  - text: "Réunion qui aurait pu être un mail"
+    rarity: common
+  - text: "Réunion pour préparer une autre réunion"
+    rarity: common
+  - text: "On revient sur un sujet déjà tranché 3 fois"
+    rarity: common
+  - text: "« On verra ça hors réunion »"
+    rarity: common
+  - text: "Aucune action item à la fin"
+    rarity: common
+  - text: "« Du coup, qui s'en occupe ? »"
+    rarity: common
+  - text: "Silence total quand on demande qui prend l'action"
+    rarity: common
+  - text: "« On en reparle plus tard »"
+    rarity: common
+  - text: "Réunion d'1h prévue qui dure 1h45"
+    rarity: common
+  - text: "On finit avec 5 minutes de bavardage sur la météo"
+    rarity: common
+  - text: "« Il nous reste 2 minutes, sujet suivant »"
+    rarity: common
+
+  # --- Le manager ---
+  - text: "« Je laisse [prénom] présenter » sans avoir prévenu [prénom]"
+    rarity: common
+  - text: "Le N+1 découvre le sujet en direct"
+    rarity: common
+  - text: "« Vas-y, fais comme si je n'étais pas là »"
+    rarity: common
+  - text: "Le boss valide sans avoir écouté"
+    rarity: common
+  - text: "« Je te fais confiance là-dessus »"
+    rarity: common
+  - text: "Le manager arrive 20 minutes en retard et résume mal le sujet"
+    rarity: common
+  - text: "« On verra ça avec [grand chef] »"
+    rarity: common
+
+  # --- Vie perso qui déborde ---
+  - text: "Un enfant qui passe en arrière-plan"
+    rarity: common
+  - text: "Un chien qui aboie pendant l'intervention"
+    rarity: common
+  - text: "Le livreur qui sonne pile au mauvais moment"
+    rarity: common
+  - text: "Caméra qui révèle le pyjama sous la chemise"
+    rarity: common
+  - text: "On voit clairement un lit défait derrière"
+    rarity: common
+  - text: "Quelqu'un est manifestement au volant"
+    rarity: common
+  - text: "Quelqu'un est dans le train avec une connexion pourrie"
+    rarity: common
+  - text: "Le café qu'on entend boire à chaque fin de phrase"
+    rarity: common
+
+  # --- Snacks & logistique présentiel ---
+  - text: "Café déjà froid à votre arrivée"
+    rarity: common
+  - text: "Plus de viennoiseries quand vous arrivez"
+    rarity: common
+  - text: "La salle est réservée par quelqu'un d'autre"
+    rarity: common
+  - text: "Climatisation glaciale"
+    rarity: common
+  - text: "Salle trop chaude, vitres fermées"
+    rarity: common
+  - text: "Le vidéoprojecteur ne reconnaît pas le PC"
+    rarity: common
+  - text: "10 minutes à chercher le bon câble HDMI"
+    rarity: common
+  - text: "« Quelqu'un a un adaptateur USB-C ? »"
+    rarity: common
+  - text: "Pas assez de chaises"
+    rarity: common
+  - text: "Quelqu'un mange bruyamment des chips"
+    rarity: common
+
+  # --- Hybride / hybride raté ---
+  - text: "Le micro de la salle ne capte pas les distants"
+    rarity: common
+  - text: "Les présentiels parlent entre eux et oublient les distants"
+    rarity: common
+  - text: "Un distant lève la main, personne ne le voit"
+    rarity: common
+  - text: "« Désolé on vous entend mal là-bas »"
+    rarity: common
+  - text: "Hybride : la moitié de la salle est sur l'écran"
+    rarity: common
+
+  # --- Slack/Teams pendant la réunion ---
+  - text: "Le chat parallèle qui commente la réunion"
+    rarity: common
+  - text: "MP entre collègues qui se moquent du présentateur"
+    rarity: common
+  - text: "Tu reçois un message « tu suis ? »"
+    rarity: common
+  - text: "Quelqu'un like ton message en plein silence gênant"
+    rarity: common
+
+  # --- Petites phrases qui tuent ---
+  - text: "« Pour être tout à fait transparent... »"
+    rarity: common
+  - text: "« Je vais être très direct »"
+    rarity: common
+  - text: "« C'est juste mon avis hein »"
+    rarity: common
+  - text: "« Je ne veux pas être négatif mais... »"
+    rarity: common
+  - text: "« Sans vouloir refaire le sujet... » (puis refait le sujet)"
+    rarity: common
+  - text: "« Je n'ai pas tout suivi mais... »"
+    rarity: common
+  - text: "« Question peut-être bête »"
+    rarity: common
+  - text: "« Désolé d'arriver avec ça à 5 minutes de la fin »"
+    rarity: common
+  - text: "« On va pas se mentir »"
+    rarity: common
+  - text: "« Au final c'est pas si compliqué »"
+    rarity: common
+
+  # --- Réunions à problématique ---
+  - text: "Réunion à 14h pile après le déjeuner"
+    rarity: common
+  - text: "Réunion à 17h45 un vendredi"
+    rarity: common
+  - text: "Réunion fixée pendant ta pause déjeuner"
+    rarity: common
+  - text: "Invit' arrivée 10 minutes avant le début"
+    rarity: common
+  - text: "« Désolé j'ai bookée à la dernière minute »"
+    rarity: common
+  - text: "Réunion récurrente que personne n'ose annuler"
+    rarity: common
+  - text: "Le daily qui dure 50 minutes"
+    rarity: common
+  - text: "Stand-up assis"
+    rarity: common
+  - text: "Rétrospective qui se transforme en règlement de comptes"
+    rarity: common
+
+  # --- Décisions & process ---
+  - text: "« Il faudrait valider ça en COMEX »"
+    rarity: common
+  - text: "« On attend le go de la direction »"
+    rarity: common
+  - text: "Décision prise puis re-discutée le lendemain"
+    rarity: common
+  - text: "« Je vais en parler à mon manager »"
+    rarity: common
+  - text: "Personne ne veut prendre la décision"
+    rarity: common
+  - text: "« On va faire un sondage »"
+    rarity: common
+  - text: "« On va créer un groupe de travail »"
+    rarity: common
+
+  # --- Outils & docs ---
+  - text: "« C'est dans le Notion »"
+    rarity: common
+  - text: "« Le lien est dans le Drive »"
+    rarity: common
+  - text: "« Je vous l'envoie après la réunion » (jamais envoyé)"
+    rarity: common
+  - text: "« Il y a un Confluence là-dessus »"
+    rarity: common
+  - text: "Tout le monde cherche le bon document Google Docs"
+    rarity: common
+  - text: "« Vous avez accès au document ? »"
+    rarity: common
+  - text: "« Je vous donne les droits »"
+    rarity: common
+  - text: "Le tableau Miro illisible"
+    rarity: common
+  - text: "« Faut que je vous partage le Figma »"
+    rarity: common
+
+  # --- Tour de table ---
+  - text: "« On fait un tour de table ? »"
+    rarity: common
+  - text: "Tour de table de présentation alors qu'on se connaît tous"
+    rarity: common
+  - text: "« Présentez-vous en quelques mots »"
+    rarity: common
+  - text: "Quelqu'un prend 4 minutes pour son « pitch perso »"
+    rarity: common
+  - text: "« Je passe mon tour »"
+    rarity: common
+
+  # --- Sujets récurrents ---
+  - text: "On reparle d'un projet abandonné depuis 6 mois"
+    rarity: common
+  - text: "« Il faudrait reprendre ce sujet »"
+    rarity: common
+  - text: "Quelqu'un évoque la « réorg »"
+    rarity: common
+  - text: "« On manque de visibilité »"
+    rarity: common
+  - text: "« On a un sujet de priorisation »"
+    rarity: common
+  - text: "« On manque de ressources »"
+    rarity: common
+  - text: "« Il faudrait un PMO »"
+    rarity: common
+
+  # --- Reformulations & redites ---
+  - text: "« Pour rebondir sur ce que vient de dire... »"
+    rarity: common
+  - text: "« Si je peux reformuler... »"
+    rarity: common
+  - text: "« Donc en gros, ce que tu dis c'est... »"
+    rarity: common
+  - text: "Trois personnes disent la même chose en 5 minutes"
+    rarity: common
+  - text: "« C'est exactement ce que je voulais dire »"
+    rarity: common
+
+  # --- Problèmes de fond ---
+  - text: "Le sujet de la réunion change en cours de route"
+    rarity: common
+  - text: "On avance pas car il manque LA bonne personne"
+    rarity: common
+  - text: "« Sans [prénom] on peut pas vraiment décider »"
+    rarity: common
+  - text: "Décision reportée parce que [prénom] est en congés"
+    rarity: common
+  - text: "Réunion entièrement basée sur un mail mal compris"
+    rarity: common
+
+  # --- Calendrier ---
+  - text: "« Je n'ai aucun créneau cette semaine »"
+    rarity: common
+  - text: "« Le seul créneau commun c'est dans 3 semaines »"
+    rarity: common
+  - text: "Réunion déplacée 4 fois"
+    rarity: common
+  - text: "« Tu m'envoies un Doodle ? »"
+    rarity: common
+  - text: "Le sondage Doodle reste sans réponse"
+    rarity: common
+
+  # --- Le retour au présentiel ---
+  - text: "Open space bruyant en arrière-plan"
+    rarity: common
+  - text: "Quelqu'un fait sa réunion en speaker dans l'open space"
+    rarity: common
+  - text: "Tu cherches une bulle de réunion, toutes occupées"
+    rarity: common
+  - text: "Réunion debout dans le couloir"
+    rarity: common
+
+  # --- Suite & action items ---
+  - text: "« Je vous envoie le récap dans la journée »"
+    rarity: common
+  - text: "Le récap n'arrive jamais"
+    rarity: common
+  - text: "Action item sans propriétaire"
+    rarity: common
+  - text: "Action item sans deadline"
+    rarity: common
+  - text: "« On se refixe quand ? »"
+    rarity: common
+
+  # --- Le client / l'externe ---
+  - text: "On parle du client en mal en croyant qu'il a coupé son micro"
+    rarity: common
+  - text: "Le client demande exactement ce qu'on n'a pas préparé"
+    rarity: common
+  - text: "« On reviendra vers vous »"
+    rarity: common
+
+  # --- Démarrage / fin un peu maladroits ---
+  - text: "« Bon courage pour cette fin de journée »"
+    rarity: common
+  - text: "« Excellente fin de semaine à tous »"
+    rarity: common
+  - text: "Personne ne sait comment quitter la visio en premier"
+    rarity: common
+  - text: "Tout le monde dit « bye bye » 4 fois"
+    rarity: common
+  - text: "Réunion qui se termine par un blanc gênant"
+    rarity: common
+  - text: "Quelqu'un oublie de couper son micro après le « au revoir »"
+    rarity: common
+
+  # --- Petites violences ordinaires ---
+  - text: "On te coupe la parole en pleine phrase"
+    rarity: common
+  - text: "Ta proposition est ignorée puis reprise par quelqu'un d'autre"
+    rarity: common
+  - text: "« On en a déjà parlé » alors que non"
+    rarity: common
+  - text: "« On va dire les choses »"
+    rarity: common
+  - text: "Quelqu'un soupire fort dans son micro"
+    rarity: common
+  - text: "« Je vais être franc avec vous »"
+    rarity: common
+
+  # --- Visio domicile ---
+  - text: "Quelqu'un a clairement une bouilloire qui chauffe en arrière-plan"
+    rarity: common
+  - text: "On entend un aspirateur en pleine intervention"
+    rarity: common
+  - text: "Le voisin du dessus fait des travaux"
+    rarity: common
+  - text: "Quelqu'un est en plein soleil et on voit que sa silhouette"
+    rarity: common
+  - text: "Le contre-jour rend le visage invisible"
+    rarity: common
+
+  # --- Engagement & motivation ---
+  - text: "« On est tous d'accord ? » silence radio"
+    rarity: common
+  - text: "Tu hoches la tête mécaniquement sans avoir suivi"
+    rarity: common
+  - text: "Tu réponds « oui oui » à une question que tu n'as pas entendue"
+    rarity: common
+  - text: "Tu dois reformuler une question que tu n'as pas écoutée"
+    rarity: common
+
+  # --- Mauvaise foi ordinaire ---
+  - text: "« Je n'ai pas eu le temps de regarder le doc »"
+    rarity: common
+  - text: "« Tu peux nous résumer rapidement ? »"
+    rarity: common
+  - text: "Quelqu'un découvre les slides qu'il est censé présenter"
+    rarity: common
+  - text: "« Je n'ai pas eu accès au fichier »"
+    rarity: common
+
+  # --- Onboarding & nouveaux ---
+  - text: "Le nouveau qu'on présente puis qu'on oublie pendant 1h"
+    rarity: common
+  - text: "« On présentera les nouveaux à la fin si on a le temps »"
+    rarity: common
+  - text: "« Désolé je suis nouveau, c'est quoi déjà... ? »"
+    rarity: common
+
+  # --- Écran partagé compromettant ---
+  - text: "Notification WhatsApp qui pop pendant le partage d'écran"
+    rarity: common
+  - text: "Onglet « offres d'emploi » visible dans le partage d'écran"
+    rarity: common
+  - text: "Mail de relance Pôle Emploi visible 2 secondes"
+    rarity: common
+  - text: "Notification Tinder pendant le partage d'écran"
+    rarity: common
+
+  # --- Gestion du temps ---
+  - text: "« On va prendre 5 minutes de plus »"
+    rarity: common
+  - text: "« Je vais essayer d'être bref »"
+    rarity: common
+  - text: "« Pour ne pas trop déborder... » puis déborde"
+    rarity: common
+  - text: "« On a déjà dépassé »"
+    rarity: common
+
+  # --- Émotions & conflits soft ---
+  - text: "Quelqu'un est visiblement vexé"
+    rarity: common
+  - text: "Deux collègues règlent leurs comptes via le sujet"
+    rarity: common
+  - text: "Quelqu'un quitte la réunion sans rien dire"
+    rarity: common
+  - text: "Tension palpable entre deux services"
+    rarity: common
+
+  # --- Trucs débiles mais classiques ---
+  - text: "Quelqu'un teste son micro avec « test test 1 2 »"
+    rarity: common
+  - text: "« Vous me voyez bien ? » alors que tout le monde le voit"
+    rarity: common
+  - text: "Caméra à l'envers"
+    rarity: common
+  - text: "Caméra qui pointe le plafond"
+    rarity: common
+  - text: "Le filtre Snapchat oublié sur Teams"
+    rarity: common
+
+  # --- Café & post-réunion ---
+  - text: "« On en parle au café ? »"
+    rarity: common
+  - text: "« Tu as deux minutes après la réunion ? » (pas deux minutes)"
+    rarity: common
+  - text: "Réunion qui se prolonge en off avec 2 personnes"
+    rarity: common
+
+  # --- Recap demandé ---
+  - text: "« Tu peux me débrief, j'ai pas pu venir »"
+    rarity: common
+  - text: "On te demande un compte-rendu sans avoir prévenu"
+    rarity: common
+
+  # --- Calendrier mal géré ---
+  - text: "Tu reçois 4 invits' contradictoires pour le même créneau"
+    rarity: common
+  - text: "Réunion à 9h le lendemain d'un séminaire"
+    rarity: common
+  - text: "Réunion entre deux autres réunions, sans pause"
+    rarity: common
+  - text: "Tu as 7 réunions dans la journée"
+    rarity: common
+
+  # --- Idées floues ---
+  - text: "« Il y a un truc à faire »"
+    rarity: common
+  - text: "« On a un sujet là »"
+    rarity: common
+  - text: "« Faudrait creuser »"
+    rarity: common
+  - text: "« On voit comment on fait ? »"
+    rarity: common
+
+  # --- Maître chronomètre ---
+  - text: "« Bon, je dois vous laisser, j'ai un autre call »"
+    rarity: common
+  - text: "« Une dernière chose rapide »" 
+    rarity: common
+  - text: "Quelqu'un revient sur le sujet 1 alors qu'on est au sujet 4"
+    rarity: common
+
+  # --- Le matériel ---
+  - text: "Marqueur du paperboard à sec"
+    rarity: common
+  - text: "Tableau blanc plein, personne n'a effacé"
+    rarity: common
+  - text: "Télécommande TV introuvable"
+    rarity: common
+
+  # --- Encore quelques classiques universels ---
+  - text: "« Avant de commencer, juste un mot » (jamais juste un mot)"
+    rarity: common
+  - text: "« Je vais essayer de faire court » (n'a jamais fait court)"
+    rarity: common
+  - text: "« On boucle ce sujet et on passe »"
+    rarity: common
+  - text: "« On a un peu de temps, on enchaîne ? »"
+    rarity: common
+  - text: "Le sujet « divers » qui dure 25 minutes"
+    rarity: common
+  - text: "Personne n'écoute la personne au téléphone"
+    rarity: common
+  - text: "« Allô ? Allô ? »"
+    rarity: common
+  - text: "Bruit de clavier en continu sans micro coupé"
+    rarity: common
+  - text: "Le bruit de mastication d'un chewing-gum"
+    rarity: common
+  - text: "Quelqu'un qui clique compulsivement son stylo"
+    rarity: common
+  - text: "Stylos sans encre, paperboard sans feuille"
+    rarity: common
+  - text: "« On a 5 minutes de retard, on enchaîne »"
+    rarity: common
+  - text: "« Désolé je dois zapper la fin »"
+    rarity: common
+  - text: "Personne n'a la version à jour du document"
+    rarity: common
+  - text: "« Je vous renvoie la bonne version »"
+    rarity: common
+  - text: "« Vous avez la dernière version ? »"
+    rarity: common
+  - text: "Trois versions du même fichier circulent"
+    rarity: common
+  - text: "« Pas sûr d'être la bonne personne pour répondre »"
+    rarity: common
+  - text: "« Je laisse [prénom] compléter »"
+    rarity: common
+  - text: "Quelqu'un commence à compléter sans qu'on lui ait demandé"
+    rarity: common
+  - text: "Le mec qui finit toutes les phrases des autres"
+    rarity: common
+  - text: "« Pour résumer ce que tu viens de dire... » (le résumé est faux)"
+    rarity: common
+  - text: "« On va aller à l'essentiel » (puis 30 min de digressions)"
+    rarity: common
+  - text: "« On est en avance, on en profite »"
+    rarity: common
+  - text: "Réunion qui finit en avance, applaudissements virtuels"
+    rarity: common
+  - text: "« On se laisse 10 minutes pour réfléchir »"
+    rarity: common
+  - text: "« Tout le monde a bien compris ? » silence"
+    rarity: common
+  - text: "« Pas de questions ? » questions 5 minutes après"
+    rarity: common
+  - text: "Le mail de relance arrive avant même la fin de la réunion"
+    rarity: common
+
+  # ============================================================
+  # RARE (≈ 140) — situations plus pointues mais reconnaissables
+  # ============================================================
+
+  # --- Jargon avancé / corporate poétique ---
+  - text: "« Il faut qu'on industrialise le sujet »"
+    rarity: rare
+  - text: "« On part sur un MVP et on itère »"
+    rarity: rare
+  - text: "« On est dans une logique d'amélioration continue »"
+    rarity: rare
+  - text: "« Il faut qu'on prenne de la hauteur sur ce sujet »"
+    rarity: rare
+  - text: "« On va capitaliser sur les acquis »"
+    rarity: rare
+  - text: "« Faut qu'on se mette dans la peau du end-user »"
+    rarity: rare
+  - text: "« On va faire un POC »"
+    rarity: rare
+  - text: "« C'est du low hanging fruit »"
+    rarity: rare
+  - text: "« On parle bien de la même chose ? »"
+    rarity: rare
+  - text: "« On s'aligne offline »"
+    rarity: rare
+  - text: "« Il faut qu'on déconstruise pour mieux reconstruire »"
+    rarity: rare
+  - text: "« On a un enjeu de delivery »"
+    rarity: rare
+  - text: "« C'est un sujet à fort impact »"
+    rarity: rare
+  - text: "« On va faire un workshop »"
+    rarity: rare
+  - text: "« On part sur du test and learn »"
+    rarity: rare
+  - text: "« C'est un changement de paradigme »"
+    rarity: rare
+  - text: "« On a un sujet de gouvernance »"
+    rarity: rare
+  - text: "« On va embarquer les sponsors »"
+    rarity: rare
+  - text: "« Il y a un effet boule de neige sur ce projet »"
+    rarity: rare
+  - text: "« On va faire un benchmark »"
+    rarity: rare
+
+  # --- Archétypes pointus ---
+  - text: "Celui qui dit « je vais jouer l'avocat du diable »"
+    rarity: rare
+  - text: "Le DEVOPS qui parle du cloud à la compta"
+    rarity: rare
+  - text: "Celui qui demande « c'est priorité 1 ou priorité 2 ? » à TOUT"
+    rarity: rare
+  - text: "Le consultant qui répète tes idées en plus cher"
+    rarity: rare
+  - text: "Le mec qui sort sa note Notion personnelle de 18 pages"
+    rarity: rare
+  - text: "Celui qui prend la parole 12 fois pour ne rien dire"
+    rarity: rare
+  - text: "Le « je joue l'avocat du diable » qui en fait défend juste son point"
+    rarity: rare
+  - text: "Celui qui finit chaque phrase par « voilà »"
+    rarity: rare
+  - text: "Le sage qui parle peu mais coupe net quand il parle"
+    rarity: rare
+  - text: "Quelqu'un sort un Excel illisible et zoome dessus"
+    rarity: rare
+  - text: "Le perfectionniste qui veut TOUT clarifier"
+    rarity: rare
+  - text: "Celui qui demande « à quoi ressemblerait le succès ici ? »"
+    rarity: rare
+  - text: "Le mec qui dégaine son framework personnel sur n'importe quel sujet"
+    rarity: rare
+  - text: "Celui qui te tag « pour info » dans le chat sur tous les points"
+    rarity: rare
+
+  # --- Visio drôles & cocasses ---
+  - text: "Le filtre chat est resté activé toute la réunion"
+    rarity: rare
+  - text: "Quelqu'un fait sa réunion depuis les toilettes (clairement)"
+    rarity: rare
+  - text: "Les rideaux se ferment automatiquement en plein speech"
+    rarity: rare
+  - text: "Le compagnon/conjoint passe en serviette en arrière-plan"
+    rarity: rare
+  - text: "Quelqu'un fait sa réunion dans sa voiture garée"
+    rarity: rare
+  - text: "Le mec qui vape à pleins poumons en visio"
+    rarity: rare
+  - text: "Le chat qui marche sur le clavier"
+    rarity: rare
+  - text: "Quelqu'un a clairement les yeux qui se ferment"
+    rarity: rare
+  - text: "Quelqu'un mâche un sandwich énorme en visio"
+    rarity: rare
+  - text: "Quelqu'un est en plein voyage en train à l'étranger"
+    rarity: rare
+  - text: "Le décor est manifestement un Airbnb"
+    rarity: rare
+  - text: "On voit la plage en arrière-plan, c'est censé être une journée de boulot"
+    rarity: rare
+
+  # --- Slides & présentations ---
+  - text: "Le slide « disclaimer » qui dure 4 minutes"
+    rarity: rare
+  - text: "Animation PowerPoint type « rebond » sur le titre"
+    rarity: rare
+  - text: "Police Comic Sans dans une slide officielle"
+    rarity: rare
+  - text: "Image clipart d'un personnage qui pense"
+    rarity: rare
+  - text: "Iceberg slide « ce qu'on voit / ce qu'on voit pas »"
+    rarity: rare
+  - text: "Pyramide de Maslow détournée pour parler de KPIs"
+    rarity: rare
+  - text: "Schéma SWOT qui ne sert strictement à rien"
+    rarity: rare
+  - text: "Une slide entièrement en anglais dans une boîte 100% française"
+    rarity: rare
+  - text: "Le graphique avec 14 courbes superposées"
+    rarity: rare
+  - text: "Slide « Questions ? » et personne n'a de question"
+    rarity: rare
+  - text: "Présentation de 20 slides terminée en 4 minutes en mode panique"
+    rarity: rare
+
+  # --- Process & gouvernance ---
+  - text: "« On a besoin d'un comité de pilotage »"
+    rarity: rare
+  - text: "« On va créer une nouvelle instance »"
+    rarity: rare
+  - text: "Réunion de pilotage du comité de pilotage"
+    rarity: rare
+  - text: "« Il faudrait formaliser un process »"
+    rarity: rare
+  - text: "« On a un sujet de RACI »"
+    rarity: rare
+  - text: "Quelqu'un sort la matrice RACI en pleine réunion"
+    rarity: rare
+  - text: "« Il manque un sponsor sur ce projet »"
+    rarity: rare
+  - text: "« On va monter un steerco »"
+    rarity: rare
+
+  # --- Messages cachés / passifs-agressifs ---
+  - text: "« Je pense qu'on n'a pas la même définition de « fini » »"
+    rarity: rare
+  - text: "« Comme dit dans mon mail »"
+    rarity: rare
+  - text: "« Pour ceux qui n'auraient pas lu le contexte... »"
+    rarity: rare
+  - text: "« Pour la énième fois... »"
+    rarity: rare
+  - text: "« Si j'ai bien compris ce que tu essaies de dire... »"
+    rarity: rare
+  - text: "« Avec tout le respect que je te dois... »"
+    rarity: rare
+  - text: "« Je ne vais pas refaire le débat mais... » (refait le débat)"
+    rarity: rare
+  - text: "« Je voudrais juste alerter sur un point »"
+    rarity: rare
+  - text: "« On a déjà eu cette conversation »"
+    rarity: rare
+  - text: "« Tu m'as mal compris »"
+    rarity: rare
+  - text: "« Je suis surpris qu'on en soit encore là »"
+    rarity: rare
+
+  # --- Politique & dynamiques de pouvoir ---
+  - text: "Recadrage public d'un junior par son manager"
+    rarity: rare
+  - text: "Le N+2 contredit le N+1 devant l'équipe"
+    rarity: rare
+  - text: "Quelqu'un quitte la réunion ostensiblement vexé"
+    rarity: rare
+  - text: "Coup de gueule annoncé en visio (caméra coupée brusquement)"
+    rarity: rare
+  - text: "Deux directeurs s'envoient des piques dans le micro"
+    rarity: rare
+  - text: "Le mec qui parle plus fort pour s'imposer"
+    rarity: rare
+  - text: "Quelqu'un appelle son chef « patron » pour rappeler la hiérarchie"
+    rarity: rare
+
+  # --- RH & souffrance ---
+  - text: "Réunion qui devient une thérapie de groupe non sollicitée"
+    rarity: rare
+  - text: "« Comment vous vous sentez ? » (silence)"
+    rarity: rare
+  - text: "Quelqu'un parle de son burn-out comme d'une banalité"
+    rarity: rare
+  - text: "« On vous remercie tous pour votre engagement »"
+    rarity: rare
+  - text: "Le mot « bienveillance » prononcé pendant un licenciement"
+    rarity: rare
+  - text: "« On va vous demander un effort supplémentaire »"
+    rarity: rare
+
+  # --- Chefs d'œuvre passifs ---
+  - text: "« Bon, on va dire que c'est validé »"
+    rarity: rare
+  - text: "« On va dire que ça marche »"
+    rarity: rare
+  - text: "« Je vais faire confiance à ton jugement »"
+    rarity: rare
+  - text: "Décision prise par épuisement collectif"
+    rarity: rare
+  - text: "« Si personne ne s'oppose, c'est validé » (dit en 2 secondes)"
+    rarity: rare
+
+  # --- Outils & systèmes ---
+  - text: "Migration en cours d'outil de visio en plein milieu de la réunion"
+    rarity: rare
+  - text: "« Vous êtes sur Teams ou Zoom ? » à 9h pile"
+    rarity: rare
+  - text: "Personne ne sait ouvrir le lien Webex"
+    rarity: rare
+  - text: "« On a perdu le ticket Jira »"
+    rarity: rare
+  - text: "« C'est dans quel sprint déjà ? »"
+    rarity: rare
+  - text: "« Vous regardez bien la bonne ligne du tableau Excel ? »"
+    rarity: rare
+  - text: "Le tableau Excel est protégé par mot de passe et personne ne l'a"
+    rarity: rare
+  - text: "Personne n'a les droits sur le SharePoint"
+    rarity: rare
+
+  # --- Transitions & flou ---
+  - text: "« Bon, et sinon, sur le sujet d'avant... »"
+    rarity: rare
+  - text: "« Tant qu'on est tous là... »"
+    rarity: rare
+  - text: "Greffe d'un nouveau sujet à 5 min de la fin"
+    rarity: rare
+  - text: "« On fait une parenthèse rapide »"
+    rarity: rare
+  - text: "Une parenthèse qui dure 22 minutes"
+    rarity: rare
+
+  # --- Présentiel cocasse ---
+  - text: "Le projecteur qui tombe de sa potence"
+    rarity: rare
+  - text: "Le câble HDMI tient avec du scotch"
+    rarity: rare
+  - text: "Quelqu'un débarque dans la salle pensant que c'était la sienne"
+    rarity: rare
+  - text: "Le téléphone fixe qui sonne pendant la réunion"
+    rarity: rare
+  - text: "Quelqu'un dort manifestement dans le fond"
+    rarity: rare
+  - text: "La porte de la salle qui ne ferme plus"
+    rarity: rare
+  - text: "Tu t'assois sur la chaise cassée"
+    rarity: rare
+  - text: "La fenêtre qui ne s'ouvre pas, salle à 28°C"
+    rarity: rare
+
+  # --- Réunions interservices ---
+  - text: "Le commercial promet ce que la tech ne peut pas livrer"
+    rarity: rare
+  - text: "Le marketing parle d'un produit qui n'existe pas encore"
+    rarity: rare
+  - text: "La compta refuse l'idée avant même qu'elle soit présentée"
+    rarity: rare
+  - text: "Le légal finit par tout vetoer"
+    rarity: rare
+  - text: "L'IT répond « c'est pas notre périmètre »"
+    rarity: rare
+  - text: "« Vous voyez avec [équipe avec qui personne ne parle] »"
+    rarity: rare
+
+  # --- Réunions clients ---
+  - text: "Le client allume sa caméra en plein dans la fenêtre, contre-jour total"
+    rarity: rare
+  - text: "Le client demande une démo qui n'était pas prévue"
+    rarity: rare
+  - text: "Le client refuse d'allumer la caméra mais demande qu'on allume la nôtre"
+    rarity: rare
+  - text: "Le client coupe la parole à son propre N+1"
+    rarity: rare
+  - text: "Le client rejoint depuis le téléphone d'un Uber"
+    rarity: rare
+
+  # --- Petites violences raffinées ---
+  - text: "Quelqu'un dit « comme je l'ai déjà expliqué la dernière fois »"
+    rarity: rare
+  - text: "« Pour rappel, on en avait parlé en mars »"
+    rarity: rare
+  - text: "Mail envoyé en CC au boss juste après la réunion"
+    rarity: rare
+  - text: "« On gardera ça en mémoire pour la prochaine fois »"
+    rarity: rare
+
+  # --- Exotique mais vrai ---
+  - text: "Quelqu'un explique son weekend pendant 8 minutes"
+    rarity: rare
+  - text: "Métaphore filée de 5 minutes sur le foot"
+    rarity: rare
+  - text: "Quelqu'un cite Sun Tzu pour justifier sa stratégie produit"
+    rarity: rare
+  - text: "Citation Steve Jobs pour appuyer un argument bidon"
+    rarity: rare
+  - text: "Quelqu'un compare le sujet à la guerre de Troie"
+    rarity: rare
+  - text: "Référence à un livre de management que personne n'a lu"
+    rarity: rare
+
+  # --- Mauvaise foi assumée ---
+  - text: "« On n'a pas eu le brief »"
+    rarity: rare
+  - text: "« Je découvre, là, en réunion »"
+    rarity: rare
+  - text: "« On nous l'avait pas dit comme ça »"
+    rarity: rare
+  - text: "« Ce n'était pas dans le scope »"
+    rarity: rare
+  - text: "« On verra à la phase 2 » (il n'y a jamais de phase 2)"
+    rarity: rare
+
+  # --- Atelier Miro/Klaxoon ---
+  - text: "Atelier post-its où personne ne participe"
+    rarity: rare
+  - text: "Tout le monde colle ses post-its en bas du Miro"
+    rarity: rare
+  - text: "Quelqu'un déplace par erreur tous les éléments du Miro"
+    rarity: rare
+  - text: "Le facilitateur qui dit « on libère la parole »"
+    rarity: rare
+  - text: "Icebreaker « partage un fait étonnant sur toi »"
+    rarity: rare
+  - text: "« On va voter avec les pouces emoji »"
+    rarity: rare
+  - text: "Sondage à 4 options où tout le monde vote « autre »"
+    rarity: rare
+
+  # --- Réunions extraordinaires ---
+  - text: "Réunion convoquée à 19h « urgente »"
+    rarity: rare
+  - text: "Réunion ajoutée le dimanche soir pour le lundi 8h"
+    rarity: rare
+  - text: "Réunion qui démarre par « bon, on a un petit souci »"
+    rarity: rare
+  - text: "« Il y a eu un incident »"
+    rarity: rare
+  - text: "Réunion de crise qui devient une chasse aux coupables"
+    rarity: rare
+
+  # --- L'horreur du calendrier ---
+  - text: "Réunion de 2h sans pause"
+    rarity: rare
+  - text: "Réunion à cheval sur ton créneau déjeuner et personne ne note"
+    rarity: rare
+  - text: "Réunion fixée pendant tes jours posés"
+    rarity: rare
+  - text: "« Tu peux décaler ton congé d'un jour ? »"
+    rarity: rare
+
+  # --- Anecdotes légères ---
+  - text: "Quelqu'un présente fier comme un paon une idée que tu lui as donnée hier"
+    rarity: rare
+  - text: "On t'attribue un projet en réunion sans t'avoir consulté"
+    rarity: rare
+  - text: "« Je vais demander à [toi] de prendre le lead » (premier que tu en entendes parler)"
+    rarity: rare
+  - text: "Tu apprends ta promotion en réunion"
+    rarity: rare
+  - text: "Tu apprends ton changement d'équipe en réunion"
+    rarity: rare
+
+  # ============================================================
+  # LEGENDARY (≈ 60) — perles rares, on s'en souvient encore
+  # ============================================================
+
+  # --- Catastrophes mémorables ---
+  - text: "Quelqu'un quitte la boîte par mail en plein milieu de la réunion"
+    rarity: legendary
+  - text: "Le directeur s'endort en visio et on entend ses ronflements"
+    rarity: legendary
+  - text: "Quelqu'un répond au téléphone à sa mère sans couper son micro"
+    rarity: legendary
+  - text: "On découvre via le partage d'écran qu'un collègue postule ailleurs"
+    rarity: legendary
+  - text: "Notification d'un mail « Réponse : votre démission » visible 3 secondes"
+    rarity: legendary
+  - text: "La caméra de quelqu'un s'allume accidentellement en pleine vie privée"
+    rarity: legendary
+  - text: "Quelqu'un croit avoir coupé son micro et insulte un collègue"
+    rarity: legendary
+  - text: "Le DG rejoint la réunion sans prévenir et tout le monde se tait"
+    rarity: legendary
+
+  # --- Bourdes irréparables ---
+  - text: "Tu envoies « cette réunion sert à rien » dans le chat général au lieu du DM"
+    rarity: legendary
+  - text: "Mail qui devait rester interne envoyé directement au client en CC"
+    rarity: legendary
+  - text: "Quelqu'un partage par erreur un document avec les salaires"
+    rarity: legendary
+  - text: "Tu découvres ton augmentation refusée dans un Excel partagé par erreur"
+    rarity: legendary
+  - text: "Quelqu'un ouvre un onglet « comment annoncer sa démission » devant tout le monde"
+    rarity: legendary
+  - text: "Le présentateur affiche par erreur son historique de navigation"
+    rarity: legendary
+
+  # --- Personnages mythologiques ---
+  - text: "Le mec qui débarque en réunion sans avoir été invité, et qui prend la parole"
+    rarity: legendary
+  - text: "Quelqu'un fait un PowerPoint pour répondre à un mail de 3 lignes"
+    rarity: legendary
+  - text: "Le consultant qui facture 4 jours pour résumer une réunion d'1h"
+    rarity: legendary
+  - text: "Le directeur qui demande qu'on lui « déchiffre » le résumé"
+    rarity: legendary
+
+  # --- Surréalisme corporate ---
+  - text: "Réunion pour décider de la fréquence des réunions"
+    rarity: legendary
+  - text: "Réunion pour ne plus faire de réunions inutiles (qui devient inutile)"
+    rarity: legendary
+  - text: "Le post-mortem se transforme en débat sur la police de caractères du rapport"
+    rarity: legendary
+  - text: "Atelier d'1h30 sur le choix d'un nom de projet"
+    rarity: legendary
+  - text: "On débat 40 minutes sur l'emoji à mettre dans le nom du canal Slack"
+    rarity: legendary
+  - text: "Vote à main levée pour savoir si on prendra des notes"
+    rarity: legendary
+
+  # --- Phrases entrées dans la légende du bureau ---
+  - text: "« On va dire qu'on a une plateforme » (alors qu'on n'a rien)"
+    rarity: legendary
+  - text: "« Le sujet est complexe car on est nombreux à travailler dessus »"
+    rarity: legendary
+  - text: "« On est dans une situation à la fois urgente et pas prioritaire »"
+    rarity: legendary
+  - text: "« On va lancer le projet pour voir où il nous mène »"
+    rarity: legendary
+  - text: "« Faisons les choses bien, mais vite »"
+    rarity: legendary
+  - text: "« Il faut accélérer mais sans pression »"
+    rarity: legendary
+  - text: "« On a fait un atelier d'idéation, on n'a rien gardé »"
+    rarity: legendary
+
+  # --- Apparitions inexplicables ---
+  - text: "Un consultant que personne ne connaît présente la stratégie de l'équipe"
+    rarity: legendary
+  - text: "Un stagiaire annonce qu'il a refait toute l'architecture du projet"
+    rarity: legendary
+  - text: "Le PDG rejoint un daily de 4 personnes par hasard"
+    rarity: legendary
+  - text: "Quelqu'un présente une slide volée à un concurrent (avec leur logo)"
+    rarity: legendary
+
+  # --- Visio mythique ---
+  - text: "Quelqu'un en pyjama-licorne, conscient, mais qui assume"
+    rarity: legendary
+  - text: "Le mec qui prend sa réunion sous la douche (vapeur visible)"
+    rarity: legendary
+  - text: "Quelqu'un est clairement dans un sauna"
+    rarity: legendary
+  - text: "Quelqu'un mange un kebab face caméra pendant son intervention"
+    rarity: legendary
+  - text: "Un enfant tout nu traverse l'écran en plein speech du DG"
+    rarity: legendary
+  - text: "Le chien qui hurle à la mort 8 minutes d'affilée"
+    rarity: legendary
+
+  # --- Décisions absurdes ---
+  - text: "On annule un projet à 6 mois de travail pour le relancer 3 semaines plus tard"
+    rarity: legendary
+  - text: "L'équipe entière est dissoute en fin de réunion sans préavis"
+    rarity: legendary
+  - text: "On apprend en réunion qu'on a déjà été remplacés par un prestataire"
+    rarity: legendary
+  - text: "On apprend la fusion de deux services pendant un point produit"
+    rarity: legendary
+
+  # --- Conflits historiques ---
+  - text: "Deux collègues s'engueulent pour un Trello mal classé"
+    rarity: legendary
+  - text: "Un directeur jette son stylo en pleine réunion"
+    rarity: legendary
+  - text: "Quelqu'un claque la porte de la salle de réunion"
+    rarity: legendary
+  - text: "« Très bien, je démissionne » (et il quitte la réunion)"
+    rarity: legendary
+  - text: "Larmes en visio non assumées (caméra qui se coupe vite)"
+    rarity: legendary
+
+  # --- Petites perles narratives ---
+  - text: "On parle 1 heure d'un sujet, à la fin quelqu'un dit « euh, c'est plus d'actualité en fait »"
+    rarity: legendary
+  - text: "Le projet a déjà été livré il y a 2 mois mais personne dans la salle ne le sait"
+    rarity: legendary
+  - text: "Le sujet de la réunion est annulé en cours, mais on continue quand même"
+    rarity: legendary
+  - text: "On découvre à la fin qu'on n'était pas censés être là"
+    rarity: legendary
+  - text: "La réunion était un test pour savoir qui viendrait sans broncher"
+    rarity: legendary
+
+  # --- Outils défaillants à l'extrême ---
+  - text: "Toute la réunion s'est passée sans que le micro principal fonctionne"
+    rarity: legendary
+  - text: "Le présentateur a bien commenté pendant 25 minutes mais ne partageait pas son écran"
+    rarity: legendary
+  - text: "On apprend à la fin que la réunion n'était pas enregistrée"
+    rarity: legendary
+  - text: "L'enregistrement est lancé alors qu'on critiquait le PDG"
+    rarity: legendary
+
+  # --- Génie du chaos ---
+  - text: "L'organisateur lui-même ne se souvient plus pourquoi il a planifié cette réunion"
+    rarity: legendary
+  - text: "Personne ne se souvient des conclusions à 17h le jour même"
+    rarity: legendary
+  - text: "Le compte-rendu envoyé après la réunion ne ressemble pas du tout à ce qui a été dit"
+    rarity: legendary

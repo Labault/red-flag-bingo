@@ -1,0 +1,84 @@
+{% extends 'admin/_layout.html.twig' %}
+
+{% block title %}Éditer red flag — RFB Admin{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .pop-button {
+            background: #db2777; color: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s; font-weight: 800;
+            padding: 12px 28px; border-radius: 8px;
+            cursor: pointer; text-transform: uppercase;
+            letter-spacing: 0.05em; font-size: 0.875rem;
+        }
+        .pop-button:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #1f2937; }
+        .pop-button:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #1f2937; }
+        .pop-input {
+            background: #fdf6f0; border: 2px solid #1f2937;
+            padding: 10px 14px; border-radius: 8px;
+            width: 100%; font-weight: 500;
+            transition: all 0.15s;
+        }
+        .pop-input:focus {
+            outline: none; background: white;
+            box-shadow: 4px 4px 0 #db2777;
+            transform: translate(-2px, -2px);
+        }
+    </style>
+{% endblock %}
+
+{% block admin_content %}
+<header class="mb-5 sm:mb-6">
+    <div class="flex items-center gap-3 mb-2">
+        <a href="{{ path('app_admin_red_flags_index', {slug: redFlag.theme.slug}) }}"
+           class="text-xs sm:text-sm text-gray-500 hover:text-gray-900">
+            ← Retour aux red flags
+        </a>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-black text-gray-900">✏️ Éditer un red flag</h1>
+    <p class="text-xs sm:text-sm text-gray-500 mt-1">
+        Thème : {{ redFlag.theme.emoji }} <strong>{{ redFlag.theme.name }}</strong>
+    </p>
+</header>
+
+<div class="bg-white border-2 border-gray-900 rounded-2xl p-5 sm:p-8 shadow-lg max-w-xl">
+    {% if redFlag.archived %}
+        <div class="bg-yellow-50 border-2 border-yellow-400 text-yellow-800 px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg mb-5 sm:mb-6 text-xs sm:text-sm">
+            📦 Ce red flag est archivé depuis le {{ redFlag.archivedAt|date('d/m/Y à H:i') }}.
+            Il sera purgé après 90 jours d'archivage.
+        </div>
+    {% endif %}
+
+    {{ form_start(form, { attr: { class: 'space-y-4' } }) }}
+
+        <div>
+            {{ form_label(form.text, null, { label_attr: { class: 'block font-bold text-gray-700 mb-1 text-sm' } }) }}
+            {{ form_widget(form.text) }}
+            {% if form.text.vars.help %}
+                <p class="text-xs text-gray-500 mt-1">{{ form.text.vars.help }}</p>
+            {% endif %}
+            {{ form_errors(form.text) }}
+        </div>
+
+        <div>
+            {{ form_label(form.rarity, null, { label_attr: { class: 'block font-bold text-gray-700 mb-1 text-sm' } }) }}
+            {{ form_widget(form.rarity) }}
+            {{ form_errors(form.rarity) }}
+        </div>
+
+        <div class="flex justify-between items-center pt-4">
+            <a href="{{ path('app_admin_red_flags_index', {slug: redFlag.theme.slug}) }}"
+               class="text-sm text-gray-500 hover:text-gray-900 underline font-medium">
+                Annuler
+            </a>
+            <button type="submit" class="pop-button">
+                Sauvegarder
+            </button>
+        </div>
+
+    {{ form_end(form) }}
+</div>
+{% endblock %}

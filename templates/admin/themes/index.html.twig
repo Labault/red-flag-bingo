@@ -1,0 +1,209 @@
+{% extends 'admin/_layout.html.twig' %}
+
+{% block title %}Thèmes — RFB Admin{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .pop-button {
+            background: #db2777;
+            color: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s;
+            font-weight: 800;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .pop-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #1f2937;
+        }
+        .pop-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1f2937;
+        }
+        .pop-button-secondary {
+            background: white;
+            color: #1f2937;
+            border: 2px solid #1f2937;
+            transition: all 0.15s;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .pop-button-secondary:hover {
+            background: #1f2937;
+            color: white;
+        }
+        .pop-button-danger {
+            background: #fee2e2;
+            color: #b91c1c;
+            border: 2px solid #b91c1c;
+            transition: all 0.15s;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .pop-button-danger:hover {
+            background: #b91c1c;
+            color: white;
+        }
+        .theme-card {
+            background: white;
+            border: 2px solid #1f2937;
+            border-radius: 1rem;
+            transition: all 0.15s;
+        }
+        .theme-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 0 -2px #1f2937;
+        }
+        .stat-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+{% endblock %}
+
+{% block admin_content %}
+<div data-controller="confirm-delete">
+    <header class="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:justify-between sm:items-end gap-3">
+        <div>
+            <h1 class="text-2xl sm:text-4xl font-black text-gray-900">🎴 Thèmes</h1>
+            <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                {{ themes|length }} thème(s). Pour en créer un nouveau, importe un fichier YAML.
+            </p>
+        </div>
+        <a href="{{ path('app_admin_imports_index') }}" class="pop-button text-center w-full sm:w-auto">
+            📥 Nouvel import
+        </a>
+    </header>
+
+    {% if themes is empty %}
+        <div class="bg-white border-2 border-gray-900 rounded-2xl p-12 text-center">
+            <div class="text-6xl mb-4">🤷</div>
+            <h2 class="text-xl font-bold text-gray-900 mb-2">Aucun thème pour l'instant</h2>
+            <p class="text-gray-500 mb-6">Importe ton premier thème depuis un fichier YAML.</p>
+            <a href="{{ path('app_admin_imports_index') }}" class="pop-button">
+                📥 Importer un thème
+            </a>
+        </div>
+    {% else %}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {% for theme in themes %}
+                {% set s = stats[theme.id] ?? { active: 0, archived: 0, cards: 0 } %}
+                <div class="theme-card p-5">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="text-4xl">{{ theme.emoji }}</div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-black text-gray-900 truncate">{{ theme.name }}</h3>
+                            <p class="text-xs text-gray-400 font-mono">/{{ theme.slug }}</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="stat-pill bg-green-100 text-green-700">
+                            🚩 {{ s.active }} actifs
+                        </span>
+                        {% if s.archived > 0 %}
+                            <span class="stat-pill bg-gray-100 text-gray-600">
+                                📦 {{ s.archived }} archivés
+                            </span>
+                        {% endif %}
+                        <span class="stat-pill bg-pink-100 text-pink-700">
+                            🎴 {{ s.cards }} cartes
+                        </span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 pt-3 border-t border-gray-100">
+                        <a href="{{ path('app_admin_red_flags_index', {slug: theme.slug}) }}"
+                        class="pop-button-secondary">
+                            🚩 Red flags
+                        </a>
+                        <a href="{{ path('app_admin_themes_edit', {slug: theme.slug}) }}"
+                        class="pop-button-secondary">
+                            ✏️ Éditer
+                        </a>
+                        <a href="{{ path('app_admin_themes_export', {slug: theme.slug}) }}"
+                        class="pop-button-secondary">
+                            💾 Exporter
+                        </a>
+                        <button type="button"
+                                class="pop-button-danger"
+                                data-action="click->confirm-delete#open"
+                                data-confirm-delete-name-param="{{ theme.name }}"
+                                data-confirm-delete-cards-param="{{ s.cards }}"
+                                data-confirm-delete-active-param="{{ s.active }}"
+                                data-confirm-delete-archived-param="{{ s.archived }}"
+                                data-confirm-delete-action-param="{{ path('app_admin_themes_delete', {slug: theme.slug}) }}"
+                                data-confirm-delete-token-param="{{ csrf_token('delete_theme_' ~ theme.id) }}">
+                            🗑️ Supprimer
+                        </button>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {# Modale de confirmation de suppression (cachée par défaut) #}
+    <div data-confirm-delete-target="modal"
+        class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white border-3 border-gray-900 rounded-2xl p-6 max-w-md w-full shadow-2xl"
+            style="border: 3px solid #1f2937;">
+            <div class="text-center mb-4">
+                <div class="text-5xl mb-2">⚠️</div>
+                <h2 class="text-xl font-black text-gray-900">Supprimer ce thème ?</h2>
+            </div>
+
+            <p class="text-gray-700 text-sm mb-4 text-center">
+                Tu es sur le point de supprimer
+                <strong data-confirm-delete-target="name" class="text-pink-600"></strong>.
+            </p>
+
+            <div class="bg-red-50 border border-red-200 rounded-lg p-3 text-xs text-red-700 mb-5">
+                <p class="font-bold mb-1">Cette action est irréversible et supprimera aussi :</p>
+                <ul class="space-y-0.5 ml-4 list-disc">
+                    <li><span data-confirm-delete-target="active"></span> red flags actifs</li>
+                    <li><span data-confirm-delete-target="archived"></span> red flags archivés</li>
+                    <li><span data-confirm-delete-target="cards"></span> cartes générées</li>
+                </ul>
+            </div>
+
+            <form method="post" data-confirm-delete-target="form">
+                <input type="hidden" name="_csrf_token" data-confirm-delete-target="token">
+
+                <div class="flex justify-between gap-3">
+                    <button type="button"
+                            data-action="click->confirm-delete#close"
+                            class="pop-button-secondary flex-1">
+                        Annuler
+                    </button>
+                    <button type="submit"
+                            class="pop-button-danger flex-1"
+                            style="font-size: 0.875rem; padding: 10px 24px;">
+                        🗑️ Supprimer
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{
+	frankenphp
+	order mercure after encode
+	order php_server before file_server
+}
+
+# FrankenPHP écoute en HTTP plain sur le réseau Docker interne ;
+# le reverse proxy Caddy global externe termine TLS et ajoute les headers de sécurité.
+:80 {
+	root * /app/public
+	encode zstd br gzip
+
+	# Mercure intégré : un seul process, un seul port HTTP interne
+	mercure {
+		publisher_jwt {env.MERCURE_PUBLISHER_JWT_KEY} {env.MERCURE_JWT_ALG}
+		subscriber_jwt {env.MERCURE_SUBSCRIBER_JWT_KEY} {env.MERCURE_JWT_ALG}
+		# CORS : restreint à ton propre domaine en prod (au lieu de * en dev)
+		cors_origins https://{$APP_DOMAIN}
+		anonymous
+		subscriptions
+	}
+
+	# Compression + cache long pour les assets versionnés (AssetMapper hash dans le nom)
+	@assets path /assets/*
+	header @assets Cache-Control "public, max-age=31536000, immutable"
+
+	php_server
+}

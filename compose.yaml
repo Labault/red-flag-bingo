@@ -1,0 +1,104 @@
+services:
+  app:
+    build: .
+    container_name: rfb_app
+    restart: unless-stopped
+    environment:
+      SERVER_NAME: ":80"
+      APP_ENV: dev
+      DATABASE_URL: postgresql://rfb:rfb@database:5432/rfb?serverVersion=16&charset=utf8
+      # Mercure — Caddy lit ces deux clés (publisher + subscriber)
+      MERCURE_PUBLISHER_JWT_KEY: '!ChangeThisMercureHubJWTSecretKey!'
+      MERCURE_SUBSCRIBER_JWT_KEY: '!ChangeThisMercureHubJWTSecretKey!'
+      MERCURE_JWT_ALG: HS256
+      # Mercure — Symfony lit celles-ci (URLs + secret pour signer ses propres JWT publisher)
+      MERCURE_URL: http://localhost/.well-known/mercure
+      MERCURE_PUBLIC_URL: http://localhost:8000/.well-known/mercure
+      MERCURE_JWT_SECRET: '!ChangeThisMercureHubJWTSecretKey!'
+    volumes:
+      - ./:/app
+      - ./frankenphp/Caddyfile:/etc/frankenphp/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    ports:
+      - "8000:80"
+    depends_on:
+      database:
+        condition: service_healthy
+    tty: true
+
+  database:
+    image: postgres:16-alpine
+    container_name: rfb_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: rfb
+      POSTGRES_USER: rfb
+      POSTGRES_PASSWORD: rfb
+    healthcheck:
+      test: ["CMD", "pg_isready", "-d", "rfb", "-U", "rfb"]
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+
+  scheduler:
+    build: .
+    container_name: rfb_scheduler
+    restart: unless-stopped
+    environment:
+      APP_ENV: dev
+      DATABASE_URL: postgresql://rfb:rfb@database:5432/rfb?serverVersion=16&charset=utf8
+      # Mercure (au cas où des handlers de jobs auraient besoin d'envoyer des updates)
+      MERCURE_URL: http://app/.well-known/mercure
+      MERCURE_PUBLIC_URL: http://localhost:8000/.well-known/mercure
+      MERCURE_JWT_SECRET: '!ChangeThisMercureHubJWTSecretKey!'
+    volumes:
+      - ./:/app
+    depends_on:
+      database:
+        condition: service_healthy
+      app:
+        condition: service_started
+    # Lance le worker Messenger qui consomme le transport "scheduler_default"
+    # --time-limit=3600 → restart toutes les heures (anti fuite mémoire Doctrine)
+    # --memory-limit=128M → idem côté RAM
+    entrypoint: []
+    command: ["php", "bin/console", "messenger:consume", "scheduler_default", "-vv", "--time-limit=3600", "--memory-limit=128M"]
+
+###> symfony/mercure-bundle ###
+  mercure:
+    image: dunglas/mercure
+    restart: unless-stopped
+    environment:
+      # Uncomment the following line to disable HTTPS,
+      #SERVER_NAME: ':80'
+      MERCURE_PUBLISHER_JWT_KEY: '!ChangeThisMercureHubJWTSecretKey!'
+      MERCURE_SUBSCRIBER_JWT_KEY: '!ChangeThisMercureHubJWTSecretKey!'
+      # Set the URL of your Symfony project (without trailing slash!) as value of the cors_origins directive
+      MERCURE_EXTRA_DIRECTIVES: |
+        cors_origins http://127.0.0.1:8000
+    # Comment the following line to disable the development mode
+    command: /usr/bin/caddy run --config /etc/caddy/dev.Caddyfile
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://localhost/healthz"]
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    volumes:
+      - mercure_data:/data
+      - mercure_config:/config
+###< symfony/mercure-bundle ###
+
+volumes:
+  caddy_data:
+  caddy_config:
+  db_data:
+
+###> symfony/mercure-bundle ###
+  mercure_data:
+  mercure_config:
+###< symfony/mercure-bundle ###

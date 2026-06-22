@@ -1,0 +1,44 @@
+<turbo-frame id="cell-{{ cell.position }}" class="contents">
+    <form method="post"
+          action="{{ path('app_card_toggle', {slug: card.slug, position: cell.position}) }}"
+          class="contents">
+        <button type="submit"
+                class="
+                    relative
+                    aspect-square
+                    flex items-center justify-center
+                    p-1 sm:p-1.5 md:p-2
+                    rounded-lg sm:rounded-xl
+                    text-center
+                    text-[0.55rem] sm:text-[0.65rem] md:text-xs leading-[1.1] sm:leading-tight
+                    cursor-pointer
+                    select-none
+                    overflow-visible
+                    touch-manipulation
+                    {% if cell.isWinning %}
+                        cell-winning
+                    {% elseif cell.isMarked %}
+                        cell-marked
+                    {% else %}
+                        cell-base
+                    {% endif %}
+                ">
+            {# Sticker de rareté (uniquement sur cases non marquées et red flag présent) #}
+            {% if cell.redFlag and not cell.isMarked and not cell.isWinning %}
+                {% if cell.redFlag.rarity.value == 'rare' %}
+                    <span class="rarity-sticker rarity-rare">RARE</span>
+                {% elseif cell.redFlag.rarity.value == 'legendary' %}
+                    <span class="rarity-sticker rarity-legendary">★ LÉG.</span>
+                {% endif %}
+            {% endif %}
+
+            <span class="cell-text relative z-10 font-semibold {% if cell.isMarked or cell.isWinning %}drop-shadow-md{% endif %}">
+                {% if cell.redFlag %}
+                    {{ cell.redFlag.text }}
+                {% else %}
+                    <span class="text-gray-300 italic">✂️ retiré</span>
+                {% endif %}
+            </span>
+        </button>
+    </form>
+</turbo-frame>

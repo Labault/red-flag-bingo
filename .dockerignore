@@ -1,0 +1,55 @@
+# Dépendances qu'on va réinstaller dans l'image
+/vendor/
+/node_modules/
+
+# Caches et logs (jamais en prod)
+/var/cache/*
+/var/log/*
+/var/imports/*
+!/var/cache/.gitkeep
+!/var/log/.gitkeep
+
+# Git et historique
+/.git/
+/.gitignore
+/.gitattributes
+
+# Fichiers de dev / IDE
+/.idea/
+/.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Tests et outils dev
+/tests/
+/.phpunit.cache/
+/phpunit.xml.dist
+/phpunit.xml
+/.php-cs-fixer.cache
+/.php-cs-fixer.dist.php
+/phpstan.neon*
+
+# Compose dev (on utilise compose.prod.yaml)
+/compose.yaml
+/compose.override.yaml
+/docker-compose.yaml
+/docker-compose.override.yaml
+
+# Env local (jamais dans l'image, on monte/inject à part)
+/.env.local
+/.env.local.php
+/.env.*.local
+
+# Doc
+/README.md
+/CHANGELOG.md
+/docs/
+
+# Assets compilés (on les rebuild dans l'image)
+/public/assets/
+/public/build/
+
+# Symfony Flex
+/.env.dev

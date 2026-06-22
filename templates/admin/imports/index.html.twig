@@ -1,0 +1,106 @@
+{% extends 'admin/_layout.html.twig' %}
+
+{% block title %}Imports — RFB Admin{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .pop-button {
+            background: #db2777;
+            color: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s;
+            font-weight: 800;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+        .pop-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #1f2937;
+        }
+        .pop-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1f2937;
+        }
+        .dropzone {
+            border: 3px dashed #1f2937;
+            background: #fdf6f0;
+            transition: all 0.2s;
+        }
+        .dropzone.is-dragover {
+            background: #ffe1ec;
+            transform: scale(1.01);
+            border-color: #db2777;
+        }
+        .dropzone.has-file {
+            background: #ecfdf5;
+            border-color: #10b981;
+            border-style: solid;
+        }
+    </style>
+{% endblock %}
+
+{% block admin_content %}
+<header class="mb-6 sm:mb-8">
+    <h1 class="text-2xl sm:text-4xl font-black text-gray-900">📥 Imports</h1>
+    <p class="text-xs sm:text-sm text-gray-500 mt-1">
+        Importe un thème depuis un fichier YAML.
+    </p>
+</header>
+
+<div class="bg-white border-2 border-gray-900 rounded-2xl p-4 sm:p-8 shadow-lg max-w-2xl">
+    {{ form_start(form, { attr: { class: 'space-y-5 sm:space-y-6' } }) }}
+
+        <div data-dropzone-target="zone"
+             class="dropzone rounded-xl p-6 sm:p-12 text-center cursor-pointer"
+             data-action="click->dropzone#openFileDialog
+                          dragover->dropzone#highlight
+                          dragleave->dropzone#unhighlight
+                          drop->dropzone#drop">
+
+            <div class="text-5xl sm:text-6xl mb-3 sm:mb-4">📄</div>
+
+            <p data-dropzone-target="placeholder" class="text-sm sm:text-base text-gray-700 font-medium">
+                Glisse ton fichier <code class="bg-stone-100 px-2 py-0.5 rounded">.yaml</code> ici<br>
+                <span class="text-xs sm:text-sm text-gray-500">ou clique pour parcourir</span>
+            </p>
+
+            <p data-dropzone-target="filename" class="hidden text-green-700 font-bold mt-2 break-all"></p>
+
+            <div class="hidden">
+                {{ form_widget(form.file, { attr: { 'data-dropzone-target': 'input', 'data-action': 'change->dropzone#fileSelected' } }) }}
+            </div>
+        </div>
+
+        {% if form.file.vars.errors|length %}
+            <div class="bg-red-50 border-2 border-red-500 text-red-700 px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg text-sm">
+                {{ form_errors(form.file) }}
+            </div>
+        {% endif %}
+
+        <div class="flex justify-end">
+            {{ form_widget(form.preview) }}
+        </div>
+
+    {{ form_end(form) }}
+</div>
+
+<div class="mt-6 sm:mt-8 max-w-2xl bg-stone-50 border-2 border-gray-200 rounded-xl p-4 sm:p-6">
+    <h3 class="font-bold text-gray-900 mb-2">💡 Format attendu</h3>
+    <pre class="text-xs bg-white p-3 sm:p-4 rounded border border-gray-200 overflow-x-auto"><code>theme:
+  name: "Premier rendez-vous"
+  slug: "first-date"      # optionnel
+  emoji: "💘"
+
+red_flags:
+  - text: "Il commande pour toi"
+    rarity: common         # common | rare | legendary
+  - text: "Elle parle de son ex"
+    rarity: rare</code></pre>
+</div>
+{% endblock %}

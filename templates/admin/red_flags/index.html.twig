@@ -1,0 +1,296 @@
+{% extends 'admin/_layout.html.twig' %}
+
+{% block title %}Red flags · {{ theme.name }} — RFB Admin{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .pop-button {
+            background: #db2777;
+            color: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s;
+            font-weight: 800;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .pop-button:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #1f2937; }
+        .pop-button:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #1f2937; }
+        .pop-button-secondary {
+            background: white; color: #1f2937;
+            border: 2px solid #1f2937; transition: all 0.15s;
+            font-weight: 700; padding: 5px 12px;
+            border-radius: 6px; font-size: 0.7rem; cursor: pointer;
+            display: inline-block; text-decoration: none;
+        }
+        .pop-button-secondary:hover { background: #1f2937; color: white; }
+        .pop-button-archive {
+            background: #fef3c7; color: #92400e;
+            border: 2px solid #92400e; transition: all 0.15s;
+            font-weight: 700; padding: 5px 12px; border-radius: 6px;
+            font-size: 0.7rem; cursor: pointer;
+        }
+        .pop-button-archive:hover { background: #92400e; color: white; }
+        .pop-button-restore {
+            background: #d1fae5; color: #065f46;
+            border: 2px solid #065f46; transition: all 0.15s;
+            font-weight: 700; padding: 5px 12px; border-radius: 6px;
+            font-size: 0.7rem; cursor: pointer;
+        }
+        .pop-button-restore:hover { background: #065f46; color: white; }
+        .filter-pill {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 6px 14px; border-radius: 999px;
+            font-size: 0.8rem; font-weight: 600;
+            border: 2px solid #e5e7eb;
+            background: white; color: #6b7280;
+            transition: all 0.15s; text-decoration: none;
+        }
+        .filter-pill:hover { border-color: #1f2937; color: #1f2937; }
+        .filter-pill.is-active {
+            background: #1f2937; color: white; border-color: #1f2937;
+        }
+        .rarity-badge {
+            font-size: 0.65rem; font-weight: 800;
+            padding: 2px 8px; border-radius: 4px;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+        .rarity-common { background: #f3f4f6; color: #4b5563; }
+        .rarity-rare { background: #dbeafe; color: #1e40af; }
+        .rarity-legendary { background: linear-gradient(135deg, #fef3c7, #fed7aa); color: #92400e; }
+        .row-archived { opacity: 0.55; }
+        .row-archived td { background: #fafaf9; }
+        .search-input {
+            width: 100%; padding: 10px 14px; padding-left: 40px;
+            background: white; border: 2px solid #1f2937;
+            border-radius: 8px; font-size: 0.9rem; transition: all 0.15s;
+        }
+        .search-input:focus {
+            outline: none; box-shadow: 4px 4px 0 #db2777;
+            transform: translate(-2px, -2px);
+        }
+    </style>
+{% endblock %}
+
+{% block admin_content %}
+<header class="mb-6">
+    <div class="flex items-center gap-2 sm:gap-3 mb-2 text-xs sm:text-sm flex-wrap">
+        <a href="{{ path('app_admin_themes_index') }}" class="text-gray-500 hover:text-gray-900">
+            ← Thèmes
+        </a>
+        <span class="text-gray-300">/</span>
+        <span class="text-gray-700">{{ theme.emoji }} {{ theme.name }}</span>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-black text-gray-900">🚩 Red flags</h1>
+    <p class="text-xs sm:text-sm text-gray-500 mt-1">
+        Pour ajouter de nouveaux red flags, importe un YAML.
+    </p>
+</header>
+
+{# Stats #}
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 mb-5 sm:mb-6">
+    <div class="bg-white border-2 border-gray-900 rounded-xl p-2.5 sm:p-3 text-center">
+        <div class="text-xl sm:text-2xl font-black">{{ stats.total }}</div>
+        <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase tracking-wider">Total</div>
+    </div>
+    <div class="bg-white border-2 border-gray-900 rounded-xl p-2.5 sm:p-3 text-center">
+        <div class="text-xl sm:text-2xl font-black text-green-600">{{ stats.active }}</div>
+        <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase tracking-wider">Actifs</div>
+    </div>
+    <div class="bg-white border-2 border-gray-900 rounded-xl p-2.5 sm:p-3 text-center">
+        <div class="text-xl sm:text-2xl font-black text-gray-700">{{ stats.common }}</div>
+        <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase tracking-wider">Commons</div>
+    </div>
+    <div class="bg-white border-2 border-gray-900 rounded-xl p-2.5 sm:p-3 text-center">
+        <div class="text-xl sm:text-2xl font-black text-blue-600">{{ stats.rare }}</div>
+        <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase tracking-wider">Rares</div>
+    </div>
+    <div class="bg-white border-2 border-gray-900 rounded-xl p-2.5 sm:p-3 text-center col-span-2 sm:col-span-1">
+        <div class="text-xl sm:text-2xl font-black text-orange-600">{{ stats.legendary }}</div>
+        <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase tracking-wider">Légendaires</div>
+    </div>
+</div>
+
+{# Recherche client #}
+<div data-controller="search-list" class="mb-4">
+    <div class="relative max-w-md">
+        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
+        <input type="text"
+               data-search-list-target="input"
+               data-action="input->search-list#filter"
+               placeholder="Rechercher un red flag..."
+               class="search-input">
+    </div>
+
+    {# Filtres #}
+    <div class="flex flex-wrap gap-2 mt-4">
+        <span class="text-xs text-gray-500 uppercase font-bold tracking-wider self-center mr-2">Statut</span>
+        {% set statuses = {
+            'active': '🚩 Actifs (' ~ stats.active ~ ')',
+            'archived': '📦 Archivés (' ~ stats.archived ~ ')',
+            'all': '∞ Tous (' ~ stats.total ~ ')'
+        } %}
+        {% for value, label in statuses %}
+            <a href="{{ path('app_admin_red_flags_index', {slug: theme.slug, status: value, rarity: rarityFilter}) }}"
+               class="filter-pill {% if statusFilter == value %}is-active{% endif %}">
+                {{ label }}
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="flex flex-wrap gap-2 mt-3">
+        <span class="text-xs text-gray-500 uppercase font-bold tracking-wider self-center mr-2">Rareté</span>
+        {% set rarities = {
+            'all': '∞ Toutes',
+            'common': '⚪ Common',
+            'rare': '🔵 Rare',
+            'legendary': '⭐ Legendary'
+        } %}
+        {% for value, label in rarities %}
+            <a href="{{ path('app_admin_red_flags_index', {slug: theme.slug, status: statusFilter, rarity: value}) }}"
+               class="filter-pill {% if rarityFilter == value %}is-active{% endif %}">
+                {{ label }}
+            </a>
+        {% endfor %}
+    </div>
+
+    {# Liste — cartes stackées sur mobile, tableau dès sm+ #}
+    <div class="bg-white border-2 border-gray-900 rounded-2xl shadow-lg mt-6 overflow-hidden">
+        {% if redFlags is empty %}
+            <div class="p-8 sm:p-12 text-center text-gray-500">
+                <div class="text-5xl mb-3">🤷</div>
+                <p>Aucun red flag avec ces filtres.</p>
+            </div>
+        {% else %}
+            <div data-search-list-target="list">
+                {# Vue desktop : tableau classique #}
+                <div class="hidden sm:block overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-stone-50 border-b-2 border-gray-200">
+                            <tr>
+                                <th class="text-left p-3 font-bold text-gray-700 uppercase text-xs tracking-wider">Texte</th>
+                                <th class="p-3 font-bold text-gray-700 uppercase text-xs tracking-wider">Rareté</th>
+                                <th class="p-3 font-bold text-gray-700 uppercase text-xs tracking-wider">Statut</th>
+                                <th class="text-right p-3 font-bold text-gray-700 uppercase text-xs tracking-wider">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for rf in redFlags %}
+                                <tr class="border-b border-gray-100 hover:bg-stone-50 {% if rf.archived %}row-archived{% endif %}"
+                                    data-search-list-target="item"
+                                    data-search-text="{{ rf.text|lower }}">
+                                    <td class="p-3 max-w-md">
+                                        <span class="text-gray-900">{{ rf.text }}</span>
+                                    </td>
+                                    <td class="p-3 text-center">
+                                        <span class="rarity-badge rarity-{{ rf.rarity.value }}">
+                                            {{ rf.rarity.value }}
+                                        </span>
+                                    </td>
+                                    <td class="p-3 text-center">
+                                        {% if rf.archived %}
+                                            <span class="text-xs text-gray-500">
+                                                📦 archivé le {{ rf.archivedAt|date('d/m/Y') }}
+                                            </span>
+                                        {% else %}
+                                            <span class="text-xs text-green-600 font-medium">✓ actif</span>
+                                        {% endif %}
+                                    </td>
+                                    <td class="p-3 text-right">
+                                        <div class="flex justify-end gap-1.5">
+                                            <a href="{{ path('app_admin_red_flags_edit', {slug: theme.slug, id: rf.id}) }}"
+                                               class="pop-button-secondary">
+                                                ✏️ Editer
+                                            </a>
+                                            {% if rf.archived %}
+                                                <form method="post"
+                                                      action="{{ path('app_admin_red_flags_restore', {slug: theme.slug, id: rf.id, status: statusFilter, rarity: rarityFilter}) }}"
+                                                      class="inline">
+                                                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('restore_red_flag_' ~ rf.id) }}">
+                                                    <button type="submit" class="pop-button-restore">
+                                                        🔄 Restaurer
+                                                    </button>
+                                                </form>
+                                            {% else %}
+                                                <form method="post"
+                                                      action="{{ path('app_admin_red_flags_archive', {slug: theme.slug, id: rf.id, status: statusFilter, rarity: rarityFilter}) }}"
+                                                      class="inline">
+                                                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('archive_red_flag_' ~ rf.id) }}">
+                                                    <button type="submit" class="pop-button-archive">
+                                                        📦 Archiver
+                                                    </button>
+                                                </form>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                {# Vue mobile : cartes empilées #}
+                <div class="sm:hidden divide-y divide-gray-100">
+                    {% for rf in redFlags %}
+                        <div class="p-3 {% if rf.archived %}row-archived{% endif %}"
+                             data-search-list-target="item"
+                             data-search-text="{{ rf.text|lower }}">
+                            <div class="flex items-start justify-between gap-2 mb-2">
+                                <span class="text-sm text-gray-900 leading-snug">{{ rf.text }}</span>
+                                <span class="rarity-badge rarity-{{ rf.rarity.value }} shrink-0">
+                                    {{ rf.rarity.value }}
+                                </span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2 flex-wrap">
+                                <span class="text-[0.7rem]">
+                                    {% if rf.archived %}
+                                        <span class="text-gray-500">📦 {{ rf.archivedAt|date('d/m/Y') }}</span>
+                                    {% else %}
+                                        <span class="text-green-600 font-medium">✓ actif</span>
+                                    {% endif %}
+                                </span>
+                                <div class="flex gap-1.5">
+                                    <a href="{{ path('app_admin_red_flags_edit', {slug: theme.slug, id: rf.id}) }}"
+                                       class="pop-button-secondary">
+                                        ✏️ Editer
+                                    </a>
+                                    {% if rf.archived %}
+                                        <form method="post"
+                                              action="{{ path('app_admin_red_flags_restore', {slug: theme.slug, id: rf.id, status: statusFilter, rarity: rarityFilter}) }}"
+                                              class="inline">
+                                            <input type="hidden" name="_csrf_token" value="{{ csrf_token('restore_red_flag_' ~ rf.id) }}">
+                                            <button type="submit" class="pop-button-restore">
+                                                🔄 Restaurer
+                                            </button>
+                                        </form>
+                                    {% else %}
+                                        <form method="post"
+                                              action="{{ path('app_admin_red_flags_archive', {slug: theme.slug, id: rf.id, status: statusFilter, rarity: rarityFilter}) }}"
+                                              class="inline">
+                                            <input type="hidden" name="_csrf_token" value="{{ csrf_token('archive_red_flag_' ~ rf.id) }}">
+                                            <button type="submit" class="pop-button-archive">
+                                                📦 Archiver
+                                            </button>
+                                        </form>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div data-search-list-target="empty"
+                 class="hidden p-8 sm:p-12 text-center text-gray-500">
+                <div class="text-5xl mb-3">🔍</div>
+                <p>Aucun résultat pour ta recherche.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

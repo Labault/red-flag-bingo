@@ -1,0 +1,101 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Connexion admin — RFB{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .pop-bg {
+            background-color: #fdf6f0;
+            background-image:
+                radial-gradient(circle at 20% 30%, #ffe1ec 0%, transparent 8%),
+                radial-gradient(circle at 80% 70%, #ffd4d4 0%, transparent 7%);
+        }
+        .login-card {
+            background: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transform: rotate(0deg);
+        }
+        @media (min-width: 640px) {
+            .login-card {
+                box-shadow: 6px 6px 0 #1f2937;
+                transform: rotate(-0.5deg);
+            }
+        }
+        .pop-input {
+            background: #fdf6f0;
+            border: 2px solid #1f2937;
+            transition: all 0.15s;
+        }
+        .pop-input:focus {
+            outline: none;
+            background: white;
+            box-shadow: 4px 4px 0 #db2777;
+            transform: translate(-2px, -2px);
+        }
+        .pop-button {
+            background: #db2777;
+            color: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s;
+            font-weight: 800;
+        }
+        .pop-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #1f2937;
+        }
+        .pop-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1f2937;
+        }
+    </style>
+{% endblock %}
+
+{% block admin_body %}
+<div class="pop-bg min-h-screen flex items-center justify-center px-4 py-8">
+    <div class="login-card rounded-2xl p-6 sm:p-8 max-w-md w-full">
+        <div class="text-center mb-5 sm:mb-6">
+            <div class="text-4xl sm:text-5xl mb-2 sm:mb-3">🔐</div>
+            <h1 class="text-2xl sm:text-3xl font-black text-gray-900">Zone admin</h1>
+            <p class="text-xs sm:text-sm text-gray-500 mt-1">— Accès réservé —</p>
+        </div>
+
+        {% if error %}
+            <div class="bg-red-50 border-2 border-red-500 text-red-700 px-4 py-3 rounded-lg mb-4 text-sm font-medium">
+                ⚠️ {{ error.messageKey|trans(error.messageData, 'security') }}
+            </div>
+        {% endif %}
+
+        <form method="post" action="{{ path('app_admin_login') }}" class="space-y-4">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('admin_login') }}">
+
+            <div>
+                <label for="password" class="block text-sm font-bold text-gray-700 mb-2">
+                    Mot de passe
+                </label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    autofocus
+                    class="pop-input w-full px-4 py-3 rounded-lg font-medium"
+                    placeholder="••••••••"
+                >
+            </div>
+
+            <button type="submit" class="pop-button w-full py-3 rounded-lg uppercase tracking-wider text-sm">
+                Entrer 🚪
+            </button>
+        </form>
+
+        <div class="text-center mt-6">
+            <a href="{{ path('app_home') }}" class="text-xs text-gray-400 hover:text-gray-600 underline">
+                ← Retour au site
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

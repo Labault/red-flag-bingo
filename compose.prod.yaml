@@ -1,0 +1,96 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: rfb-app:latest
+    container_name: rfb_app
+    restart: unless-stopped
+    environment:
+      # FrankenPHP écoute en HTTP plain sur le réseau Docker interne ; TLS terminé par le Caddy global externe
+      SERVER_NAME: ":80"
+      APP_DOMAIN: ${APP_DOMAIN}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+      # Symfony
+      APP_ENV: prod
+      APP_DEBUG: 0
+      APP_SECRET: ${APP_SECRET}
+      # Database
+      DATABASE_URL: ${DATABASE_URL}
+      # Mercure (FrankenPHP intégré)
+      MERCURE_PUBLISHER_JWT_KEY: ${MERCURE_PUBLISHER_JWT_KEY}
+      MERCURE_SUBSCRIBER_JWT_KEY: ${MERCURE_SUBSCRIBER_JWT_KEY}
+      MERCURE_JWT_ALG: HS256
+      MERCURE_URL: https://${APP_DOMAIN}/.well-known/mercure
+      MERCURE_PUBLIC_URL: https://${APP_DOMAIN}/.well-known/mercure
+      MERCURE_JWT_SECRET: ${MERCURE_JWT_SECRET}
+      # Admin
+      ADMIN_PASSWORD_HASH: ${ADMIN_PASSWORD_HASH}
+    volumes:
+      # Données persistantes uniquement (PAS le code, il est dans l'image)
+      - caddy_data:/data
+      - caddy_config:/config
+      # var/ persistant pour les logs et imports YAML uploadés
+      - app_var:/app/var
+    networks:
+      - web
+      - internal
+    depends_on:
+      database:
+        condition: service_healthy
+
+  database:
+    image: postgres:16-alpine
+    container_name: rfb_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    healthcheck:
+      test: ["CMD", "pg_isready", "-d", "${POSTGRES_DB}", "-U", "${POSTGRES_USER}"]
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - internal
+    # PAS de ports exposés en prod : la BDD n'est accessible que depuis le réseau Docker
+
+  scheduler:
+    image: rfb-app:latest  # Réutilise l'image buildée par "app", pas de rebuild
+    container_name: rfb_scheduler
+    restart: unless-stopped
+    environment:
+      APP_ENV: prod
+      APP_DEBUG: 0
+      APP_SECRET: ${APP_SECRET}
+      DATABASE_URL: ${DATABASE_URL}
+      MERCURE_URL: https://${APP_DOMAIN}/.well-known/mercure
+      MERCURE_PUBLIC_URL: https://${APP_DOMAIN}/.well-known/mercure
+      MERCURE_JWT_SECRET: ${MERCURE_JWT_SECRET}
+    volumes:
+      - app_var:/app/var
+    networks:
+      - internal
+    depends_on:
+      database:
+        condition: service_healthy
+      app:
+        condition: service_started
+    entrypoint: []
+    command: ["php", "bin/console", "messenger:consume", "scheduler_default", "-vv", "--time-limit=3600", "--memory-limit=128M"]
+
+volumes:
+  caddy_data:
+  caddy_config:
+  db_data:
+  app_var:
+
+networks:
+  web:
+    external: true
+    name: web
+  internal:
+    driver: bridge

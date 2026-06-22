@@ -1,0 +1,107 @@
+# ============================================================================
+# STAGE 1 — BUILDER : composer + assets
+# ============================================================================
+FROM dunglas/frankenphp:1-php8.3 AS builder
+
+# Extensions PHP (mêmes qu'en dev + ce qu'il faut pour build)
+RUN install-php-extensions \
+    pdo_pgsql \
+    intl \
+    zip \
+    opcache \
+    apcu
+
+# Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Node 20 pour Tailwind (binaire téléchargé par symfonycasts/tailwind-bundle au build)
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Variables d'env nécessaires au build (mode prod)
+ENV APP_ENV=prod \
+    APP_DEBUG=0 \
+    COMPOSER_ALLOW_SUPERUSER=1
+
+# 1. Copie composer.json + lock SEUL d'abord pour profiter du cache Docker
+COPY composer.json composer.lock symfony.lock ./
+
+# 2. Install des dépendances PHP SANS générer l'autoload ni lancer les scripts
+#    (le code de l'app n'est pas encore là, on ne peut rien faire d'utile pour l'autoload)
+RUN composer install \
+    --no-dev \
+    --no-scripts \
+    --no-autoloader \
+    --no-progress \
+    --prefer-dist
+
+# 3. Copie le reste du code
+COPY . .
+
+# 4. Crée les dossiers var/ qui peuvent manquer après .dockerignore
+RUN mkdir -p var/cache var/log var/share var/imports
+
+# 5. MAINTENANT que le code est là, génère l'autoload optimisé + classmap authoritative
+RUN composer dump-autoload \
+    --no-dev \
+    --optimize \
+    --classmap-authoritative
+
+# 6. Lance les auto-scripts composer (cache:clear, assets:install, importmap:install)
+#    Cette fois l'autoload connaît App\Kernel ✅
+RUN composer run-script post-install-cmd --no-dev
+
+# 7. Build des assets : Tailwind minify + AssetMapper compile
+RUN php bin/console tailwind:build --minify --env=prod \
+    && php bin/console asset-map:compile --env=prod
+
+# 8. Cache warmup pour ne pas le faire au démarrage du conteneur en prod
+RUN php bin/console cache:clear --env=prod --no-debug \
+    && php bin/console cache:warmup --env=prod --no-debug
+# ============================================================================
+# STAGE 2 — RUNTIME : image finale légère
+# ============================================================================
+FROM dunglas/frankenphp:1-php8.3 AS runtime
+
+# Mêmes extensions qu'en dev (PAS de mode dev d'opcache)
+RUN install-php-extensions \
+    pdo_pgsql \
+    intl \
+    zip \
+    opcache \
+    apcu
+
+WORKDIR /app
+
+# Config PHP optimisée prod : opcache agressif + memory_limit raisonnable
+COPY <<'EOF' /usr/local/etc/php/conf.d/zz-app-prod.ini
+memory_limit = 256M
+opcache.enable = 1
+opcache.memory_consumption = 192
+opcache.max_accelerated_files = 20000
+opcache.validate_timestamps = 0
+opcache.preload_user = www-data
+opcache.jit_buffer_size = 64M
+opcache.jit = tracing
+realpath_cache_size = 4096K
+realpath_cache_ttl = 600
+EOF
+
+# Copie depuis le stage builder : code + vendor + assets compilés + cache warmé
+COPY --from=builder --chown=www-data:www-data /app /app
+
+# Copie le Caddyfile prod (HTTPS auto)
+COPY frankenphp/Caddyfile.prod /etc/frankenphp/Caddyfile
+
+# Crée les volumes persistants (montés en runtime via compose)
+VOLUME ["/app/var", "/data", "/config"]
+
+# Healthcheck simple sur la home
+HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
+    CMD curl -fsS http://localhost/ -o /dev/null || exit 1
+
+# FrankenPHP tourne déjà sur le bon entrypoint, pas besoin de l'override
+EXPOSE 80 443 443/udp

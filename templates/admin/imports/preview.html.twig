@@ -1,0 +1,239 @@
+{% extends 'admin/_layout.html.twig' %}
+
+{% block title %}Aperçu de l'import — RFB Admin{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .pop-button {
+            background: #db2777;
+            color: white;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s;
+            font-weight: 800;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+        }
+        .pop-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #1f2937;
+        }
+        .pop-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1f2937;
+        }
+        .pop-button-secondary {
+            background: white;
+            color: #1f2937;
+            border: 3px solid #1f2937;
+            box-shadow: 4px 4px 0 #1f2937;
+            transition: all 0.15s;
+            font-weight: 700;
+            padding: 12px 28px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .pop-button-secondary:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #1f2937;
+        }
+        .stat-card {
+            background: white;
+            border: 2px solid #1f2937;
+            border-radius: 0.75rem;
+            padding: 0.875rem;
+            text-align: center;
+        }
+        @media (min-width: 640px) {
+            .stat-card {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block admin_content %}
+<header class="mb-6 sm:mb-8">
+    <div class="flex items-center gap-2 sm:gap-3 mb-2 text-xs sm:text-sm flex-wrap">
+        <a href="{{ path('app_admin_imports_index') }}" class="text-gray-500 hover:text-gray-900">
+            ← Retour
+        </a>
+        <span class="text-gray-300">/</span>
+        <span class="font-mono text-gray-500 truncate max-w-[60vw]">{{ filename }}</span>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-black text-gray-900">
+        {% if imported %}
+            ✨ Import effectué
+        {% else %}
+            👀 Aperçu de l'import
+        {% endif %}
+    </h1>
+    {% if not imported %}
+        <p class="text-xs sm:text-sm text-gray-500 mt-1">
+            Vérifie ce qui sera créé avant de confirmer. Aucune donnée n'est encore en base.
+        </p>
+    {% endif %}
+</header>
+
+{# Erreurs de validation #}
+{% if report.hasErrors() %}
+    <div class="bg-red-50 border-2 border-red-500 rounded-xl p-6 mb-6">
+        <h2 class="font-black text-red-700 text-lg mb-3">❌ Erreurs de validation</h2>
+        <ul class="space-y-2">
+            {% for error in report.validationErrors %}
+                <li class="flex gap-2 text-sm">
+                    <code class="bg-white px-2 py-0.5 rounded border border-red-200 text-red-600 font-mono">
+                        {{ error.path }}
+                    </code>
+                    <span class="text-red-700">{{ error.message }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ path('app_admin_imports_index') }}" class="inline-block mt-4 pop-button-secondary">
+            Réessayer un autre fichier
+        </a>
+    </div>
+{% else %}
+
+    {# Récap thème #}
+    <div class="bg-white border-2 border-gray-900 rounded-2xl p-4 sm:p-6 mb-5 sm:mb-6 shadow-lg">
+        <h2 class="font-black text-lg sm:text-xl mb-3 sm:mb-4">Thème</h2>
+        <div class="flex items-center gap-3 sm:gap-4 flex-wrap">
+            <div class="text-4xl sm:text-5xl">{{ report.themeEmoji }}</div>
+            <div class="flex-1 min-w-0">
+                <div class="text-lg sm:text-2xl font-bold text-gray-900 truncate">{{ report.themeName }}</div>
+                <div class="text-xs sm:text-sm text-gray-500 font-mono truncate">/{{ report.themeSlug }}</div>
+            </div>
+            <div>
+                {% if report.themeAlreadyExists %}
+                    <span class="bg-blue-100 text-blue-700 px-2.5 sm:px-3 py-1 rounded-full text-[0.65rem] sm:text-xs font-bold uppercase whitespace-nowrap">
+                        🔁 Existant
+                    </span>
+                {% else %}
+                    <span class="bg-green-100 text-green-700 px-2.5 sm:px-3 py-1 rounded-full text-[0.65rem] sm:text-xs font-bold uppercase whitespace-nowrap">
+                        🆕 Sera créé
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    {# Stats d'import #}
+    <div class="grid grid-cols-2 gap-3 sm:gap-4 mb-5 sm:mb-6">
+        <div class="stat-card">
+            <div class="text-3xl sm:text-4xl font-black text-green-600">{{ report.totalCreated() }}</div>
+            <div class="text-[0.65rem] sm:text-sm text-gray-500 uppercase tracking-wider mt-1">À créer</div>
+        </div>
+        <div class="stat-card">
+            <div class="text-3xl sm:text-4xl font-black text-orange-500">{{ report.totalSkipped() }}</div>
+            <div class="text-[0.65rem] sm:text-sm text-gray-500 uppercase tracking-wider mt-1">Skippés</div>
+        </div>
+    </div>
+
+    {# Jouabilité #}
+    {% set playability = report.isPlayable() %}
+    <div class="bg-white border-2 border-gray-900 rounded-2xl p-4 sm:p-6 mb-5 sm:mb-6 shadow-lg">
+        <div class="flex items-center justify-between gap-2 mb-3 sm:mb-4 flex-wrap">
+            <h2 class="font-black text-lg sm:text-xl">Jouabilité</h2>
+            {% if playability.playable %}
+                <span class="bg-green-100 text-green-700 px-2.5 sm:px-3 py-1 rounded-full text-[0.65rem] sm:text-xs font-bold uppercase">
+                    ✅ Jouable
+                </span>
+            {% else %}
+                <span class="bg-yellow-100 text-yellow-800 px-2.5 sm:px-3 py-1 rounded-full text-[0.65rem] sm:text-xs font-bold uppercase">
+                    ⚠️ Non jouable
+                </span>
+            {% endif %}
+        </div>
+        <div class="grid grid-cols-3 gap-2 sm:gap-3 text-center">
+            <div>
+                <div class="text-xl sm:text-2xl font-black text-gray-700">{{ playability.byRarity.common }}</div>
+                <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase">Commons <span class="text-gray-400">/ 15</span></div>
+            </div>
+            <div>
+                <div class="text-xl sm:text-2xl font-black text-blue-600">{{ playability.byRarity.rare }}</div>
+                <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase">Rares <span class="text-gray-400">/ 7</span></div>
+            </div>
+            <div>
+                <div class="text-xl sm:text-2xl font-black text-orange-500">{{ playability.byRarity.legendary }}</div>
+                <div class="text-[0.65rem] sm:text-xs text-gray-500 uppercase">Légendaires <span class="text-gray-400">/ 3</span></div>
+            </div>
+        </div>
+        {% if not playability.playable %}
+            <p class="text-xs text-yellow-700 mt-3 text-center">
+                Manquants : {% for rarity, count in playability.missing %}{{ count }} {{ rarity }}{% if not loop.last %}, {% endif %}{% endfor %}
+            </p>
+        {% endif %}
+    </div>
+
+    {# Liste des red flags à créer #}
+    {% if report.createdRedFlags|length > 0 %}
+        <details class="bg-white border-2 border-gray-200 rounded-xl p-4 mb-4">
+            <summary class="font-bold cursor-pointer">
+                ✅ {{ report.createdRedFlags|length }} red flag(s) à créer
+            </summary>
+            <ul class="mt-3 space-y-1 text-sm">
+                {% for rf in report.createdRedFlags %}
+                    <li class="flex gap-2 items-start">
+                        <span class="text-xs px-2 py-0.5 rounded font-mono uppercase
+                                     {% if rf.rarity == 'legendary' %}bg-orange-100 text-orange-700
+                                     {% elseif rf.rarity == 'rare' %}bg-blue-100 text-blue-700
+                                     {% else %}bg-stone-100 text-gray-600{% endif %}">
+                            {{ rf.rarity }}
+                        </span>
+                        <span>{{ rf.text }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </details>
+    {% endif %}
+
+    {# Liste des red flags skippés #}
+    {% if report.skippedRedFlags|length > 0 %}
+        <details class="bg-white border-2 border-gray-200 rounded-xl p-4 mb-6">
+            <summary class="font-bold cursor-pointer">
+                ⏭️ {{ report.skippedRedFlags|length }} red flag(s) skippé(s)
+            </summary>
+            <ul class="mt-3 space-y-1 text-sm text-gray-600">
+                {% for skip in report.skippedRedFlags %}
+                    <li>• <em>{{ skip.text }}</em> — <span class="text-gray-500 text-xs">{{ skip.reason }}</span></li>
+                {% endfor %}
+            </ul>
+        </details>
+    {% endif %}
+
+    {# Boutons d'action #}
+    {% if not imported %}
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 bg-stone-50 border-2 border-gray-300 rounded-xl p-4 sm:p-6">
+            <a href="{{ path('app_admin_imports_index') }}" class="pop-button-secondary text-center">
+                ← Annuler
+            </a>
+
+            {% if report.totalCreated() > 0 %}
+                <form method="post" action="{{ path('app_admin_imports_preview', {filename: filename}) }}">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('import_confirm') }}">
+                    <button type="submit" class="pop-button w-full sm:w-auto">
+                        Confirmer l'import →
+                    </button>
+                </form>
+            {% else %}
+                <span class="text-sm text-gray-500 italic">Rien à importer.</span>
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="bg-green-50 border-2 border-green-500 rounded-xl p-4 sm:p-6 text-center">
+            <p class="text-green-700 font-bold text-base sm:text-lg mb-3">
+                🎉 Tout est en base !
+            </p>
+            <a href="{{ path('app_admin_imports_index') }}" class="pop-button">
+                Importer un autre fichier
+            </a>
+        </div>
+    {% endif %}
+
+{% endif %}
+{% endblock %}

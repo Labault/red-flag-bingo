@@ -1,0 +1,487 @@
+{% extends 'admin/_layout.html.twig' %}
+
+{% block title %}Dashboard — RFB Admin{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        /* Card stat avec rebond et style pop */
+        .stat-card {
+            background: white;
+            border: 2px solid #1f2937;
+            border-radius: 0.875rem;
+            padding: 1rem;
+            position: relative;
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 3px 3px 0 #1f2937;
+        }
+        @media (min-width: 640px) {
+            .stat-card {
+                border: 3px solid #1f2937;
+                border-radius: 1rem;
+                padding: 1.5rem;
+                box-shadow: 4px 4px 0 #1f2937;
+            }
+        }
+        .stat-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #1f2937;
+        }
+        .stat-value {
+            font-size: 1.85rem;
+            font-weight: 900;
+            line-height: 1;
+            margin: 6px 0 4px;
+        }
+        @media (min-width: 640px) {
+            .stat-value {
+                font-size: 2.5rem;
+                margin: 8px 0 4px;
+            }
+        }
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            color: #6b7280;
+        }
+        .stat-icon {
+            position: absolute;
+            top: -12px;
+            right: -8px;
+            font-size: 1.75rem;
+            transform: rotate(12deg);
+        }
+        .trend-up { color: #059669; }
+        .trend-down { color: #dc2626; }
+        .trend-neutral { color: #9ca3af; }
+
+        /* Chart container */
+        .chart-card {
+            background: white;
+            border: 2px solid #1f2937;
+            border-radius: 0.875rem;
+            padding: 1rem;
+            box-shadow: 0 2px 0 #1f2937, 0 6px 16px rgba(0,0,0,0.05);
+        }
+        @media (min-width: 640px) {
+            .chart-card {
+                border-radius: 1rem;
+                padding: 1.5rem;
+            }
+        }
+        .chart-canvas-wrapper {
+            position: relative;
+            height: 220px;
+        }
+        @media (min-width: 640px) {
+            .chart-canvas-wrapper {
+                height: 280px;
+            }
+        }
+
+        /* Heatmap */
+        .heatmap-grid {
+            display: grid;
+            grid-template-rows: repeat(7, minmax(0, 1fr));
+            grid-auto-flow: column;
+            grid-auto-columns: minmax(0, 1fr);
+            gap: 3px;
+        }
+        .heatmap-cell {
+            aspect-ratio: 1;
+            border-radius: 3px;
+            background: #f3f4f6;
+            transition: transform 0.1s;
+            cursor: default;
+        }
+        .heatmap-cell:hover {
+            transform: scale(1.3);
+            z-index: 2;
+        }
+        .heatmap-l1 { background: #fbcfe8; }
+        .heatmap-l2 { background: #f9a8d4; }
+        .heatmap-l3 { background: #ec4899; }
+        .heatmap-l4 { background: #be185d; }
+
+        /* Top red flags */
+        .winning-row {
+            display: grid;
+            grid-template-columns: 22px 1fr auto;
+            gap: 8px;
+            align-items: center;
+            padding: 8px 2px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        @media (min-width: 640px) {
+            .winning-row {
+                grid-template-columns: 24px 1fr auto;
+                gap: 12px;
+                padding: 8px 4px;
+            }
+        }
+        .winning-row:last-child { border-bottom: none; }
+        .winning-rank {
+            font-weight: 900;
+            color: #9ca3af;
+            text-align: right;
+            font-size: 0.8rem;
+        }
+        .winning-rank-1 { color: #f59e0b; }
+        .winning-rank-2 { color: #94a3b8; }
+        .winning-rank-3 { color: #b45309; }
+        .winning-bar-track {
+            height: 8px;
+            background: #f3f4f6;
+            border-radius: 999px;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+        .winning-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #db2777, #f59e0b);
+            border-radius: 999px;
+        }
+        .winning-theme {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #6b7280;
+            background: #f3f4f6;
+            border-radius: 999px;
+            padding: 2px 8px;
+            margin-left: 6px;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+
+        /* Tabs de thème */
+        .theme-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+        .theme-tab {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #6b7280;
+            background: #f3f4f6;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .theme-tab:hover {
+            background: #e5e7eb;
+            color: #1f2937;
+        }
+        .theme-tab-active {
+            background: #fce7f3;
+            color: #be185d;
+            border-color: #f9a8d4;
+        }
+        .theme-tab-count {
+            font-size: 0.65rem;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+    </style>
+{% endblock %}
+
+{% block admin_content %}
+{% set km = stats.keyMetrics %}
+
+<header class="mb-6 sm:mb-8">
+    <h1 class="text-2xl sm:text-4xl font-black text-gray-900">🎛️ Dashboard</h1>
+    <p class="text-xs sm:text-sm text-gray-500 mt-1">
+        Vue d'ensemble de Red Flag Bingo. Stats mises à jour toutes les 5 minutes.
+    </p>
+</header>
+
+{# ━━━━ Bloc chiffres clés ━━━━ #}
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
+
+    <div class="stat-card">
+        <span class="stat-icon">🎴</span>
+        <div class="stat-label">Cartes générées</div>
+        <div class="stat-value text-gray-900">{{ km.total }}</div>
+        <div class="text-xs">
+            <span class="font-bold text-pink-600">{{ km.last7Days }}</span>
+            <span class="text-gray-500">cette semaine</span>
+            {% if km.trend is not null %}
+                {% if km.trend > 0 %}
+                    <span class="trend-up font-bold ml-1">↑ {{ km.trend }}%</span>
+                {% elseif km.trend < 0 %}
+                    <span class="trend-down font-bold ml-1">↓ {{ km.trend|abs }}%</span>
+                {% else %}
+                    <span class="trend-neutral font-bold ml-1">→ stable</span>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <span class="stat-icon">🎯</span>
+        <div class="stat-label">Bingos atteints</div>
+        <div class="stat-value text-pink-600">{{ km.bingos }}</div>
+        <div class="text-xs text-gray-500">
+            sur les {{ km.total }} cartes
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <span class="stat-icon">📊</span>
+        <div class="stat-label">Taux de bingo</div>
+        <div class="stat-value text-orange-500">{{ km.bingoRate }}%</div>
+        <div class="text-xs text-gray-500">
+            {% if km.bingoRate >= 50 %}
+                solide 💪
+            {% elseif km.bingoRate >= 25 %}
+                pas mal 👌
+            {% else %}
+                ils abandonnent 😅
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <span class="stat-icon">🚩</span>
+        <div class="stat-label">Red flags</div>
+        <div class="stat-value text-blue-600">{{ stats.redFlagsTotal }}</div>
+        <div class="text-xs text-gray-500">
+            répartis sur {{ stats.themesWithRedFlags }} thème(s)
+        </div>
+    </div>
+
+</div>
+
+{# ━━━━ Graphiques principaux ━━━━ #}
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+
+    {# Cartes par jour (30j) — large #}
+    <div class="chart-card lg:col-span-2">
+        <div class="flex justify-between items-end mb-3 sm:mb-4">
+            <div>
+                <h2 class="font-black text-base sm:text-lg text-gray-900">📈 Cartes par jour</h2>
+                <p class="text-xs text-gray-500">30 derniers jours</p>
+            </div>
+        </div>
+        <div class="chart-canvas-wrapper">
+            <canvas data-controller="chart"
+                    data-chart-target="canvas"
+                    data-chart-config-value='{{ {
+                        type: "line",
+                        data: {
+                            labels: stats.cardsPerDay.labels,
+                            datasets: [{
+                                label: "Cartes",
+                                data: stats.cardsPerDay.data,
+                                borderColor: "#db2777",
+                                backgroundColor: "rgba(219, 39, 119, 0.1)",
+                                borderWidth: 3,
+                                pointBackgroundColor: "#db2777",
+                                pointRadius: 3,
+                                pointHoverRadius: 6,
+                                tension: 0.3,
+                                fill: true
+                            }]
+                        },
+                        options: {
+                            plugins: { legend: { display: false } },
+                            scales: {
+                                y: { beginAtZero: true, ticks: { precision: 0 } },
+                                x: { grid: { display: false } }
+                            }
+                        }
+                    }|json_encode|e('html_attr') }}'>
+            </canvas>
+        </div>
+    </div>
+
+    {# Donut par thème #}
+    <div class="chart-card">
+        <h2 class="font-black text-base sm:text-lg text-gray-900 mb-1">🎴 Par thème</h2>
+        <p class="text-xs text-gray-500 mb-3 sm:mb-4">Répartition des cartes</p>
+        {% if stats.cardsByTheme.data|length > 0 %}
+            <div class="chart-canvas-wrapper">
+                <canvas data-controller="chart"
+                        data-chart-target="canvas"
+                        data-chart-config-value='{{ {
+                            type: "doughnut",
+                            data: {
+                                labels: stats.cardsByTheme.labels,
+                                datasets: [{
+                                    data: stats.cardsByTheme.data,
+                                    backgroundColor: ["#db2777", "#f59e0b", "#3b82f6", "#10b981", "#8b5cf6", "#ec4899"],
+                                    borderColor: "white",
+                                    borderWidth: 3
+                                }]
+                            },
+                            options: {
+                                plugins: {
+                                    legend: { position: "bottom", labels: { font: { size: 11 }, boxWidth: 12 } }
+                                },
+                                cutout: "65%"
+                            }
+                        }|json_encode|e('html_attr') }}'>
+                </canvas>
+            </div>
+        {% else %}
+            <p class="text-gray-400 text-sm text-center py-12">Aucune donnée</p>
+        {% endif %}
+    </div>
+
+</div>
+
+{# ━━━━ Heatmap + Top red flags gagnants ━━━━ #}
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6 sm:mb-8">
+
+<div class="chart-card lg:col-span-1">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-2 mb-4">
+        <div>
+            <h2 class="font-black text-base sm:text-lg text-gray-900">🔥 Activité (90 jours)</h2>
+            <p class="text-xs text-gray-500">Une case = un jour. Plus c'est rose, plus il y a eu de cartes générées.</p>
+        </div>
+        <div class="flex items-center gap-1 text-xs text-gray-500 shrink-0">
+            <span>moins</span>
+            <div class="heatmap-cell w-3 h-3"></div>
+            <div class="heatmap-cell heatmap-l1 w-3 h-3"></div>
+            <div class="heatmap-cell heatmap-l2 w-3 h-3"></div>
+            <div class="heatmap-cell heatmap-l3 w-3 h-3"></div>
+            <div class="heatmap-cell heatmap-l4 w-3 h-3"></div>
+            <span>plus</span>
+        </div>
+    </div>
+
+    <div class="heatmap-grid">
+        {# Cellules vides au début pour aligner le 1er jour sur sa colonne lundi-dimanche #}
+        {% set firstCell = stats.heatmap.cells|first %}
+        {% if firstCell %}
+            {% set offset = firstCell.dayOfWeek - 1 %}
+            {% if offset > 0 %}
+                {% for i in 1..offset %}
+                    <div></div>
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+
+        {% for cell in stats.heatmap.cells %}
+            <div class="heatmap-cell {% if cell.level > 0 %}heatmap-l{{ cell.level }}{% endif %}"
+                title="{{ cell.displayDate }} · {{ cell.count }} carte{{ cell.count > 1 ? 's' : '' }}"></div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="chart-card lg:col-span-2" data-controller="theme-tabs">
+    <h2 class="font-black text-base sm:text-lg text-gray-900 mb-1">🏆 Red flags qui font gagner</h2>
+    <p class="text-xs text-gray-500 mb-3 sm:mb-4">Top 10 des red flags les plus présents dans les bingos atteints</p>
+
+    {% if stats.topWinningRedFlags.global|length > 0 %}
+        {# Onglets : "Tous" + un par thème #}
+        <div class="theme-tabs" role="tablist">
+            <button type="button"
+                    class="theme-tab theme-tab-active"
+                    role="tab"
+                    aria-selected="true"
+                    data-theme-tabs-target="tab"
+                    data-action="click->theme-tabs#select"
+                    data-theme-key="all">
+                <span>🌐 Tous</span>
+            </button>
+            {% for group in stats.topWinningRedFlags.byTheme %}
+                <button type="button"
+                        class="theme-tab"
+                        role="tab"
+                        aria-selected="false"
+                        data-theme-tabs-target="tab"
+                        data-action="click->theme-tabs#select"
+                        data-theme-key="theme-{{ group.theme.id }}">
+                    <span>{{ group.theme.emoji }} {{ group.theme.name }}</span>
+                    <span class="theme-tab-count">({{ group.flags|length }})</span>
+                </button>
+            {% endfor %}
+        </div>
+
+        {# Panel "Tous" — affiche le thème à côté de chaque red flag #}
+        <div data-theme-tabs-target="panel" data-theme-key="all" role="tabpanel">
+            {% set topMax = stats.topWinningRedFlags.global|first.count %}
+            {% for entry in stats.topWinningRedFlags.global %}
+                {% set ratio = topMax > 0 ? (entry.count / topMax * 100) : 0 %}
+                <div class="winning-row">
+                    <div class="winning-rank {% if loop.index == 1 %}winning-rank-1{% elseif loop.index == 2 %}winning-rank-2{% elseif loop.index == 3 %}winning-rank-3{% endif %}">
+                        #{{ loop.index }}
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-900 font-medium">
+                            {{ entry.redFlag.text }}
+                            {% if entry.redFlag.archived %}
+                                <span class="text-xs text-gray-400 ml-1">(archivé)</span>
+                            {% endif %}
+                            {% if entry.redFlag.theme %}
+                                <span class="winning-theme" title="Thème : {{ entry.redFlag.theme.name }}">
+                                    {{ entry.redFlag.theme.emoji }} {{ entry.redFlag.theme.name }}
+                                </span>
+                            {% endif %}
+                        </div>
+                        <div class="winning-bar-track">
+                            <div class="winning-bar-fill" style="width: {{ ratio }}%"></div>
+                        </div>
+                    </div>
+                    <div class="text-sm font-bold text-pink-600 whitespace-nowrap">
+                        {{ entry.count }}×
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        {# Un panel par thème — masqué par défaut #}
+        {% for group in stats.topWinningRedFlags.byTheme %}
+            <div data-theme-tabs-target="panel"
+                 data-theme-key="theme-{{ group.theme.id }}"
+                 role="tabpanel"
+                 class="hidden">
+                {% set themeMax = group.flags|first.count %}
+                {% for entry in group.flags %}
+                    {% set ratio = themeMax > 0 ? (entry.count / themeMax * 100) : 0 %}
+                    <div class="winning-row">
+                        <div class="winning-rank {% if loop.index == 1 %}winning-rank-1{% elseif loop.index == 2 %}winning-rank-2{% elseif loop.index == 3 %}winning-rank-3{% endif %}">
+                            #{{ loop.index }}
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-900 font-medium">
+                                {{ entry.redFlag.text }}
+                                {% if entry.redFlag.archived %}
+                                    <span class="text-xs text-gray-400 ml-1">(archivé)</span>
+                                {% endif %}
+                            </div>
+                            <div class="winning-bar-track">
+                                <div class="winning-bar-fill" style="width: {{ ratio }}%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm font-bold text-pink-600 whitespace-nowrap">
+                            {{ entry.count }}×
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="text-gray-400 text-sm text-center py-8">
+            Pas encore de bingos atteints.<br>
+            <span class="text-xs">Les stats apparaîtront dès qu'un joueur fera un bingo.</span>
+        </p>
+    {% endif %}
+</div>
+
+</div>
+{% endblock %}
