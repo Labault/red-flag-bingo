@@ -12,8 +12,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class CardGenerator
 {
-    private const CELLS_PER_CARD = 25;
-    private const DISTRIBUTION   = [
+    private const DISTRIBUTION = [
         'common'    => 15,
         'legendary' => 3,
         'rare'      => 7,
@@ -54,7 +53,7 @@ class CardGenerator
             $picked = array_slice($pool, 0, $count);
 
             foreach ($picked as $redFlag) {
-                $pickedIds[] = $redFlag->getId();
+                $pickedIds[] = (int) $redFlag->getId();
             }
         }
 

@@ -99,6 +99,9 @@ class BingoChecker
         return array_keys($positions);
     }
 
+    /**
+     * @param int[] $markedCells
+     */
     public function hasBingo(array $markedCells): bool
     {
         return count($this->getWinningLines($markedCells)) > 0;

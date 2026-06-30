@@ -4,7 +4,6 @@ namespace App\Service\Stats;
 
 use App\Repository\BingoCardRepository;
 use App\Repository\RedFlagRepository;
-use App\Repository\ThemeRepository;
 use Psr\Cache\CacheItemPoolInterface;
 
 /**
@@ -18,16 +17,25 @@ final class StatsService
 
     public function __construct(
         private readonly BingoCardRepository $cardRepository,
-        private readonly ThemeRepository $themeRepository,
         private readonly RedFlagRepository $redFlagRepository,
         private readonly CacheItemPoolInterface $cache,
     ) {}
 
+    /**
+     * @template T
+     *
+     * @param callable(): T $compute
+     *
+     * @return T
+     */
     private function cached(string $key, callable $compute): mixed
     {
         $item = $this->cache->getItem(self::CACHE_PREFIX . $key);
         if ($item->isHit()) {
-            return $item->get();
+            /** @var T $hit */
+            $hit = $item->get();
+
+            return $hit;
         }
         $value = $compute();
         $item->set($value);
@@ -39,6 +47,8 @@ final class StatsService
 
     /**
      * Renvoie toutes les stats agrégées pour le dashboard.
+     *
+     * @return array<string, mixed>
      */
     public function getAllStats(): array
     {
@@ -55,6 +65,8 @@ final class StatsService
 
     /**
      * Répartition des cartes par thème, formatée pour Chart.js (donut).
+     *
+     * @return array{data: list<int>, emojis: list<string>, labels: list<string>}
      */
     public function getCardsByTheme(): array
     {
@@ -76,6 +88,8 @@ final class StatsService
 
     /**
      * Cartes créées par jour sur N jours, formatées pour Chart.js.
+     *
+     * @return array{data: list<int>, labels: list<string>}
      */
     public function getCardsPerDay(int $days): array
     {
@@ -101,6 +115,8 @@ final class StatsService
 
     /**
      * Heatmap façon GitHub : par jour sur N jours, avec 5 niveaux d'intensité.
+     *
+     * @return array{cells: list<array{count: int, date: string, dayOfWeek: int, displayDate: string, level: int}>, max: int}
      */
     public function getHeatmap(int $days): array
     {
@@ -132,6 +148,8 @@ final class StatsService
 
     /**
      * 4 chiffres clés : cartes totales, bingos, taux de bingo, cartes 7 derniers jours.
+     *
+     * @return array{bingoRate: float|int, bingos: int, last7Days: int, total: int, trend: float|int|null}
      */
     public function getKeyMetrics(): array
     {
@@ -186,6 +204,8 @@ final class StatsService
 
     /**
      * Top N red flags qui ont contribué à des bingos, en global et regroupés par thème.
+     *
+     * @return array<string, mixed>
      */
     public function getTopWinningRedFlags(int $limit): array
     {

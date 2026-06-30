@@ -31,14 +31,18 @@ final class AdminHashPasswordCommand extends Command
         $question = new Question('Mot de passe admin : ');
         $question->setHidden(true);
         $question->setHiddenFallback(false);
-        $question->setValidator(function (?string $value): string {
-            if (!$value || strlen($value) < 8) {
+        $question->setValidator(function (mixed $value): string {
+            if (!is_string($value) || strlen($value) < 8) {
                 throw new \RuntimeException('Le mot de passe doit faire au moins 8 caractères.');
             }
             return $value;
         });
 
         $password = $io->askQuestion($question);
+        if (!is_string($password)) {
+            $io->error('Mot de passe invalide.');
+            return Command::FAILURE;
+        }
 
         $hasher = $this->hasherFactory->getPasswordHasher('admin');
         $hash = $hasher->hash($password);

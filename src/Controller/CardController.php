@@ -25,10 +25,12 @@ final class CardController extends AbstractController
     {
         $item = $cache->getItem('viewers_' . $slug);
         $viewers = $item->isHit() ? $item->get() : [];
+        /** @var array<string, int> $viewers */
+        $viewers = is_array($viewers) ? $viewers : [];
 
         // Filtre les viewers expirés (heartbeat plus ancien que 15s)
         $now = time();
-        $viewers = array_filter($viewers, fn($lastSeen) => ($now - $lastSeen) < 15);
+        $viewers = array_filter($viewers, fn (int $lastSeen): bool => ($now - $lastSeen) < 15);
 
         return count($viewers);
     }
@@ -42,21 +44,23 @@ final class CardController extends AbstractController
         HubInterface $hub,
         Environment $twig,
     ): Response {
-        $viewerId = $request->request->get('viewerId');
-        if (!$viewerId) {
+        $viewerId = $request->request->getString('viewerId');
+        if ('' === $viewerId) {
             return new JsonResponse(['ok' => false], 400);
         }
 
         // Récupère la liste des viewers
         $item = $cache->getItem('viewers_' . $card->getSlug());
         $viewers = $item->isHit() ? $item->get() : [];
+        /** @var array<string, int> $viewers */
+        $viewers = is_array($viewers) ? $viewers : [];
 
         // Met à jour le timestamp de ce viewer
         $viewers[$viewerId] = time();
 
         // Nettoie les viewers expirés
         $now = time();
-        $viewers = array_filter($viewers, fn($lastSeen) => ($now - $lastSeen) < 15);
+        $viewers = array_filter($viewers, fn (int $lastSeen): bool => ($now - $lastSeen) < 15);
 
         // Sauvegarde
         $item->set($viewers);
@@ -113,7 +117,7 @@ final class CardController extends AbstractController
 
         $redFlagsById = [];
         foreach ($redFlags as $rf) {
-            $redFlagsById[$rf->getId()] = $rf;
+            $redFlagsById[(int) $rf->getId()] = $rf;
         }
 
         // Calcul des positions gagnantes (cases d'au moins une ligne complète)
@@ -202,7 +206,7 @@ final class CardController extends AbstractController
         )));
         $redFlagsById = [];
         foreach ($redFlagRepository->findByIdsIncludingArchived($redFlagIds) as $rf) {
-            $redFlagsById[$rf->getId()] = $rf;
+            $redFlagsById[(int) $rf->getId()] = $rf;
         }
 
         foreach ($positionsToPublish as $pos) {

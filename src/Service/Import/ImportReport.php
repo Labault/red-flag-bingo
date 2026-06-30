@@ -44,6 +44,8 @@ final class ImportReport
     /**
      * Calcule la jouabilité du thème après import :
      * red flags actifs déjà existants + ceux qui vont être créés.
+     *
+     * @return array{byRarity: array<string, int>, missing: array<string, int>, playable: bool}
      */
     public function isPlayable(): array
     {

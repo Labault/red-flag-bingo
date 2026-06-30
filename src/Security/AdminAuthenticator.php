@@ -81,14 +81,14 @@ final class AdminAuthenticator extends AbstractAuthenticator implements Authenti
         );
     }
 
-    public function onAuthenticationFailure(Request $request, AuthenticationException $exception): ?Response
+    public function onAuthenticationFailure(Request $request, AuthenticationException $exception): Response
     {
         $request->getSession()->set(SecurityRequestAttributes::AUTHENTICATION_ERROR, $exception);
 
         return new RedirectResponse($this->urlGenerator->generate(self::LOGIN_ROUTE));
     }
 
-    public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response
+    public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): Response
     {
         return new RedirectResponse($this->urlGenerator->generate('app_admin_dashboard'));
     }
@@ -98,7 +98,7 @@ final class AdminAuthenticator extends AbstractAuthenticator implements Authenti
         return new RedirectResponse($this->urlGenerator->generate(self::LOGIN_ROUTE));
     }
 
-    public function supports(Request $request): ?bool
+    public function supports(Request $request): bool
     {
         return $request->isMethod('POST')
             && self::LOGIN_ROUTE === $request->attributes->get('_route');

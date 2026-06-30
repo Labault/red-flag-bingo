@@ -34,6 +34,7 @@ class BingoCardRepository extends ServiceEntityRepository
     {
         $since = (new \DateTimeImmutable())->modify(sprintf('-%d days', $days))->setTime(0, 0);
 
+        /** @var list<array{day: string, cnt: int|string}> $rows */
         $rows = $this->getEntityManager()->getConnection()->executeQuery(
             "SELECT TO_CHAR(created_at::date, 'YYYY-MM-DD') AS day, COUNT(*) AS cnt
              FROM bingo_card
@@ -58,6 +59,7 @@ class BingoCardRepository extends ServiceEntityRepository
      */
     public function countByTheme(): array
     {
+        /** @var list<array{theme_id: int|string, cnt: int|string}> $rows */
         $rows = $this->createQueryBuilder('c')
             ->select('IDENTITY(c.theme) AS theme_id, COUNT(c.id) AS cnt')
             ->groupBy('c.theme')
@@ -68,7 +70,7 @@ class BingoCardRepository extends ServiceEntityRepository
             return [];
         }
 
-        $themeIds = array_map(fn ($r) => (int) $r['theme_id'], $rows);
+        $themeIds = array_map(fn (array $r): int => (int) $r['theme_id'], $rows);
         $themes = $this->getEntityManager()
             ->getRepository(Theme::class)
             ->createQueryBuilder('t')
@@ -79,7 +81,7 @@ class BingoCardRepository extends ServiceEntityRepository
 
         $themesById = [];
         foreach ($themes as $theme) {
-            $themesById[$theme->getId()] = $theme;
+            $themesById[(int) $theme->getId()] = $theme;
         }
 
         $result = [];
@@ -130,6 +132,7 @@ class BingoCardRepository extends ServiceEntityRepository
      */
     public function topWinningRedFlags(int $limit = 10): array
     {
+        /** @var list<array{cells: string, markedCells: string}> $cards */
         $cards = $this->createQueryBuilder('c')
             ->select('c.cells, c.markedCells')
             ->where('c.bingoReachedAt IS NOT NULL')
@@ -141,16 +144,24 @@ class BingoCardRepository extends ServiceEntityRepository
         }
 
         // Comptage des occurrences dans les cellules MARQUÉES (= ayant contribué au bingo)
+        // cells / markedCells sont des colonnes JSON : scalarResult les renvoie en chaîne.
         $counts = [];
         foreach ($cards as $card) {
-            $cells  = is_string($card['cells']) ? json_decode($card['cells'], true) : $card['cells'];
-            $marked = is_string($card['markedCells']) ? json_decode($card['markedCells'], true) : $card['markedCells'];
+            $cells  = json_decode($card['cells'], true);
+            $marked = json_decode($card['markedCells'], true);
 
-            if (!is_array($cells) || !is_array($marked)) continue;
+            if (!is_array($cells) || !is_array($marked)) {
+                continue;
+            }
 
             foreach ($marked as $position) {
+                if (!is_int($position)) {
+                    continue;
+                }
                 $redFlagId = $cells[$position] ?? null;
-                if (null === $redFlagId) continue;
+                if (!is_int($redFlagId)) {
+                    continue;
+                }
                 $counts[$redFlagId] = ($counts[$redFlagId] ?? 0) + 1;
             }
         }
@@ -177,7 +188,7 @@ class BingoCardRepository extends ServiceEntityRepository
 
         $redFlagsById = [];
         foreach ($redFlags as $rf) {
-            $redFlagsById[$rf->getId()] = $rf;
+            $redFlagsById[(int) $rf->getId()] = $rf;
         }
 
         // Tri global décroissant
@@ -195,8 +206,7 @@ class BingoCardRepository extends ServiceEntityRepository
             }
 
             $theme = $redFlag->getTheme();
-            if (null === $theme) continue;
-            $themeId = $theme->getId();
+            $themeId = (int) $theme->getId();
             if (!isset($byTheme[$themeId])) {
                 $byTheme[$themeId] = ['flags' => [], 'theme' => $theme, 'totalCount' => 0];
             }

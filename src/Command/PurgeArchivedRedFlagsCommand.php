@@ -36,7 +36,8 @@ final class PurgeArchivedRedFlagsCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
-        $days   = (int) $input->getOption('days');
+        $daysOption = $input->getOption('days');
+        $days   = is_numeric($daysOption) ? (int) $daysOption : 90;
         $dryRun = (bool) $input->getOption('dry-run');
 
         $io->title(sprintf('Purge des red flags archivés depuis plus de %d jours', $days));

@@ -2,6 +2,7 @@
 
 namespace App\Service\Export;
 
+use App\Entity\RedFlag;
 use App\Entity\Theme;
 use App\Repository\RedFlagRepository;
 use Symfony\Component\Yaml\Yaml;
@@ -24,9 +25,9 @@ final class ThemeExporter
         $redFlags = $this->redFlagRepository->findBy(['theme' => $theme]);
 
         // Tri par rareté puis alphabétique pour un fichier lisible
-        usort($redFlags, function ($a, $b) {
-            $rarityCmp = (self::RARITY_ORDER[$a->getRarity()->value] ?? 99)
-                       <=> (self::RARITY_ORDER[$b->getRarity()->value] ?? 99);
+        usort($redFlags, function (RedFlag $a, RedFlag $b): int {
+            $rarityCmp = self::RARITY_ORDER[$a->getRarity()->value]
+                       <=> self::RARITY_ORDER[$b->getRarity()->value];
 
             if (0 !== $rarityCmp) {
                 return $rarityCmp;

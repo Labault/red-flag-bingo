@@ -17,10 +17,10 @@ class Theme
     private ?int $id = null;
 
     #[ORM\Column(length: 10)]
-    private ?string $emoji = null;
+    private string $emoji;
 
     #[ORM\Column(length: 255)]
-    private ?string $name = null;
+    private string $name;
 
     /**
      * @var Collection<int, RedFlag>
@@ -29,7 +29,7 @@ class Theme
     private Collection $redFlags;
 
     #[ORM\Column(length: 255, unique: true)]
-    private ?string $slug = null;
+    private string $slug;
 
     public function __construct()
     {
@@ -46,7 +46,7 @@ class Theme
         return $this;
     }
 
-    public function getEmoji(): ?string
+    public function getEmoji(): string
     {
         return $this->emoji;
     }
@@ -56,7 +56,7 @@ class Theme
         return $this->id;
     }
 
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -69,19 +69,15 @@ class Theme
         return $this->redFlags;
     }
 
-    public function getSlug(): ?string
+    public function getSlug(): string
     {
         return $this->slug;
     }
 
     public function removeRedFlag(RedFlag $redFlag): static
     {
-        if ($this->redFlags->removeElement($redFlag)) {
-            // set the owning side to null (unless already changed)
-            if ($redFlag->getTheme() === $this) {
-                $redFlag->setTheme(null);
-            }
-        }
+        // orphanRemoval handles deletion once the flag leaves the collection.
+        $this->redFlags->removeElement($redFlag);
 
         return $this;
     }

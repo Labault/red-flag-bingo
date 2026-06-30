@@ -20,14 +20,14 @@ class RedFlag
     private ?\DateTimeImmutable $archivedAt = null;
 
     #[ORM\Column(length: 20, enumType: Rarity::class)]
-    private ?Rarity $rarity = null;
+    private Rarity $rarity;
 
     #[ORM\Column(type: Types::TEXT)]
-    private ?string $text = null;
+    private string $text;
 
     #[ORM\ManyToOne(inversedBy: 'redFlags')]
     #[ORM\JoinColumn(nullable: false, onDelete: 'CASCADE')]
-    private ?Theme $theme = null;
+    private Theme $theme;
 
     public function getArchivedAt(): ?\DateTimeImmutable
     {
@@ -39,17 +39,17 @@ class RedFlag
         return $this->id;
     }
 
-    public function getRarity(): ?Rarity
+    public function getRarity(): Rarity
     {
         return $this->rarity;
     }
 
-    public function getText(): ?string
+    public function getText(): string
     {
         return $this->text;
     }
 
-    public function getTheme(): ?Theme
+    public function getTheme(): Theme
     {
         return $this->theme;
     }
@@ -80,7 +80,7 @@ class RedFlag
         return $this;
     }
 
-    public function setTheme(?Theme $theme): static
+    public function setTheme(Theme $theme): static
     {
         $this->theme = $theme;
 

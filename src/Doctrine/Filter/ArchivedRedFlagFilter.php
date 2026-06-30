@@ -14,6 +14,9 @@ use Doctrine\ORM\Query\Filter\SQLFilter;
  */
 final class ArchivedRedFlagFilter extends SQLFilter
 {
+    /**
+     * @param string $targetTableAlias
+     */
     public function addFilterConstraint(ClassMetadata $targetEntity, $targetTableAlias): string
     {
         if (RedFlag::class !== $targetEntity->getName()) {

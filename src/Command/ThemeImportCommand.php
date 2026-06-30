@@ -38,14 +38,19 @@ final class ThemeImportCommand extends Command
         $file   = $input->getArgument('file');
         $dryRun = (bool) $input->getOption('dry-run');
 
-        if (!is_file($file) || !is_readable($file)) {
-            $io->error(sprintf('Fichier introuvable ou illisible : %s', $file));
+        if (!is_string($file) || !is_file($file) || !is_readable($file)) {
+            $io->error(sprintf('Fichier introuvable ou illisible : %s', is_string($file) ? $file : ''));
             return Command::FAILURE;
         }
 
         $io->title(sprintf('Import du fichier : %s%s', basename($file), $dryRun ? ' (DRY-RUN)' : ''));
 
         $yaml = file_get_contents($file);
+        if (false === $yaml) {
+            $io->error('Impossible de lire le fichier.');
+            return Command::FAILURE;
+        }
+
         $report = $this->importer->import($yaml, dryRun: $dryRun);
 
         // Erreurs de validation

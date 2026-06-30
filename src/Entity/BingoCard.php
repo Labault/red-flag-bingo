@@ -20,33 +20,46 @@ class BingoCard
     #[ORM\Column(nullable: true)]
     private ?\DateTimeImmutable $bingoReachedAt = null;
 
+    /**
+     * Les 25 identifiants de red flags, dans l'ordre de la grille.
+     *
+     * @var list<int>
+     */
     #[ORM\Column(type: 'json')]
     private array $cells = [];
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $createdAt = null;
+    private \DateTimeImmutable $createdAt;
 
+    /**
+     * Les positions (0-24) des cases cochées.
+     *
+     * @var list<int>
+     */
     #[ORM\Column(type: 'json')]
     private array $markedCells = [];
 
     #[ORM\Column(length: 50, unique: true)]
-    private ?string $slug = null;
+    private string $slug;
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false, onDelete: 'CASCADE')]
-    private ?Theme $theme = null;
+    private Theme $theme;
 
     public function getBingoReachedAt(): ?\DateTimeImmutable
     {
         return $this->bingoReachedAt;
     }
 
+    /**
+     * @return list<int>
+     */
     public function getCells(): array
     {
         return $this->cells;
     }
 
-    public function getCreatedAt(): ?\DateTimeImmutable
+    public function getCreatedAt(): \DateTimeImmutable
     {
         return $this->createdAt;
     }
@@ -56,17 +69,20 @@ class BingoCard
         return $this->id;
     }
 
+    /**
+     * @return list<int>
+     */
     public function getMarkedCells(): array
     {
         return $this->markedCells;
     }
 
-    public function getSlug(): ?string
+    public function getSlug(): string
     {
         return $this->slug;
     }
 
-    public function getTheme(): ?Theme
+    public function getTheme(): Theme
     {
         return $this->theme;
     }
@@ -83,6 +99,9 @@ class BingoCard
         return $this;
     }
 
+    /**
+     * @param list<int> $cells
+     */
     public function setCells(array $cells): static
     {
         $this->cells = $cells;
@@ -103,6 +122,9 @@ class BingoCard
         $this->createdAt = new \DateTimeImmutable();
     }
 
+    /**
+     * @param list<int> $markedCells
+     */
     public function setMarkedCells(array $markedCells): static
     {
         $this->markedCells = $markedCells;
@@ -117,7 +139,7 @@ class BingoCard
         return $this;
     }
 
-    public function setTheme(?Theme $theme): static
+    public function setTheme(Theme $theme): static
     {
         $this->theme = $theme;
 

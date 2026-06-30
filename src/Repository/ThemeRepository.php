@@ -43,7 +43,7 @@ class ThemeRepository extends ServiceEntityRepository
             return [];
         }
 
-        $themeIds = array_map(fn (Theme $t) => $t->getId(), $themes);
+        $themeIds = array_map(fn (Theme $t): int => (int) $t->getId(), $themes);
         $em = $this->getEntityManager();
 
         // Red flags actifs (le filtre 'archived_red_flag' s'applique → archivés exclus)
@@ -82,20 +82,28 @@ class ThemeRepository extends ServiceEntityRepository
             GROUP BY c.theme
         ')->setParameter('ids', $themeIds)->getResult();
 
-        // Construction de l'index final
-        $stats = [];
-        foreach ($themeIds as $id) {
-            $stats[$id] = ['active' => 0, 'archived' => 0, 'cards' => 0];
+        // Indexation des compteurs par theme ID
+        $activeByTheme = [];
+        foreach ($active as $row) {
+            $activeByTheme[(int) $row['theme_id']] = (int) $row['cnt'];
+        }
+        $archivedByTheme = [];
+        foreach ($archived as $row) {
+            $archivedByTheme[(int) $row['theme_id']] = (int) $row['cnt'];
+        }
+        $cardsByTheme = [];
+        foreach ($cards as $row) {
+            $cardsByTheme[(int) $row['theme_id']] = (int) $row['cnt'];
         }
 
-        foreach ($active as $row) {
-            $stats[(int) $row['theme_id']]['active'] = (int) $row['cnt'];
-        }
-        foreach ($archived as $row) {
-            $stats[(int) $row['theme_id']]['archived'] = (int) $row['cnt'];
-        }
-        foreach ($cards as $row) {
-            $stats[(int) $row['theme_id']]['cards'] = (int) $row['cnt'];
+        // Construction de l'index final (toutes les clés sont garanties présentes)
+        $stats = [];
+        foreach ($themeIds as $id) {
+            $stats[$id] = [
+                'active'   => $activeByTheme[$id] ?? 0,
+                'archived' => $archivedByTheme[$id] ?? 0,
+                'cards'    => $cardsByTheme[$id] ?? 0,
+            ];
         }
 
         return $stats;

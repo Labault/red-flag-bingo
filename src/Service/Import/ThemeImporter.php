@@ -34,16 +34,21 @@ final class ThemeImporter
 
     /**
      * Construit les DTOs à partir des données YAML brutes.
+     *
+     * @param array<array-key, mixed> $data
      */
     private function buildDto(array $data): ThemeImportDto
     {
+        $toString = static fn (mixed $v): ?string => is_scalar($v) ? trim((string) $v) : null;
+
         $themeData    = $data['theme'] ?? [];
         $redFlagsData = $data['red_flags'] ?? [];
+        $themeData    = is_array($themeData) ? $themeData : [];
 
         $dto = new ThemeImportDto();
-        $dto->name  = isset($themeData['name']) ? trim((string) $themeData['name']) : null;
-        $dto->slug  = isset($themeData['slug']) ? trim((string) $themeData['slug']) : null;
-        $dto->emoji = isset($themeData['emoji']) ? trim((string) $themeData['emoji']) : null;
+        $dto->name  = $toString($themeData['name'] ?? null);
+        $dto->slug  = $toString($themeData['slug'] ?? null);
+        $dto->emoji = $toString($themeData['emoji'] ?? null);
 
         if (is_array($redFlagsData)) {
             foreach ($redFlagsData as $rfData) {
@@ -51,7 +56,7 @@ final class ThemeImporter
                     continue;
                 }
                 $rfDto = new RedFlagImportDto();
-                $rfDto->text     = isset($rfData['text']) ? trim((string) $rfData['text']) : null;
+                $rfDto->text     = $toString($rfData['text'] ?? null);
                 $rfDto->rarity   = $this->parseRarity($rfData['rarity'] ?? null);
                 $dto->redFlags[] = $rfDto;
             }
@@ -68,6 +73,7 @@ final class ThemeImporter
      */
     private function countActiveByRarity(Theme $theme): array
     {
+        /** @var list<array{rarity: Rarity|string, cnt: int|string}> $rows */
         $rows = $this->em->createQueryBuilder()
             ->select('r.rarity', 'COUNT(r.id) AS cnt')
             ->from(RedFlag::class, 'r')
@@ -104,6 +110,7 @@ final class ThemeImporter
         }
 
         try {
+            /** @var list<array{text: string}> $rows */
             $rows = $this->em->createQueryBuilder()
                 ->select('r.text')
                 ->from(RedFlag::class, 'r')
@@ -113,7 +120,7 @@ final class ThemeImporter
                 ->getScalarResult();
 
             return array_map(
-                fn ($row) => mb_strtolower($row['text']),
+                fn (array $row): string => mb_strtolower($row['text']),
                 $rows
             );
         } finally {
@@ -163,11 +170,14 @@ final class ThemeImporter
         }
 
         // 4. Slug fallback
-        $slug = $dto->slug ?: strtolower((string) $this->slugger->slug($dto->name));
+        // À ce stade, name/emoji sont garantis non-null par la validation (NotBlank ci-dessus).
+        $name  = (string) $dto->name;
+        $emoji = (string) $dto->emoji;
+        $slug  = $dto->slug ?: strtolower((string) $this->slugger->slug($name));
 
-        $report->themeName  = $dto->name;
+        $report->themeName  = $name;
         $report->themeSlug  = $slug;
-        $report->themeEmoji = $dto->emoji;
+        $report->themeEmoji = $emoji;
 
         // 5. Theme existant ou nouveau ?
         $theme = $this->themeRepository->findOneBy(['slug' => $slug]);
@@ -176,9 +186,9 @@ final class ThemeImporter
 
         if (!$dryRun && !$theme) {
             $theme = new Theme();
-            $theme->setName($dto->name);
+            $theme->setName($name);
             $theme->setSlug($slug);
-            $theme->setEmoji($dto->emoji);
+            $theme->setEmoji($emoji);
             $this->em->persist($theme);
         }
 
@@ -196,6 +206,11 @@ final class ThemeImporter
 
         // 8. Traitement de chaque red flag
         foreach ($dto->redFlags as $rfDto) {
+            // Garantis non-null par la validation (@Assert\NotNull / NotBlank sur le DTO).
+            if (null === $rfDto->rarity || null === $rfDto->text) {
+                continue;
+            }
+
             $normalizedText = trim($rfDto->text);
 
             if (in_array(mb_strtolower($normalizedText), $existingTexts, true)) {
@@ -212,6 +227,8 @@ final class ThemeImporter
             ];
 
             if (!$dryRun) {
+                // En mode réel, le thème a forcément été chargé ou créé à l'étape 5.
+                \assert($theme instanceof Theme);
                 $redFlag = new RedFlag();
                 $redFlag->setText($normalizedText);
                 $redFlag->setRarity($rfDto->rarity);

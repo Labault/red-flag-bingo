@@ -6,6 +6,7 @@ use App\Dto\Import\UploadDto;
 use App\Form\Admin\UploadType;
 use App\Service\Import\ThemeImporter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -29,6 +30,11 @@ final class ImportController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             // 1. Sauvegarde du fichier dans var/imports/ avec timestamp
             $uploadedFile = $dto->file;
+            if (!$uploadedFile instanceof UploadedFile) {
+                // Garanti non-null par la contrainte NotNull, garde défensive pour le typage.
+                $this->addFlash('error', 'Aucun fichier reçu.');
+                return $this->redirectToRoute('app_admin_imports_index');
+            }
             $originalName = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
             $safeName     = $this->slugger->slug($originalName)->lower();
             $filename     = sprintf(
@@ -62,6 +68,10 @@ final class ImportController extends AbstractController
         }
 
         $yaml = file_get_contents($path);
+        if (false === $yaml) {
+            $this->addFlash('error', 'Fichier illisible. Réessaie l\'upload.');
+            return $this->redirectToRoute('app_admin_imports_index');
+        }
 
         // POST = confirmation de l'import réel
         if ($request->isMethod('POST')) {
