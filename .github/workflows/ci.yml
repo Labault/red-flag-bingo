@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tests:
+    name: PHPUnit
+    runs-on: ubuntu-latest
+    env:
+      APP_ENV: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: ctype, iconv
+          coverage: none
+
+      - name: Install dependencies
+        # --no-scripts: skip Symfony auto-scripts (asset/tailwind install), the
+        # test suite needs none of them.
+        run: composer install --prefer-dist --no-progress --no-scripts
+
+      - name: PHPStan (static analysis, level 9)
+        run: php -d memory_limit=512M vendor/bin/phpstan analyse --no-progress
+
+      - name: Run PHPUnit
+        run: php bin/phpunit
