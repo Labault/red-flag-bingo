@@ -1,7 +1,7 @@
 # ============================================================================
 # STAGE 1 — BUILDER : composer + assets
 # ============================================================================
-FROM dunglas/frankenphp:1-php8.3 AS builder
+FROM dunglas/frankenphp:1-php8.4 AS builder
 
 # Extensions PHP (mêmes qu'en dev + ce qu'il faut pour build)
 RUN install-php-extensions \
@@ -64,7 +64,7 @@ RUN php bin/console cache:clear --env=prod --no-debug \
 # ============================================================================
 # STAGE 2 — RUNTIME : image finale légère
 # ============================================================================
-FROM dunglas/frankenphp:1-php8.3 AS runtime
+FROM dunglas/frankenphp:1-php8.4 AS runtime
 
 # Mêmes extensions qu'en dev (PAS de mode dev d'opcache)
 RUN install-php-extensions \

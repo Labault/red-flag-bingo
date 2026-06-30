@@ -25,7 +25,7 @@ together.
 
 | Layer     | Tech                                                  |
 | --------- | ----------------------------------------------------- |
-| Framework | Symfony 7.4, PHP 8.3                                   |
+| Framework | Symfony 7.4, PHP 8.4                                   |
 | Server    | FrankenPHP (Caddy-based, worker mode)                 |
 | Real-time | Mercure (SSE), embedded in FrankenPHP                 |
 | Front     | Twig, Stimulus/Turbo, Tailwind v4 (AssetMapper)       |

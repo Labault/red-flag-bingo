@@ -1,4 +1,4 @@
-FROM dunglas/frankenphp:1-php8.3
+FROM dunglas/frankenphp:1-php8.4
 
 # Extensions PHP nécessaires pour Symfony + PostgreSQL
 RUN install-php-extensions \

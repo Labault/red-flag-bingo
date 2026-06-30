@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Stack
 
-- **Symfony 7.4** on PHP 8.2+, served by **FrankenPHP** (worker mode, hot-reload enabled in dev via `FRANKENPHP_HOT_RELOAD`).
+- **Symfony 7.4** on PHP 8.4+, served by **FrankenPHP** (worker mode, hot-reload enabled in dev via `FRANKENPHP_HOT_RELOAD`).
 - **Doctrine ORM 3** + **doctrine-migrations-bundle**, against **PostgreSQL 16**. Mappings are attribute-based, scanned from `src/Entity` (configured in [config/packages/doctrine.yaml](config/packages/doctrine.yaml)).
 - **Hotwire** front-end: Symfony **AssetMapper** + **importmap** (no Webpack/Encore — JS deps live in [importmap.php](importmap.php)), **Stimulus**, **Turbo**, plus **Tailwind v4** via `symfonycasts/tailwind-bundle` (no `node_modules` for Tailwind — the bundle downloads a standalone binary, version pinned in [config/packages/symfonycasts_tailwind.yaml](config/packages/symfonycasts_tailwind.yaml)). **Chart.js 4** is pulled via importmap for the admin dashboard.
 - **Mercure** (`symfony/mercure-bundle` + standalone `dunglas/mercure` hub container) is wired up for real-time card updates: cell toggles, bingo banner, viewer counter — published as Turbo Streams on the topic `https://rfb.app/cards/{slug}`.
@@ -31,7 +31,7 @@ Inside the app container, `WORKDIR` is `/app` and `DATABASE_URL` points at the `
 
 ## Common commands
 
-All `bin/console` and `bin/phpunit` invocations assume you're either in the container or have a local PHP 8.2+ toolchain.
+All `bin/console` and `bin/phpunit` invocations assume you're either in the container or have a local PHP 8.4+ toolchain.
 
 ```bash
 # Symfony CLI
