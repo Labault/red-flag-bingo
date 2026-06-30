@@ -7,7 +7,6 @@
 ![CI](https://github.com/Labault/red-flag-bingo/actions/workflows/ci.yml/badge.svg)
 ![PHPStan](https://img.shields.io/badge/PHPStan-level%209-2a2a2a)
 ![Symfony](https://img.shields.io/badge/Symfony-7.4-000000)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 Red Flag Bingo is a real-time, multiplayer bingo game built on the clichés of
 dating apps. Everyone shares a board, ticks off the red flags as they show up,
@@ -182,4 +181,4 @@ Secrets (`APP_SECRET`, `MERCURE_JWT_SECRET`, `POSTGRES_PASSWORD`,
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+All rights reserved.
