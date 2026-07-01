@@ -24,6 +24,10 @@
         <meta name="twitter:image" content="{{ block('og_image') }}">
 
         <meta name="description" content="{{ block('og_description') }}">
+
+        {# Analytics self-hébergées (cookieless, pas de bandeau requis). Script servi depuis public/tracker.js, événements renvoyés vers l'instance Umami via data-host-url. #}
+        <script defer src="{{ asset('tracker.js') }}" data-website-id="ed608b51-d15b-4f55-beb1-0713796168d2" data-host-url="https://stats.labault.dev"></script>
+
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
         {% endblock %}
