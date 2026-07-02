@@ -2,6 +2,15 @@
 framework:
     secret: '%env(APP_SECRET)%'
 
+    # L'app tourne derrière le Caddy global (réseau interne, port non publié) :
+    # on fait confiance au proxy pour les en-têtes X-Forwarded-*. Sans ça,
+    # getClientIp() renvoie l'IP du proxy (rate limiter admin = bucket global),
+    # le schéma vu est http (cookie de session sans Secure) et les URLs absolues
+    # sont générées en http://. REMOTE_ADDR est sûr car seul Caddy peut se
+    # connecter à l'app.
+    trusted_proxies: '127.0.0.1,REMOTE_ADDR'
+    trusted_headers: ['x-forwarded-for', 'x-forwarded-host', 'x-forwarded-proto', 'x-forwarded-port', 'x-forwarded-prefix']
+
     # Note that the session will be started ONLY if you read or write from it.
     session: true
 
