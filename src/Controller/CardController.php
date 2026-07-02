@@ -87,7 +87,7 @@ final class CardController extends AbstractController
         return new JsonResponse(['count' => $viewerCount, 'ok' => true]);
     }
 
-    #[Route('/card/new/{themeSlug}', name: 'app_card_new', methods: ['POST', 'GET'])]
+    #[Route('/card/new/{themeSlug}', name: 'app_card_new', methods: ['POST'])]
     public function new(
         string $themeSlug,
         ThemeRepository $themeRepository,

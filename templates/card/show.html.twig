@@ -264,10 +264,6 @@
         {# Bandeau BINGO #}
         {{ include('card/_bingo_banner.html.twig', {hasBingo: hasBingo, bingoCount: bingoCount}) }}
 
-        <turbo-stream-source
-            src="{{ mercure('https://rfb.app/cards/' ~ card.slug) }}"
-        ></turbo-stream-source>
-
         {# Grille 5x5 — paddings réduits au max sur mobile pour donner toute la place aux cases #}
         <div class="card-container bg-white rounded-2xl sm:rounded-3xl p-2 sm:p-4 md:p-6 shadow-2xl border-2 sm:border-4 border-gray-900 mb-6 sm:mb-8"
              data-scroll-preservation-target="anchor">
@@ -293,10 +289,14 @@
 
         {# Boutons d'action #}
         <div class="flex flex-col gap-6 sm:gap-8 justify-center items-center">
-            <a href="{{ path('app_card_new', {themeSlug: card.theme.slug}) }}"
-               class="tape-button rounded-lg uppercase tracking-wider text-sm w-full sm:w-auto text-center">
-                🎲 Nouvelle carte
-            </a>
+            {# Création en POST (jamais en GET) : évite qu'un crawler ou un
+               préchargeur de lien génère des cartes en masse. #}
+            <form method="post" action="{{ path('app_card_new', {themeSlug: card.theme.slug}) }}" class="w-full sm:w-auto">
+                <button type="submit"
+                        class="tape-button rounded-lg uppercase tracking-wider text-sm w-full sm:w-auto text-center">
+                    🎲 Nouvelle carte
+                </button>
+            </form>
             <a href="{{ path('app_home') }}"
                class="tape-button-sm rounded-md uppercase tracking-wider text-center">
                 ← Retour à l'accueil
