@@ -4,914 +4,1009 @@ theme:
   emoji: "💔"
 
 red_flags:
-  # ────────────────────────────────────────
-  # Commons (300)
-  # ────────────────────────────────────────
-  - text: "Arrive et dit 'pardon j'ai pas eu le temps de me changer'"
+
+  # common (300)
+  - text: "Arrive trente minutes en retard et te reproche d’avoir déjà commandé"
     rarity: common
-  - text: "Te fait remarquer qu'il/elle est en avance"
+  - text: "Te salue en finissant son vocal, puis en enregistre un autre"
     rarity: common
-  - text: "Te dit 'tu es plus petit.e que je pensais'"
+  - text: "Te fait attendre dehors alors que sa table est déjà prête"
     rarity: common
-  - text: "Garde son manteau toute la soirée"
+  - text: "Arrive avec un café à emporter puis râle parce que tu veux t’asseoir"
     rarity: common
-  - text: "Pose son téléphone face cachée et le retourne toutes les 2 minutes"
+  - text: "Entre sans te saluer et commence par critiquer le quartier"
     rarity: common
-  - text: "Reçoit un appel et dit 'je dois répondre'"
+  - text: "Te demande de changer de place pour garder la meilleure vue"
     rarity: common
-  - text: "Sort un mouchoir en tissu de sa poche"
+  - text: "Prend les deux sièges confortables, un pour son manteau"
     rarity: common
-  - text: "Dit qu'il/elle 'mange peu en général' puis termine ton plat"
+  - text: "Te fait déplacer ta chaise pour ne pas apparaître sur ses photos"
     rarity: common
-  - text: "Demande au serveur 'qu'est-ce qui est bon ici ?'"
+  - text: "Annonce « je te laisse une heure » avant même de s’asseoir"
     rarity: common
-  - text: "Commande à la place du serveur en disant 'on va prendre'"
+  - text: "Te présente son retard comme une technique pour se faire désirer"
     rarity: common
-  - text: "Te commande une salade sans te demander"
+  - text: "Critique le lieu que tu as choisi après avoir répondu « comme tu veux »"
     rarity: common
-  - text: "Te dit 'tu es sûr.e de vouloir un dessert ?'"
+  - text: "Te fait marcher vers un autre bar sans attendre ta réponse"
     rarity: common
-  - text: "Sale son plat avant de le goûter"
+  - text: "Se moque de ta tenue en ajoutant « au moins tu es à l’aise »"
     rarity: common
-  - text: "Mâche bouche ouverte"
+  - text: "Dit « tu as fait un effort, c’est mignon » en inspectant ta tenue"
     rarity: common
-  - text: "Aspire ses pâtes en faisant gicler la sauce"
+  - text: "Commence par expliquer pourquoi son dernier rendez-vous était mieux"
     rarity: common
-  - text: "Mange sa pizza avec un couteau et une fourchette"
+  - text: "Arrive avec un casque et le garde pendant vos présentations"
     rarity: common
-  - text: "Trempe son pain dans ton assiette"
+  - text: "Laisse son sac sur ton siège alors que tu attends pour t’asseoir"
     rarity: common
-  - text: "Pioche dans ton plat avec sa fourchette"
+  - text: "Te demande de garder ses affaires et disparaît vingt minutes"
     rarity: common
-  - text: "Lèche son couteau"
+  - text: "S’installe à table sans laisser la personne avant vous se lever"
     rarity: common
-  - text: "Rote en disant 'ça veut dire que c'est bon'"
+  - text: "Te laisse gérer la réservation à son nom sans te donner ce nom"
     rarity: common
-  - text: "Renifle bruyamment toutes les 2 minutes"
+  - text: "Râle sur ton trajet alors que tu viens de traverser toute la ville"
     rarity: common
-  - text: "Vérifie son reflet dans le couteau"
+  - text: "Annonce avoir dîné avant de venir au restaurant qu’il fallait tester"
     rarity: common
-  - text: "Enlève ses chaussures sous la table"
+  - text: "Dit « j’ai failli annuler » comme si tu devais remercier"
     rarity: common
-  - text: "Finit toutes tes phrases (mal)"
+  - text: "Te demande où tu t’es garé pour comparer le prix de vos voitures"
     rarity: common
-  - text: "Reformule chacune de tes phrases en 'donc en gros tu dis que'"
+  - text: "Fait attendre le personnel pour terminer une story d’arrivée"
     rarity: common
-  - text: "Te corrige avec 'en fait techniquement'"
+  - text: "Commande pour toi sans te demander ce que tu veux"
     rarity: common
-  - text: "Dit 'mais bon je te juge pas' juste après t'avoir jugé.e"
+  - text: "Te commande une salade après que tu as choisi un burger"
     rarity: common
-  - text: "Dit 'sans vouloir te vexer' puis te vexe"
+  - text: "Dit « tu es sûr de vouloir un dessert ? » en regardant ton assiette"
     rarity: common
-  - text: "Dit 'enfin tu fais ce que tu veux' avec un ton qui dit l'inverse"
+  - text: "Demande ton avis sur le menu et démonte chacune de tes suggestions"
     rarity: common
-  - text: "Commence une histoire par 'je vais te raconter un truc de ouf'"
+  - text: "Choisit une bouteille hors de prix sans parler du partage de l’addition"
     rarity: common
-  - text: "Dit 'tu vas pas me croire' puis raconte un truc banal"
+  - text: "Te pousse à commander un plat cher « pour pouvoir goûter »"
     rarity: common
-  - text: "Dit 'franchement' 14 fois en 10 minutes"
+  - text: "Répond au serveur à ta place quand on te demande ton choix"
     rarity: common
-  - text: "Te dit 'détends-toi' alors que tu es détendu.e"
+  - text: "Change ta commande pendant que tu es aux toilettes"
     rarity: common
-  - text: "Te dit 'souris un peu'"
+  - text: "Insiste pour partager des plats puis refuse tous ceux que tu proposes"
     rarity: common
-  - text: "Te dit 'tu parles pas beaucoup'"
+  - text: "Dit « prends ce que tu veux » puis fixe un plafond en regardant la carte"
     rarity: common
-  - text: "Te demande 'pourquoi tu es célibataire ?' au bout de 5 minutes"
+  - text: "Te fait justifier pourquoi tu ne bois pas d’alcool"
     rarity: common
-  - text: "Te demande 'qu'est-ce que tu cherches en ce moment ?' avec gravité"
+  - text: "Insiste pour commander du vin après ton deuxième refus"
     rarity: common
-  - text: "Te demande pourquoi ton ex t'a quitté.e"
+  - text: "Répète au serveur que ton plat est « le choix ennuyeux »"
     rarity: common
-  - text: "Te demande si tu vois d'autres personnes en parallèle"
+  - text: "Déclare que ton régime alimentaire est une phase devant le serveur"
     rarity: common
-  - text: "Te demande 'on est en date là ou pas ?' au plat"
+  - text: "Se moque de ton budget après t’avoir demandé de choisir un plat"
     rarity: common
-  - text: "Te demande 'on s'embrasse ou pas ?' avec un sourire gêné"
+  - text: "Te conseille de manger léger « pour rester séduisant »"
     rarity: common
-  - text: "Décide qu'on prend un dessert sans te demander"
+  - text: "Interrompt ta commande pour raconter une anecdote au serveur"
     rarity: common
-  - text: "Décide qu'on va dans un bar après sans te demander"
+  - text: "Dit « surprends-moi » puis refuse chaque proposition du personnel"
     rarity: common
-  - text: "Te propose 'on partage l'addition ?' après 2 verres et un steak"
+  - text: "Annonce ne pas avoir faim puis prévoit de manger la moitié de ton plat"
     rarity: common
-  - text: "Sort la calculette pour le pourboire"
+  - text: "Te fait choisir en trente secondes puis hésite encore dix minutes"
     rarity: common
-  - text: "Compte les centimes au moment de payer"
+  - text: "Décide que vous partagez un dessert sans te consulter"
     rarity: common
-  - text: "Insiste pour vérifier l'addition ligne par ligne"
+  - text: "Commande un deuxième verre pour toi alors que tu pars bientôt"
     rarity: common
-  - text: "Demande à enlever le service compris"
+  - text: "Tente de négocier ton choix avec le serveur comme si tu étais absent"
     rarity: common
-  - text: "Râle parce que 'le café est facturé séparément'"
+  - text: "Te reproche de demander les ingrédients après avoir vanté son palais fin"
     rarity: common
-  - text: "Te paye en faisant un Lydia 'je t'ai mis 23,50 €'"
+  - text: "Dit que ton choix de plat en dit long sur ton manque d’ambition"
     rarity: common
-  - text: "Te demande de mettre l'addition sur ta carte 'tu me Lydia après'"
+  - text: "Claque des doigts pour appeler le serveur"
     rarity: common
-  - text: "Oublie de te rembourser le Lydia"
+  - text: "Interrompt le serveur pour lui expliquer comment faire son métier"
+    rarity: common
+  - text: "Dit « enfin » au serveur qui arrive après deux minutes"
+    rarity: common
+  - text: "Tutoie le personnel puis exige qu’on le vouvoie"
+    rarity: common
+  - text: "Ne dit merci au serveur que lorsqu’il te regarde"
+    rarity: common
+  - text: "Rit d’une erreur de prononciation du serveur devant toute la table"
+    rarity: common
+  - text: "Te fait signe de te taire pendant qu’il humilie le serveur"
+    rarity: common
+  - text: "Critique le restaurant assez fort pour que la table voisine entende"
+    rarity: common
+  - text: "Demande une remise parce que la table n’est pas assez romantique"
+    rarity: common
+  - text: "Fait revenir le serveur trois fois sans avoir regardé le menu"
+    rarity: common
+  - text: "Prétend connaître le patron pour obtenir une meilleure table"
+    rarity: common
+  - text: "Se vante de laisser de gros pourboires puis ne laisse rien"
+    rarity: common
+  - text: "Demande au serveur si ton plat est vraiment « pour une personne »"
+    rarity: common
+  - text: "Renvoie un plat presque terminé en disant qu’il était immangeable"
+    rarity: common
+  - text: "Accuse le serveur d’avoir oublié ce qu’il n’a jamais commandé"
+    rarity: common
+  - text: "Fait une blague au personnel et exige qu’on en rie"
+    rarity: common
+  - text: "Compare le salaire du serveur au sien pendant la commande"
+    rarity: common
+  - text: "Menace de mettre une étoile pour obtenir du pain plus vite"
+    rarity: common
+  - text: "Se plaint du bruit en parlant plus fort que toute la salle"
+    rarity: common
+  - text: "Ignore le serveur qui attend parce que son anecdote n’est pas finie"
+    rarity: common
+  - text: "Déplace la table sans demander et bloque le passage du personnel"
+    rarity: common
+  - text: "Se moque d’un client à voix haute en comptant sur ton rire"
+    rarity: common
+  - text: "Fait signe au serveur de débarrasser ton assiette encore pleine"
+    rarity: common
+  - text: "Conteste le prix affiché après avoir fini son verre"
+    rarity: common
+  - text: "Reste assis malgré trois annonces de fermeture"
+    rarity: common
+  - text: "Pioche dans ton assiette après que tu as dit non"
+    rarity: common
+  - text: "Boit dans ton verre sans demander puis dit que tu exagères"
+    rarity: common
+  - text: "Te ressert malgré ta main posée sur le verre"
+    rarity: common
+  - text: "Termine le plat à partager pendant que tu cherches tes couverts"
+    rarity: common
+  - text: "Garde toutes les bonnes pièces du plateau « sans faire exprès »"
+    rarity: common
+  - text: "Te donne son plat raté et récupère le tien"
+    rarity: common
+  - text: "Mange ta dernière frite en expliquant qu’il déteste les gens égoïstes"
+    rarity: common
+  - text: "Pose ses couverts sales directement sur ta serviette"
+    rarity: common
+  - text: "Trempe son pain dans ta sauce après avoir critiqué ton plat"
+    rarity: common
+  - text: "Te presse de finir alors que son café n’est pas encore arrivé"
+    rarity: common
+  - text: "Parle la bouche pleine en te demandant de te rapprocher pour entendre"
+    rarity: common
+  - text: "Essuie sa fourchette sur ta serviette sans demander"
+    rarity: common
+  - text: "Te fait goûter son plat en poussant la fourchette malgré ton refus"
+    rarity: common
+  - text: "Pousse ses déchets de crevettes sur le bord de ton assiette"
+    rarity: common
+  - text: "Te corrige sur la façon de tenir tes couverts"
+    rarity: common
+  - text: "Transforme chaque bouchée en leçon sur les calories"
+    rarity: common
+  - text: "Fait la grimace à chaque bouchée de ton plat"
+    rarity: common
+  - text: "Commente la quantité que tu manges au lieu de poursuivre la conversation"
+    rarity: common
+  - text: "Récupère le morceau que tu venais de choisir sur le plateau"
+    rarity: common
+  - text: "Se sert le dernier verre sans t’en proposer"
+    rarity: common
+  - text: "Te reproche de ne pas partager le plat qu’il a refusé de partager"
+    rarity: common
+  - text: "Te fait attendre pour manger pendant qu’il reprend vingt photos"
+    rarity: common
+  - text: "Annonce à la table voisine que tu ne sais pas choisir le vin"
+    rarity: common
+  - text: "Finit ton dessert pendant que tu réponds à une question"
+    rarity: common
+  - text: "Recrache discrètement un noyau dans ton assiette"
+    rarity: common
+  - text: "Finit tes phrases, puis t’explique que ce n’est pas ce que tu voulais dire"
+    rarity: common
+  - text: "Te pose une question et répond à ta place"
+    rarity: common
+  - text: "Te coupe pour raconter la même chose, mais « en pire »"
+    rarity: common
+  - text: "Vérifie un détail de ton récit sur son téléphone avant de te laisser finir"
+    rarity: common
+  - text: "Raconte ton anecdote au serveur comme si elle lui était arrivée"
+    rarity: common
+  - text: "Te redemande ton métier après vingt minutes passées à en parler"
+    rarity: common
+  - text: "Transforme chacune de tes réponses en débat qu’il faut gagner"
+    rarity: common
+  - text: "Dit « bref » au milieu de ton histoire pour revenir à la sienne"
+    rarity: common
+  - text: "Te demande de résumer parce que ton anecdote prend trop de temps"
+    rarity: common
+  - text: "Ne rebondit que sur les noms de gens connus dans ton récit"
+    rarity: common
+  - text: "Dit « je sais » avant chaque information que tu lui donnes"
+    rarity: common
+  - text: "Corrige la date d’un événement auquel il n’était pas présent"
+    rarity: common
+  - text: "Reformule ton avis en quelque chose que tu n’as jamais dit"
+    rarity: common
+  - text: "Te demande un exemple puis l’interrompt dès la première phrase"
+    rarity: common
+  - text: "Cherche la prochaine question pendant que tu réponds à la précédente"
+    rarity: common
+  - text: "Répond « moi aussi » à tout, même à deux choses contradictoires"
+    rarity: common
+  - text: "Explique ton propre métier après avoir découvert son existence"
+    rarity: common
+  - text: "Te raconte la fin du film que tu viens de dire ne pas avoir encore vu"
+    rarity: common
+  - text: "Pose une question intime puis se moque de ta réponse"
+    rarity: common
+  - text: "Dit « on parlait de moi » quand tu essaies de participer"
+    rarity: common
+  - text: "Répète ton opinion avec assurance après l’avoir trouvée ridicule"
+    rarity: common
+  - text: "Te reproche de parler peu après t’avoir coupé toute la soirée"
+    rarity: common
+  - text: "Ignore ton « je préfère ne pas en parler » et insiste"
+    rarity: common
+  - text: "Dispute le moindre détail pour finir par « chacun son avis »"
+    rarity: common
+  - text: "Te demande de raconter de nouveau parce qu’il n’écoutait pas"
+    rarity: common
+  - text: "Dit « arrête-moi si je parle trop » puis t’interrompt quand tu essaies"
+    rarity: common
+  - text: "Raconte trois fois la même anecdote sans remarquer que tu connais la fin"
+    rarity: common
+  - text: "Compte ses abonnés comme d’autres présentent leur prénom"
+    rarity: common
+  - text: "Te montre chaque photo de ses vacances sans te laisser tenir le téléphone"
+    rarity: common
+  - text: "Répond à une question sur ses loisirs par le montant de son salaire"
+    rarity: common
+  - text: "Parle de ses ex en donnant des notes"
+    rarity: common
+  - text: "Raconte son dernier rendez-vous en imitant la personne pour la ridiculiser"
+    rarity: common
+  - text: "Précise le prix de chaque vêtement que tu complimentes"
+    rarity: common
+  - text: "Dit « je ne suis pas matérialiste » puis te demande la marque de ta montre"
+    rarity: common
+  - text: "Te fait écouter toute une conversation vocale que tu n’as pas demandée"
+    rarity: common
+  - text: "Vante son sens de l’écoute sans t’avoir posé une seule question"
+    rarity: common
+  - text: "Annonce « petite anecdote » et remonte jusqu’à son collège"
+    rarity: common
+  - text: "Raconte une dispute en jouant tous les rôles et en criant"
+    rarity: common
+  - text: "Parle de ses réussites en te demandant régulièrement si tu es impressionné"
+    rarity: common
+  - text: "Te montre ses statistiques sportives après que tu as changé de sujet"
+    rarity: common
+  - text: "Cite son influenceur préféré comme un ami personnel"
+    rarity: common
+  - text: "Prétend que toutes ses anciennes relations étaient le problème"
+    rarity: common
+  - text: "Se félicite d’être ponctuel alors que tu as attendu vingt minutes"
+    rarity: common
+  - text: "Dit « je suis très drôle » et attend que tu confirmes"
+    rarity: common
+  - text: "Transforme ton compliment en invitation à en demander trois autres"
+    rarity: common
+  - text: "Affirme être très discret puis raconte les secrets de ses amis"
+    rarity: common
+  - text: "Te récite les compliments reçus lors de ses précédents rendez-vous"
+    rarity: common
+  - text: "Raconte sa rupture et te demande de trancher qui avait raison"
+    rarity: common
+  - text: "Se décrit comme humble en détaillant pourquoi les autres le jalousent"
+    rarity: common
+  - text: "Ressort une photo de sa voiture pour répondre à une question sur sa famille"
+    rarity: common
+  - text: "Te dit « détends-toi » après avoir provoqué le malaise"
+    rarity: common
+  - text: "Réclame un sourire avant de te laisser reprendre ta phrase"
+    rarity: common
+  - text: "Dit « je ne juge pas » juste après avoir rabaissé ton choix de vie"
+    rarity: common
+  - text: "Boude parce que tu n’as pas ri à sa blague"
+    rarity: common
+  - text: "Utilise « c’est de l’humour » pour éviter de s’excuser"
+    rarity: common
+  - text: "Te félicite de ne pas être « comme les autres » en les insultant"
+    rarity: common
+  - text: "Déclare que les amis que tu décris sont de mauvaises fréquentations"
+    rarity: common
+  - text: "Te demande ton salaire puis calcule à voix haute ce que tu pourrais payer"
+    rarity: common
+  - text: "Explique que tes loisirs sont une perte de temps"
+    rarity: common
+  - text: "Te demande de prouver un diplôme dont tu viens de parler"
+    rarity: common
+  - text: "Parle de gentillesse comme d’une dette que les autres doivent rembourser"
+    rarity: common
+  - text: "Transforme ton refus d’un verre en preuve que tu ne sais pas t’amuser"
+    rarity: common
+  - text: "T’explique ce que tu devrais changer pour devenir son type"
+    rarity: common
+  - text: "Dit que ton avis est mignon plutôt que d’y répondre"
+    rarity: common
+  - text: "Compare ta réussite à celle de son ex"
+    rarity: common
+  - text: "Te demande de choisir entre lui et un ami que tu connais depuis dix ans"
+    rarity: common
+  - text: "Te reproche un manque de spontanéité parce que tu travailles demain"
+    rarity: common
+  - text: "Décide que ton signe astrologique explique chacun de tes désaccords"
+    rarity: common
+  - text: "T’annonce que sa jalousie serait la preuve de son attachement"
+    rarity: common
+  - text: "Te demande ce que tu apportes « concrètement » à une relation"
+    rarity: common
+  - text: "Dit « moi, au moins » avant chaque qualité qu’il se donne"
+    rarity: common
+  - text: "Se moque de ton accent puis insiste pour que tu répètes un mot"
+    rarity: common
+  - text: "Fait de ton « non » le début d’une négociation"
+    rarity: common
+  - text: "Te reproche de ne pas avoir deviné une attente qu’il n’a jamais exprimée"
+    rarity: common
+  - text: "Dit qu’il te rend service en te laissant une chance"
+    rarity: common
+  - text: "Pose son téléphone face cachée puis le retourne toutes les deux minutes"
+    rarity: common
+  - text: "Répond à ses messages pendant que tu réponds à sa question"
+    rarity: common
+  - text: "Met un appel en haut-parleur sans prévenir la table"
+    rarity: common
+  - text: "Te filme pour une story sans te demander"
+    rarity: common
+  - text: "Te tague dans une publication après que tu as demandé de ne pas le faire"
+    rarity: common
+  - text: "Te demande dix portraits puis refuse de prendre une photo pour toi"
+    rarity: common
+  - text: "Interrompt le repas pour refaire une vidéo où son rire doit sembler spontané"
+    rarity: common
+  - text: "Te montre des messages privés de ses autres rencontres"
+    rarity: common
+  - text: "Continue de swiper pendant que tu racontes quelque chose"
+    rarity: common
+  - text: "Lit tes notifications en se penchant sur ton téléphone"
+    rarity: common
+  - text: "Saisit ton téléphone pour regarder une photo sans te demander"
+    rarity: common
+  - text: "Te demande de ranger ton téléphone en continuant d’utiliser le sien"
+    rarity: common
+  - text: "Passe un appel « de deux secondes » qui dure tout le plat"
+    rarity: common
+  - text: "Te laisse seul à table pour tourner une vidéo devant le restaurant"
+    rarity: common
+  - text: "Répond à un appel en annonçant « non, je ne fais rien »"
+    rarity: common
+  - text: "Met le volume d’une vidéo au maximum dans le restaurant"
+    rarity: common
+  - text: "Fait un débrief de votre rendez-vous à son ami alors que tu es en face"
+    rarity: common
+  - text: "Demande un selfie pour prouver à quelqu’un qu’il a bien un rendez-vous"
+    rarity: common
+  - text: "Arrête la conversation pour vérifier combien sa story a fait de vues"
+    rarity: common
+  - text: "Te demande de rejouer votre arrivée pour la filmer"
+    rarity: common
+  - text: "Annonce ta présence à ses abonnés avant de te demander ton accord"
+    rarity: common
+  - text: "Transforme la table en studio avec une lampe posée entre vous"
+    rarity: common
+  - text: "Choisit ta boisson pour qu’elle soit plus jolie sur la photo"
+    rarity: common
+  - text: "Utilise ton visage pour déverrouiller ton téléphone posé sur la table"
+    rarity: common
+  - text: "T’envoie une vidéo à regarder alors que vous êtes assis face à face"
+    rarity: common
+  - text: "Marche si vite que tu dois courir pour continuer la conversation"
+    rarity: common
+  - text: "Te laisse derrière à chaque passage piéton"
+    rarity: common
+  - text: "Choisit une promenade longue après que tu as annoncé une heure de départ"
+    rarity: common
+  - text: "Se moque de tes chaussures après avoir changé le café en randonnée"
+    rarity: common
+  - text: "Décide de la direction à chaque carrefour en ignorant tes propositions"
+    rarity: common
+  - text: "Te confie toutes ses affaires dès que vous commencez à marcher"
+    rarity: common
+  - text: "Jette son emballage au sol en disant que quelqu’un est payé pour ça"
+    rarity: common
+  - text: "Monopolise le banc et te propose de rester debout"
+    rarity: common
+  - text: "Te fait attendre pendant qu’il termine son défi sportif"
+    rarity: common
+  - text: "Critique ton rythme de marche pendant toute la balade"
+    rarity: common
+  - text: "T’emmène faire ses courses sans avoir évoqué ce détour"
+    rarity: common
+  - text: "Prend le parapluie que vous partagez et te laisse sous la pluie"
+    rarity: common
+  - text: "Te fait photographier chaque étape de sa promenade"
+    rarity: common
+  - text: "S’arrête parler à ses connaissances sans jamais te présenter"
+    rarity: common
+  - text: "Invite un ami croisé en chemin à finir le rendez-vous avec vous"
+    rarity: common
+  - text: "Te coupe pour commenter le physique des passants"
+    rarity: common
+  - text: "Refuse de rentrer malgré ta demande quand la météo se gâte"
+    rarity: common
+  - text: "Choisit un itinéraire bruyant puis te reproche de parler trop bas"
+    rarity: common
+  - text: "Te laisse porter le pique-nique qu’il a proposé"
+    rarity: common
+  - text: "Ouvre ton panier de pique-nique en listant ce qu’il manque"
+    rarity: common
+  - text: "Te reproche d’avoir besoin de t’asseoir après t’avoir fait marcher une heure"
+    rarity: common
+  - text: "Passe devant les gens dans la file en te faisant signe de suivre"
+    rarity: common
+  - text: "S’éloigne avec vos billets et te laisse gérer l’entrée"
+    rarity: common
+  - text: "Fait semblant de ne pas entendre quand tu demandes une pause"
+    rarity: common
+  - text: "Part chercher un café et revient avec un seul"
+    rarity: common
+  - text: "Commente tout le film à voix haute malgré tes demandes"
+    rarity: common
+  - text: "Consulte son téléphone écran au maximum pendant la séance"
+    rarity: common
+  - text: "Garde tout le pop-corn que vous avez payé à deux"
+    rarity: common
+  - text: "Prend ton siège au cinéma parce que la vue y est meilleure que depuis le sien"
+    rarity: common
+  - text: "Te demande le silence au cinéma puis répond à son téléphone"
+    rarity: common
+  - text: "Explique chaque tableau sans lire les cartels et refuse d’être corrigé"
+    rarity: common
+  - text: "Se moque de ce qui te plaît au musée avant de passer à la salle suivante"
+    rarity: common
+  - text: "Interrompt le guide pour raconter sa propre visite de l’année dernière"
+    rarity: common
+  - text: "Te presse dans l’exposition puis passe vingt minutes à la boutique"
+    rarity: common
+  - text: "Photographie les œuvres interdites et te demande de surveiller le gardien"
+    rarity: common
+  - text: "Triche au mini-golf puis conteste ton score"
+    rarity: common
+  - text: "Transforme un jeu de société en évaluation de ton intelligence"
+    rarity: common
+  - text: "Refuse d’expliquer les règles puis se moque de tes erreurs"
+    rarity: common
+  - text: "Change les règles du jeu quand il commence à perdre"
+    rarity: common
+  - text: "Boude après avoir perdu une partie censée être « juste pour rire »"
+    rarity: common
+  - text: "Répond à ta place pendant toute la soirée quiz"
+    rarity: common
+  - text: "Te reproche de gâcher son score au bowling"
+    rarity: common
+  - text: "Prend toute la place dans l’atelier cuisine et critique ta technique"
+    rarity: common
+  - text: "Refait ce que tu viens de faire à l’atelier sans te demander"
+    rarity: common
+  - text: "Te choisit une chanson au karaoké après que tu as dit non"
+    rarity: common
+  - text: "Monopolise le micro pendant votre chanson en duo"
+    rarity: common
+  - text: "Filme ta tentative au sport après ton refus d’être filmé"
+    rarity: common
+  - text: "S’inscrit à une activité à deux puis te laisse attendre pendant qu’il discute"
+    rarity: common
+  - text: "Raconte la solution de l’escape game à l’équipe qui attend dehors"
+    rarity: common
+  - text: "Te reproche de ne pas assez l’encourager pendant votre activité"
     rarity: common
   - text: "Insiste pour payer puis se vexe que tu acceptes"
     rarity: common
-  - text: "Râle quand le serveur arrive 'enfin' au bout de 4 minutes"
+  - text: "Propose de couper en deux après avoir commandé trois fois plus que toi"
     rarity: common
-  - text: "Claque dans ses doigts pour appeler le serveur"
+  - text: "Réclame ton virement avant même que l’addition arrive"
     rarity: common
-  - text: "Appelle le serveur 'chef'"
+  - text: "Retire ton pourboire de la table en disant que c’est trop"
     rarity: common
-  - text: "Fait répéter le serveur trois fois en souriant"
+  - text: "Fait payer sa bouteille à moitié à la personne qui ne boit pas"
     rarity: common
-  - text: "Reproche au serveur que le plat soit chaud"
+  - text: "Compte ton café dans le partage mais oublie ses cocktails"
     rarity: common
-  - text: "Renvoie son plat parce que 'la présentation est triste'"
+  - text: "Te réclame les centimes puis arrondit sa propre part à son avantage"
     rarity: common
-  - text: "Demande à voir le chef"
+  - text: "Dit « c’est pour moi » au serveur puis te réclame ta part à voix basse"
     rarity: common
-  - text: "Met une mauvaise note Google avant de partir, à table"
+  - text: "Te fait payer ses achats personnels ajoutés à l’addition"
     rarity: common
-  - text: "Compare le restau à un autre 'beaucoup mieux et moins cher'"
+  - text: "Se vante du restaurant qu’il t’offre puis te tend le terminal"
     rarity: common
-  - text: "Critique la musique 'c'est trop calme on dirait un enterrement'"
+  - text: "Attend que tu sortes ta carte en faisant semblant de chercher la sienne"
     rarity: common
-  - text: "Demande qu'on 'baisse la clim'"
+  - text: "Prétend que le repas était ton invitation parce que tu as choisi l’adresse"
     rarity: common
-  - text: "Râle parce que la table 'penche'"
+  - text: "Te demande de rembourser sa tenue achetée pour le rendez-vous"
     rarity: common
-  - text: "Veut absolument changer de table en arrivant"
+  - text: "Juge ton intérêt à la somme que tu acceptes de payer"
     rarity: common
-  - text: "Veut absolument être dos au mur 'pour voir la salle'"
+  - text: "Réclame une réduction parce que votre rendez-vous n’a pas été concluant"
     rarity: common
-  - text: "Essuie ses couverts avec sa serviette"
+  - text: "Te laisse discuter une erreur d’addition qu’il a lui-même provoquée"
     rarity: common
-  - text: "Renifle son verre de vin pendant 30 secondes"
+  - text: "Propose de partager après avoir encaissé le remboursement d’un plat"
     rarity: common
-  - text: "Fait tourner son verre comme à la télé"
+  - text: "T’explique que ton temps vaut moins que le prix du dîner"
     rarity: common
-  - text: "Renvoie la bouteille 'elle est bouchonnée' (elle ne l'est pas)"
+  - text: "Attend que tu paies pour annoncer qu’il avait un bon de réduction"
     rarity: common
-  - text: "Commande la bouteille la moins chère en disant 'je préfère celle-là par goût'"
+  - text: "Met la note à ton nom sans t’en parler"
     rarity: common
-  - text: "Commande la bouteille la plus chère puis te demande de partager"
+  - text: "Te demande d’avancer puis plaisante sur son talent pour manger gratuitement"
     rarity: common
-  - text: "Te ressert sans te demander"
+  - text: "Insiste pour ajouter un dessert et te laisse sa part de l’addition"
     rarity: common
-  - text: "Boit cul sec en te regardant attendre"
+  - text: "Refuse de compter son apéritif parce qu’il l’a bu avant ton arrivée"
     rarity: common
-  - text: "Insiste pour que tu finisses ton verre"
+  - text: "Te fait régler le parking après avoir insisté pour prendre sa voiture"
     rarity: common
-  - text: "Te dit 'tu bois beaucoup pour une fille' (ou pour un mec)"
+  - text: "Déduit de sa part le prix du trajet qu’il a fait pour venir"
     rarity: common
-  - text: "Devient soudainement très tactile au troisième verre"
+  - text: "Annonce le prochain lieu comme une décision déjà prise"
     rarity: common
-  - text: "Te touche le bras toutes les 30 secondes"
+  - text: "Commande une nouvelle tournée alors que tu viens de dire que tu pars"
     rarity: common
-  - text: "Pose sa main sur ta cuisse au bout de 20 minutes"
+  - text: "Te fait culpabiliser de rentrer à l’heure annoncée"
     rarity: common
-  - text: "Fait du pied avec insistance"
+  - text: "Prend ton manteau pour t’empêcher de partir « aussi vite »"
     rarity: common
-  - text: "Te dévisage le décolleté pendant que tu parles"
+  - text: "Propose de te raccompagner puis te demande de porter ses sacs"
     rarity: common
-  - text: "Tombe sur un.e ami.e et la fait s'asseoir avec vous"
+  - text: "Te demande de déposer un ami à l’autre bout de la ville"
     rarity: common
-  - text: "Croise un.e ex et fait comme si de rien n'était"
+  - text: "Change le trajet de retour sans te prévenir pour faire une course"
     rarity: common
-  - text: "Croise un.e ex et le/la présente comme 'mon meilleur.e ami.e'"
+  - text: "Te laisse payer le taxi commun et descend sans un mot"
     rarity: common
-  - text: "Te présente comme son 'ami.e' à des gens qui passent"
+  - text: "Te reproche de ne pas prolonger une soirée dont il a passé la moitié au téléphone"
     rarity: common
-  - text: "Sort 'mon ex faisait pareil' au moins une fois"
+  - text: "Négocie un deuxième rendez-vous comme si ton départ était une objection à lever"
     rarity: common
-  - text: "Te demande 'tu ressembles à mon ex tu sais ?'"
+  - text: "Te demande une note sur dix avant de te dire au revoir"
     rarity: common
-  - text: "T'appelle par le prénom de son ex"
+  - text: "Insiste pour obtenir une explication détaillée de ton manque d’envie de continuer"
     rarity: common
-  - text: "Te dit 'toutes mes ex étaient folles' sans réaliser"
+  - text: "Te fait répéter ton refus devant ses amis croisés à la sortie"
     rarity: common
-  - text: "Te dit 'tous mes ex étaient des connards' sans réaliser"
+  - text: "Te demande de dire que la soirée était parfaite pour rassurer son ego"
     rarity: common
-  - text: "Te dit 'je suis trop gentil.le c'est mon problème'"
+  - text: "Dit « tu me dois bien un autre verre » parce qu’il a payé le premier"
     rarity: common
-  - text: "Te dit 'on me dit souvent que je suis intense'"
+  - text: "T’annonce que vous êtes en couple parce que le dîner s’est bien passé"
     rarity: common
-  - text: "Te dit 'tu vas pas me décevoir comme les autres ?'"
+  - text: "Te réserve le week-end suivant sans vérifier si tu es disponible"
     rarity: common
-  - text: "Te dit 'j'ai un mur autour de moi'"
+  - text: "Te présente comme son partenaire à quelqu’un que vous croisez au départ"
     rarity: common
-  - text: "Te dit 'tu vas finir par me faire mal toi aussi'"
+  - text: "Te demande d’annuler tes plans du lendemain pour prolonger le rendez-vous"
     rarity: common
-  - text: "Te dit 'je suis très jaloux.se mais c'est parce que j'aime fort'"
+  - text: "Fait semblant de ne pas entendre ton au revoir pour relancer son anecdote"
     rarity: common
-  - text: "Te demande tes mots de passe 'comme ça par confiance'"
+  - text: "Part sans prévenir pendant que tu attends au vestiaire"
     rarity: common
-  - text: "Te demande de désactiver ton appli de rencontre 'maintenant'"
+  - text: "Te laisse seul récupérer les deux manteaux puis se plaint de l’attente"
     rarity: common
-  - text: "Lit ton écran de notifs en penchant la tête"
+  - text: "Te demande ton avis sur la soirée et conteste chacune de tes réponses"
     rarity: common
-  - text: "Te demande de poser ton téléphone 'pour qu'on soit présents'"
+  - text: "Exige que tu promettes un prochain rendez-vous avant de commander ton taxi"
     rarity: common
-  - text: "Prend 12 photos de son plat avant d'y toucher"
-    rarity: common
-  - text: "Te demande de prendre la photo 'mais en mode portrait'"
-    rarity: common
-  - text: "Met une story en se montrant 'spontanément' en train de rire"
-    rarity: common
-  - text: "Te tague dans une story sans demander"
-    rarity: common
-  - text: "Te demande ton Insta avant ton prénom"
-    rarity: common
-  - text: "Te follow en plein date"
-    rarity: common
-  - text: "Mentionne ses followers dans une phrase"
-    rarity: common
-  - text: "Glisse 'mes abonnés adorent ça'"
-    rarity: common
-  - text: "Te raconte sa progression Instagram en chiffres"
-    rarity: common
-  - text: "Te montre une photo de lui/elle 'avant' avec fierté"
-    rarity: common
-  - text: "Te montre une photo de lui/elle plus jeune 'pour tu vois'"
-    rarity: common
-  - text: "Te montre les photos de son chien pendant 12 minutes"
-    rarity: common
-  - text: "Parle de son chien comme de son enfant"
-    rarity: common
-  - text: "Te montre des vidéos de son neveu sans qu'on demande"
-    rarity: common
-  - text: "Te dit 'je suis un peu maman/papa avant l'heure'"
-    rarity: common
-  - text: "Te dit le nombre d'enfants qu'il/elle veut"
-    rarity: common
-  - text: "Te dit le prénom des enfants qu'il/elle veut"
-    rarity: common
-  - text: "Te dit 'tu ferais une belle mère/un beau père' au bout d'1h"
-    rarity: common
-  - text: "Te dit 'on aurait des beaux enfants ensemble'"
-    rarity: common
-  - text: "Te demande à quel âge tu veux des enfants au plat principal"
-    rarity: common
-  - text: "Te demande où tu te vois dans 10 ans, à l'apéro"
-    rarity: common
-  - text: "Te demande 'tu te vois vivre où plus tard ?'"
-    rarity: common
-  - text: "Te demande si tu serais ok pour bouger en province"
-    rarity: common
-  - text: "Te demande si tu veux 'plutôt maison ou appart'"
-    rarity: common
-  - text: "Te dit 'moi je te visualise déjà chez moi'"
-    rarity: common
-  - text: "Te demande quel chien tu prendrais 'avec moi'"
-    rarity: common
-  - text: "Te dit 'on irait trop bien à Bali ensemble'"
-    rarity: common
-  - text: "Te demande 'tu serais d'accord pour un mariage en petit comité ?'"
-    rarity: common
-  - text: "Te dit 'je sens qu'on est en train de tomber amoureux'"
-    rarity: common
-  - text: "Te dit 'je t'aime déjà un peu' au dessert"
-    rarity: common
-  - text: "Te dit qu'il/elle a 'jamais ressenti ça avant'"
-    rarity: common
-  - text: "Te dit 'c'est rare ce qu'on vit là'"
-    rarity: common
-  - text: "Te dit 'l'univers nous a mis ensemble'"
-    rarity: common
-  - text: "Te dit que tu lui as 'sauvé la soirée'"
-    rarity: common
-  - text: "Te dit 'je sortais plus depuis 3 ans'"
-    rarity: common
-  - text: "Te dit 'tu es ma première date depuis ma rupture'"
-    rarity: common
-  - text: "Précise que sa rupture date de 'il y a deux semaines'"
-    rarity: common
-  - text: "Te dit 'on est juste en train de finaliser le divorce'"
-    rarity: common
-  - text: "Te dit 'on est séparés mais on vit encore ensemble'"
-    rarity: common
-  - text: "Mentionne sa colocataire/son colocataire qui s'appelle 'Marie'"
-    rarity: common
-  - text: "Te dit qu'il/elle vit chez sa mère 'temporairement depuis 4 ans'"
-    rarity: common
-  - text: "Te dit qu'il/elle est 'entre deux appartements'"
-    rarity: common
-  - text: "Te dit qu'il/elle 'a tout quitté il y a 6 mois'"
-    rarity: common
-  - text: "Te dit qu'il/elle a 'plein de projets'"
-    rarity: common
-  - text: "Te dit qu'il/elle 'va se lancer en freelance bientôt'"
-    rarity: common
-  - text: "Te dit qu'il/elle 'monte sa boîte' sans préciser quoi"
-    rarity: common
-  - text: "Te dit qu'il/elle est 'entrepreneur dans plein de domaines'"
-    rarity: common
-  - text: "Te dit qu'il/elle 'est en pause pro pour se retrouver'"
-    rarity: common
-  - text: "Te dit qu'il/elle 'cherche du sens'"
-    rarity: common
-  - text: "Te dit 'je suis pas matérialiste' avec une montre à 3000 €"
-    rarity: common
-  - text: "Te dit 'je m'en fous des marques' tout en portant du logo partout"
-    rarity: common
-  - text: "Te dit 'l'argent ça m'intéresse pas' deux fois en 30 minutes"
-    rarity: common
-  - text: "Te demande ton salaire au bout de 40 minutes"
-    rarity: common
-  - text: "Te demande combien tu paies de loyer"
-    rarity: common
-  - text: "Te demande si tu es propriétaire"
-    rarity: common
-  - text: "Te demande si tu as 'des placements'"
-    rarity: common
-  - text: "Te parle de son livret A pendant 8 minutes"
-    rarity: common
-  - text: "Te parle 'd'investissement immobilier' à l'apéro"
-    rarity: common
-  - text: "Te propose 'un projet ensemble' à la troisième phrase"
-    rarity: common
-  - text: "Te demande si tu veux 'voir son business plan'"
-    rarity: common
-  - text: "Te dit 'je peux te faire gagner de l'argent rapidement'"
-    rarity: common
-  - text: "Te parle de 'liberté financière'"
-    rarity: common
-  - text: "Te parle de son 'mentor'"
-    rarity: common
-  - text: "Te parle de sa 'morning routine' pendant 10 minutes"
-    rarity: common
-  - text: "Te dit qu'il/elle se lève à 5h tous les matins"
-    rarity: common
-  - text: "Te dit 'la majorité des gens ne sont pas prêts à le sacrifier'"
-    rarity: common
-  - text: "Te dit 'la plupart des gens sont médiocres'"
-    rarity: common
-  - text: "Te dit 'je ne me reconnais pas dans les gens de mon âge'"
-    rarity: common
-  - text: "Te dit 'je suis une vieille âme'"
-    rarity: common
-  - text: "Te dit 'je suis très empathique, c'est un fardeau'"
-    rarity: common
-  - text: "Te dit 'on me dit souvent que je suis trop gentil.le'"
-    rarity: common
-  - text: "Te dit 'je donne beaucoup, peut-être trop'"
-    rarity: common
-  - text: "Te dit 'je m'oublie pour les autres'"
-    rarity: common
-  - text: "Te dit 'je suis quelqu'un de très exigeant.e avec moi-même'"
-    rarity: common
-  - text: "Te dit 'je suis une bonne personne'"
-    rarity: common
-  - text: "Te dit 'tout le monde me dit que je suis drôle'"
-    rarity: common
-  - text: "Te dit 'mes potes disent que je suis fou.folle'"
-    rarity: common
-  - text: "Te dit 'je suis un peu spécial.e'"
-    rarity: common
-  - text: "Te dit 'je suis pas pour tout le monde'"
-    rarity: common
-  - text: "Se compare à un personnage de série pendant le date"
-    rarity: common
-  - text: "Te demande à quel personnage de série tu le/la compares"
-    rarity: common
-  - text: "Te demande quel animal tu serais"
-    rarity: common
-  - text: "T'attribue lui-même un animal après 10 minutes"
-    rarity: common
-  - text: "Te demande ton signe astro 'pour vérifier la compatibilité'"
-    rarity: common
-  - text: "Soupire en apprenant ton signe"
-    rarity: common
-  - text: "Te dit 'ça explique tout' après ton signe"
-    rarity: common
-  - text: "Te dit 'évidemment, tu es Verseau' à chaque réaction"
-    rarity: common
-  - text: "Te demande ton signe ascendant ET lunaire"
-    rarity: common
-  - text: "Te dit 'je crois aux signes'"
-    rarity: common
-  - text: "Te dit 'je crois pas au hasard'"
-    rarity: common
-  - text: "Te parle d'une 'synchronicité' parce qu'il/elle a vu un 11:11"
-    rarity: common
-  - text: "Te dit 'je le savais que ça allait se passer ce soir'"
-    rarity: common
-  - text: "Te demande 'on s'est pas déjà rencontrés ?' avec gravité"
-    rarity: common
-  - text: "Te dit 'tu ressembles à quelqu'un que je connaissais'"
-    rarity: common
-  - text: "Te demande de jurer sur quelque chose"
-    rarity: common
-  - text: "Te demande 'jure-le sur ta mère'"
-    rarity: common
-  - text: "Te dit 'sur la tête de ma mère' à propos d'un truc anodin"
-    rarity: common
-  - text: "Pleure devant le dessert sans prévenir"
-    rarity: common
-  - text: "Pleure parce que la chanson 'lui rappelle quelqu'un'"
-    rarity: common
-  - text: "Pleure et te dit 'c'est pas à cause de toi'"
-    rarity: common
-  - text: "Devient soudainement très silencieux.se au plat"
-    rarity: common
-  - text: "Boude parce que tu n'as 'pas ri à sa blague'"
-    rarity: common
-  - text: "Boude parce que tu n'as 'pas réagi à son outfit'"
-    rarity: common
-  - text: "Te demande de complimenter sa tenue"
-    rarity: common
-  - text: "Te demande 'tu trouves pas que je suis beau/belle ce soir ?'"
-    rarity: common
-  - text: "Te dit 'normalement les gens m'abordent dans la rue'"
-    rarity: common
-  - text: "Te dit 'normalement je suis canon'"
-    rarity: common
-  - text: "Te dit 'j'ai mal dormi je suis pas à mon meilleur'"
-    rarity: common
-  - text: "S'excuse de sa tête toutes les 15 minutes"
-    rarity: common
-  - text: "S'excuse de sa voix"
-    rarity: common
-  - text: "S'excuse pour 'son rire chelou'"
-    rarity: common
-  - text: "Te dit 'pardon je sais je parle trop'"
-    rarity: common
-  - text: "Te demande 'je te saoule là ?' tout le temps"
-    rarity: common
-  - text: "Te dit 'arrête-moi si je suis chiant.e' puis ne se laisse pas arrêter"
-    rarity: common
-  - text: "Te demande de te justifier sur un détail anodin"
-    rarity: common
-  - text: "Te dit 'tu mens là, dis-moi la vérité'"
-    rarity: common
-  - text: "Te demande 'tu es vraiment là pour me rencontrer ?'"
-    rarity: common
-  - text: "Te dit 'je sens que tu me caches un truc'"
-    rarity: common
-  - text: "Te dit 'je sais lire les gens'"
-    rarity: common
-  - text: "Te dit 'je vois clair en toi'"
-    rarity: common
-  - text: "Te dit 'tu mets des barrières'"
-    rarity: common
-  - text: "Te dit 'tu es un mystère'"
-    rarity: common
-  - text: "Te dit 'tu es compliqué.e en fait'"
-    rarity: common
-  - text: "Te dit 'je vais te faire baisser ta garde'"
-    rarity: common
-  - text: "Te promet 'qu'il/elle va te faire confiance lentement'"
-    rarity: common
-  - text: "Te dit 'on prend notre temps' tout en proposant de rentrer chez lui/elle"
-    rarity: common
-  - text: "Te propose de rentrer chez lui/elle 'juste pour boire un verre'"
-    rarity: common
-  - text: "Te propose 'un dernier au coin' à 23h45"
-    rarity: common
-  - text: "Te propose 'un Netflix' au bout d'1h30"
-    rarity: common
-  - text: "Te propose 'on dort juste, on touche pas'"
-    rarity: common
-  - text: "Te dit 'fais comme tu le sens' avec un ton qui dit l'inverse"
-    rarity: common
-  - text: "Te dit 'je veux pas te forcer mais bon'"
-    rarity: common
-  - text: "Te dit 'd'habitude les filles/mecs sont plus chauds'"
-    rarity: common
-  - text: "Te dit 'tu es coincé.e en fait ?'"
-    rarity: common
-  - text: "Te dit 'détends-toi t'as l'air stressé.e'"
-    rarity: common
-  - text: "Te raccompagne en faisant un détour suspect"
-    rarity: common
-  - text: "Te demande ton adresse 'au cas où'"
-    rarity: common
-  - text: "Te demande ton nom de famille pour 'te checker'"
-    rarity: common
-  - text: "Te dit 'je vais te googler ce soir'"
-    rarity: common
-  - text: "Te dit avoir lu ton Linkedin avant le date"
-    rarity: common
-  - text: "Cite une info de toi que tu ne lui as pas donnée"
-    rarity: common
-  - text: "Connait le prénom de ton ex"
-    rarity: common
-  - text: "Connait le nom de ton chat"
-    rarity: common
-  - text: "Mentionne ton boulot avec un détail trop précis"
-    rarity: common
-  - text: "Cite une de tes anciennes villes 'comme ça'"
-    rarity: common
-  - text: "Te dit 'tu es bien la personne sur les photos hein ?'"
-    rarity: common
-  - text: "Repart en disant 'je te texte tout à l'heure'"
-    rarity: common
-  - text: "Texte 4 minutes après le date 'tu es bien rentré.e ?'"
-    rarity: common
-  - text: "Texte 'good night beautiful' à 1h sans contexte"
-    rarity: common
-  - text: "Envoie un vocal de 7 minutes après le date"
-    rarity: common
-  - text: "Te like 12 stories en une nuit"
-    rarity: common
-  - text: "Te tague dans un meme à 3h du matin"
-    rarity: common
-  - text: "Te demande 'on se revoit quand ?' en sortant du restaurant"
-    rarity: common
-  - text: "Te propose un week-end à deux dès le premier date"
-    rarity: common
-  - text: "Te propose de partir en vacances dès le premier date"
-    rarity: common
-  - text: "Te dit 'la prochaine fois on fait ça chez moi'"
-    rarity: common
-  - text: "Te demande si tu peux le/la déposer chez lui/elle"
-    rarity: common
-  - text: "Te demande si tu peux le/la ramener à la gare"
-    rarity: common
-  - text: "Te demande si tu peux passer prendre quelqu'un en chemin"
-    rarity: common
-  - text: "Arrive avec un.e ami.e 'qui passait par là'"
-    rarity: common
-  - text: "Demande à son/sa pote de venir nous rejoindre"
-    rarity: common
-  - text: "Met sa pote en haut-parleur en plein restaurant"
-    rarity: common
-  - text: "Met sa mère en haut-parleur 'juste deux secondes'"
-    rarity: common
-  - text: "FaceTime quelqu'un et te montre"
-    rarity: common
-  - text: "Te demande de dire bonjour à sa mère par téléphone"
-    rarity: common
-  - text: "Mentionne sa mère 7 fois en 1h"
-    rarity: common
-  - text: "Te dit 'ma mère t'aimerait bien je crois'"
-    rarity: common
-  - text: "Te dit 'ma mère m'a dit de me méfier des comme toi'"
-    rarity: common
-  - text: "Compare ta cuisine à celle de sa mère"
-    rarity: common
-  - text: "Te dit 'tu ressembles un peu à ma mère/mon père'"
-    rarity: common
-  - text: "Compare son ex à sa mère"
-    rarity: common
-  - text: "Te raconte le divorce de ses parents en détail"
-    rarity: common
-  - text: "Te raconte la mort de son grand-père au plat"
-    rarity: common
-  - text: "Te déballe son traumatisme d'enfance entre l'entrée et le plat"
-    rarity: common
-  - text: "Te raconte sa thérapie heure par heure"
-    rarity: common
-  - text: "Te dit 'mon thérapeute serait fier de moi ce soir'"
-    rarity: common
-  - text: "Te raconte son rêve de la nuit dernière en détail"
-    rarity: common
-  - text: "Te demande d'analyser son rêve"
-    rarity: common
-  - text: "Te demande quel rêve tu as fait cette nuit"
-    rarity: common
-  - text: "Te dit 'j'ai rêvé de toi cette nuit' (vous ne vous connaissez pas)"
-    rarity: common
-  - text: "Te dit 'je t'avais imaginé.e différemment dans ma tête'"
-    rarity: common
-  - text: "Te dit 'tu es pas comme dans nos messages'"
-    rarity: common
-  - text: "Te reproche un message que tu as envoyé il y a 3 semaines"
-    rarity: common
-  - text: "Cite un de tes messages mot pour mot"
-    rarity: common
-  - text: "Te dit 'tu as mis 3h à répondre la dernière fois'"
-    rarity: common
-  - text: "Te dit 'pourquoi tu n'as pas répondu à mon message d'hier ?'"
-    rarity: common
-  - text: "Compte les jours depuis ton dernier message"
-    rarity: common
-  - text: "Te dit 'tu m'as fait poireauter 4 jours'"
-    rarity: common
-  - text: "Te dit 'je vais pas te courir après'"
-    rarity: common
-  - text: "Te dit 'tu fais le difficile/la difficile'"
-    rarity: common
-  - text: "Te dit 'tu joues' deux fois dans la soirée"
-    rarity: common
-  - text: "Te dit 'allez avoue tu as un mec/une meuf'"
-    rarity: common
-  - text: "Te demande de prouver que tu es célibataire"
-    rarity: common
-  - text: "Te demande de te déconnecter de Tinder devant lui/elle"
-    rarity: common
-  - text: "Te demande pourquoi tu es encore sur l'appli si on se voit"
+  - text: "Dit « je savais que ça finirait comme ça » quand tu veux simplement rentrer"
     rarity: common
 
-  # ────────────────────────────────────────
-  # Rares (115)
-  # ────────────────────────────────────────
-  - text: "T'attend dans la voiture en bas du restaurant pour 'éviter de payer le parking'"
+  # rare (140)
+  - text: "Arrive avec un ami « juste pour vérifier que tu lui plais »"
     rarity: rare
-  - text: "Te dit 'tu peux te garer plus loin moi je suis bien là' avant même d'arriver"
+  - text: "A déjà commandé un repas pour deux avec quelqu’un d’autre à ton arrivée"
     rarity: rare
-  - text: "Arrive avec un sac de Decathlon comme s'il/elle venait de courir"
+  - text: "T’accueille au restaurant en te demandant de tenir sa caméra"
     rarity: rare
-  - text: "Te demande de garder son sac 'deux minutes' et part 25 minutes"
+  - text: "Te donne un faux prénom puis oublie lequel au moment de la réservation"
     rarity: rare
-  - text: "Te dit avoir 'failli pas venir'"
+  - text: "Te fait entrer par une autre porte pour éviter une connaissance"
     rarity: rare
-  - text: "Te dit 'tu as failli te faire poser un lapin tu sais'"
+  - text: "Annonce à table que le rendez-vous était un pari avec ses amis"
     rarity: rare
-  - text: "Te dit qu'il/elle 'se laisse une chance avec toi'"
+  - text: "T’explique que tu remplaces la personne qui a annulé une heure plus tôt"
     rarity: rare
-  - text: "T'annonce qu'il/elle 'fait ça pour rendre service à un.e ami.e qui a insisté'"
+  - text: "Te fait attendre à une table pendant qu’il termine un autre rendez-vous"
     rarity: rare
-  - text: "Te dit 'normalement je date pas dans ta tranche'"
+  - text: "Salue le personnel par des prénoms inventés pour faire croire à ses habitudes"
     rarity: rare
-  - text: "Te dit 'tu es pas mon style mais on verra'"
+  - text: "T’emmène au restaurant où travaille son ex pour « montrer qu’il avance »"
     rarity: rare
-  - text: "Te dit 'tu es pas mal en vrai, je m'attendais à pire'"
+  - text: "Refuse la table réservée parce qu’elle n’est pas assez visible depuis la rue"
     rarity: rare
-  - text: "Te complimente en disant 'pour ton âge tu te défends'"
+  - text: "Réserve avec une fausse occasion pour obtenir un dessert gratuit"
     rarity: rare
-  - text: "Te complimente en disant 'pour quelqu'un de ton métier tu es ouvert.e'"
+  - text: "Annonce ton anniversaire au personnel sans te prévenir, ce n’est pas ton anniversaire"
     rarity: rare
-  - text: "Te demande au bout de 5 minutes : 'on dirait pas qu'on est sur un date là, non ?'"
+  - text: "Demande au restaurant de couper la musique pour faire une déclaration"
     rarity: rare
-  - text: "Te demande si tu veux un date plus 'classique' la prochaine fois"
+  - text: "Se fait passer pour un critique gastronomique afin d’obtenir des attentions"
     rarity: rare
-  - text: "Te demande s'il/elle peut prendre un selfie 'pour rassurer ma copine'"
+  - text: "Te demande de prétendre que vous êtes journalistes au moment de payer"
     rarity: rare
-  - text: "Te dit 'ma coloc me demande comment ça se passe' toutes les 20 minutes"
+  - text: "Te fait apporter une chaise supplémentaire pour son sac de luxe"
     rarity: rare
-  - text: "Texte sa mère en direct pour la rassurer"
+  - text: "T’annonce que sa mère choisit tous ses lieux de rendez-vous"
     rarity: rare
-  - text: "Te montre la conversation avec sa pote où il/elle parle de toi"
+  - text: "Compare ta ponctualité à un classement de ses précédentes rencontres"
     rarity: rare
-  - text: "Te montre vos messages d'avant le date 'pour qu'on rigole'"
+  - text: "Te donne un badge avec ton prénom « pour ne pas se tromper »"
     rarity: rare
-  - text: "Te montre les messages de ses autres matchs"
+  - text: "Sort une liste imprimée de questions et exige de suivre l’ordre"
     rarity: rare
-  - text: "Te montre le profil Tinder qu'il/elle a swipé pendant ta phrase"
+  - text: "Chronomètre tes réponses « pour laisser une place égale à chacun »"
     rarity: rare
-  - text: "Continue à swiper devant toi 'mais juste pour te montrer un truc'"
+  - text: "Prend des notes sur tes défauts entre deux bouchées"
     rarity: rare
-  - text: "Te demande de noter ses autres matchs"
+  - text: "T’explique que ton rire ne correspond pas à son image du couple idéal"
     rarity: rare
-  - text: "Te demande de l'aider à choisir entre toi et un autre date prévu demain"
+  - text: "Annonce un pourcentage de compatibilité après vingt minutes de repas"
     rarity: rare
-  - text: "T'annonce qu'il/elle a un autre date dans 2h"
+  - text: "Fait un test de culture générale et refuse de passer à la suite si tu te trompes"
     rarity: rare
-  - text: "Regarde sa montre toutes les 4 minutes en disant 'on a le temps'"
+  - text: "Te demande de vendre ton profil en une minute comme en entretien"
     rarity: rare
-  - text: "Te dit qu'il/elle a réservé une autre table à 22h 'au cas où'"
+  - text: "Sort ses propres photos pour te demander laquelle tu préfères"
     rarity: rare
-  - text: "Te dit 'si tu n'avais pas été comme ça je rentrais à 21h'"
+  - text: "Te fait écouter un compliment reçu en vocal pour confirmer sa version"
     rarity: rare
-  - text: "Te demande si tu acceptes qu'il/elle commande sur Uber Eats à table"
+  - text: "Lit les avis de ses amis sur toi à voix haute"
     rarity: rare
-  - text: "Commande à manger sur son téléphone parce que 'il y a trop d'attente'"
+  - text: "Te fait une démonstration de séduction sur quelqu’un de la table voisine"
     rarity: rare
-  - text: "Sort une barre protéinée pendant que tu lis le menu"
+  - text: "Te raconte votre rendez-vous comme s’il préparait déjà son podcast"
     rarity: rare
-  - text: "Sort un Tupperware de chez sa mère"
+  - text: "S’invente une connaissance célèbre puis cherche son nom sous la table"
     rarity: rare
-  - text: "Sort une boîte de comprimés et avale 4 trucs sans expliquer"
+  - text: "Te récite ton CV au lieu de te demander ce que tu fais"
     rarity: rare
-  - text: "Te demande si tu veux 'un peu de ses cachets, ça détend'"
+  - text: "Fait noter ta tenue par son groupe d’amis en plein repas"
     rarity: rare
-  - text: "Te raconte son dernier rendez-vous médical en détail"
+  - text: "Te montre un classement où tu es « bien parti pour monter »"
     rarity: rare
-  - text: "Te raconte sa coloscopie au plat principal"
+  - text: "Déclare que tu passes une période d’essai avant le deuxième rendez-vous"
     rarity: rare
-  - text: "Te montre la radio de son genou"
+  - text: "Te demande trois références parmi tes anciennes relations"
     rarity: rare
-  - text: "Te montre la cicatrice qu'il/elle a sur la cuisse"
+  - text: "Se félicite d’avoir provoqué ton agacement pour « tester ton caractère »"
     rarity: rare
-  - text: "Sort 'tu veux toucher ma cicatrice ?'"
+  - text: "Annonce avoir volontairement donné une mauvaise adresse pour tester ta patience"
     rarity: rare
-  - text: "Te montre un grain de beauté 'qui a évolué depuis hier'"
+  - text: "T’emmène à une visite d’appartement en te présentant comme son partenaire"
     rarity: rare
-  - text: "Te demande si tu peux regarder s'il/elle a un truc dans le dos"
+  - text: "Transforme la balade en distribution de prospectus pour son activité"
     rarity: rare
-  - text: "Sort qu'il/elle est 'en train de soigner une mycose'"
+  - text: "Te fait passer un entretien avec son coach de vie sur un banc"
     rarity: rare
-  - text: "Te raconte avoir 'eu la gale en mars'"
+  - text: "T’invite à une dégustation gratuite puis refuse de sortir de la boutique sans cadeau"
     rarity: rare
-  - text: "Annonce être en pleine cure de jus, mais boit trois bières"
+  - text: "Te fait passer pour son collègue afin de participer à une soirée privée"
     rarity: rare
-  - text: "Annonce un jeûne intermittent en commandant deux entrées"
+  - text: "Te fait rejoindre un cours de sport puis part s’entraîner seul"
     rarity: rare
-  - text: "Annonce qu'il/elle est vegan strict.e en mangeant un burger"
+  - text: "Te propose une brocante et t’utilise pour négocier ses achats"
     rarity: rare
-  - text: "Annonce qu'il/elle est sobre depuis 3 mois en commandant un verre 'juste pour ce soir'"
+  - text: "T’emmène choisir un cadeau pour son ex et demande ton avis sur la carte"
     rarity: rare
-  - text: "Te dit qu'il/elle a 'rechuté' à cause de toi avec un sourire"
+  - text: "Te laisse une heure devant sa cabine d’essayage pendant le rendez-vous"
     rarity: rare
-  - text: "Te dit 'tu m'as donné envie de boire alors que j'avais arrêté'"
+  - text: "T’invite à un concert puis tente de te revendre ton billet plus cher"
     rarity: rare
-  - text: "Sort 'normalement je sors plus le mardi mais pour toi'"
+  - text: "Prend ta place numérotée et te laisse négocier avec l’autre spectateur"
     rarity: rare
-  - text: "Te dit qu'il/elle a annulé un truc important pour te voir"
+  - text: "Fait croire au guide que vous êtes fiancés pour obtenir une photo"
     rarity: rare
-  - text: "Te dit avoir lâché ses potes ce soir 'tu as intérêt à être à la hauteur'"
+  - text: "Te demande de porter son dossard pour récupérer son cadeau de course"
     rarity: rare
-  - text: "Te chiffre le coût horaire du temps qu'il/elle te consacre"
+  - text: "Vient à un atelier en couple uniquement pour te faire fabriquer son cadeau"
     rarity: rare
-  - text: "Te dit 'tu te rends compte du privilège de ce date ?'"
+  - text: "Te demande de distraire un vendeur pendant qu’il photographie tout le magasin"
     rarity: rare
-  - text: "T'explique pendant 8 minutes pourquoi tu as de la chance d'être avec lui/elle"
+  - text: "T’emmène à son match et t’annonce que tu dois filmer toute la rencontre"
     rarity: rare
-  - text: "Te liste ses qualités au moment du dessert"
+  - text: "Prétend être un expert à l’escape game puis exige tous les indices"
     rarity: rare
-  - text: "Te demande de lister tes qualités pour 'qu'on voie si on matche'"
+  - text: "Te demande de valider son record sportif alors qu’il a raccourci le parcours"
     rarity: rare
-  - text: "Te demande de lister tes défauts 'pour voir si tu es honnête'"
+  - text: "Confisque les dés parce que tu gagnes trop au jeu qu’il a choisi"
     rarity: rare
-  - text: "Te fait passer un test de culture générale entre l'entrée et le plat"
+  - text: "Te fait monter sur scène pour une surprise malgré ton refus"
     rarity: rare
-  - text: "Te corrige sur la prononciation d'un mot dans une autre langue qu'il/elle ne parle pas"
+  - text: "Te demande de corriger son CV sur ton téléphone pendant l’apéritif"
     rarity: rare
-  - text: "Cite des phrases en latin qu'il/elle invente"
+  - text: "Sort son ordinateur et te demande d’avancer son travail pendant qu’il commande"
     rarity: rare
-  - text: "Te corrige une date historique en se trompant"
+  - text: "Te demande de garder son chien trois semaines dès le premier café"
     rarity: rare
-  - text: "T'explique ton métier mieux que toi"
+  - text: "T’invite à dîner chez lui puis te laisse faire les courses et la cuisine"
     rarity: rare
-  - text: "Te coupe pour t'expliquer ce que tu allais dire"
+  - text: "Te demande de repasser sa chemise pour être présentable à votre rendez-vous"
     rarity: rare
-  - text: "Sort 'je sais ce que tu vas dire' et se trompe à chaque fois"
+  - text: "Profite de ta voiture pour récupérer un meuble acheté en ligne"
     rarity: rare
-  - text: "Te coupe pour finir une histoire que tu lui racontes alors qu'il/elle ne la connaît pas"
+  - text: "Te demande d’arbitrer sa dispute avec son propriétaire au téléphone pendant l’apéritif"
     rarity: rare
-  - text: "Te demande de répéter ton anecdote 'parce qu'il/elle écoutait pas'"
+  - text: "Te demande de traduire tout son dossier professionnel avant le dessert"
     rarity: rare
-  - text: "Demande au serveur de venir lui répéter sa commande 'pour vérifier qu'il avait compris'"
+  - text: "Sort un formulaire pour que tu deviennes garant de son appartement"
     rarity: rare
-  - text: "Te fait choisir le vin et critique ton choix devant le serveur"
+  - text: "T’explique que ton métier serait très pratique pour l’aider gratuitement"
     rarity: rare
-  - text: "Te demande de payer puis se vexe que tu n'aies pas insisté"
+  - text: "T’appelle « mon contact » quand il te présente à un ami venu vous rejoindre"
     rarity: rare
-  - text: "Sort sa CB en attendant que tu sortes la tienne"
+  - text: "Te demande si ton entreprise recrute puis ne parle plus que de son CV"
     rarity: rare
-  - text: "Tente le 'oups j'ai oublié ma carte' au moment de l'addition"
+  - text: "Transforme le café en démonstration de sa boutique en ligne"
     rarity: rare
-  - text: "Découvre 'qu'il/elle a oublié sa carte d'identité' au moment de payer en CB"
+  - text: "Te propose une commission si tu présentes son produit à tes amis"
     rarity: rare
-  - text: "Te demande de l'avancer 'jusqu'à demain' à la fin du date"
+  - text: "Demande ton adresse pour y faire livrer ses commandes"
     rarity: rare
-  - text: "Te demande de l'avancer 100 € pour le loyer 'mais juste cette fois'"
+  - text: "Te demande de laisser un avis cinq étoiles sur son activité avant le plat"
     rarity: rare
-  - text: "Te demande si tu peux 'lui faire un Lydia rapide pour le taxi'"
+  - text: "Utilise ton ordinateur prêté pour installer son logiciel sans te demander"
     rarity: rare
-  - text: "Te dit qu'il/elle a perdu son téléphone juste avant de payer"
+  - text: "Te propose de régler le dîner en échange d’un logo pour sa marque"
     rarity: rare
-  - text: "Te dit 'oh non j'ai plus de batterie' quand il faut Lydia"
+  - text: "T’explique que le rendez-vous sera déductible si tu acceptes de parler affaires"
     rarity: rare
-  - text: "Te demande de te connecter au wifi du resto pour qu'il/elle puisse payer"
+  - text: "Te tend son dossier de location « puisque tu connais bien l’administration »"
     rarity: rare
-  - text: "Te demande de payer en liquide parce que 'sa banque déconne'"
+  - text: "Appelle son ex à table pour prouver qu’il n’y a plus de sentiments"
     rarity: rare
-  - text: "Te dit 'je te rembourse en nature' avec un clin d'œil"
+  - text: "Te montre les captures de ses disputes et attend que tu prennes parti"
     rarity: rare
-  - text: "Te dit 'on va dire que c'est mon cadeau d'anniversaire en avance' (tu n'as pas d'anniversaire)"
+  - text: "Te demande d’écrire son message de rupture pendant votre dîner"
     rarity: rare
-  - text: "Te demande la date de ton anniversaire pour 'te marquer dans son agenda'"
+  - text: "Invite une ancienne rencontre au dessert pour comparer vos impressions"
     rarity: rare
-  - text: "Note dans son agenda l'heure exacte du début du date"
+  - text: "Fait écouter votre conversation à un ami resté en ligne"
     rarity: rare
-  - text: "Te dit avoir préparé une liste de questions"
+  - text: "Envoie une photo de vous à son ex avec « regarde ce que tu perds »"
     rarity: rare
-  - text: "Sort une vraie liste de questions imprimée"
+  - text: "Te demande de mentir sur l’endroit où vous vous êtes rencontrés"
     rarity: rare
-  - text: "Te lit ses questions une par une avec une intonation appliquée"
+  - text: "Annonce que tous ses amis pensent que tu n’es pas à sa hauteur"
     rarity: rare
-  - text: "Te demande de répondre 'sans réfléchir' à 30 questions d'affilée"
+  - text: "Te fait appeler sa mère pour la convaincre de vous laisser partir en week-end"
     rarity: rare
-  - text: "Te lit son test de personnalité préféré à voix haute"
+  - text: "Te demande de changer ton prénom dans son téléphone pour éviter des questions"
     rarity: rare
-  - text: "Te dit que tu as 'le mauvais MBTI pour lui/elle'"
+  - text: "T’annonce que sa relation est ouverte mais que l’autre personne ne le sait pas"
     rarity: rare
-  - text: "Annule le date mentalement à cause de ton signe astro"
+  - text: "Cache vos verres dès qu’une connaissance s’approche"
     rarity: rare
-  - text: "Te dit 'on est pas du tout compatibles, mais on essaie quand même'"
+  - text: "Te fait passer pour un collègue devant la personne qui partage sa vie"
     rarity: rare
-  - text: "Te dit 'je sens qu'on est compatibles à 73%'"
+  - text: "S’excuse auprès d’un inconnu pour ton avis politique sans te consulter"
     rarity: rare
-  - text: "Te dit 'mon appli de couple dit qu'on a un avenir'"
+  - text: "Demande au serveur s’il te trouve attirant"
     rarity: rare
-  - text: "Te montre la prédiction de son horoscope du jour pour le date"
+  - text: "Te fait écouter son hymne de rupture puis exige que tu critiques son ex"
     rarity: rare
-  - text: "Te dit qu'il/elle a 'fait tirer ses cartes' avant de venir"
+  - text: "Présente ta vie personnelle à la table voisine comme un problème à résoudre"
     rarity: rare
-  - text: "Te dit 'ma voyante m'avait dit de me méfier ce soir'"
+  - text: "Te demande d’appeler un ami pour prouver ton histoire"
     rarity: rare
-  - text: "Te dit avoir 'consulté un médium sur toi cette semaine'"
+  - text: "Te fait lire un message intime reçu par quelqu’un d’autre"
     rarity: rare
-  - text: "Te dit 'mes amis ont voté contre toi mais je suis venu.e quand même'"
+  - text: "Te demande si un de tes amis célibataires pourrait finalement mieux lui convenir"
     rarity: rare
-  - text: "Te dit 'mes potes te trouvent moyen.ne sur les photos mais bon'"
+  - text: "Te propose de régler son amende de stationnement parce qu’il venait te voir"
     rarity: rare
-  - text: "Te dit 'ma sœur m'a dit que tu allais me faire du mal'"
+  - text: "Réclame le prix de son essence au prorata des minutes où tu as parlé"
     rarity: rare
-  - text: "Te dit avoir lu sur Reddit que les gens de ton métier sont 'du genre toxique'"
+  - text: "Sort un bon pour deux puis te fait payer le prix d’un repas entier"
     rarity: rare
-  - text: "Te dit 'tous les hommes/les femmes sont pareils' et te regarde fixement"
+  - text: "Tente de faire ajouter à ta note l’ardoise qu’il a laissée le mois dernier"
     rarity: rare
-  - text: "Te dit 'tu vas me prouver que tu es différent.e'"
+  - text: "Te fait payer le prix affiché alors qu’il a obtenu une remise pour toute la table"
     rarity: rare
-  - text: "Te dit 'tu as une dette envers moi' au bout de 30 minutes"
+  - text: "Compte les points de fidélité gagnés comme sa contribution au dîner"
     rarity: rare
-  - text: "Te dit 'tu me dois bien ça' à propos d'un truc anodin"
+  - text: "Te propose de payer sa part avec des produits de sa boutique"
     rarity: rare
-  - text: "Décompte le prix du repas en disant 'normalement à ce prix-là je passe la nuit'"
+  - text: "Essaie de faire passer ses courses de la semaine sur votre addition"
     rarity: rare
-  - text: "Te dit 'normalement après ce restau on va chez moi'"
+  - text: "Te demande un prêt pour finir le mois avant d’avoir retenu ton prénom"
     rarity: rare
-  - text: "Te demande à mi-repas 'tu vas me dire oui ce soir ?'"
+  - text: "T’annonce que le dîner est offert si tu acceptes de venir à sa réunion commerciale"
     rarity: rare
-  - text: "Te demande de signer une attestation de consentement"
+  - text: "Te tend une cagnotte pour financer son prochain rendez-vous"
     rarity: rare
-  - text: "Te montre sa case 'à cocher' sur une appli de tracking de dates"
+  - text: "Demande un reçu au double du montant pour se faire rembourser davantage"
     rarity: rare
-  - text: "Te dit qu'il/elle compte ses dates pour 'battre son record annuel'"
+  - text: "Fait ajouter un repas à emporter pour demain dans votre note commune"
     rarity: rare
-  - text: "Te dit 'tu vas être ma 47e date de l'année'"
+  - text: "Te fait commander via son lien de parrainage sans te le dire"
     rarity: rare
-  - text: "Te dit 'je tiens un Excel de mes dates'"
+  - text: "Demande au serveur de te faire croire que sa carte a été refusée"
     rarity: rare
-  - text: "Sort un carnet et écrit pendant que tu parles"
+  - text: "Tente de troquer ton cadeau contre une réduction sur l’addition"
     rarity: rare
-  - text: "Te demande l'autorisation d'enregistrer la conversation"
+  - text: "Te réclame le remboursement des fleurs quand tu refuses un second rendez-vous"
     rarity: rare
-  - text: "Pose son téléphone face à toi en mode vocal sans rien dire"
+  - text: "Propose de partager la note en fonction de vos salaires, sans donner le sien"
     rarity: rare
-  - text: "Te demande de poser pour un avant/après"
+  - text: "T’annonce que son cadeau est prêté et qu’il faudra le rendre si ça ne marche pas"
+    rarity: rare
+  - text: "Fait payer ton entrée à tarif plein alors qu’il avait deux invitations gratuites"
+    rarity: rare
+  - text: "Déplie une liste de règles à respecter si vous vous revoyez"
+    rarity: rare
+  - text: "Te demande de supprimer tes applis de rencontre devant lui au premier verre"
+    rarity: rare
+  - text: "Exige que tu montres tes messages pour prouver que tu es célibataire"
+    rarity: rare
+  - text: "Prend ton avis sur un film comme une raison d’annuler le reste de la soirée"
+    rarity: rare
+  - text: "Te demande ton heure de naissance pendant que le serveur attend la commande"
+    rarity: rare
+  - text: "Téléphone à sa voyante pour décider s’il doit rester au dessert"
+    rarity: rare
+  - text: "Déplace vos chaises trois fois pour améliorer la compatibilité de vos énergies"
+    rarity: rare
+  - text: "Te fait changer un plat parce que sa mère n’approuverait pas"
+    rarity: rare
+  - text: "Veut choisir le nom de votre futur chien alors que tu n’en veux pas"
+    rarity: rare
+  - text: "Sort un agenda pour négocier vos Noëls des cinq prochaines années"
+    rarity: rare
+  - text: "Te demande de valider sa liste de prénoms d’enfants avant de commander"
+    rarity: rare
+  - text: "Te propose de rencontrer sa famille demain et se vexe que tu hésites"
+    rarity: rare
+  - text: "Sort une réservation d’hôtel non remboursable pour te convaincre de prolonger la soirée"
+    rarity: rare
+  - text: "T’annonce un deuxième rendez-vous avec des billets déjà achetés à ton nom"
+    rarity: rare
+  - text: "Te demande de partager ta position en continu « maintenant qu’on se connaît »"
+    rarity: rare
+  - text: "Te fait évaluer chaque étape de la soirée sur son téléphone"
+    rarity: rare
+  - text: "Déclenche un enregistrement de votre conversation sans te prévenir"
+    rarity: rare
+  - text: "Débute le dîner par une lecture de tes anciennes publications"
+    rarity: rare
+  - text: "T’explique quelle coupe de cheveux conviendrait à vos photos de couple"
+    rarity: rare
+  - text: "Te demande d’adopter ses goûts musicaux pour éviter des disputes futures"
     rarity: rare
 
-  # ────────────────────────────────────────
-  # Légendaires (35)
-  # ────────────────────────────────────────
-  - text: "Sort une bague de fiançailles dès l'entrée"
+  # legendary (60)
+  - text: "Ses parents sont à la table d’à côté et viennent donner leur verdict au dessert"
     rarity: legendary
-  - text: "Te montre une photo d'un faire-part déjà imprimé à votre nom"
+  - text: "Arrive avec son ex pour vous organiser un débrief à trois"
     rarity: legendary
-  - text: "T'annonce qu'il/elle a déjà choisi le prénom de votre futur enfant"
+  - text: "Te propose une sortie surprise et t’emmène au mariage de son ex"
     rarity: legendary
-  - text: "Te montre une échographie en disant 'imagine si c'était la nôtre'"
+  - text: "Son partenaire vous rejoint, il te présente comme quelqu’un venu vendre un meuble"
     rarity: legendary
-  - text: "Te demande d'aller récupérer ses enfants à l'école demain matin"
+  - text: "Demande au serveur de filmer une fausse demande en mariage pour ses abonnés"
     rarity: legendary
-  - text: "Te demande de garder son chien pendant trois semaines à partir de demain"
+  - text: "T’offre une bague puis te présente le paiement en plusieurs fois"
     rarity: legendary
-  - text: "Te demande si tu veux signer en garant pour son nouvel appart"
+  - text: "T’annonce avoir inscrit votre duo à une émission de rencontres"
     rarity: legendary
-  - text: "Te demande de cosigner un crédit auto avant le dessert"
+  - text: "Invite son coach en séduction à votre table pour commenter ses progrès"
     rarity: legendary
-  - text: "Sort un contrat de mariage déjà rempli au stylo"
+  - text: "Fait venir son ami au dessert et t’annonce que c’était lui qui écrivait les messages"
     rarity: legendary
-  - text: "Te demande ton numéro de Sécu 'pour qu'on partage la mutuelle plus tard'"
+  - text: "Te demande de jouer son partenaire au mariage où vous venez d’arriver"
     rarity: legendary
-  - text: "T'annonce qu'il/elle a tatoué ton prénom (et c'est sec)"
+  - text: "Te présente à ses parents comme la personne qui va bientôt emménager"
     rarity: legendary
-  - text: "Te montre le tatouage du prénom de son ex 'mais je peux le faire transformer en ton prénom'"
+  - text: "A invité deux rencontres au même dîner « pour comparer naturellement »"
     rarity: legendary
-  - text: "Te dit avoir acheté la place à côté de toi en concert pour décembre"
+  - text: "Quitte votre table pour draguer quelqu’un et te demande de surveiller ses affaires"
     rarity: legendary
-  - text: "Te dit avoir réservé un Airbnb à deux pour ce week-end 'au cas où'"
+  - text: "Te laisse l’addition de toute sa bande, invitée sans te prévenir"
     rarity: legendary
-  - text: "T'annonce qu'il/elle a démissionné aujourd'hui pour passer plus de temps avec toi"
+  - text: "Te montre votre photo déjà publiée avec « enfin en couple » sans t’avoir consulté"
     rarity: legendary
-  - text: "T'annonce qu'il/elle a déménagé dans ton quartier la semaine dernière"
+  - text: "Embrasse quelqu’un croisé dans le bar puis te dit que tu prends tout trop au sérieux"
     rarity: legendary
-  - text: "Te montre la clé qu'il/elle a fait faire de ton appartement"
+  - text: "Te demande de servir d’alibi quand son partenaire l’appelle à votre table"
     rarity: legendary
-  - text: "Cite ta veilleuse de chevet par sa marque exacte"
+  - text: "S’en va avec son ex croisé au restaurant et te laisse payer leurs verres"
     rarity: legendary
-  - text: "Te dit 'j'ai aimé ton album de 2017 sur Facebook'"
+  - text: "Transforme votre café en réunion de vente avec trois collègues arrivés ensemble"
     rarity: legendary
-  - text: "Te montre une capture d'écran de ton agenda Google"
+  - text: "Te demande de financer son restaurant pendant le dîner où il dit t’inviter"
     rarity: legendary
-  - text: "Te dit 'je sais que tu es passé.e à la pharmacie ce midi'"
+  - text: "T’a donné rendez-vous dans le restaurant qu’il possède et exige que tu consommes"
     rarity: legendary
-  - text: "Te montre un dossier avec ton nom dessus"
+  - text: "T’offre une clé de chez lui puis te demande ta moitié du loyer"
     rarity: legendary
-  - text: "Sort un classeur titré 'projet [ton prénom]'"
+  - text: "Te demande de cosigner un crédit auto avant le café"
     rarity: legendary
-  - text: "Te montre la liste de tes ex avec une note pour chacun"
+  - text: "A apporté tous ses bagages « si jamais ça marche bien ce soir »"
     rarity: legendary
-  - text: "Te récite ton CV par cœur"
+  - text: "T’explique que tu dois rendre son cadeau dans son emballage pour qu’il se fasse rembourser"
     rarity: legendary
-  - text: "Te récite tes 3 dernières positions LinkedIn dans l'ordre"
+  - text: "T’offre des fleurs avec l’étiquette au nom de son précédent rendez-vous"
     rarity: legendary
-  - text: "Te dit avoir parlé à ta mère cette semaine"
+  - text: "Récupère tes coordonnées pour sa liste commerciale pendant que tu réserves le restaurant"
     rarity: legendary
-  - text: "T'annonce que ta mère lui a donné sa bénédiction"
+  - text: "T’annonce qu’il a promis de vous héberger chez toi à ses parents de passage"
     rarity: legendary
-  - text: "Sort une lettre de recommandation d'un.e de tes ex"
+  - text: "Te propose un pourcentage de ses revenus futurs pour que tu paies l’addition"
     rarity: legendary
-  - text: "Sort une lettre de recommandation de son propre ex"
+  - text: "T’invite à cuisiner puis fait venir dix amis sans t’avoir prévenu"
     rarity: legendary
-  - text: "Te dit avoir rencontré ton ex pour 'avoir des conseils'"
+  - text: "T’emmène à une soirée et te laisse à l’accueil gérer les manteaux"
     rarity: legendary
-  - text: "Vient avec son ex pour 'un débrief honnête à trois'"
+  - text: "Te propose de travailler derrière le bar pour rembourser ton repas"
     rarity: legendary
-  - text: "Vient avec son thérapeute qui prend la table d'à côté"
+  - text: "Te présente son autre partenaire et annonce que vous devez vous mettre d’accord"
     rarity: legendary
-  - text: "T'annonce qu'il/elle a invité ses parents au dessert"
+  - text: "Te demande de quitter la table pour recevoir discrètement son prochain rendez-vous"
     rarity: legendary
-  - text: "Ses parents sont à la table d'à côté depuis le début et te font coucou"
+  - text: "Propose au restaurant d’offrir vos repas contre une vidéo où tu dois jouer sa fiancée"
+    rarity: legendary
+  - text: "Te présente la note de ses conseils de carrière à la fin du rendez-vous"
+    rarity: legendary
+  - text: "Te demande de l’aider à choisir une bague pour la personne avec qui il vit"
+    rarity: legendary
+  - text: "Te fait rencontrer son prochain rendez-vous pour assurer « une transition sympa »"
+    rarity: legendary
+  - text: "Lance un direct sur votre dîner et demande aux abonnés s’il doit rester"
+    rarity: legendary
+  - text: "Demande le numéro de ton ami devant toi parce qu’il préfère finalement tenter avec lui"
+    rarity: legendary
+  - text: "Te demande de prendre une photo de lui avec la personne qu’il drague à la table voisine"
+    rarity: legendary
+  - text: "Tente de payer son repas avec le billet que tu avais laissé en pourboire"
+    rarity: legendary
+  - text: "Commande un plat à emporter pour son partenaire et te laisse le payer"
+    rarity: legendary
+  - text: "Part « chercher sa carte » puis tu le vois monter dans un taxi avec son dessert"
+    rarity: legendary
+  - text: "Prétend à toute la salle que tu viens de le demander en mariage pour avoir du champagne"
+    rarity: legendary
+  - text: "Installe une caméra sur la table et annonce tourner son cours de séduction"
+    rarity: legendary
+  - text: "Se fait rembourser le repas que tu viens de payer et garde la somme"
+    rarity: legendary
+  - text: "Te demande de téléphoner à son ex en prétendant être son fiancé"
+    rarity: legendary
+  - text: "Vient avec une valise de produits à vendre et appelle ça votre projet de couple"
+    rarity: legendary
+  - text: "T’annonce que sa rupture dépend du fait que tu acceptes un deuxième rendez-vous"
+    rarity: legendary
+  - text: "A acheté un abonnement annuel pour deux et exige ta part dès le premier rendez-vous"
+    rarity: legendary
+  - text: "Emprunte ton téléphone pour appeler son ex et nie ensuite l’avoir fait"
+    rarity: legendary
+  - text: "Te demande de mentir à ses parents en visio sur la durée de votre relation"
+    rarity: legendary
+  - text: "Réserve votre table sous le nom de son ex pour lui faire recevoir les notifications"
+    rarity: legendary
+  - text: "T’annonce que le dîner sert d’audition pour son podcast sur le partenaire idéal"
+    rarity: legendary
+  - text: "Te demande de reprendre le bail de la personne avec qui il vit encore"
+    rarity: legendary
+  - text: "Fait payer le dîner à son ex au téléphone en te demandant de ne pas faire de bruit"
+    rarity: legendary
+  - text: "Te présente un contrat professionnel à signer alors que tu pensais venir à un rendez-vous"
+    rarity: legendary
+  - text: "Fait intervenir son ami avec un bouquet pour rejouer votre rencontre devant une caméra"
+    rarity: legendary
+  - text: "Te demande de remplir le dossier pour adopter ensemble un chien avant la fin du café"
     rarity: legendary

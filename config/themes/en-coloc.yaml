@@ -1,15 +1,4 @@
-# ========================================================================
-# Red Flag Bingo — Thème "En coloc"
-# ========================================================================
-# 520 red flags répartis selon la proportion de tirage 15/7/3 (60/28/12 %)
-#   - common    : 312
-#   - rare      : 145
-#   - legendary :  63
-# Sous-thèmes : Vaisselle, Salle de bain, Toilettes, Frigo, Nuisances,
-#               Invités, Argent, Ménage, Communication, Salon, Animaux,
-#               Lessive, Déco, Régime, Habitudes, Tech, Spiritualité
-# ========================================================================
-
+# 500 situations autonomes : 300 common, 140 rare, 60 legendary.
 theme:
   name: "En coloc"
   slug: "en-coloc"
@@ -17,1144 +6,1052 @@ theme:
 
 red_flags:
 
-  # ======================================================================
-  # COMMON (312)
-  # ======================================================================
-
-  # --- Vaisselle (35) ---
-  - text: "Laisse la vaisselle 'tremper' depuis 5 jours dans l'évier"
+  # Cuisine
+  - text: "Laisse la vaisselle « tremper » depuis cinq jours"
     rarity: common
-  - text: "Lave uniquement ses propres assiettes"
+  - text: "Remet la poêle grasse dans le placard avec les propres"
     rarity: common
-  - text: "Fait la vaisselle quand il a besoin d'une assiette propre"
+  - text: "Vide les pâtes dans un évier encore plein de vaisselle"
     rarity: common
-  - text: "Empile les bols sales en pyramide architecturale dans l'évier"
+  - text: "Laisse le beurre commun couvert de miettes"
     rarity: common
-  - text: "Range les casseroles encore mouillées dans le placard"
+  - text: "Remet la cuillère léchée dans la casserole commune"
     rarity: common
-  - text: "Garde la même éponge depuis trois mois"
+  - text: "Laisse les projections de sauce sécher sur la crédence"
     rarity: common
-  - text: "Stocke 14 mugs sales dans sa chambre"
+  - text: "Emprunte ta boîte repas et la rapporte sans couvercle"
     rarity: common
-  - text: "Casse une assiette tous les quinze jours 'par accident'"
+  - text: "Utilise le couteau du pain pour ouvrir ses colis"
     rarity: common
-  - text: "Range le couteau du beurre dans le pot de Nutella commun"
+  - text: "Laisse le lait déborder et attend que la plaque refroidisse pour oublier"
     rarity: common
-  - text: "Met sa fourchette pour goûter dans la casserole commune"
+  - text: "Racle sa poêle antiadhésive avec une fourchette"
     rarity: common
-  - text: "Confond le sel et le sucre une fois par mois"
+  - text: "Pose le couvercle gras sur le torchon propre"
     rarity: common
-  - text: "Brûle systématiquement les pâtes"
+  - text: "Ouvre un deuxième paquet sans finir le premier"
     rarity: common
-  - text: "Considère le four à micro-ondes comme un placard de stockage"
+  - text: "Laisse son sachet de thé dans l’évier jusqu’au ménage suivant"
     rarity: common
-  - text: "Lave la vaisselle uniquement à l'eau froide"
+  - text: "Vide le bac à marc dans la poubelle sans sac"
     rarity: common
-  - text: "Met les Tupperware sales sous le canapé 'en attendant'"
+  - text: "Laisse sa plaque allumée après avoir retiré la casserole"
     rarity: common
-  - text: "Mange ses pâtes directement dans la casserole"
+  - text: "Dépose sa cuillère sale directement sur le plan de travail"
     rarity: common
-  - text: "Boit le lait au goulot"
+  - text: "Démarre son repas sur les quatre plaques quand tu cuisines déjà"
     rarity: common
-  - text: "Met le micro-ondes 47 secondes au lieu d'une minute par habitude"
+  - text: "Utilise tout le papier cuisson et remet la boîte vide"
     rarity: common
-  - text: "Garde les boîtes de pizza vides sur le comptoir trois jours"
+  - text: "Laisse les miettes du grille-pain sur ton coin de table"
     rarity: common
-  - text: "Cuit ses pâtes sans saler l'eau"
-    rarity: common
-  - text: "Cuisine sans hotte et fait sonner le détecteur de fumée"
-    rarity: common
-  - text: "Sert son café dans tes verres à vin"
-    rarity: common
-  - text: "Touille la sauce avec ta cuillère en bois 'spéciale'"
-    rarity: common
-  - text: "Met le grille-pain à fond et déclenche l'alarme incendie"
-    rarity: common
-  - text: "Lave la planche à découper avec le côté vert de l'éponge"
-    rarity: common
-  - text: "Range les couverts encore mouillés dans le tiroir"
-    rarity: common
-  - text: "Mange des céréales à 23h tous les soirs sans exception"
-    rarity: common
-  - text: "Boit son café dans une tasse pas lavée depuis trois jours"
-    rarity: common
-  - text: "Décongèle de la viande sur le radiateur"
-    rarity: common
-  - text: "Cuit du brocoli sans ouvrir la fenêtre"
-    rarity: common
-  - text: "Garde l'huile de friture dans la poêle pendant deux semaines"
-    rarity: common
-  - text: "Pose la cocotte brûlante sur la plaque chaude pour économiser"
-    rarity: common
-  - text: "Range le pain sur le four"
-    rarity: common
-  - text: "Stocke des sacs Picard sur le balcon en plein juillet"
-    rarity: common
-  - text: "Demande où se trouve la passoire au bout de huit mois de coloc"
+  - text: "Prend ton repas en préparation pour un buffet en libre-service"
     rarity: common
 
-  # --- Salle de bain (30) ---
-  - text: "Laisse 47 cheveux dans la baignoire après chaque douche"
+  # Vaisselle
+  - text: "Lave uniquement l’intérieur des assiettes"
     rarity: common
-  - text: "Vide les rouleaux de PQ sans les remplacer"
+  - text: "Range les verres encore marqués de rouge à lèvres"
     rarity: common
-  - text: "Prend des douches de 35 minutes minimum"
+  - text: "Empile les bols sales jusqu’à rendre le robinet inaccessible"
     rarity: common
-  - text: "Squatte la salle de bain de 7h45 à 8h17 pile quand tu commences à 8h30"
+  - text: "Garde tous les mugs de la coloc dans sa chambre"
     rarity: common
+  - text: "Ajoute ses couverts à la vaisselle que tu laves puis s’en va sans un mot"
+    rarity: common
+  - text: "Laisse le lave-vaisselle propre fermé et remplit l’évier"
+    rarity: common
+  - text: "Met un plat devant le bras du lave-vaisselle puis accuse la machine"
+    rarity: common
+  - text: "Range les boîtes humides fermées dans le placard"
+    rarity: common
+  - text: "Se sert de l’éponge à vaisselle pour nettoyer ses chaussures"
+    rarity: common
+  - text: "Réclame une assiette propre devant sa pile de vaisselle sale"
+    rarity: common
+  - text: "Jette les restes dans l’évier au lieu de la poubelle"
+    rarity: common
+  - text: "Rince son mug et le repose au milieu des tasses propres"
+    rarity: common
+  - text: "Laisse le bac d’égouttage plein d’eau trouble"
+    rarity: common
+  - text: "Range les couteaux encore couverts de beurre"
+    rarity: common
+  - text: "Lave la passoire mais laisse les pâtes collées au fond de l’évier"
+    rarity: common
+  - text: "Dépose les couverts sales dans le pot des propres"
+    rarity: common
+  - text: "Prend une casserole propre pour éviter de laver celle de la veille"
+    rarity: common
+  - text: "Essuie les verres avec le torchon qui vient de nettoyer le sol"
+    rarity: common
+  - text: "Prétend que les plats « doivent encore tremper » après trois repas"
+    rarity: common
+  - text: "Pose les assiettes propres sur les miettes du repas"
+    rarity: common
+
+  # Frigo et provisions
+  - text: "Mange les restes que tu avais gardés pour le lendemain"
+    rarity: common
+  - text: "Boit le dernier jus et remet la brique vide au frigo"
+    rarity: common
+  - text: "Remplace ton fromage par « à peu près le même » après l’avoir fini"
+    rarity: common
+  - text: "Laisse une boîte moisie en espérant que quelqu’un la jette"
+    rarity: common
+  - text: "Occupe ton étage du frigo « juste le temps que ça refroidisse »"
+    rarity: common
+  - text: "Laisse la porte du congélateur mal fermée"
+    rarity: common
+  - text: "Ouvre ton paquet neuf alors que le sien est entamé"
+    rarity: common
+  - text: "Prend les courses communes pour remplir son sac de week-end"
+    rarity: common
+  - text: "Enlève l’étiquette de ton repas pour faire de la place"
+    rarity: common
+  - text: "Laisse les légumes abîmés couler dans le bac"
+    rarity: common
+  - text: "Met un plat sans couvercle au-dessus de ta salade"
+    rarity: common
+  - text: "Finit le lait et n’en parle qu’une fois ton café servi"
+    rarity: common
+  - text: "Vide le bac à glaçons et le remet au congélateur"
+    rarity: common
+  - text: "Déplace tes courses au fond et oublie où"
+    rarity: common
+  - text: "Garde une cuillère de sauce dans le pot pour ne pas avoir à le remplacer"
+    rarity: common
+  - text: "Confond « commun » et « disponible quand j’ai faim »"
+    rarity: common
+  - text: "Prend ton dernier œuf après avoir demandé si tu comptais cuisiner"
+    rarity: common
+  - text: "Fait une place à ses bières en sortant ton repas du frigo"
+    rarity: common
+  - text: "Remet un emballage vide dans la boîte à biscuits commune"
+    rarity: common
+  - text: "Laisse une bouteille ouverte couchée sur l’étagère du frigo"
+    rarity: common
+
+  # Salle de bain
   - text: "Met sa serviette mouillée par-dessus la tienne"
     rarity: common
-  - text: "Possède 14 produits de soin pour son seul visage"
+  - text: "Laisse ses cheveux dans la bonde après la douche"
     rarity: common
-  - text: "Laisse le tube de dentifrice grand ouvert sur le lavabo"
+  - text: "Termine le papier toilette sans remettre de rouleau"
     rarity: common
-  - text: "Presse le tube de dentifrice par le milieu"
+  - text: "Laisse sa barbe fraîchement rasée dans le lavabo"
     rarity: common
-  - text: "Met du gel douche dans la machine à laver pour faire de la mousse"
+  - text: "Inonde le sol de la salle de bain puis part travailler"
     rarity: common
-  - text: "Constelle le miroir de petits points de dentifrice"
+  - text: "Occupe la salle de bain après avoir dit « j’en ai pour deux minutes »"
     rarity: common
-  - text: "Sèche son linge sur le radiateur de la salle de bain"
+  - text: "Utilise ton shampoing et ajoute de l’eau pour masquer le niveau"
     rarity: common
-  - text: "Inonde la salle de bain à chaque douche"
+  - text: "Éparpille ses produits sur les étagères réservées aux autres"
     rarity: common
-  - text: "Prend ses douches à 23h45 pile quand tu te couches"
+  - text: "Laisse des traces de dentifrice sur le miroir"
     rarity: common
-  - text: "Range son rasoir avec encore 12 poils dessus"
+  - text: "Pose ses vêtements sales sur ta serviette propre"
     rarity: common
-  - text: "Lit une heure dans la baignoire"
+  - text: "Ne ferme pas le rideau de douche puis se plaint du tapis trempé"
     rarity: common
-  - text: "Met le chauffage à 28°C pour avoir chaud après la douche"
+  - text: "Range sa brosse pleine de cheveux dans le verre commun"
     rarity: common
-  - text: "A trois shampoings différents qu'il alterne par jour de la semaine"
+  - text: "Laisse la brosse des toilettes sécher au milieu du passage"
     rarity: common
-  - text: "Laisse les bouchons dévissés sur tous les flacons"
+  - text: "Termine le savon et remet le flacon sur son support"
     rarity: common
-  - text: "Squatte la salle de bain pendant ton appel professionnel le plus important"
+  - text: "Bloque le lavabo avec ses affaires pendant qu’il se douche"
     rarity: common
-  - text: "Sort de la douche en chantant Vianney faux"
+  - text: "Laisse ses lentilles usagées sur le rebord du lavabo"
     rarity: common
-  - text: "Met sa brosse à cheveux pleine de cheveux dans le placard commun"
+  - text: "Mouille le rouleau de papier toilette puis le laisse en place"
     rarity: common
-  - text: "Laisse couler l'eau pendant qu'il se brosse les dents"
+  - text: "Prend la dernière serviette propre sans lancer de lessive"
     rarity: common
-  - text: "Stocke ses serviettes humides en boule au sol"
+  - text: "Dépose ses cotons utilisés sur l’étagère"
     rarity: common
-  - text: "Étend ses chaussettes mouillées sur le porte-serviettes"
-    rarity: common
-  - text: "Met ses sous-vêtements à sécher sur la poignée de la fenêtre"
-    rarity: common
-  - text: "Range son shampoing dans la cuisine"
-    rarity: common
-  - text: "Bouche le lavabo avec sa barbe rasée"
-    rarity: common
-  - text: "Laisse son maquillage étalé sur le rebord du lavabo"
-    rarity: common
-  - text: "Met ses chaussons mouillés sécher dans la salle de bain"
-    rarity: common
-  - text: "Garde une bougie parfumée à la vanille à côté du lavabo"
+  - text: "Oublie de rincer la baignoire après son bain moussant"
     rarity: common
 
-  # --- Toilettes (15) ---
-  - text: "Ne tire pas la chasse 'pour économiser l'eau'"
+  # Lessive
+  - text: "Laisse son linge trois jours dans la machine"
     rarity: common
-  - text: "Laisse le rouleau vide sur le support en partant"
+  - text: "Retire ton linge encore humide pour étendre le sien"
     rarity: common
-  - text: "Met le rouleau dans le mauvais sens"
+  - text: "Lance une lessive juste avant ton créneau convenu"
     rarity: common
-  - text: "Lit son téléphone aux toilettes pendant 25 minutes"
+  - text: "Prend ta lessive personnelle sans la remplacer"
     rarity: common
-  - text: "Allume la lumière des WC même en pleine journée"
+  - text: "Bloque l’étendoir avec du linge sec depuis une semaine"
     rarity: common
-  - text: "Pisse en chantant à 7h du matin"
+  - text: "Vide tes affaires propres dans le panier du linge sale"
     rarity: common
-  - text: "Laisse la lunette levée systématiquement"
+  - text: "Emporte toutes les pinces à linge dans sa chambre"
     rarity: common
-  - text: "Achète du PQ une couche 'pour le climat'"
+  - text: "Laisse le filtre du sèche-linge plein pour le suivant"
     rarity: common
-  - text: "Stocke le PQ dans sa chambre"
+  - text: "Pose sa corbeille devant la machine et considère la place réservée"
     rarity: common
-  - text: "Verrouille la porte des WC même quand il/elle n'y est pas"
+  - text: "Met ton pull dans sa lessive chaude sans te demander"
     rarity: common
-  - text: "Met une bougie parfumée sur la chasse d'eau"
+  - text: "Laisse les dosettes vides sur le dessus de la machine"
     rarity: common
-  - text: "Squatte les toilettes 30 minutes pile après son café du matin"
+  - text: "Étend une chemise dégoulinante au-dessus de tes chaussures"
     rarity: common
-  - text: "Allume la radio dans les WC pour couvrir les bruits"
+  - text: "Prend tes cintres et te répond qu’ils se ressemblent tous"
     rarity: common
-  - text: "Met du papier sur la lunette avant de s'asseoir et le laisse là"
+  - text: "Abandonne le fer branché le temps d’aller répondre au téléphone"
     rarity: common
-  - text: "Range les magazines People sur la chasse d'eau"
+  - text: "Utilise la table à manger comme panier à linge permanent"
     rarity: common
-
-  # --- Frigo & nourriture (40) ---
-  - text: "Met des étiquettes 'À MOI' sur tous ses produits"
+  - text: "Lave ses chaussures avec les torchons communs sans prévenir"
     rarity: common
-  - text: "Vole tes restes que tu gardais soigneusement pour midi"
+  - text: "Te demande de récupérer son linge à chaque cycle"
     rarity: common
-  - text: "Achète du beurre demi-sel quand tu es team beurre doux"
+  - text: "Dit « je l’enlève tout de suite » et part pour le week-end"
     rarity: common
-  - text: "Stocke des yaourts périmés depuis 3 mois"
+  - text: "Nettoie ses baskets avec la brosse réservée à la vaisselle"
     rarity: common
-  - text: "Garde un Tupperware vert non identifié au fond du frigo"
-    rarity: common
-  - text: "Boit le dernier verre de jus d'orange et range la brique vide"
-    rarity: common
-  - text: "Mange tes œufs en disant 'je pensais que c'étaient les communs'"
-    rarity: common
-  - text: "Met un post-it 'NE PAS TOUCHER' sur sa banane"
-    rarity: common
-  - text: "Cuisine 2 kilos de pâtes pour le dîner du soir"
-    rarity: common
-  - text: "Fait des courses pour 8 jours et bloque tout le frigo"
-    rarity: common
-  - text: "Achète du saumon fumé 'pour une occasion spéciale' qui n'arrive jamais"
-    rarity: common
-  - text: "Stocke ses 14 sodas perso au fond du frigo"
-    rarity: common
-  - text: "Garde le tiroir à légumes plein de pousses moisies"
-    rarity: common
-  - text: "Range les courses brûlantes encore dans le sac plastique"
-    rarity: common
-  - text: "Achète du pain de mie sans gluten qui dure 6 mois"
-    rarity: common
-  - text: "A trois moutardes différentes ouvertes en même temps"
-    rarity: common
-  - text: "Laisse une pizza dans son carton dans le frigo pendant 5 jours"
-    rarity: common
-  - text: "Met du Comté de 36 mois d'affinage hors de portée des indignes"
-    rarity: common
-  - text: "Stocke sa bière Lidl à côté de ton Picon Bière"
-    rarity: common
-  - text: "Te boit ton dernier coca à 23h"
-    rarity: common
-  - text: "Mange tes restes en ne laissant qu'une cuillère de symbole dans la boîte"
-    rarity: common
-  - text: "Garde une bouteille de lait entamée derrière le frigo"
-    rarity: common
-  - text: "Ne ferme pas la porte du frigo correctement"
-    rarity: common
-  - text: "Met une banane au frigo"
-    rarity: common
-  - text: "Stocke ses bouteilles d'eau en plastique alors qu'il y a une carafe Brita"
-    rarity: common
-  - text: "Mange directement dans le pot de glace commun avec sa cuillère"
-    rarity: common
-  - text: "Achète du thon premier prix mais ne le paie qu'à moitié"
-    rarity: common
-  - text: "Te demande 'tu manges quoi ce soir ?' alors qu'il a déjà son repas"
-    rarity: common
-  - text: "Goûte tes plats sur ton assiette sans demander"
-    rarity: common
-  - text: "Laisse une casserole avec un fond de soupe sur la table 8h"
-    rarity: common
-  - text: "Stocke six bouteilles de vin entamées dans le frigo"
-    rarity: common
-  - text: "Cuisine du curry tous les soirs et l'odeur reste 3 jours"
-    rarity: common
-  - text: "Mange devant le frigo ouvert pendant 10 minutes en pyjama"
-    rarity: common
-  - text: "Achète un pot de Nutella en se disant 'c'est commun'"
-    rarity: common
-  - text: "Ne sait pas où sont rangées les épices après un an"
-    rarity: common
-  - text: "Stocke ses chocolats Kinder cachés dans la boîte des pâtes"
-    rarity: common
-  - text: "Recharge le bocal du sucre avec du sel par mégarde"
-    rarity: common
-  - text: "Considère que la sauce tomate dure trois mois après ouverture"
-    rarity: common
-  - text: "Mange du fromage à 1h du matin debout devant le frigo ouvert"
-    rarity: common
-  - text: "Achète des fruits exotiques qu'il jette une semaine plus tard"
+  - text: "Range tes chaussettes dans ses affaires et attend que tu les réclames"
     rarity: common
 
-  # --- Nuisances sonores (25) ---
-  - text: "Met de la musique à 7h du matin le dimanche"
+  # Ménage
+  - text: "Passe l’aspirateur autour de ses chaussures sans les déplacer"
     rarity: common
-  - text: "Apprend la guitare acoustique en débutant absolu"
+  - text: "Déclare avoir fait le ménage après avoir rangé sa chambre"
     rarity: common
-  - text: "Ronfle comme un tracteur même par temps calme"
+  - text: "Pousse les miettes de la table sur le sol que tu viens de laver"
     rarity: common
-  - text: "Marche pieds nus sur le parquet à 3h du matin"
+  - text: "Nettoie seulement la moitié du miroir à sa hauteur"
     rarity: common
-  - text: "Met son réveil à sonner 7 fois entre 6h45 et 7h30"
+  - text: "Emprunte l’aspirateur et le rend avec le réservoir plein"
     rarity: common
-  - text: "Tousse dramatiquement tous les matins"
+  - text: "Laisse ses traces de pas sur le sol encore humide"
     rarity: common
-  - text: "Fait du yoga avec une vidéo YouTube à fond"
+  - text: "Efface son nom du planning ménage au crayon"
     rarity: common
-  - text: "Regarde ses séries dans le salon sans casque"
+  - text: "Annonce « moi, la poussière ne me gêne pas »"
     rarity: common
-  - text: "Rit 'HA HA' bruyamment seul devant un écran"
+  - text: "Essuie une éclaboussure avec le premier vêtement à portée"
     rarity: common
-  - text: "Reçoit ses amis et parle plus fort qu'un haut-parleur de stade"
+  - text: "Déplace le tapis pour couvrir une tache"
     rarity: common
-  - text: "Fait des FaceTime à fond sur enceinte dans le salon"
+  - text: "Attend une visite de ses parents pour nettoyer les espaces communs"
     rarity: common
-  - text: "Joue à Mario Kart en hurlant à 23h"
+  - text: "Fait le ménage en laissant tous les produits ouverts derrière lui"
     rarity: common
-  - text: "Tape la mesure sur la table avec ses ongles pendant l'apéro"
+  - text: "Dépose ses chaussures boueuses sur le paillasson intérieur propre"
     rarity: common
-  - text: "Apprend la flûte à bec à 32 ans"
+  - text: "Laisse son tapis de sport collant au milieu du salon"
     rarity: common
-  - text: "Sèche ses cheveux à 6h45 avec un sèche-cheveux de 2008"
+  - text: "Secoue son plaid au-dessus de la table déjà dressée"
     rarity: common
-  - text: "Claque les portes systématiquement"
+  - text: "Passe la serpillière sans ramasser les miettes"
     rarity: common
-  - text: "Marche en talons sur le parquet à 7h"
+  - text: "Laisse la hotte grasse et dit ne jamais cuisiner gras"
     rarity: common
-  - text: "Fait des pompes en respirant comme une locomotive"
+  - text: "Range les produits de ménage derrière ses réserves de boissons"
     rarity: common
-  - text: "Chante sous la douche faux mais fort"
+  - text: "Nettoie son étagère en poussant la poussière sur la tienne"
     rarity: common
-  - text: "Fait sonner l'alarme du four toutes les 30 secondes sans réagir"
-    rarity: common
-  - text: "Brosse ses dents avec une brosse électrique à 6h pile"
-    rarity: common
-  - text: "Joue à Call of Duty en s'engueulant avec ses copains du Discord"
-    rarity: common
-  - text: "Imite des animaux en parlant à son chat"
-    rarity: common
-  - text: "Met les vocaux Insta à fond et tu entends tout du couloir"
-    rarity: common
-  - text: "Fait du running sur place dans sa chambre"
+  - text: "Te tend l’aspirateur quand tu lui rappelles son tour"
     rarity: common
 
-  # --- Invités & partenaires (20) ---
-  - text: "Son·sa partenaire dort là 6 nuits sur 7 mais ne paie pas le loyer"
+  # Poubelles et recyclage
+  - text: "Tasse la poubelle avec le pied pour éviter de la sortir"
     rarity: common
-  - text: "Ramène un nouveau date toutes les deux semaines"
+  - text: "Pose son emballage à côté de la poubelle pleine"
     rarity: common
-  - text: "Présente son date sans son prénom à 8h du matin dans la cuisine"
+  - text: "Retire le sac sans en remettre un"
     rarity: common
-  - text: "Fait l'amour bruyamment quand tu fais une visio importante"
+  - text: "Laisse le sac poubelle devant la porte toute la nuit"
     rarity: common
-  - text: "Son·sa copain·ine prend des douches de 40 minutes"
+  - text: "Jette une bouteille pleine dans le tri"
     rarity: common
-  - text: "Ses parents débarquent un dimanche sans prévenir"
+  - text: "Empile ses cartons de livraison sans les plier"
     rarity: common
-  - text: "Sa mère vient laver son linge tous les dimanches"
+  - text: "Dit « ça ne sent rien » depuis sa chambre, porte fermée"
     rarity: common
-  - text: "Son chien vient en visite tous les week-ends"
+  - text: "Balance ses restes directement dans la poubelle sans sac"
     rarity: common
-  - text: "Squatte le salon avec sa pote tous les jeudis pour Quotidien"
+  - text: "Laisse couler le sac percé jusqu’à l’ascenseur"
     rarity: common
-  - text: "Reçoit ses potes en pyjama dans le salon"
+  - text: "Mélange les poubelles que tu viens de trier"
     rarity: common
-  - text: "Son·sa copain·ine a son propre côté du frigo"
+  - text: "Empile le verre sur le balcon jusqu’à cacher la fenêtre"
     rarity: common
-  - text: "Sa cousine de 19 ans vient 'pour quelques jours' qui durent 3 mois"
+  - text: "Finit les sacs poubelles et laisse la boîte vide sous l’évier"
     rarity: common
-  - text: "Son·sa pote de fac vient dormir une fois par semaine"
+  - text: "Te demande de sortir ses déchets puisque « tu descends »"
     rarity: common
-  - text: "Reçoit son ex pour 'discuter' pendant 4h dans le salon"
+  - text: "Jette une boîte avec la cuillère encore dedans"
     rarity: common
-  - text: "Ramène sa team de boulot pour finir une présentation un dimanche"
+  - text: "Utilise le petit bac de salle de bain pour les restes du dîner"
     rarity: common
-  - text: "Présente sa nouvelle conquête comme 'ma future femme'"
+  - text: "Laisse ses mégots dans le pot de ta plante"
     rarity: common
-  - text: "Sa mère t'appelle directement pour avoir des nouvelles de son enfant"
+  - text: "Remet un emballage sale dans le placard au lieu de le jeter"
     rarity: common
-  - text: "Son·sa partenaire boit ton café personnel"
+  - text: "Abandonne un carton rempli de polystyrène dans l’entrée"
     rarity: common
-  - text: "Met sa pote en colocation cachée pour 'quelques semaines'"
+  - text: "Pose un sac de tri devant ta porte pour te le rappeler"
     rarity: common
-  - text: "Son·sa partenaire fait son footing chez vous tous les matins"
-    rarity: common
-
-  # --- Argent & charges (20) ---
-  - text: "'Ah merde j'ai pas de liquide, tu peux avancer ?'"
-    rarity: common
-  - text: "Doit toujours 17,50€ depuis 4 mois"
-    rarity: common
-  - text: "Refuse Lydia/Tricount 'par principe'"
-    rarity: common
-  - text: "Calcule au centime près qui doit quoi"
-    rarity: common
-  - text: "Conteste la facture EDF parce qu'il était en vacances 2 jours"
-    rarity: common
-  - text: "Paie le loyer le 12 du mois 'désolé je rentre que demain'"
-    rarity: common
-  - text: "Refuse de mettre du PQ dans les courses communes"
-    rarity: common
-  - text: "Met sur Tricount 'petit-déjeuner avec ma mère 14€'"
-    rarity: common
-  - text: "Compte le sel dans le Tricount"
-    rarity: common
-  - text: "Demande à ce que les pâtes soient mises à part dans les comptes"
-    rarity: common
-  - text: "Achète distributeur quand c'est commun, du bio quand c'est pour lui"
-    rarity: common
-  - text: "'Je fais virement la semaine prochaine'"
-    rarity: common
-  - text: "Conteste sa part de l'apéro auquel il est arrivé 1h en retard"
-    rarity: common
-  - text: "Te montre des captures d'écran Splitwise sur 6 mois"
-    rarity: common
-  - text: "Calcule sa part au prorata de sa présence dans l'appart"
-    rarity: common
-  - text: "Refuse de partager Netflix 'par principe'"
-    rarity: common
-  - text: "A 'oublié' son code carte bancaire pour la troisième fois ce mois"
-    rarity: common
-  - text: "Sort sa calculette pour le partage de la pizza"
-    rarity: common
-  - text: "'T'as cramé combien d'eau chaude ce mois-ci ?'"
-    rarity: common
-  - text: "Fait la gueule quand on lui demande sa part trois fois"
+  - text: "Remplit une seconde poubelle au lieu de vider la première"
     rarity: common
 
-  # --- Ménage & propreté (30) ---
-  - text: "Le planning ménage est ignoré depuis le 4 octobre"
+  # Bruit et sommeil
+  - text: "Met de la musique à sept heures le dimanche"
     rarity: common
-  - text: "Passe l'aspirateur uniquement dans sa chambre"
+  - text: "Laisse son réveil sonner pendant sa douche"
     rarity: common
-  - text: "Lave le sol avec de l'eau froide sans produit"
+  - text: "Répète « dernière partie » à minuit puis crie dans son casque"
     rarity: common
-  - text: "Considère que 'ranger' = 'cacher'"
+  - text: "Ferme toutes les portes en les laissant claquer"
     rarity: common
-  - text: "Sort la poubelle uniquement quand elle déborde de 30 cm"
+  - text: "Passe ses appels en haut-parleur devant les chambres"
     rarity: common
-  - text: "Met une nouvelle poubelle alors que la première n'est pas pleine"
+  - text: "Lance le blender après avoir vu tout le monde se coucher"
     rarity: common
-  - text: "Mange des biscuits sur le canapé et laisse les miettes"
+  - text: "Monte le volume pour entendre la télé depuis la cuisine"
     rarity: common
-  - text: "N'a jamais nettoyé la hotte de la cuisine"
+  - text: "Laisse son téléphone vibrer sur le mur mitoyen"
     rarity: common
-  - text: "Garde 23 sacs plastiques sous l'évier 'au cas où'"
+  - text: "Teste une sonnerie différente à chaque réveil reporté"
     rarity: common
-  - text: "A des moutons sous son lit qui ont leur propre nom"
+  - text: "Répond « je chuchote » en parlant plus fort"
     rarity: common
-  - text: "Fait son lit une fois par mois"
+  - text: "Traîne les chaises sur le carrelage pendant son goûter de nuit"
     rarity: common
-  - text: "Confond la serpillière et le torchon de cuisine"
+  - text: "Garde l’enceinte allumée quand il quitte l’appartement"
     rarity: common
-  - text: "Aspire les poils de chien avec un Dyson de 2008"
+  - text: "Lance ses vocaux à plein volume puis colle le téléphone à son oreille"
     rarity: common
-  - text: "Range les chaussures en formation libre dans l'entrée"
+  - text: "Fait participer toute la coloc à sa dispute téléphonique"
     rarity: common
-  - text: "Laisse les courses dans le sac réutilisable trois jours"
+  - text: "Laisse l’alarme du four sonner parce qu’il est dans une partie"
     rarity: common
-  - text: "Met les sacs poubelles à côté de la poubelle pleine"
+  - text: "Travaille ses gammes pendant le créneau calme convenu"
     rarity: common
-  - text: "Mange du chocolat sur le canapé blanc en t-shirt blanc"
+  - text: "Réveille tout le monde pour demander qui fait du bruit"
     rarity: common
-  - text: "Cache la poussière sous le canapé en pensant que ça suffit"
+  - text: "Parle fort sous ta fenêtre après avoir promis de sortir pour appeler"
     rarity: common
-  - text: "Considère qu'un placard fermé est un placard rangé"
+  - text: "Tape au mur pour réclamer le silence avec sa télé allumée"
     rarity: common
-  - text: "Lave les vitres une fois tous les deux ans"
-    rarity: common
-  - text: "Ne change jamais le sac de l'aspirateur"
-    rarity: common
-  - text: "Met les fringues sales en boule sur la chaise du couloir"
-    rarity: common
-  - text: "Stocke 4 tapis enroulés dans le couloir 'pour plus tard'"
-    rarity: common
-  - text: "Garde le sapin de Noël en juin"
-    rarity: common
-  - text: "Repose la table basse plus loin sans nettoyer en dessous"
-    rarity: common
-  - text: "Tousse partout sans jamais désinfecter rien"
-    rarity: common
-  - text: "Considère que la cuisinière 'se nettoie quand on cuisine'"
-    rarity: common
-  - text: "Considère que la lessive 'désinfecte' la machine"
-    rarity: common
-  - text: "Range les chaussures encore boueuses dans le placard"
-    rarity: common
-  - text: "Fait du sport et laisse son tapis collant dans le salon"
+  - text: "Lance un appel vidéo dans le couloir à côté de ta porte"
     rarity: common
 
-  # --- Communication (15) ---
-  - text: "Met des post-its passifs-agressifs partout"
+  # Salon et temps partagé
+  - text: "Change de chaîne au milieu du film sans demander"
     rarity: common
-  - text: "Tagge tout le monde dans le groupe WhatsApp à 23h"
+  - text: "Regarde seul l’épisode que vous aviez prévu ensemble"
     rarity: common
-  - text: "Prend en photo la vaisselle sale et l'envoie sur le groupe"
+  - text: "Garde la télécommande en allant dans sa chambre"
     rarity: common
-  - text: "Crée un Trello partagé pour les tâches ménagères"
+  - text: "Met le film en pause et disparaît vingt minutes"
     rarity: common
-  - text: "Fait des 'réunions de coloc' mensuelles"
+  - text: "Laisse ses miettes entre les coussins du canapé"
     rarity: common
-  - text: "Soupire bruyamment quand tu rentres"
+  - text: "Réserve le canapé avec ses affaires même en son absence"
     rarity: common
-  - text: "N'ouvre jamais le groupe WhatsApp coloc"
+  - text: "Étale son travail sur toute la table au moment du dîner"
     rarity: common
-  - text: "Répond avec 'ok' 3 jours plus tard"
+  - text: "Commente la fin d’un film qu’il sait que tu découvres"
     rarity: common
-  - text: "Vocale de 12 minutes pour dire 'y'a plus de PQ'"
+  - text: "Pose ses chaussures sur le plaid commun"
     rarity: common
-  - text: "Lit les messages mais ne répond jamais"
+  - text: "Laisse sa manette vide au suivant"
     rarity: common
-  - text: "Te demande si tu as vu sa carte d'identité par message à 2h"
+  - text: "Éteint la lampe dont tu te sers pour lire"
     rarity: common
-  - text: "Fait des stories Instagram de l'appart sans demander"
+  - text: "S’endort devant la télé puis proteste quand on l’éteint"
     rarity: common
-  - text: "Rappelle ses soucis perso à chaque réunion coloc"
+  - text: "Laisse sa tasse collée à la table basse"
     rarity: common
-  - text: "Te demande de 'reformuler' quand tu fais un reproche"
+  - text: "Prend le seul fauteuil pour y poser son sac"
     rarity: common
-  - text: "Fait des appels d'urgence WhatsApp pour des broutilles"
+  - text: "Refuse de choisir le film puis critique tous les choix"
     rarity: common
-
-  # --- Salon, TV & streaming (15) ---
-  - text: "Squatte le salon avec son plaid et un paquet de chips familial"
+  - text: "Déplace ton puzzle en cours pour poser son ordinateur"
     rarity: common
-  - text: "Regarde des télé-réalités à fond sans casque"
+  - text: "Laisse son jeu installé plusieurs jours sur la seule table"
     rarity: common
-  - text: "Spoile la série que tu regardes en commun"
+  - text: "Débranche ton casque pour brancher le sien"
     rarity: common
-  - text: "Change la box pour mettre L'Équipe 21 en plein milieu de ton film"
+  - text: "Te demande de libérer le salon sans dire pourquoi"
     rarity: common
-  - text: "Pose des pauses sans dire 'je reviens'"
-    rarity: common
-  - text: "Refuse de partager le mot de passe Netflix avec la coloc"
-    rarity: common
-  - text: "Met le canapé en mode lit et y dort tout le week-end"
-    rarity: common
-  - text: "S'endort devant la télé qui reste allumée jusqu'au matin"
-    rarity: common
-  - text: "Met la télé en sortant 'pour faire un peu de bruit'"
-    rarity: common
-  - text: "Mange avec son assiette directement sur ses genoux dans le canap'"
-    rarity: common
-  - text: "Met ses pieds sur la table basse en chaussettes douteuses"
-    rarity: common
-  - text: "Garde la télécommande sur lui même pour aller pisser"
-    rarity: common
-  - text: "Laisse un mug avec un fond de café froid sur la table basse"
-    rarity: common
-  - text: "Endort à 22h dans le canap' avec le bowl de pâtes encore plein"
-    rarity: common
-  - text: "Joue à la Switch avec le son de fond toute la nuit"
+  - text: "Parle pendant les dialogues puis demande ce qui s’est passé"
     rarity: common
 
-  # --- Animaux (10) ---
-  - text: "A pris un chat sans demander à la coloc"
+  # Invités
+  - text: "Invite des amis et prévient quand ils sonnent"
     rarity: common
-  - text: "Le chat fait pipi dans tes plantes"
+  - text: "Laisse son invité seul dans l’appartement sans prévenir"
     rarity: common
-  - text: "Le chien hurle quand tu rentres"
+  - text: "Propose ton lit à un ami pendant ton absence"
     rarity: common
-  - text: "Les croquettes traînent dans toute la cuisine"
+  - text: "Promet un apéro calme et pousse les meubles à vingt-deux heures"
     rarity: common
-  - text: "Le chat dort sur ton oreiller en ton absence"
+  - text: "Fait visiter ta chambre à ses invités"
     rarity: common
-  - text: "Le chat vomit sur ton tapis blanc"
+  - text: "Laisse les verres de sa soirée pour le petit-déjeuner des autres"
     rarity: common
-  - text: "Le chien aboie dès qu'on toque à la porte"
+  - text: "Annonce que son invité reste dîner une fois le repas servi"
     rarity: common
-  - text: "Le chat saute sur le plan de travail pendant la cuisine"
+  - text: "Demande le silence à la coloc parce que son invité dort"
     rarity: common
-  - text: "Le chien pique du nez dans ton sac à main"
+  - text: "Laisse ses amis utiliser tes serviettes"
     rarity: common
-  - text: "La litière du chat n'est jamais nettoyée à temps"
+  - text: "Répond « ils partent bientôt » sans leur en avoir parlé"
     rarity: common
-
-  # --- Lessive (15) ---
-  - text: "Fait sa lessive à 23h"
+  - text: "Invite cinq personnes à votre repas prévu pour trois"
     rarity: common
-  - text: "Laisse son linge dans la machine 3 jours"
+  - text: "Donne ton numéro à son invité pour que tu lui ouvres"
     rarity: common
-  - text: "Lave un seul jean à 60°C"
+  - text: "Fait passer les amis de son invité pour des invités de la coloc"
     rarity: common
-  - text: "Étend son linge dans le salon en plein été"
+  - text: "Dit « faites comme chez vous » devant ton placard personnel"
     rarity: common
-  - text: "Met du linge mouillé dans le sèche-linge sans nettoyer le filtre"
+  - text: "Laisse un invité fumer à la fenêtre malgré la règle commune"
     rarity: common
-  - text: "Lave son linge avec ta lessive 'spéciale couleur foncée'"
+  - text: "Prend les coussins de ton lit pour installer ses amis"
     rarity: common
-  - text: "Lance la machine à 7h du matin un dimanche"
+  - text: "S’en va au travail en te laissant faire le café à son invité"
     rarity: common
-  - text: "Bloque le sèche-linge avec une montagne de couvertures"
+  - text: "Se sert dans les courses communes pour offrir un brunch"
     rarity: common
-  - text: "Étend ses sous-vêtements sur le radiateur de la cuisine"
+  - text: "Utilise ton chargeur pour dépanner un invité qui repart avec"
     rarity: common
-  - text: "Met ses chaussettes mouillées sur le porte-serviettes commun"
-    rarity: common
-  - text: "Confond bouton lavage et bouton essorage"
-    rarity: common
-  - text: "Lance 200g de linge dans une machine de 7kg"
-    rarity: common
-  - text: "Étend son linge sur la chaise qui te sert pour manger"
-    rarity: common
-  - text: "Bloque le tambour avec ses 4 jeans en même temps"
-    rarity: common
-  - text: "Fait ses lessives 'à la main' dans la baignoire commune"
+  - text: "Laisse son invité monopoliser la salle de bain avant ton départ"
     rarity: common
 
-  # --- Décoration (12) ---
-  - text: "A des posters de One Piece dans le salon"
+  # Argent et achats
+  - text: "Promet un virement « ce soir » à chaque relance"
     rarity: common
-  - text: "A accroché un drapeau de pays 'comme déco'"
+  - text: "Conteste une dépense commune après avoir approuvé l’achat"
     rarity: common
-  - text: "Met des bougies parfumées violentes type 'orient mystique'"
+  - text: "Met son repas individuel dans les courses partagées"
     rarity: common
-  - text: "Diffuse de l'huile essentielle de patchouli"
+  - text: "Réclame trente centimes mais oublie les vingt euros qu’il te doit"
     rarity: common
-  - text: "Achète des plantes qu'il oublie d'arroser systématiquement"
+  - text: "Achète un produit commun coûteux sans consulter personne"
     rarity: common
-  - text: "Met un tapis pour cacher une tache"
+  - text: "Attend que tu avances les courses pour dire « on fera les comptes »"
     rarity: common
-  - text: "A une lampe à lave dans le salon"
+  - text: "Oublie systématiquement son portefeuille au supermarché"
     rarity: common
-  - text: "Garde un calendrier de l'Avent en juillet"
+  - text: "Se rembourse avant d’envoyer le ticket de caisse"
     rarity: common
-  - text: "Met des guirlandes lumineuses toute l'année"
+  - text: "Garde la monnaie des courses communes dans sa poche"
     rarity: common
-  - text: "Accroche ses photos de vacances en Crète au-dessus du canapé"
+  - text: "Ajoute les frais de sa livraison personnelle aux charges"
     rarity: common
-  - text: "A une chouette en céramique sur la cheminée"
+  - text: "Calcule sa part d’apéro après avoir mangé toutes les olives"
     rarity: common
-  - text: "Garde un cactus mort sur le rebord de la fenêtre"
+  - text: "Exige le ticket pour ta dépense mais a perdu le sien"
     rarity: common
-
-  # --- Régime / alimentation (10) ---
-  - text: "Vegan militant qui te juge à chaque repas"
+  - text: "Décide qu’un cadeau reçu compte comme sa participation aux courses"
     rarity: common
-  - text: "Crossfiteur qui mange 6 kilos de poulet par semaine"
+  - text: "Prend le remboursement d’un achat commun sur son compte et ne le signale pas"
     rarity: common
-  - text: "Suit le jeûne intermittent et te rappelle l'heure"
+  - text: "Compte son temps de courses comme une avance d’argent"
     rarity: common
-  - text: "Sous régime cétogène depuis 3 ans et n'arrête pas d'en parler"
+  - text: "Insiste pour choisir la marque puis refuse de payer la différence"
     rarity: common
-  - text: "Boit son shaker protéiné qui pue dans le salon"
+  - text: "Utilise les capsules communes après avoir refusé de participer à leur achat"
     rarity: common
-  - text: "Fait du batchcooking dominical en monopolisant la cuisine"
+  - text: "Te relance pour une dette déjà remboursée sans vérifier"
     rarity: common
-  - text: "Mange du quinoa à tous les repas"
+  - text: "Déduit un achat non demandé de ce qu’il te doit"
     rarity: common
-  - text: "Te récite les valeurs nutritionnelles de tout ce que tu manges"
-    rarity: common
-  - text: "Refuse de partager une pizza 'trop transformée'"
-    rarity: common
-  - text: "Te conseille un livre sur l'index glycémique"
+  - text: "Laisse les autres payer le remplacement de ce qu’il a cassé"
     rarity: common
 
-  # --- Habitudes personnelles (10) ---
-  - text: "Marche en sous-vêtements dans le salon"
+  # Messages et coordination
+  - text: "Envoie la photo de la vaisselle sale qui contient sa propre assiette"
     rarity: common
-  - text: "Mange en boxer torse nu à table"
+  - text: "Écrit « certaines personnes » au lieu de nommer le problème"
     rarity: common
-  - text: "Coupe ses ongles devant la télé"
+  - text: "Répond au groupe uniquement quand il cherche ses clés"
     rarity: common
-  - text: "Sèche ses cheveux dans le salon"
+  - text: "Envoie douze minutes de vocal pour signaler le manque de papier toilette"
     rarity: common
-  - text: "Se vernit les ongles dans la cuisine"
+  - text: "Organise le ménage commun sur un créneau où il est absent"
     rarity: common
-  - text: "Médite à voix haute"
+  - text: "Vote pour une date puis annonce qu’il ne sera pas là"
     rarity: common
-  - text: "Lit son thème astral à voix haute le dimanche matin"
+  - text: "Écrit « personne ne répond » deux minutes après son premier message au groupe"
     rarity: common
-  - text: "Brûle de la sauge tous les vendredis soirs"
+  - text: "Réagit avec un pouce au message qui lui demande une réponse précise"
     rarity: common
-  - text: "Fait ses tirages de tarot sur la table de la cuisine"
+  - text: "Change un accord oral en disant « personne ne l’a écrit »"
     rarity: common
-  - text: "Pratique le bain glacé tous les matins en hurlant"
+  - text: "Supprime son message après que tout le monde y a répondu"
     rarity: common
-
-  # --- Tech & internet (10) ---
-  - text: "Met du torrent et fait planter le wifi"
+  - text: "Transforme chaque rappel en débat sur le ton employé"
     rarity: common
-  - text: "Stream Twitch en 4K pendant 12h d'affilée"
+  - text: "Répond « vu » au message demandant un virement"
     rarity: common
-  - text: "A 14 abonnements en cours"
+  - text: "Annonce une coupure d’eau après avoir fermé le robinet général"
     rarity: common
-  - text: "Reçoit 5 colis Amazon par semaine"
+  - text: "Envoie ses reproches à minuit et exige une réponse immédiate"
     rarity: common
-  - text: "Met le décodeur en mode 'TV partout' sans demander"
+  - text: "Fait parler « tout le monde » pour sa propre préférence"
     rarity: common
-  - text: "Reboote la box trois fois par soir"
+  - text: "Renvoie les responsabilités vers le coloc absent"
     rarity: common
-  - text: "Branche son PC fixe sur le compteur 'pas en heures pleines'"
+  - text: "Refuse la réunion puis critique les décisions prises"
     rarity: common
-  - text: "Pirate les séries et fait flipper tout le monde sur le wifi"
+  - text: "Écrit en privé à chacun pour obtenir des réponses différentes"
     rarity: common
-  - text: "Reçoit des courriers d'ex à votre adresse encore deux ans après"
+  - text: "Envoie « on peut parler ? » et disparaît jusqu’au lendemain"
     rarity: common
-  - text: "Branche 8 appareils sur la même multiprise tordue"
+  - text: "Lit le planning seulement pour expliquer pourquoi il ne convient pas"
     rarity: common
 
-  # ======================================================================
-  # RARE (145)
-  # ======================================================================
+  # Affaires et limites
+  - text: "Entre dans ta chambre avant la réponse à son coup frappé"
+    rarity: common
+  - text: "Emprunte ton chargeur et le laisse dans son sac au travail"
+    rarity: common
+  - text: "Ouvre ton courrier parce qu’il était sur la table"
+    rarity: common
+  - text: "Prend ton plaid dans ta chambre sans demander"
+    rarity: common
+  - text: "Utilise ton bureau pendant ton absence et déplace tes papiers"
+    rarity: common
+  - text: "Garde ton double de clé après la raison pour laquelle tu l’avais prêté"
+    rarity: common
+  - text: "Fouille dans ton sac pour chercher « juste un stylo »"
+    rarity: common
+  - text: "Commente ton colis avant même que tu l’aies ouvert"
+    rarity: common
+  - text: "Emprunte tes écouteurs sans te le dire"
+    rarity: common
+  - text: "Laisse tes affaires prêtées chez un ami"
+    rarity: common
+  - text: "Ouvre la porte de ta chambre pour mieux faire circuler l’air"
+    rarity: common
+  - text: "Affiche une photo de toi au salon après ton refus"
+    rarity: common
+  - text: "Pose tes affaires dans un sac parce qu’elles « traînaient »"
+    rarity: common
+  - text: "Prend ta chaise de bureau et te laisse la chaise pliante"
+    rarity: common
+  - text: "Publie une vidéo où l’on entend ta conversation privée"
+    rarity: common
+  - text: "Utilise ton carnet pour noter une liste de courses"
+    rarity: common
+  - text: "Raconte à ses amis ce que tu lui as confié en privé"
+    rarity: common
+  - text: "Emprunte tes chaussures pour descendre les poubelles"
+    rarity: common
+  - text: "Déplace tes médicaments en rangeant sans te dire où"
+    rarity: common
+  - text: "Répond à ta place au livreur depuis l’interphone"
+    rarity: common
 
-  # --- Vaisselle / Cuisine (15) ---
-  - text: "Met sa fourchette sale dans le pot de Nutella commun"
-    rarity: rare
-  - text: "Cuisine du poisson le dimanche soir sans ouvrir une seule fenêtre"
-    rarity: rare
-  - text: "Découpe la viande crue sur la planche à pain commune"
-    rarity: rare
-  - text: "A 14 mugs personnels mais utilise toujours le tien préféré"
-    rarity: rare
-  - text: "Sert sa raclette dans tes assiettes du dimanche en porcelaine"
-    rarity: rare
-  - text: "Met la cocotte-minute en marche puis part faire pipi"
-    rarity: rare
-  - text: "Fait griller du pain au four en mode pyrolyse pendant 20 minutes"
-    rarity: rare
-  - text: "Cuit ses lentilles dans la bouilloire électrique"
-    rarity: rare
-  - text: "Met du riz dans la cafetière 'pour gagner du temps'"
-    rarity: rare
-  - text: "Fait fondre une cuillère en plastique dans la sauce et la laisse là"
-    rarity: rare
-  - text: "Fait des spaghettis carbonara avec de la crème fraîche et des lardons"
-    rarity: rare
-  - text: "Mange un steak haché cru 'à la tartare' sans rien d'autre"
-    rarity: rare
-  - text: "Confond la coriandre et le persil pendant 4 ans"
-    rarity: rare
-  - text: "Range les œufs durs dans le frigo sans les marquer du tout"
-    rarity: rare
-  - text: "Cuit du quinoa pendant 1h et le sert al dente comme du riz japonais"
-    rarity: rare
+  # Équipements
+  - text: "Redémarre la box pendant ta visioconférence sans prévenir"
+    rarity: common
+  - text: "Débranche ton ordinateur pour brancher son enceinte"
+    rarity: common
+  - text: "Change le mot de passe du wifi et oublie de le communiquer"
+    rarity: common
+  - text: "Monopolise la prise commune avec un chargeur inutilisé"
+    rarity: common
+  - text: "Laisse son casque connecté à la télé et part avec"
+    rarity: common
+  - text: "Vide les piles de la télécommande pour sa manette"
+    rarity: common
+  - text: "Signale une fuite seulement quand tu marches dedans"
+    rarity: common
+  - text: "Fait semblant de découvrir la poignée qu’il vient de casser"
+    rarity: common
+  - text: "Laisse la fenêtre ouverte avec le chauffage au maximum"
+    rarity: common
+  - text: "Change le thermostat dès que tu quittes la pièce"
+    rarity: common
+  - text: "Bloque l’accès au tableau électrique avec ses cartons"
+    rarity: common
+  - text: "Laisse le frigo sonner plutôt que vérifier la porte"
+    rarity: common
+  - text: "Règle l’enceinte commune pour diffuser ses notifications personnelles"
+    rarity: common
+  - text: "Enlève l’ampoule du couloir pour remplacer celle de sa chambre"
+    rarity: common
+  - text: "Déplace la box dans sa chambre parce qu’il a besoin du câble"
+    rarity: common
+  - text: "Utilise le dernier rouleau adhésif et range le dévidoir vide"
+    rarity: common
+  - text: "Garde les outils communs au fond de sa valise"
+    rarity: common
+  - text: "Perd la notice au moment de démonter l’appareil commun"
+    rarity: common
+  - text: "Répare un meuble avec ton matériel puis laisse les débris"
+    rarity: common
+  - text: "Désactive le minuteur du chauffage sans prévenir"
+    rarity: common
 
-  # --- Salle de bain (12) ---
-  - text: "Se coupe les ongles dans le salon devant la télé"
-    rarity: rare
-  - text: "Se coupe les cheveux au-dessus du lavabo et oublie de nettoyer"
-    rarity: rare
-  - text: "Fait sa coloration capillaire au-dessus du lavabo blanc"
-    rarity: rare
-  - text: "Lave son chien dans la baignoire commune"
-    rarity: rare
-  - text: "Sèche sa lessive sur le sèche-serviettes pendant 4 jours"
-    rarity: rare
-  - text: "Met son maillot de bain mouillé sur le panier de linge propre"
-    rarity: rare
-  - text: "Fait des masques visage à minuit dans le couloir et tu te casses dessus"
-    rarity: rare
-  - text: "Met de la teinture violette dans la baignoire blanche"
-    rarity: rare
-  - text: "Tente de teindre un T-shirt à la javel dans le lavabo"
-    rarity: rare
-  - text: "Met du papier mâché à sécher sur le radiateur de la salle de bain"
-    rarity: rare
-  - text: "Fait son henné capillaire et la salle de bain pue le foin pendant 3 jours"
-    rarity: rare
-  - text: "Met sa boîte à dents en mode UV dans le placard à pharmacie commun"
-    rarity: rare
+  # Entrée et vie commune
+  - text: "Laisse son vélo bloquer le passage dans l’entrée"
+    rarity: common
+  - text: "Pose ses colis devant la porte jusqu’à sa prochaine sortie"
+    rarity: common
+  - text: "Garde ses clés sur la serrure et empêche ton entrée"
+    rarity: common
+  - text: "Part avec les deux jeux de clés par habitude"
+    rarity: common
+  - text: "Laisse la porte palière entrouverte en attendant une livraison"
+    rarity: common
+  - text: "Descend ses cartons sur le palier et les y oublie"
+    rarity: common
+  - text: "Utilise le balcon comme débarras sans laisser de place aux autres"
+    rarity: common
+  - text: "Fait livrer un meuble et te désigne pour le réceptionner"
+    rarity: common
+  - text: "Laisse ses chaussures dans le passage malgré le meuble à chaussures"
+    rarity: common
+  - text: "Vide son sac de plage sur le tapis du salon"
+    rarity: common
+  - text: "Rentre avec son parapluie ouvert qui goutte sur les manteaux"
+    rarity: common
+  - text: "Empile ses valises devant le placard commun"
+    rarity: common
+  - text: "Emporte toute la pile de courrier dans sa chambre et oublie de la trier"
+    rarity: common
+  - text: "Laisse son casque de vélo sur la chaise où tu allais t’asseoir"
+    rarity: common
+  - text: "Oublie son code d’entrée et t’appelle chaque soir"
+    rarity: common
+  - text: "Ouvre à n’importe qui dès que l’interphone sonne"
+    rarity: common
+  - text: "Se gare devant la sortie commune « juste cinq minutes »"
+    rarity: common
+  - text: "Abandonne les vis du meuble démonté sur le canapé"
+    rarity: common
+  - text: "Prend toute la penderie d’entrée avec ses manteaux hors saison"
+    rarity: common
+  - text: "Demande de l’aide pour monter un colis sans préciser que c’est un canapé"
+    rarity: common
 
-  # --- Frigo & nourriture (15) ---
-  - text: "Range ses chaussettes de running au congélateur 'pour tuer les bactéries'"
+  # Cuisine sous contrôle
+  - text: "Met un cadenas sur son beurre mais utilise le tien"
     rarity: rare
-  - text: "Stocke ses huiles essentielles dans le frigo et nique le goût de tous tes plats"
+  - text: "Dessine un trait sur la bouteille de lait pour surveiller le niveau"
     rarity: rare
-  - text: "Met un cadenas sur sa boîte du frigo"
+  - text: "Prétend que ton prénom sur la boîte désigne la recette"
     rarity: rare
-  - text: "Prépare un meal-prep en 12 boîtes hermétiques tous les dimanches"
+  - text: "Remplace ton plat mangé par les ingrédients encore crus"
     rarity: rare
-  - text: "Fait son propre kéfir et l'a baptisé 'Bernard'"
+  - text: "Étiquette ton reste de gâteau « commun » pendant ton absence"
     rarity: rare
-  - text: "Fait fermenter sa choucroute maison dans la cuisine en jarre ouverte"
+  - text: "Décongèle tous tes repas pour récupérer une étagère"
     rarity: rare
-  - text: "Stocke un litre de gras de canard dans le frigo 'pour les confits du mois'"
+  - text: "Cache la vaisselle sale dans le four avant l’arrivée de ses parents"
     rarity: rare
-  - text: "Garde un yaourt dans le frigo depuis le déménagement"
+  - text: "Jette ton levain parce que « ça faisait plusieurs jours »"
     rarity: rare
-  - text: "Fait son kombucha qui explose dans la cuisine à 4h du matin"
+  - text: "Lave sa vaisselle sale uniquement quand le propriétaire vient"
     rarity: rare
-  - text: "Achète un demi-agneau congelé qui bloque tout le compartiment surgelé pendant 3 mois"
+  - text: "Réserve les quatre plaques avec des casseroles vides"
     rarity: rare
-  - text: "Possède un rayon 'fermenté' qui sent la chaussette de marathonien"
+  - text: "Conserve son repas dans tes boîtes et te rend les siennes tachées"
     rarity: rare
-  - text: "Stocke 14 boîtes de sardines premier prix dans le tiroir à fromage 'au cas où'"
+  - text: "Classe le frigo par couleur et mélange les courses de chacun"
     rarity: rare
-  - text: "A son propre frigo personnel dans sa chambre"
+  - text: "T’apporte une assiette pour que tu lui serves une part de ton dîner"
     rarity: rare
-  - text: "Range son sac de protéines à côté du sucre en poudre"
+  - text: "Revend l’appareil à raclette commun parce qu’il ne mange pas de fromage"
     rarity: rare
-  - text: "Fait sécher ses figues du jardin sur le rebord de la fenêtre du salon"
+  - text: "Met une balance devant le fromage commun pour contrôler les parts"
     rarity: rare
-
-  # --- Nuisances sonores (10) ---
-  - text: "A un perroquet qui dit 'BONJOUR' à 6h du matin"
+  - text: "Organise un repas pour ses amis et te demande de prêter tes courses"
     rarity: rare
-  - text: "Apprend le yodel pour le spectacle de fin d'année de son atelier"
+  - text: "Ouvre une bouteille offerte à ton anniversaire pour sa sauce"
     rarity: rare
-  - text: "Pratique le hang drum dans le salon en mode méditation"
+  - text: "Te laisse un mot expliquant comment remplacer le repas qu’il t’a pris"
     rarity: rare
-  - text: "Cuit ses pâtes en chantant l'opéra italien"
+  - text: "Refuse de nettoyer le four parce que ses plats ont toujours un couvercle"
     rarity: rare
-  - text: "Joue de la batterie électronique à 1h du matin sans casque"
-    rarity: rare
-  - text: "Pratique le saxophone 'pour le plaisir' tous les soirs à 22h"
-    rarity: rare
-  - text: "Sort son didgeridoo à chaque soirée"
-    rarity: rare
-  - text: "Fait du beatbox dans la salle de bain pour tester l'acoustique"
-    rarity: rare
-  - text: "Pratique le throat-singing mongol depuis qu'il est rentré du Kirghizistan"
-    rarity: rare
-  - text: "Met une enceinte connectée dans la salle de bain qui parle toute seule"
-    rarity: rare
-
-  # --- Invités & partenaires (10) ---
-  - text: "Son·sa copain·ine fait sa propre lessive chez vous toutes les semaines"
-    rarity: rare
-  - text: "Son·sa copain·ine a sa propre clé alors qu'on ne lui en a jamais donnée"
-    rarity: rare
-  - text: "Reçoit un parfait inconnu trouvé sur Tinder qui prend son petit-déj' avec toi"
-    rarity: rare
-  - text: "Son·sa copain·ine vide le lave-vaisselle et range tout au mauvais endroit"
-    rarity: rare
-  - text: "Son père reste dormir 3 nuits 'en passant'"
-    rarity: rare
-  - text: "Sa thérapeute fait des séances en visio dans le salon"
-    rarity: rare
-  - text: "Reçoit son groupe de prière le mercredi soir"
-    rarity: rare
-  - text: "Reçoit sa meilleure amie qui pleure pendant 4h dans le salon"
-    rarity: rare
-  - text: "Sa mère a sa propre brosse à dents chez vous"
-    rarity: rare
-  - text: "Son·sa copain·ine se met directement en pyjama dès l'arrivée"
-    rarity: rare
-
-  # --- Argent (12) ---
-  - text: "Demande qu'on note sur Tricount l'eau utilisée pour ses pâtes"
-    rarity: rare
-  - text: "A créé une cagnotte Leetchi pour le PQ commun"
-    rarity: rare
-  - text: "Met sur Lydia 'loyer + 0,50€ d'intérêts car retard'"
-    rarity: rare
-  - text: "Refuse d'acheter une corbeille à pain commune 'pas dans mes priorités'"
-    rarity: rare
-  - text: "Réclame sa moitié du sel quand il déménage"
-    rarity: rare
-  - text: "Met ses Tupperware sur Vinted en cas de départ de coloc"
-    rarity: rare
-  - text: "A renégocié sa part de loyer 'vu qu'il est plus à la maison'"
-    rarity: rare
-  - text: "Refuse de partager le wifi mais utilise le tien quand le sien rame"
-    rarity: rare
-  - text: "Fait des reproches sur le détergent 'trop premium'"
-    rarity: rare
-  - text: "Achète des couverts perso pour ne pas user les communs"
-    rarity: rare
-  - text: "Demande qu'on rembourse les heures où il a fait le ménage en SMIC horaire"
-    rarity: rare
-  - text: "Te facture l'utilisation de sa Nespresso au tarif Starbucks"
-    rarity: rare
-
-  # --- Ménage (15) ---
-  - text: "Met du Mr Propre directement sur le parquet en bois brut huilé"
-    rarity: rare
-  - text: "Lave le sol pieds nus et glisse 4 fois sur le dallage"
-    rarity: rare
-  - text: "Confond eau de Javel et désinfectant et nique tout le carrelage de couleur"
-    rarity: rare
-  - text: "Ne sait pas changer un sac d'aspirateur"
-    rarity: rare
-  - text: "Lave ses sneakers blanches en machine avec ses serviettes blanches"
-    rarity: rare
-  - text: "Considère que la salle de bain 'se nettoie à la vapeur' en prenant des douches"
-    rarity: rare
-  - text: "Lave les vitres avec un T-shirt sale"
-    rarity: rare
-  - text: "Confond cire d'abeille et cire à parquet et glisse partout"
-    rarity: rare
-  - text: "Range tous les produits dans le placard sans capuchon"
-    rarity: rare
-  - text: "Met de la lessive en poudre à la louche dans le tambour"
-    rarity: rare
-  - text: "Lave la cuisinière au Cif et tu le mets sans le savoir dans tes pâtes"
-    rarity: rare
-  - text: "Pose son aspirateur sur le canapé 'en mode pause'"
-    rarity: rare
-  - text: "Met les éponges sales au lave-vaisselle 'pour stériliser'"
-    rarity: rare
-  - text: "Considère qu'un mug rincé est un mug propre"
-    rarity: rare
-  - text: "Aspire le sapin de Noël en aiguilles et bouche tout l'aspirateur"
+  - text: "Prend une photo de ton assiette pour contester ta part des courses"
     rarity: rare
 
-  # --- Communication (8) ---
-  - text: "Met un panneau 'ZONE INTERDITE' sur sa porte de chambre"
+  # Ménage à géométrie variable
+  - text: "Retire ses lunettes pour démontrer qu’il ne voit pas la poussière"
     rarity: rare
-  - text: "Pose une caméra dans la cuisine 'pour identifier le voleur de yaourts'"
+  - text: "Coche le planning ménage avec deux semaines d’avance"
     rarity: rare
-  - text: "Imprime le règlement intérieur en A3 plastifié"
+  - text: "Tient un journal de tes oublis à côté de sa vaisselle sale"
     rarity: rare
-  - text: "Tient un journal de bord papier des manquements de chaque coloc"
+  - text: "Affirme que ses chaussures ne salissent pas puisqu’il ne marche qu’en ville"
     rarity: rare
-  - text: "Met le groupe coloc en silencieux et accuse les autres de ne rien dire"
+  - text: "Rassemble toutes les poussières et les dépose devant ta porte"
     rarity: rare
-  - text: "Quitte le groupe WhatsApp en mode dramatique tous les 2 mois"
+  - text: "Déplace les affaires des autres dans la baignoire pour aspirer"
     rarity: rare
-  - text: "Met sa pote en commission consultative dans le groupe WhatsApp coloc"
+  - text: "Propose un prestataire de ménage payé par ceux « que ça dérange »"
     rarity: rare
-  - text: "Imprime des pancartes 'ICI ON ÉCONOMISE L'EAU' au-dessus de l'évier"
+  - text: "Fait repeindre sa chambre et te laisse nettoyer les traces dans le couloir"
     rarity: rare
-
-  # --- Salon (8) ---
-  - text: "Met des films d'horreur à 23h alors qu'il sait que tu ne supportes pas"
+  - text: "Fait disparaître le planning en lavant le frigo"
     rarity: rare
-  - text: "Crie 'OUI' pendant les matchs comme s'il était dans le stade"
+  - text: "Utilise la photo du ménage de la semaine précédente comme preuve"
     rarity: rare
-  - text: "Reproduit les danses de TikTok dans le salon en filmant"
+  - text: "Range les affaires de ses invités dans ton placard pour faire propre"
     rarity: rare
-  - text: "Tousse exprès quand tu ris à un mauvais moment"
+  - text: "Assure que l’eau de la douche nettoie aussi toute la salle de bain"
     rarity: rare
-  - text: "Tient un quiz musical seul dans le salon le samedi soir"
+  - text: "Retire son nom du tour de ménage car son invité a passé l’aspirateur"
     rarity: rare
-  - text: "Fait des séances de PlayStation immersives avec un casque qui fuit le son"
+  - text: "Lave le sol devant ta chambre et t’interdit de sortir pendant une heure"
     rarity: rare
-  - text: "Met des bougies à 80€ dans le salon 'pour l'ambiance'"
+  - text: "Démonte la bonde puis part chercher une pièce pour tout le week-end"
     rarity: rare
-  - text: "Pratique sa stand-up routine devant le miroir du salon"
+  - text: "Passe ton balai aux voisins et te propose d’aller le récupérer"
     rarity: rare
-
-  # --- Animaux (5) ---
-  - text: "Élève des fourmis dans une fourmilière en verre dans le salon"
+  - text: "Laisse les draps de ses invités dans la machine avec ton nom sur un mot"
     rarity: rare
-  - text: "A un serpent dans sa chambre dont tu n'es pas sûr qu'il soit toujours dedans"
+  - text: "Annonce que tu lui dois un tour de ménage pour avoir déplacé une chaise"
     rarity: rare
-  - text: "Adopte un deuxième chat 'qui rend le premier moins seul'"
+  - text: "Fait remplir une grille de satisfaction après avoir vidé le lave-vaisselle"
     rarity: rare
-  - text: "A un lapin nain qui ronge tous les fils électriques"
-    rarity: rare
-  - text: "Possède un terrarium de phasmes dans le couloir d'entrée"
+  - text: "Confond ménage commun et tri de tes affaires personnelles"
     rarity: rare
 
-  # --- Lessive (10) ---
-  - text: "Étend ses sous-vêtements sur la grille du four"
+  # Invités qui s’installent
+  - text: "Donne une clé à son partenaire sans consulter la coloc"
     rarity: rare
-  - text: "Met un sachet de lavande de Provence directement dans le tambour"
+  - text: "Son invité reçoit ses propres invités pendant son absence"
     rarity: rare
-  - text: "Lave ses pulls en cachemire à 90°C en programme intensif"
+  - text: "Présente une valise dans le couloir comme « juste un sac pour ce soir »"
     rarity: rare
-  - text: "Étend du linge sur le radiateur en plein hiver et coupe le chauffage à tous"
+  - text: "Offre une étagère de ton placard à la personne qu’il héberge"
     rarity: rare
-  - text: "Met ses chaussures en cuir au sèche-linge"
+  - text: "Son partenaire vote aux réunions mais ne participe pas aux charges"
     rarity: rare
-  - text: "Lave un seul collant à 30°C avec un cycle de 3h"
+  - text: "Héberge un ami puis part en vacances en te le confiant"
     rarity: rare
-  - text: "Repasse à 5h du matin avant le boulot"
+  - text: "Invite sa famille pour le week-end et s’attribue ta chambre"
     rarity: rare
-  - text: "Lave son tapis de yoga dans la baignoire et tu glisses dedans le matin"
+  - text: "Ajoute ses invités au groupe coloc pour que tu règles leurs problèmes"
     rarity: rare
-  - text: "Lave une peau de mouton à 60°C et la rétrécit pour un caniche"
+  - text: "Explique que son partenaire ne vit pas ici pendant qu’il relève son courrier"
     rarity: rare
-  - text: "Étend ses fringues directement sur les meubles en bois clair"
+  - text: "Son invité critique votre ménage dès le premier petit-déjeuner"
     rarity: rare
-
-  # --- Décoration (8) ---
-  - text: "Pratique le minimalisme et a viré tes affaires 'par mégarde'"
+  - text: "Prête les clés communes au livreur d’un meuble puis oublie de les reprendre"
     rarity: rare
-  - text: "Achète une lampe de sel de l'Himalaya pour 'purifier l'air'"
+  - text: "Prévoit une soirée surprise à quelqu’un qui ne vit pas dans l’appartement"
     rarity: rare
-  - text: "A installé un mini trampoline dans le salon"
+  - text: "Demande une contribution à ses invités et garde l’argent des courses communes"
     rarity: rare
-  - text: "Accroche un trophée de chasse au-dessus du canapé"
+  - text: "Donne à ses parents un double « pour les visites surprises »"
     rarity: rare
-  - text: "A peint un mur en jaune fluo 'pour le pep's'"
+  - text: "Annonce que son ami reste jusqu’à trouver un logement sans date de départ"
     rarity: rare
-  - text: "Met des stickers Disney sur la porte du frigo commun"
+  - text: "Son invité réserve un créneau de machine comme s’il payait le loyer"
     rarity: rare
-  - text: "Affiche son test de QI à 138 sur la porte du frigo"
+  - text: "Laisse ses amis dormir dans le salon le soir où tu avais prévenu recevoir"
     rarity: rare
-  - text: "Décore la cuisine avec des papillons en plastique fluorescents"
+  - text: "Envoie ton code d’entrée dans un groupe de trente personnes"
     rarity: rare
-
-  # --- Régime (8) ---
-  - text: "Pratique le crudivorisme strict et te juge quand tu fais des pâtes"
+  - text: "Récupère le courrier de son partenaire pour cacher son installation"
     rarity: rare
-  - text: "Fait fermenter ses propres légumes dans 14 bocaux étiquetés"
-    rarity: rare
-  - text: "Consomme uniquement Demeter et n'arrête pas de le rappeler"
-    rarity: rare
-  - text: "Boit du jus de céleri pressé à 6h du matin avec son extracteur bruyant"
-    rarity: rare
-  - text: "Fait son propre lait d'amande à 7h en faisant rugir le blender"
-    rarity: rare
-  - text: "Suit le régime Seignalet et te le justifie à chaque repas"
-    rarity: rare
-  - text: "Pratique l'Ayurveda et te dit que tu es Pitta-Vata déséquilibré"
-    rarity: rare
-  - text: "Fait des cures de jus pendant 7 jours et fait peur à voir"
+  - text: "Fait le tour des chambres avec un invité pour choisir où il dormira"
     rarity: rare
 
-  # --- Habitudes personnelles (6) ---
-  - text: "Pratique le bain glacé Wim Hof en hurlant à 6h du matin"
+  # Comptabilité créative
+  - text: "Réclame une réduction de charges pour deux nuits passées ailleurs"
     rarity: rare
-  - text: "Fait son lavement de café tous les vendredis"
+  - text: "Ajoute des intérêts à une avance sans l’avoir annoncé"
     rarity: rare
-  - text: "Pratique le scraping de la langue avec une cuillère commune"
+  - text: "Compte le bon de réduction des courses comme sa contribution personnelle"
     rarity: rare
-  - text: "Médite face à la lune sur le balcon en murmurant des mantras"
+  - text: "Demande le remboursement du cadeau qu’il a offert à la coloc"
     rarity: rare
-  - text: "Fait son gua sha pendant que tu manges en face de lui"
+  - text: "Supprime une dette de l’application parce qu’elle « datait »"
     rarity: rare
-  - text: "Pratique le hauling Insta Live dans le salon"
+  - text: "Facture sa cafetière à la tasse après l’avoir proposée gratuitement"
+    rarity: rare
+  - text: "Achète ses courses avec la cagnotte puis promet de faire le détail"
+    rarity: rare
+  - text: "Met son abonnement de sport dans les comptes après y avoir invité un coloc"
+    rarity: rare
+  - text: "Divise une dépense entre les présents en s’oubliant dans la liste"
+    rarity: rare
+  - text: "Réclame sa moitié du sel au moment de déménager"
+    rarity: rare
+  - text: "Exige une caution pour prêter une casserole déjà achetée en commun"
+    rarity: rare
+  - text: "Réclame sa part du remboursement d’un achat auquel il n’a pas participé"
+    rarity: rare
+  - text: "Inscrit les pizzas de ses amis sous « dîner de coloc »"
+    rarity: rare
+  - text: "Demande de rembourser une remise qu’il n’a finalement pas obtenue"
+    rarity: rare
+  - text: "Se sert dans la cagnotte pour retirer du liquide « provisoirement »"
+    rarity: rare
+  - text: "Négocie une baisse de sa part de loyer après avoir choisi la plus grande chambre"
+    rarity: rare
+  - text: "Fait payer son meuble usagé au prix neuf à la coloc"
+    rarity: rare
+  - text: "Ajoute la livraison express choisie seul à un achat commun"
+    rarity: rare
+  - text: "Récupère la consigne des bouteilles de tous et garde le montant"
+    rarity: rare
+  - text: "Déclare les produits reçus gratuitement comme des achats à partager"
     rarity: rare
 
-  # --- Tech (3) ---
-  - text: "A connecté son frigo intelligent au wifi et te demande de débugger"
+  # Petite administration
+  - text: "Imprime le règlement intérieur sans la règle qui le concerne"
     rarity: rare
-  - text: "Met le wifi en captif 'pour économiser les datas'"
+  - text: "Quitte le groupe à chaque désaccord puis demande le résumé"
     rarity: rare
-  - text: "A installé un VPN chinois qui ralentit toute la connexion"
+  - text: "Invite sa mère à une réunion de coloc comme médiatrice"
+    rarity: rare
+  - text: "Lance un sondage puis le recommence parce que le résultat lui déplaît"
+    rarity: rare
+  - text: "Demande une confirmation écrite pour prêter un tire-bouchon"
+    rarity: rare
+  - text: "Envoie une photo de l’évier au propriétaire pour appuyer sa plainte contre toi"
+    rarity: rare
+  - text: "Affiche tes horaires de douche sur le frigo"
+    rarity: rare
+  - text: "Renomme le wifi pour te faire un reproche"
+    rarity: rare
+  - text: "Crée un groupe de coloc sans la personne dont il veut parler"
+    rarity: rare
+  - text: "Envoie une mise en demeure pour une tasse non rendue"
+    rarity: rare
+  - text: "Propose le vote à majorité puis compte son invité"
+    rarity: rare
+  - text: "Exige que chaque passage de balai soit prouvé par une photo"
+    rarity: rare
+  - text: "Fait un calendrier partagé pour interdire des créneaux sans concertation"
+    rarity: rare
+  - text: "Transforme ton « peut-être » en engagement dans le compte rendu"
+    rarity: rare
+  - text: "Désigne un responsable des poubelles sans se proposer"
+    rarity: rare
+  - text: "Fait relire ses messages de reproche par ses invités devant toi"
+    rarity: rare
+  - text: "Accroche un post-it sur chaque objet que tu as déplacé"
+    rarity: rare
+  - text: "Ressort un message de huit mois pour éviter une question simple"
+    rarity: rare
+  - text: "Enregistre la réunion sur les courses sans prévenir"
+    rarity: rare
+  - text: "Annonce un nouveau règlement comme si le propriétaire l’avait écrit"
     rarity: rare
 
-  # ======================================================================
-  # LEGENDARY (63)
-  # ======================================================================
+  # Territoires et intimité
+  - text: "Lit ton journal sur ton bureau et vient te donner son avis sur ce que tu y racontes"
+    rarity: rare
+  - text: "Transforme le salon en bureau puis exige que tu annonces tes passages"
+    rarity: rare
+  - text: "Décore les murs communs avec ses portraits sans consulter personne"
+    rarity: rare
+  - text: "Met tes cartons dans la cave humide pour libérer son coin sport"
+    rarity: rare
+  - text: "Retire ta déco et la propose dans un groupe de dons"
+    rarity: rare
+  - text: "Prend des photos de ta chambre pour illustrer son annonce de meuble"
+    rarity: rare
+  - text: "Relit les enveloppes sur la table pour commenter tes dépenses"
+    rarity: rare
+  - text: "Installe son étendoir devant ta porte et te demande de faire attention"
+    rarity: rare
+  - text: "Pousse ton lit en ton absence pour récupérer une multiprise"
+    rarity: rare
+  - text: "Fait une copie de ta clé de chambre « au cas où »"
+    rarity: rare
+  - text: "Prête ton manteau à un invité parce qu’il faisait froid"
+    rarity: rare
+  - text: "Débranche ton ordinateur pour mesurer ce qu’il consomme"
+    rarity: rare
+  - text: "Ajoute ta chambre à la visite du propriétaire sans t’en parler"
+    rarity: rare
+  - text: "Utilise ton nom pour réceptionner ses achats"
+    rarity: rare
+  - text: "Ouvre tes colis pour vérifier si sa commande n’est pas dedans"
+    rarity: rare
+  - text: "Entre pendant ta visioconférence pour montrer ta chambre à un ami"
+    rarity: rare
+  - text: "Range les chaussures communes par prix et commente les tiennes"
+    rarity: rare
+  - text: "Confisque la télécommande parce que tu as choisi le film hier"
+    rarity: rare
+  - text: "Prend ton fauteuil pour travailler et t’accuse de le déranger quand tu le réclames"
+    rarity: rare
+  - text: "Fait une story de ta pile de linge en te mentionnant"
+    rarity: rare
 
-  # --- Cuisine (5) ---
-  - text: "Élève un SCOBY de kombucha qui a un nom et auquel personne ne doit toucher"
-    rarity: legendary
-  - text: "Fait sécher des piments du Pérou rapportés en cabine à côté de la table à manger"
-    rarity: legendary
-  - text: "Passe un thermos en bois au lave-vaisselle"
-    rarity: legendary
-  - text: "Stocke 14 bocaux de tomates au vinaigre depuis 3 ans 'au cas où'"
-    rarity: legendary
-  - text: "A acheté une raclette à 4 étages en plein mois d'août"
-    rarity: legendary
+  # Installation et entretien
+  - text: "Peint un mur commun sans demander et t’annonce ta part du pot"
+    rarity: rare
+  - text: "Installe une batterie au salon après avoir dit « un petit instrument »"
+    rarity: rare
+  - text: "Adopte un animal et découvre ensuite qu’il faut l’accord des autres"
+    rarity: rare
+  - text: "Te désigne pour nourrir son animal la veille de son départ"
+    rarity: rare
+  - text: "Laisse son chien sur ton lit malgré ta porte habituellement fermée"
+    rarity: rare
+  - text: "Prétend que nettoyer la litière relève du ménage commun"
+    rarity: rare
+  - text: "Programme l’enceinte pour annoncer ses rappels dans toutes les pièces"
+    rarity: rare
+  - text: "Installe un répéteur wifi dans ta chambre sans t’en parler"
+    rarity: rare
+  - text: "Change l’abonnement internet puis annonce une coupure de dix jours"
+    rarity: rare
+  - text: "Démonte la table commune pour un projet qu’il n’a pas commencé"
+    rarity: rare
+  - text: "Garde le canapé vendu dans le salon jusqu’à trouver un acheteur pour le suivant"
+    rarity: rare
+  - text: "Commande un meuble trop grand et condamne l’ouverture du placard"
+    rarity: rare
+  - text: "Fait livrer ses meubles chez toi avant son emménagement officiel"
+    rarity: rare
+  - text: "T’annonce le passage d’un artisan quand celui-ci frappe à ta chambre"
+    rarity: rare
+  - text: "Laisse les fenêtres ouvertes en partant pour un week-end pluvieux"
+    rarity: rare
+  - text: "Installe une serrure sur le placard à ménage commun"
+    rarity: rare
+  - text: "Utilise les rideaux de la coloc comme bâche de peinture"
+    rarity: rare
+  - text: "Jette les clés d’un cadenas commun parce qu’il ne les reconnaissait pas"
+    rarity: rare
+  - text: "Promet une réparation maison et bloque la douche jusqu’au lundi"
+    rarity: rare
+  - text: "Débranche le congélateur pour faire de la place à son ventilateur"
+    rarity: rare
 
-  # --- Salle de bain (4) ---
-  - text: "Élève des escargots dans la salle de bain pour son resto pop-up"
+  # Le logement devient son projet
+  - text: "Publie une annonce pour louer ta chambre pendant tes vacances"
     rarity: legendary
-  - text: "Fait pousser des champignons médicinaux dans le bac de douche"
+  - text: "Sous-loue le canapé à la nuit sans prévenir personne"
     rarity: legendary
-  - text: "A installé un mini sauna infrarouge dans les toilettes"
+  - text: "Organise des visites de l’appartement alors que personne n’a prévu de partir"
     rarity: legendary
-  - text: "Garde un poisson rouge dans le bidet"
+  - text: "Ouvre l’appartement aux retraits de ses ventes pendant qu’il est au travail"
     rarity: legendary
-
-  # --- Frigo (5) ---
-  - text: "A acheté un mini frigo à viande dédié dans sa chambre"
+  - text: "Loue le salon pour un tournage et te demande de déjeuner dehors"
     rarity: legendary
-  - text: "Élève des vers à soie dans la cuisine pour 'sa filière textile perso'"
+  - text: "Fait venir un groupe entier pour répéter « une seule chanson »"
     rarity: legendary
-  - text: "Garde une dinde de Noël entière dans le congélateur depuis 3 Noëls 'à la prochaine grande occasion'"
+  - text: "Transforme ta chambre en bureau pendant ton déplacement de trois jours"
     rarity: legendary
-  - text: "Fait sécher de la viande de sanglier dans le placard à balais"
+  - text: "Vend la table commune en promettant à l’acheteur que tu aideras à la porter"
     rarity: legendary
-  - text: "A monté un frigo à fromage régulé à 12°C avec hygromètre branché en wifi"
+  - text: "Fait livrer un piano droit et découvre qu’il faut déplacer ton lit"
     rarity: legendary
-
-  # --- Nuisances (6) ---
-  - text: "A acheté un drone qu'il fait voler dans l'appartement"
+  - text: "Offre les meubles communs au prochain coloc avant de demander à qui ils sont"
     rarity: legendary
-  - text: "Pratique le hurlement primal dans le salon le dimanche matin"
+  - text: "Reçoit un stage de méditation et affiche « silence » sur toutes les portes"
     rarity: legendary
-  - text: "Fait des séances de gong à 22h 'pour évacuer les énergies'"
+  - text: "Fait poser une cloison dans le salon pour créer sa pièce supplémentaire"
     rarity: legendary
-  - text: "A monté un studio de batterie acoustique dans la cave commune"
+  - text: "Propose l’appartement comme lieu d’événement dans une annonce publique"
     rarity: legendary
-  - text: "A installé une barre de pole dance dans le salon"
+  - text: "Fait visiter l’appartement à un journaliste sans prévenir les personnes qui y vivent"
     rarity: legendary
-  - text: "A un didgeridoo de 2 mètres qui dort sur le canapé"
+  - text: "Donne rendez-vous à des clients dans la cuisine pendant vos repas"
     rarity: legendary
-
-  # --- Invités (5) ---
-  - text: "Reçoit son groupe de musique métal pour répéter le samedi"
+  - text: "Peint le salon pendant vos vacances puis vous facture la surprise"
     rarity: legendary
-  - text: "Organise une retraite silencieuse de 12 personnes pendant tout un week-end dans l'appart"
+  - text: "Installe une salle de sport au salon et range le canapé dans le garage"
     rarity: legendary
-  - text: "Reçoit un guérisseur philippin tous les jeudis pour des soins en visio"
+  - text: "Déplace toutes tes affaires dans la petite chambre en affirmant « on alterne »"
     rarity: legendary
-  - text: "Fait un week-end coaching avec un mentor en chakras dans le salon"
+  - text: "Publie une visite vidéo de la coloc avec les codes d’entrée visibles"
     rarity: legendary
-  - text: "Sa mère emménage 'temporairement' après une dispute avec son père"
-    rarity: legendary
-
-  # --- Argent (4) ---
-  - text: "A monté un Excel à 16 onglets avec macros pour les charges communes"
-    rarity: legendary
-  - text: "A acheté un compteur d'eau personnel pour mesurer sa consommation de douche"
-    rarity: legendary
-  - text: "Demande des intérêts composés sur les avances de loyer"
-    rarity: legendary
-  - text: "A intégré un coefficient de risque locatif dans son partage des charges"
-    rarity: legendary
-
-  # --- Ménage (5) ---
-  - text: "A acheté un Roomba qu'il a appelé 'Régine' et le considère comme un coloc à part entière"
-    rarity: legendary
-  - text: "A dressé un planning ménage avec tableau de bord et KPIs hebdomadaires"
-    rarity: legendary
-  - text: "Met de l'encens patchouli en plein été pour couvrir l'odeur de la poubelle"
-    rarity: legendary
-  - text: "Mesure le pH de l'eau du sol avec une bandelette après le ménage"
-    rarity: legendary
-  - text: "A monté un dossier 'preuves' depuis 18 mois sur Google Drive partagé avec son avocat"
-    rarity: legendary
-
-  # --- Communication (4) ---
-  - text: "A créé un Notion partagé avec 47 colonnes pour le suivi du ménage"
-    rarity: legendary
-  - text: "Imprime les conversations WhatsApp 'au cas où ça devient un litige'"
-    rarity: legendary
-  - text: "A intégré son avocat directement dans le groupe WhatsApp coloc"
-    rarity: legendary
-  - text: "Rédige des PV de réunion de coloc qu'il fait signer à la fin"
-    rarity: legendary
-
-  # --- Salon (3) ---
-  - text: "A construit une mezzanine dans le salon 'pour gagner de l'espace'"
-    rarity: legendary
-  - text: "A installé un panier de basket fixé au-dessus de l'évier de la cuisine"
-    rarity: legendary
-  - text: "A tendu une slackline entre les deux radiateurs du salon"
-    rarity: legendary
-
-  # --- Animaux (5) ---
-  - text: "A acheté un poulpe pour son aquarium d'eau de mer du salon"
-    rarity: legendary
-  - text: "A monté un terrarium pour mygale dans le salon, 'elle est gentille promis'"
-    rarity: legendary
-  - text: "A négocié un cochon nain qui a fini à 80 kilos"
-    rarity: legendary
-  - text: "Adopte un caméléon 'presque invisible'"
-    rarity: legendary
-  - text: "A des rats apprivoisés qui se baladent en liberté dans l'appart"
-    rarity: legendary
-
-  # --- Décoration (4) ---
-  - text: "A peint un mur entier en vert kaki sans demander à personne"
-    rarity: legendary
-  - text: "A acheté une pyramide en cristal pour 'purifier l'eau du robinet'"
-    rarity: legendary
-  - text: "A monté un autel à la déesse mère dans le couloir d'entrée"
-    rarity: legendary
-  - text: "A accroché un mobile en cristal de 12 kilos au plafond du salon"
-    rarity: legendary
-
-  # --- Spiritualité & dev perso (8) ---
-  - text: "A fait Vipassana et n'arrête pas d'en parler depuis 18 mois"
-    rarity: legendary
-  - text: "Élève un esprit 'familier' dans sa chambre selon ses propres mots"
-    rarity: legendary
-  - text: "Te lit ton thème astral chaque dimanche matin sans que tu aies demandé"
-    rarity: legendary
-  - text: "Fait des constellations familiales dans le salon avec des inconnus"
-    rarity: legendary
-  - text: "Pratique le sungazing torse nu sur le balcon le matin"
-    rarity: legendary
-  - text: "Médite nu·e dans le salon en lotus"
-    rarity: legendary
-  - text: "Pratique le breathwork à 6h en réveillant tout l'immeuble"
-    rarity: legendary
-  - text: "Fait des séances d'EFT en se tapant la tête dans la cuisine au petit-dej"
+  - text: "Organise une fête de départ avant de t’annoncer qu’il quitte la coloc"
     rarity: legendary
 
-  # --- Régime (3) ---
-  - text: "Suit le régime carnivore et stocke 3 kilos de bavette saignante dans le frigo"
+  # Le culot en comptabilité
+  - text: "Te présente une facture de ménage pour le nettoyage de sa soirée"
     rarity: legendary
-  - text: "Mange uniquement entre 11h et 17h, en bambou, sous la pleine lune"
+  - text: "Négocie une baisse du loyer total et continue de réclamer aux autres la même somme"
     rarity: legendary
-  - text: "Pratique le breatharianisme deux jours par mois et fait peur"
+  - text: "Vend le canapé commun puis réclame sa part pour en acheter un nouveau"
+    rarity: legendary
+  - text: "Encaisse les parts de loyer et explique qu’il a utilisé l’argent pour ses vacances"
+    rarity: legendary
+  - text: "Part de la coloc en laissant tous ses abonnements prélevés sur le compte commun"
+    rarity: legendary
+  - text: "Te demande de poser un jour de congé pour assurer son déménagement"
+    rarity: legendary
+  - text: "Organise une soirée payante dans l’appartement et te demande de tenir le vestiaire"
+    rarity: legendary
+  - text: "Prend la cagnotte de la coloc pour réserver son déménagement"
+    rarity: legendary
+  - text: "Vend ton meuble pendant ton absence et propose de te reverser la moitié"
+    rarity: legendary
+  - text: "Retire sa participation aux charges en expliquant qu’il a assez apporté « humainement »"
+    rarity: legendary
+  - text: "Achète l’aspirateur avec la cagnotte commune puis le revend comme le sien"
+    rarity: legendary
+  - text: "Perce les murs le jour de l’état des lieux pour emporter les étagères fixées au logement"
+    rarity: legendary
+  - text: "Réclame un loyer à son invité puis partage toutes ses charges avec vous"
+    rarity: legendary
+  - text: "Refuse de rendre tes clés tant que tu n’as pas payé son calcul personnel"
+    rarity: legendary
+  - text: "Déménage avec le lave-linge commun et te propose de venir faire tes lessives chez lui"
+    rarity: legendary
+  - text: "Déduit de son loyer le coût des soirées où il estime ne pas avoir profité du salon"
+    rarity: legendary
+  - text: "Commande une télé au nom de la coloc et choisit seul le paiement en plusieurs fois"
+    rarity: legendary
+  - text: "Te propose de reprendre ses dettes de courses en échange de ses meubles cassés"
+    rarity: legendary
+  - text: "Retient ta part d’un remboursement pour financer sa pendaison de crémaillère"
+    rarity: legendary
+  - text: "Décide seul de louer le garage commun et garde tous les loyers"
     rarity: legendary
 
-  # --- Misc (2) ---
-  - text: "A fait livrer un piano droit en montant 4 étages à 23h sans prévenir"
+  # Règlement très personnel
+  - text: "Ajoute son avocat au groupe de coloc après un désaccord sur le lave-vaisselle"
     rarity: legendary
-  - text: "A inscrit l'appartement comme adresse de son association sans le dire"
+  - text: "Vient à la réunion de coloc avec ses parents pour parler à sa place"
+    rarity: legendary
+  - text: "Installe une caméra face aux placards et demande de signer un consentement"
+    rarity: legendary
+  - text: "Change le code d’entrée pour obliger la coloc à venir à une réunion"
+    rarity: legendary
+  - text: "Organise une audition de nouveaux colocs pour remplacer celui qui le contredit"
+    rarity: legendary
+  - text: "Cache tous les couverts propres dans sa chambre pour obliger les autres à laver les sales"
+    rarity: legendary
+  - text: "Envoie les captures du groupe à tes parents pour qu’ils te « raisonnent »"
+    rarity: legendary
+  - text: "Fait intervenir ses parents pour vérifier ton tour de ménage"
+    rarity: legendary
+  - text: "Réinitialise la box après une dispute et ne donne le mot de passe qu’à certains colocs"
+    rarity: legendary
+  - text: "Invite le propriétaire à dîner pour arbitrer votre dispute sur les yaourts"
+    rarity: legendary
+  - text: "Fait installer une alarme à ton insu et ne te donne pas le code avant ton retour"
+    rarity: legendary
+  - text: "Envoie au propriétaire des photos du désordre en déplaçant d’abord ses affaires hors champ"
+    rarity: legendary
+  - text: "Invite tous ses amis à la réunion pour faire pencher le vote de son côté"
+    rarity: legendary
+  - text: "Décroche la porte du salon pour prouver qu’il s’agit d’un espace ouvert à tous"
+    rarity: legendary
+  - text: "Dépose tous tes objets du salon devant chez tes parents"
+    rarity: legendary
+  - text: "Installe une boîte verrouillée autour du thermostat dont lui seul a la clé"
+    rarity: legendary
+  - text: "Envoie son préavis au propriétaire en parlant au nom de toute la coloc"
+    rarity: legendary
+  - text: "Diffuse sur les réseaux le classement nominatif des colocs les plus sales"
+    rarity: legendary
+  - text: "Fait dormir ses invités dans le couloir et te reproche de les réveiller en passant"
+    rarity: legendary
+  - text: "Invite le nouveau coloc à emménager avant que le précédent ait rendu sa chambre"
     rarity: legendary

@@ -134,6 +134,10 @@ docker compose exec app bin/console doctrine:migrations:migrate
 docker compose exec app bin/console app:theme:import config/themes/date.yaml
 ```
 
+Each bundled theme contains 500 red flags (300 common, 140 rare, 60 legendary).
+Imports add missing texts; they do not replace an existing catalog. See the
+[catalog editing and import notes](docs/theme-catalogs.md) before importing a revision.
+
 The app is served by FrankenPHP; open the local URL printed by Caddy. Tailwind is
 built through AssetMapper, so there's no separate Node build step.
 

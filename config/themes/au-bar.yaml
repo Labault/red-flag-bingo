@@ -1,1091 +1,1057 @@
 theme:
   name: "Au bar"
   slug: "au-bar"
-  description: "Tous les red flags qu'on a déjà croisés (ou subis) au comptoir, en terrasse, au karaoké, devant le videur ou en cherchant les toilettes."
+  description: "Du comptoir à la dernière commande : les grandes manières et les petits culots de la soirée."
   emoji: "🍻"
 
 red_flags:
-  # ============================================================
-  # COMMON (305) — les classiques universels qui font dire "tellement ça"
-  # ============================================================
 
-  - text: "Demande \"tu fais quoi dans la vie ?\" avant même de connaître ton prénom"
+  # Commande (common)
+  - text: "Appelle le serveur, puis commence seulement à lire la carte"
     rarity: common
-  - text: "Te paye un verre puis attend manifestement un retour sur investissement"
+  - text: "Commande pour toute la table sans consulter personne"
     rarity: common
-  - text: "Annonce \"moi je suis pas comme les autres mecs\" en buvant sa 3e bière"
+  - text: "Change de cocktail quand le barman a déjà commencé à le préparer"
     rarity: common
-  - text: "Commande un \"Sex on the Beach\" et ricane en regardant la serveuse"
+  - text: "Dit « surprenez-moi », puis refuse les trois propositions"
     rarity: common
-  - text: "Te raconte sa rupture après trois minutes de conversation"
+  - text: "Demande un cocktail sans chacun de ses ingrédients"
     rarity: common
-  - text: "\"Tu ressembles à quelqu'un mais je sais plus qui\""
+  - text: "Dit « la même chose » en montrant trois verres différents"
     rarity: common
-  - text: "Sort son téléphone pour te montrer 47 photos de son chien"
+  - text: "Commande le plus cher dès qu’on annonce une tournée offerte"
     rarity: common
-  - text: "T'invite à son after sans même connaître ton prénom"
+  - text: "Refuse de préciser la taille de sa bière, puis conteste celle reçue"
     rarity: common
-  - text: "Demande ton âge et a clairement l'air déçu de la réponse"
+  - text: "Coupe ta commande pour ajouter « juste une petite question »"
     rarity: common
-  - text: "Te fait la bise pendant que tu tendais la main"
+  - text: "Commande en plusieurs fois pour faire revenir le serveur"
     rarity: common
-  - text: "Explique en détail pourquoi il/elle est célibataire depuis si longtemps"
+  - text: "Invente un nom de cocktail et reproche au barman de ne pas le connaître"
     rarity: common
-  - text: "Sort son CV verbal complet en 5 secondes chrono"
+  - text: "Réclame un verre gratuit parce que la mousse est retombée"
     rarity: common
-  - text: "Place \"j'ai un pote qui bosse là-bas\" à chaque sujet abordé"
+  - text: "Demande la recette complète alors que dix personnes attendent"
     rarity: common
-  - text: "Boit une bière à la paille"
+  - text: "Renvoie un cocktail presque terminé parce qu’il « n’était pas terrible »"
     rarity: common
-  - text: "Commande un Mojito à 23h dans un bar bondé"
+  - text: "Affirme avoir demandé sans glace après avoir laissé fondre tous les glaçons"
     rarity: common
-  - text: "Compte ses verres à voix haute pour tout le monde"
+  - text: "Commande au comptoir puis recommence auprès du serveur en terrasse"
     rarity: common
-  - text: "\"C'est moi qui invite\" mais paie avec des tickets resto"
+  - text: "Prend le verre prêt pour quelqu’un d’autre sans vérifier"
     rarity: common
-  - text: "Te raconte sa thèse en sciences humaines au comptoir"
+  - text: "Réclame un ingrédient absent de la carte après deux refus"
     rarity: common
-  - text: "\"Tu sais que j'ai failli être sélectionné en équipe de France ?\""
+  - text: "Dicte les dosages au barman sans lui laisser finir sa phrase"
     rarity: common
-  - text: "Tend une carte de visite à quelqu'un qu'il vient juste de rencontrer"
-    rarity: common
-  - text: "Parle de sa start-up sans qu'on lui ait rien demandé"
-    rarity: common
-  - text: "Mentionne son salaire \"de manière naturelle\""
-    rarity: common
-  - text: "Refait le calcul de l'addition à voix haute trois fois"
-    rarity: common
-  - text: "Demande à séparer la note en 12 parts différentes"
-    rarity: common
-  - text: "Compte ses pièces une par une sur le comptoir"
-    rarity: common
-  - text: "Refuse de laisser un pourboire \"par principe\""
-    rarity: common
-  - text: "Donne 20 centimes au serveur en disant \"tiens, pour toi\""
-    rarity: common
-  - text: "Lance un \"garçon !\" à pleine voix"
-    rarity: common
-  - text: "Fait claquer ses doigts pour appeler le serveur"
-    rarity: common
-  - text: "Tape sur le comptoir en attendant sa commande"
-    rarity: common
-  - text: "Demande la carte des cocktails dans un bar uniquement bières"
-    rarity: common
-  - text: "Demande \"une pression mais sans la mousse\""
-    rarity: common
-  - text: "Demande si la 1664 \"c'est de la bonne bière\""
-    rarity: common
-  - text: "Commande \"comme d'hab\" dans un bar où il n'a jamais mis les pieds"
-    rarity: common
-  - text: "Demande à goûter trois cocktails avant de choisir"
-    rarity: common
-  - text: "Renifle son verre de vin avec une mine de sommelier"
-    rarity: common
-  - text: "Fait tourner son verre d'apéro avec un sérieux papal"
-    rarity: common
-  - text: "Renvoie un verre parce qu'il \"manque de glace\""
-    rarity: common
-  - text: "Renvoie un verre parce qu'il \"y a trop de glace\""
-    rarity: common
-  - text: "Affirme que \"c'est meilleur en Espagne\""
-    rarity: common
-  - text: "\"Tu sais, en Argentine, on fait pas comme ça\""
-    rarity: common
-  - text: "Compare chaque bar à un bar fantasmé à Berlin"
-    rarity: common
-  - text: "Cite Hemingway dans un PMU de quartier"
-    rarity: common
-  - text: "\"Moi je vais pas en boîte, c'est pas mon truc\" mais finit la soirée en boîte"
-    rarity: common
-  - text: "Met les mêmes morceaux dans le jukebox trois fois de suite"
-    rarity: common
-  - text: "Choisit \"Born to be Alive\" au karaoké et y croit"
-    rarity: common
-  - text: "Connaît toutes les paroles de Bohemian Rhapsody"
-    rarity: common
-  - text: "Prend le micro pour rapper sur une ballade"
-    rarity: common
-  - text: "Annonce \"j'ai fait du chant\" avant de chanter atrocement faux"
-    rarity: common
-  - text: "Casse l'ambiance en se lançant dans Whitney Houston"
-    rarity: common
-  - text: "Demande au DJ techno \"tu peux mettre du Booba ?\""
-    rarity: common
-  - text: "Demande \"t'as Joe Dassin ?\" à un DJ électro"
-    rarity: common
-  - text: "Garde son manteau toute la soirée"
-    rarity: common
-  - text: "Garde son sac à main posé sur ses genoux pendant 3 heures"
-    rarity: common
-  - text: "Surveille la porte d'entrée toutes les 30 secondes"
-    rarity: common
-  - text: "Vérifie son téléphone toutes les 5 secondes en pleine discussion"
-    rarity: common
-  - text: "Swipe sur Tinder pendant que vous buvez ensemble"
-    rarity: common
-  - text: "Te montre des conversations Tinder ouvertes en cours"
-    rarity: common
-  - text: "Te demande de l'aider à rédiger un message à son ex"
-    rarity: common
-  - text: "Pleure aux toilettes après deux verres"
-    rarity: common
-  - text: "Se cache 45 minutes aux toilettes pour ne pas payer"
-    rarity: common
-  - text: "Demande du PQ par-dessus la cabine"
-    rarity: common
-  - text: "Squatte le lavabo pour se mettre du gloss pendant un quart d'heure"
-    rarity: common
-  - text: "Refait son maquillage en bloquant tout le monde dans la glace"
-    rarity: common
-  - text: "Drague aux toilettes mixtes"
-    rarity: common
-  - text: "Te tend un mouchoir aux toilettes en mode psy improvisé"
-    rarity: common
-  - text: "Ressort de la cabine à deux"
-    rarity: common
-  - text: "Se vante de \"tenir l'alcool\""
-    rarity: common
-  - text: "Tient pas l'alcool du tout"
-    rarity: common
-  - text: "Refuse catégoriquement de boire de l'eau toute la soirée"
-    rarity: common
-  - text: "Boit cul sec et regarde autour de lui pour quémander un applaudissement"
-    rarity: common
-  - text: "Lève son verre pour trinquer et personne ne suit"
-    rarity: common
-  - text: "Trinque sans regarder dans les yeux (\"sept ans de mauvais sexe !\")"
-    rarity: common
-  - text: "Pose son verre absolument n'importe où"
-    rarity: common
-  - text: "Renverse sa bière dès le 2e verre"
-    rarity: common
-  - text: "Casse un verre et fait genre que c'est pas lui"
-    rarity: common
-  - text: "Joue l'innocent avec le truc cassé encore dans la main"
-    rarity: common
-  - text: "Mange les amuse-gueules comme si c'était son dîner"
-    rarity: common
-  - text: "Reprend des cacahuètes huit fois sans se laver les mains"
-    rarity: common
-  - text: "Vide le bol d'olives dans un coin de son sac"
-    rarity: common
-  - text: "Demande \"vous avez du salé ?\" toutes les 20 minutes"
-    rarity: common
-  - text: "Demande à manger dans un bar qui ne sert que de l'alcool"
-    rarity: common
-  - text: "Sort un sandwich SNCF en pleine soirée"
-    rarity: common
-  - text: "Mange un kebab posé sur le comptoir"
-    rarity: common
-  - text: "Fume dehors et revient avec une odeur militante"
-    rarity: common
-  - text: "Vapote au bar malgré l'interdiction affichée partout"
-    rarity: common
-  - text: "Cache sa cigarette dans la main quand le serveur passe"
-    rarity: common
-  - text: "Demande \"j'peux fumer ?\" et allume avant la réponse"
-    rarity: common
-  - text: "Va \"fumer\" toutes les 10 minutes alors qu'il n'a pas de cigarettes"
-    rarity: common
-  - text: "Demande une clope sans jamais en proposer la fois suivante"
-    rarity: common
-  - text: "Demande du feu et part avec le briquet"
-    rarity: common
-  - text: "Vide le cendrier dans un verre vide d'à côté"
-    rarity: common
-  - text: "Trempe sa cigarette dans le verre des autres pour l'éteindre"
-    rarity: common
-  - text: "Dit \"oh la la, les jeunes\" en regardant des trentenaires"
-    rarity: common
-  - text: "Hurle \"10 euros la bière ?!\" comme s'il était le premier humain à la découvrir"
-    rarity: common
-  - text: "Demande \"vous prenez la carte ?\" dans un bar à 9€ la pression"
-    rarity: common
-  - text: "\"À Paris on a pas ça\" dit hors de Paris"
-    rarity: common
-  - text: "Vante son bar préféré pendant 20 minutes alors qu'il est ailleurs"
-    rarity: common
-  - text: "Critique le bar où il est en buvant son 4e verre du même bar"
-    rarity: common
-  - text: "Connaît le serveur par son prénom et le crie pour bien le faire savoir"
-    rarity: common
-  - text: "Fait des private jokes avec le barman devant tous les autres"
-    rarity: common
-  - text: "Drague ouvertement la barmaid à chaque commande"
-    rarity: common
-  - text: "Tient le comptoir comme une bouée"
-    rarity: common
-  - text: "Squatte le même tabouret pendant 4 heures"
-    rarity: common
-  - text: "Pose sa veste sur 3 tabourets pour \"réserver\""
-    rarity: common
-  - text: "Refuse de bouger pour laisser passer alors qu'il bloque tout"
-    rarity: common
-  - text: "Crie sa commande par-dessus la foule comme une halle aux poissons"
-    rarity: common
-  - text: "Tend son billet en levant le bras au-dessus des autres"
-    rarity: common
-  - text: "Coupe la file en mode \"j'ai pas vu\""
-    rarity: common
-  - text: "Râle à voix haute qu'il y a la queue (alors qu'il est en plein week-end)"
-    rarity: common
-  - text: "Se fait pote avec celui devant pour passer avant\u202f"
-    rarity: common
-  - text: "Trinque avec absolument n'importe qui"
-    rarity: common
-  - text: "Distribue des high-five à tous les inconnus"
-    rarity: common
-  - text: "Fait un câlin au videur"
-    rarity: common
-  - text: "Demande au videur s'il \"fait quelque chose après\""
-    rarity: common
-  - text: "Sort une carte d'identité périmée depuis 4 ans"
-    rarity: common
-  - text: "Argumente sur la dress code en jogging"
-    rarity: common
-  - text: "Lance \"tu sais qui je suis ?\" au videur"
-    rarity: common
-  - text: "Annonce \"je connais le patron\" alors que le patron ne le connaît pas"
-    rarity: common
-  - text: "Demande à parler au manager pour se plaindre du prix"
-    rarity: common
-  - text: "Menace de mettre une étoile sur Google sans avoir bu une seule gorgée"
-    rarity: common
-  - text: "Crie \"service !\" toutes les 3 minutes"
-    rarity: common
-  - text: "Garde la main en l'air, immobile, pendant 10 minutes"
-    rarity: common
-  - text: "Siffle pour attirer l'attention du serveur"
-    rarity: common
-  - text: "Attrape le bras du serveur qui passe en plein rush"
-    rarity: common
-  - text: "Tutoie le serveur d'office en mode \"pote\""
-    rarity: common
-  - text: "Vouvoie le serveur de manière condescendante"
-    rarity: common
-  - text: "Demande des cocktails inventés \"comme à la maison\""
-    rarity: common
-  - text: "Compare le prix de sa bière au prix au supermarché"
-    rarity: common
-  - text: "\"À ce prix-là je préfère acheter une bouteille\""
-    rarity: common
-  - text: "Annonce qu'il \"boit pas d'alcool ce soir\" en ouvrant la 4e bière"
-    rarity: common
-  - text: "\"Promis je rentre pas tard\" répété toutes les heures"
-    rarity: common
-  - text: "Le \"dernier verre\" n'est jamais le dernier"
-    rarity: common
-  - text: "\"Encore un et on y va\" répété douze fois"
-    rarity: common
-  - text: "Arrive en retard avec une excuse minable"
-    rarity: common
-  - text: "Arrive 2 heures à l'avance et finit son apéro avant que les autres arrivent"
-    rarity: common
-  - text: "Reste jusqu'à la fermeture sans jamais bouger de sa chaise"
-    rarity: common
-  - text: "Continue de discuter pendant que les chaises sont déjà sur les tables"
-    rarity: common
-  - text: "Demande \"vous fermez vraiment ?\" à 4h05"
-    rarity: common
-  - text: "Veut absolument acheter une bouteille à emporter à la fermeture"
-    rarity: common
-  - text: "Sort discrètement une flasque de sa veste"
-    rarity: common
-  - text: "Verse sa flasque dans le verre des autres sans demander"
-    rarity: common
-  - text: "Goûte chaque cocktail des autres à la table"
-    rarity: common
-  - text: "Pique une gorgée à chaque verre qui passe"
-    rarity: common
-  - text: "Demande à tout le monde de poser pour la photo de groupe"
-    rarity: common
-  - text: "Tag tout le monde sur Instagram sans demander la permission"
-    rarity: common
-  - text: "Met une photo où tu es horrible et la laisse en ligne"
-    rarity: common
-  - text: "Fait un selfie au flash dans un bar volontairement sombre"
-    rarity: common
-  - text: "Met le flash de l'iPhone dans la gueule des autres pour cadrer"
-    rarity: common
-  - text: "Allume sa lampe torche pour lire la carte"
-    rarity: common
-  - text: "Demande au serveur de lui lire la carte à voix haute"
-    rarity: common
-  - text: "Choisit le premier truc parce qu'il a pas envie de chercher"
-    rarity: common
-  - text: "Choisit toujours la carte la moins chère"
-    rarity: common
-  - text: "Choisit toujours la plus chère pour faire le malin"
-    rarity: common
-  - text: "Commande \"ce que prend la dame\" sans réfléchir"
-    rarity: common
-  - text: "Demande \"qu'est-ce que vous me conseillez ?\" sans rien préciser"
-    rarity: common
-  - text: "Demande au serveur \"et toi tu prendrais quoi ?\""
-    rarity: common
-  - text: "Drague la serveuse, mal"
-    rarity: common
-  - text: "\"Vous êtes là souvent ?\" au serveur qui bosse là tous les soirs"
-    rarity: common
-  - text: "Demande son numéro à la serveuse à chaque commande"
-    rarity: common
-  - text: "Laisse son numéro sur le sous-bock comme dans un film des années 80"
-    rarity: common
-  - text: "Tente l'œillade insistante depuis 1h"
-    rarity: common
-  - text: "Te fixe sans cligner des yeux pendant 2 minutes"
-    rarity: common
-  - text: "Te dévisage de la tête aux pieds avec un demi-sourire"
-    rarity: common
-  - text: "Lève son verre dans ta direction sans rien dire"
-    rarity: common
-  - text: "T'envoie un verre via le serveur comme dans un film noir"
-    rarity: common
-  - text: "Demande au serveur ce que tu bois pour t'en commander un identique"
-    rarity: common
-  - text: "T'aborde avec \"j'ai cru qu'on s'connaissait\""
-    rarity: common
-  - text: "T'aborde avec \"tu fais quoi de beau ?\""
-    rarity: common
-  - text: "T'aborde avec \"vous êtes magnifique\" en regardant ailleurs"
-    rarity: common
-  - text: "T'aborde avec \"t'as l'heure ?\" alors qu'il regarde son téléphone"
-    rarity: common
-  - text: "T'aborde avec \"j'parie que t'es Vierge\""
-    rarity: common
-  - text: "T'aborde avec \"je dérange ?\" avant de s'asseoir d'office"
-    rarity: common
-  - text: "S'invite sur ton tabouret en disant \"y a de la place\""
-    rarity: common
-  - text: "Pose sa main sur ton épaule sans prévenir"
-    rarity: common
-  - text: "Touche tes cheveux sans demander"
-    rarity: common
-  - text: "Sent ton parfum à voix haute"
-    rarity: common
-  - text: "\"T'as un beau sourire\" placé toutes les 5 minutes"
-    rarity: common
-  - text: "\"J'ai jamais vu des yeux comme les tiens\" (carrément)"
-    rarity: common
-  - text: "\"T'es trop bien pour ce bar\""
-    rarity: common
-  - text: "\"Tu me rappelles mon ex\""
-    rarity: common
-  - text: "Sort une pickup line clairement trouvée sur Reddit"
-    rarity: common
-  - text: "Demande \"tu crois au destin ?\" très sérieusement"
-    rarity: common
-  - text: "Demande \"tu crois aux signes ?\" en regardant le plafond"
-    rarity: common
-  - text: "Te lit ton thème astral non sollicité"
-    rarity: common
-  - text: "Te plaque dès qu'il apprend ton signe"
-    rarity: common
-  - text: "\"Ah, Sagittaire, tant pis pour moi\""
-    rarity: common
-  - text: "Cite Marc Lévy comme référence intellectuelle"
-    rarity: common
-  - text: "Cite Paulo Coelho avec des étoiles dans les yeux"
-    rarity: common
-  - text: "Te conseille un livre que t'as déjà lu trois fois"
-    rarity: common
-  - text: "T'explique ton métier"
-    rarity: common
-  - text: "T'explique ton propre pays d'origine"
-    rarity: common
-  - text: "T'explique le féminisme alors que t'es féministe"
-    rarity: common
-  - text: "T'explique le foot avec passion alors que t'as posé la question par politesse"
-    rarity: common
-  - text: "T'explique le whisky comme si tu n'en avais jamais bu"
-    rarity: common
-  - text: "T'explique pourquoi le cocktail que t'as choisi \"c'est vraiment de la merde\""
-    rarity: common
-  - text: "Refait l'histoire complète du gin tonic"
-    rarity: common
-  - text: "Insiste pour t'apprendre comment boire la tequila"
-    rarity: common
-  - text: "Te montre comment \"tenir un verre à vin correctement\""
-    rarity: common
-  - text: "Hume son rhum les yeux fermés comme un dégustateur en tournée"
-    rarity: common
-  - text: "Frémit théâtralement après chaque gorgée"
-    rarity: common
-  - text: "Annonce \"ça décape !\" à chaque verre"
-    rarity: common
-  - text: "Trinque \"à la nôtre\" en regardant l'horloge"
-    rarity: common
-  - text: "Insiste pour avoir du citron \"un vrai\", pas une rondelle"
-    rarity: common
-  - text: "Demande des glaçons puis se plaint qu'il y en a trop"
-    rarity: common
-  - text: "Tient son verre à deux mains comme un café du dimanche"
-    rarity: common
-  - text: "Fait des bulles dans son verre avec la paille"
-    rarity: common
-  - text: "Mâchouille la paille pendant toute la soirée"
-    rarity: common
-  - text: "Plie sa serviette en avion en plein rendez-vous"
-    rarity: common
-  - text: "Joue avec les sous-bocks pendant que tu lui parles"
-    rarity: common
-  - text: "Pousse les verres avec le doigt pour les aligner"
-    rarity: common
-  - text: "Demande à voir la bouteille de la maison \"pour vérifier\""
-    rarity: common
-  - text: "Demande l'année du gin"
-    rarity: common
-  - text: "Demande la provenance des glaçons"
-    rarity: common
-  - text: "Fait remarquer à voix haute qu'il y a une trace sur le verre"
-    rarity: common
-  - text: "Renvoie deux fois le même verre par principe"
-    rarity: common
-  - text: "S'excuse de ne pas être quelqu'un de drôle puis essaie d'être drôle"
-    rarity: common
-  - text: "Rit à ses propres blagues avant la chute"
-    rarity: common
-  - text: "Place \"private joke\" devant un inconnu"
-    rarity: common
-  - text: "Imite l'accent du sud sans en avoir un"
-    rarity: common
-  - text: "Imite Jean-Claude Van Damme à 23h pile"
-    rarity: common
-  - text: "Refait des sketchs des années 90 que personne ne reconnaît"
-    rarity: common
-  - text: "Cite des répliques de film toutes les 5 minutes"
-    rarity: common
-  - text: "Spoile un film en plein bar"
-    rarity: common
-  - text: "Demande \"t'as vu Inception ?\" pour la 4e fois"
-    rarity: common
-  - text: "Lance un \"on parle pas politique ce soir\" puis lance le sujet politique"
-    rarity: common
-  - text: "Crache sur les médias \"sauf un\""
-    rarity: common
-  - text: "Refait l'élection présidentielle au comptoir"
-    rarity: common
-  - text: "Refait le match de la veille minute par minute"
-    rarity: common
-  - text: "Te demande pour quel club tu es comme un test de loyauté"
-    rarity: common
-  - text: "Lance \"vous êtes au courant pour…\" en chuchotant"
-    rarity: common
-  - text: "Mentionne BFM toutes les 10 minutes"
-    rarity: common
-  - text: "Reprend tout ce qu'a dit son pote en plus fort"
-    rarity: common
-  - text: "Coupe la parole à chaque phrase"
-    rarity: common
-  - text: "Termine les phrases des autres mal"
-    rarity: common
-  - text: "Te dit \"laisse-moi finir\" alors que tu n'avais pas commencé"
-    rarity: common
-  - text: "Lève le doigt pour parler à un apéro entre potes"
-    rarity: common
-  - text: "Sort \"deux secondes, c'est mon tour\" en pleine discussion"
-    rarity: common
-  - text: "Sort son téléphone pour vérifier ce que tu viens de dire"
-    rarity: common
-  - text: "Te corrige avec Wikipédia ouvert sous la table"
-    rarity: common
-  - text: "Te corrige sur ta propre histoire"
-    rarity: common
-  - text: "Te coupe pour reformuler ce que tu viens de dire \"plus clairement\""
-    rarity: common
-  - text: "Mange tes mots quand t'essayes de placer une vanne"
-    rarity: common
-  - text: "Réécrit la blague de quelqu'un et la raconte 10 minutes plus tard comme la sienne"
-    rarity: common
-  - text: "Vole une vanne au gars qui vient de la dire à voix haute"
-    rarity: common
-  - text: "Pose la même question trois fois après chaque verre"
-    rarity: common
-  - text: "Oublie ton prénom puis le redemande devant tout le monde"
-    rarity: common
-  - text: "T'appelle par un autre prénom toute la soirée"
-    rarity: common
-  - text: "Te demande \"on s'est déjà vus ?\" alors que vous discutez depuis 1h"
-    rarity: common
-  - text: "Demande \"on en était où ?\" toutes les 5 minutes"
-    rarity: common
-  - text: "Soupire bruyamment quand son pote raconte une anecdote"
-    rarity: common
-  - text: "Lève les yeux au ciel quand on lui sert le verre"
-    rarity: common
-  - text: "Fait la moue à chaque gorgée"
-    rarity: common
-  - text: "Râle pour râler"
-    rarity: common
-  - text: "Trouve l'ambiance \"meilleure la semaine dernière\""
-    rarity: common
-  - text: "Trouve la musique \"trop forte\" puis \"trop basse\" 5 minutes plus tard"
-    rarity: common
-  - text: "Demande à baisser la musique au milieu d'un bar"
-    rarity: common
-  - text: "Demande à monter la musique sur une chanson \"il faut entendre ça\""
-    rarity: common
-  - text: "Connaît le DJ depuis le primaire selon lui"
-    rarity: common
-  - text: "S'invite derrière le bar pour \"montrer comment on fait\""
-    rarity: common
-  - text: "Veut tester la machine à café à 1h du matin"
-    rarity: common
-  - text: "Veut goûter la pression \"sans alcool, juste pour comparer\""
-    rarity: common
-  - text: "Demande la recette du cocktail au barman débordé"
-    rarity: common
-  - text: "Note la recette du cocktail dans son téléphone avec sérieux"
-    rarity: common
-  - text: "Filme le barman qui prépare le cocktail pendant 4 minutes"
-    rarity: common
-  - text: "Veut absolument trinquer avec le barman"
-    rarity: common
-  - text: "Offre un verre au barman qui ne boit pas pendant le service"
-    rarity: common
-  - text: "Insiste pour avoir un \"shot avec la maison\""
-    rarity: common
-  - text: "Quémande des shots gratuits en disant que c'est son anniv (alors que non)"
-    rarity: common
-  - text: "Bricole une fausse réservation au nom de \"Dupont\""
-    rarity: common
-  - text: "Demande s'il y a une terrasse alors qu'il pleut"
-    rarity: common
-  - text: "Demande s'il y a de la place dehors en plein hiver à 23h"
-    rarity: common
-  - text: "Veut absolument une table près de la fenêtre dans un bar sans fenêtres"
-    rarity: common
-  - text: "Trouve sa chaise \"trop dure\""
-    rarity: common
-  - text: "Demande à changer de table après 2 minutes"
-    rarity: common
-  - text: "Trouve la lumière \"agressive\" au comptoir"
-    rarity: common
-  - text: "Sort ses lunettes uniquement pour lire la carte"
-    rarity: common
-  - text: "Garde son casque audio sur la tête tout en parlant"
-    rarity: common
-  - text: "Vient avec un sac à dos énorme qu'il pose sur la table"
-    rarity: common
-  - text: "Vient avec un sac de courses Carrefour"
-    rarity: common
-  - text: "Vient avec un casque de moto qu'il garde sur ses genoux"
-    rarity: common
-  - text: "Étale son trousseau de clés sur le comptoir comme un trophée"
-    rarity: common
-  - text: "Pose ses clés de voiture en évidence \"discrètement\""
-    rarity: common
-  - text: "Tousse exagérément après chaque shot"
-    rarity: common
-  - text: "Reprend des chips et les remet dans le bol"
-    rarity: common
-  - text: "Lèche le rebord de son verre"
-    rarity: common
-  - text: "Suce les glaçons un par un"
-    rarity: common
-  - text: "Croque les glaçons en faisant un bruit insupportable"
-    rarity: common
-  - text: "Mâche le citron entier après son cocktail"
-    rarity: common
-  - text: "Mâche la rondelle de citron comme une tequila"
-    rarity: common
-  - text: "Pose la rondelle de citron sur la table en faisant la grimace"
-    rarity: common
-  - text: "Demande à enlever la menthe parce qu'il \"aime pas le vert\""
-    rarity: common
-  - text: "Range son chargeur USB sur le comptoir comme s'il était chez lui"
-    rarity: common
-  - text: "Demande à charger son téléphone derrière le bar"
-    rarity: common
-  - text: "Demande le mot de passe wifi à voix haute"
-    rarity: common
-  - text: "Râle quand il y a pas de wifi"
-    rarity: common
-  - text: "Met le bar en story Instagram avec localisation et critique en légende"
-    rarity: common
-  - text: "Lit ses messages à voix haute en pleine soirée"
-    rarity: common
-  - text: "Met haut-parleur \"juste 2 secondes\" pendant 10 minutes"
-    rarity: common
-  - text: "Regarde une vidéo TikTok sans écouteurs au comptoir"
-    rarity: common
-  - text: "Diffuse de la musique sur son téléphone par-dessus celle du bar"
-    rarity: common
-  - text: "Te montre une vidéo de chat \"absolument géniale\""
-    rarity: common
-  - text: "Te montre 12 vidéos de chat à la suite"
-    rarity: common
-  - text: "Te fait écouter ses vocaux WhatsApp de 4 minutes"
-    rarity: common
-  - text: "Te fait écouter le vocal de son ex en direct"
-    rarity: common
-  - text: "Demande \"tu veux écouter ce que m'a envoyé ma mère ?\""
-    rarity: common
-  - text: "Annonce qu'il appelle sa mère, l'appelle, raconte la soirée"
-    rarity: common
-  - text: "Annonce qu'il appelle son père \"juste pour dire bonjour\""
-    rarity: common
-  - text: "Décline un appel de sa mère et le mentionne 6 fois"
-    rarity: common
-  - text: "Décline un appel de son boss \"qui sait pas que je suis là\""
-    rarity: common
-  - text: "Demande à un inconnu de lui tenir son verre pour aller fumer"
-    rarity: common
-  - text: "Confie son téléphone à un inconnu pour aller aux toilettes"
-    rarity: common
-  - text: "Te demande de surveiller son sac et disparaît 2 heures"
-    rarity: common
-  - text: "Te demande de surveiller son verre et le retrouve dans la main d'un autre"
-    rarity: common
-  - text: "Quitte la table sans dire au revoir"
-    rarity: common
-  - text: "Part \"5 minutes\" et revient le lendemain"
-    rarity: common
-  - text: "Disparaît au moment de payer"
-    rarity: common
-  - text: "Réapparaît au moment de la tournée"
-    rarity: common
-  - text: "Réussit à boire 4 verres sans en payer un seul"
-    rarity: common
-  - text: "Met du temps à attraper son portefeuille à chaque tournée"
-    rarity: common
-  - text: "Cherche son portefeuille très visiblement \"oh j'ai dû le laisser\""
-    rarity: common
-  - text: "Sort son portefeuille uniquement à la dernière tournée pour faire bien"
-    rarity: common
-  - text: "Paye le 1er verre avec ostentation puis disparaît pour la suite"
+  - text: "Donne sa commande à un client qui ramène simplement ses verres"
     rarity: common
 
-  # ============================================================
-  # RARE (145) — situations plus pointues, observations plus fines
-  # ============================================================
+  # Service (common)
+  - text: "Claque des doigts pour appeler le serveur"
+    rarity: common
+  - text: "Siffle le personnel depuis l’autre bout de la terrasse"
+    rarity: common
+  - text: "Tape sa monnaie sur le comptoir pour accélérer le service"
+    rarity: common
+  - text: "Attrape le bras du serveur qui passe avec un plateau"
+    rarity: common
+  - text: "Dit « enfin » avant que le serveur ait posé les verres"
+    rarity: common
+  - text: "Crie le prénom du barman pour montrer qu’il le connaît"
+    rarity: common
+  - text: "Bloque le serveur pour finir une anecdote pendant le rush"
+    rarity: common
+  - text: "Réclame un sourire à la personne qui vient prendre sa commande"
+    rarity: common
+  - text: "Explique au personnel que son métier « n’est quand même pas compliqué »"
+    rarity: common
+  - text: "Tutoie le serveur, puis exige qu’on le vouvoie"
+    rarity: common
+  - text: "Répond à une question du serveur sans lever les yeux de son téléphone"
+    rarity: common
+  - text: "Accuse le serveur d’avoir oublié une commande que personne n’a passée"
+    rarity: common
+  - text: "Fait signe à deux serveurs pour la même demande sans les prévenir"
+    rarity: common
+  - text: "Réclame le responsable avant d’expliquer le problème"
+    rarity: common
+  - text: "Raconte au serveur la blague qu’il vient de faire sur son métier"
+    rarity: common
+  - text: "Dit « ça va, on plaisante » après une remarque au personnel"
+    rarity: common
+  - text: "Garde la carte pour continuer à la lire quand le serveur la réclame"
+    rarity: common
+  - text: "Pose son verre dans la main déjà chargée du serveur"
+    rarity: common
+  - text: "Demande un service au serveur qui part avec son manteau"
+    rarity: common
+  - text: "Fait semblant de ne pas entendre quand on lui demande de dégager le passage"
+    rarity: common
 
-  - text: "Apporte sa propre playlist sur clé USB et veut absolument \"ambiancer\""
-    rarity: rare
-  - text: "Connaît plein de bars \"super cool\" qui ont tous fermé en 2017"
-    rarity: rare
-  - text: "T'invite dans un bar \"discret\" qui est en fait un Q-bar"
-    rarity: rare
-  - text: "Connaît un karaoké \"ouvert toute la nuit\" qui n'a jamais existé"
-    rarity: rare
-  - text: "Te jure que \"le mec là-bas, c'est Hugo Lloris\" (c'est pas lui)"
-    rarity: rare
-  - text: "Se croit reconnu par tout le monde dans le bar"
-    rarity: rare
-  - text: "Met ses lunettes de soleil après minuit, à l'intérieur"
-    rarity: rare
-  - text: "Garde son écharpe en intérieur \"parce qu'il a toujours froid\""
-    rarity: rare
-  - text: "Porte un costume sans cravate dans un bar de quartier en jogging"
-    rarity: rare
-  - text: "Porte un nœud papillon dans un karaoké"
-    rarity: rare
-  - text: "Vient en short en plein hiver \"parce que c'est plus pratique\""
-    rarity: rare
-  - text: "Refuse d'enlever son casque de scooter pendant 1h"
-    rarity: rare
-  - text: "Sort un cigare et l'allume à l'intérieur comme si de rien n'était"
-    rarity: rare
-  - text: "Mâchouille un cure-dent comme dans un western"
-    rarity: rare
-  - text: "Sort un canif \"pour ouvrir la bouteille\""
-    rarity: rare
-  - text: "Apporte sa propre clé décapsuleur autour du cou comme un trophée"
-    rarity: rare
-  - text: "Sort un kit complet pour préparer ses propres cocktails au comptoir"
-    rarity: rare
-  - text: "Goûte chaque alcool en parlant fort de \"robe\" et de \"finale\""
-    rarity: rare
-  - text: "Demande un saké chaud à 3h du matin dans un PMU"
-    rarity: rare
-  - text: "Tente de commander un Picon-Bière dans un bar à mojitos"
-    rarity: rare
-  - text: "Demande \"vous avez du Suze ?\" partout où il met les pieds"
-    rarity: rare
-  - text: "Place le mot \"guinguette\" en faisant semblant de connaître"
-    rarity: rare
-  - text: "Refuse les glaçons \"qui dénaturent l'alcool\""
-    rarity: rare
-  - text: "Demande \"un verre d'eau du robinet, mais frais\""
-    rarity: rare
-  - text: "Refuse de payer son verre d'eau \"par principe\""
-    rarity: rare
-  - text: "Vide la carafe d'eau commune sur la table en se servant maladroitement"
-    rarity: rare
-  - text: "Verse de l'eau dans son cocktail \"pour le couper\""
-    rarity: rare
-  - text: "Met du Coca dans son verre de Saint-Émilion"
-    rarity: rare
-  - text: "Met des glaçons dans son vin rouge"
-    rarity: rare
-  - text: "Demande à réchauffer son rouge au micro-ondes"
-    rarity: rare
-  - text: "Mélange du Schweppes avec du whisky 25 ans d'âge"
-    rarity: rare
-  - text: "Coupe son champagne avec du jus d'orange à 23h"
-    rarity: rare
-  - text: "Trouve toutes les bières \"trop fortes\" et tous les cocktails \"trop faibles\""
-    rarity: rare
-  - text: "Demande \"tu peux mettre plus de vodka stp\" en chuchotant fort"
-    rarity: rare
-  - text: "Demande \"vous avez de l'absinthe ?\" comme un poète maudit"
-    rarity: rare
-  - text: "Tente le coup classique du \"y a une mouche dans mon verre\""
-    rarity: rare
-  - text: "Trouve \"un cheveu\" dans son cocktail (ses propres cheveux)"
-    rarity: rare
-  - text: "Brûle un sous-bock avec son briquet \"pour voir\""
-    rarity: rare
-  - text: "Plie 47 sous-bocks en chapeaux origami"
-    rarity: rare
-  - text: "Construit une tour de Pise avec les verres vides"
-    rarity: rare
-  - text: "Sort un jeu de cartes et propose une partie à des inconnus"
-    rarity: rare
-  - text: "Sort un jeu de société complet dans un bar bondé"
-    rarity: rare
-  - text: "Veut absolument lancer un blind test improvisé"
-    rarity: rare
-  - text: "Lance un débat sur l'existence de Dieu après 3 verres"
-    rarity: rare
-  - text: "Lance un débat sur le PSG dans un bar marseillais"
-    rarity: rare
-  - text: "Lance un débat sur la pizza à l'ananas en boucle"
-    rarity: rare
-  - text: "Lance un débat sur la pomme de terre vs la patate"
-    rarity: rare
-  - text: "Soutient à 4h du matin que la Terre est plate \"pour rigoler\""
-    rarity: rare
-  - text: "Te certifie que les chats parlent quand on dort"
-    rarity: rare
-  - text: "T'explique que la 5G rend impuissant"
-    rarity: rare
-  - text: "T'explique que l'eau du bar est \"trafiquée\""
-    rarity: rare
-  - text: "T'explique que c'est lui qui a inventé le verlan"
-    rarity: rare
-  - text: "Prétend connaître Booba \"personnellement\""
-    rarity: rare
-  - text: "Prétend avoir bossé pour Tarantino sur \"un truc, mais pas crédité\""
-    rarity: rare
-  - text: "Prétend avoir refusé un rôle dans une grande série"
-    rarity: rare
-  - text: "Prétend faire de la musique mais \"ça sortira l'année prochaine\""
-    rarity: rare
-  - text: "Te fait écouter ses sons sur son téléphone, sans écouteurs"
-    rarity: rare
-  - text: "Te fait lire son journal intime au comptoir"
-    rarity: rare
-  - text: "Te lit un scénario imprimé sorti de son sac"
-    rarity: rare
-  - text: "Sort son manuscrit \"juste pour avoir ton avis\""
-    rarity: rare
-  - text: "Pitche son projet pendant 45 minutes sans une pause"
-    rarity: rare
-  - text: "Te demande d'investir 5000€ dans son idée \"révolutionnaire\""
-    rarity: rare
-  - text: "Te propose de venir \"tester sa nouvelle marque\" demain matin"
-    rarity: rare
-  - text: "T'envoie une demande LinkedIn pendant que vous parlez encore"
-    rarity: rare
-  - text: "T'ajoute sur 6 réseaux sociaux différents au comptoir"
-    rarity: rare
-  - text: "Te suit déjà sur Instagram et avoue qu'il te \"trace depuis 2 mois\""
-    rarity: rare
-  - text: "Connaît ton prénom avant que tu ne le donnes"
-    rarity: rare
-  - text: "Connaît ton lieu de travail sans qu'on lui ait dit"
-    rarity: rare
-  - text: "Sait dans quelle école tu étais"
-    rarity: rare
-  - text: "Cite ton ex par son prénom devant toi"
-    rarity: rare
-  - text: "Te montre un screenshot de votre conversation Tinder de 2019"
-    rarity: rare
-  - text: "Demande à matcher \"a posteriori\" en pleine soirée"
-    rarity: rare
-  - text: "Reconnaît ta tête \"depuis Bumble\""
-    rarity: rare
-  - text: "T'a vu à un mariage il y a 4 ans et te le rappelle dans le détail"
-    rarity: rare
-  - text: "Te connaît \"depuis l'école primaire\" mais tu te souviens absolument pas"
-    rarity: rare
-  - text: "Vient avec sa mère \"pour qu'elle te rencontre\""
-    rarity: rare
-  - text: "Vient avec son meilleur pote pour avoir un avis en direct"
-    rarity: rare
-  - text: "Vient avec son chien sans laisse en plein bar bondé"
-    rarity: rare
-  - text: "Vient avec son enfant à 23h \"juste boire un verre vite fait\""
-    rarity: rare
-  - text: "Vient avec une trottinette qu'il pose au milieu du passage"
-    rarity: rare
-  - text: "Porte un T-shirt avec sa propre tête imprimée dessus"
-    rarity: rare
-  - text: "Distribue ses propres autocollants en pleine soirée"
-    rarity: rare
-  - text: "Donne des prospectus pour son podcast à tout le monde"
-    rarity: rare
-  - text: "Veut t'interviewer pour son podcast tout de suite"
-    rarity: rare
-  - text: "Te demande \"ça t'embête si je te filme ?\" en filmant déjà"
-    rarity: rare
-  - text: "Sort un trépied pour cadrer son verre"
-    rarity: rare
-  - text: "Lance un live TikTok en plein bar et te demande de faire coucou"
-    rarity: rare
-  - text: "Met le téléphone entre vous deux pour filmer la conversation"
-    rarity: rare
-  - text: "Crée un thread Twitter sur la soirée le lendemain matin avec ton prénom"
-    rarity: rare
-  - text: "Tag le bar dans 47 stories en une soirée"
-    rarity: rare
-  - text: "Refuse les photos \"à cause de ses ex qui le suivent\""
-    rarity: rare
-  - text: "Demande à flouter sa tête \"à cause du boulot\""
-    rarity: rare
-  - text: "Te demande sérieusement si tu travailles dans le renseignement"
-    rarity: rare
-  - text: "Donne 3 prénoms différents en 2 heures de soirée"
-    rarity: rare
-  - text: "Refuse de dire d'où il vient \"par sécurité\""
-    rarity: rare
-  - text: "\"Je préfère pas en parler\" sur absolument tout"
-    rarity: rare
-  - text: "Sort une fausse alliance pour faire fuir les indésirables"
-    rarity: rare
-  - text: "Met une vraie alliance qu'il enlève discrètement en arrivant"
-    rarity: rare
-  - text: "Range l'alliance dans le verre vide et le perd"
-    rarity: rare
-  - text: "Téléphone à son partenaire en pleine conversation avec toi"
-    rarity: rare
-  - text: "Met le téléphone en haut-parleur \"par habitude\" pendant 10 minutes"
-    rarity: rare
-  - text: "Reçoit un appel et part 30 minutes sans s'excuser"
-    rarity: rare
-  - text: "Demande à son ex \"où est mon t-shirt ?\" devant toi au téléphone"
-    rarity: rare
-  - text: "Crie sur sa colocation au téléphone depuis le comptoir"
-    rarity: rare
-  - text: "Crie après son chauffeur Uber depuis le comptoir"
-    rarity: rare
-  - text: "Cherche son téléphone qu'il a en main"
-    rarity: rare
-  - text: "Cherche ses clés dans le seau à glace"
-    rarity: rare
-  - text: "Cherche son sac sur la tête de son voisin"
-    rarity: rare
-  - text: "Met sa veste alors que c'est celle de quelqu'un d'autre"
-    rarity: rare
-  - text: "Repart avec un parapluie qui n'est manifestement pas le sien"
-    rarity: rare
-  - text: "Confond les manteaux et part avec un trois tailles trop petit"
-    rarity: rare
-  - text: "Confond les manteaux et part avec un trois tailles trop grand"
-    rarity: rare
-  - text: "Trouve son manteau \"trop petit\" puis comprend que c'est pas le sien"
-    rarity: rare
-  - text: "Repart avec ton écharpe \"par mégarde\""
-    rarity: rare
-  - text: "Vole un sous-bock dans une poche intérieure secrète"
-    rarity: rare
-  - text: "Vole un verre \"pour la collection\""
-    rarity: rare
-  - text: "Repart avec une carafe sous son bras avec assurance"
-    rarity: rare
-  - text: "Repart avec une chaise du bar comme si c'était la sienne"
-    rarity: rare
-  - text: "Tente le coup de la carte refusée trois fois de suite"
-    rarity: rare
-  - text: "Demande le code PIN du PC à voix haute pour le serveur"
-    rarity: rare
-  - text: "Sort sa carte vitale au lieu de la CB"
-    rarity: rare
-  - text: "Tente de payer en bitcoin \"à l'ancienne\""
-    rarity: rare
-  - text: "Demande le wifi du bar pour faire un virement"
-    rarity: rare
-  - text: "Refait sa vie au comptoir avec un parfait inconnu pendant 2h"
-    rarity: rare
-  - text: "Pleure dans son verre en silence en attendant qu'on lui demande"
-    rarity: rare
-  - text: "Rit tout seul à un truc sur son téléphone toutes les 30 secondes"
-    rarity: rare
-  - text: "Reposte des stories de la même soirée toutes les 5 minutes"
-    rarity: rare
-  - text: "Filme tout, verticalement, sans monter le son"
-    rarity: rare
-  - text: "Met ton plus mauvais profil sur une story \"sans filtre\""
-    rarity: rare
-  - text: "Récite des fiches de révision pendant que tu lui parles"
-    rarity: rare
-  - text: "Sort un livre pour lire pendant que tu vas aux toilettes"
-    rarity: rare
-  - text: "Sort un Sudoku pour ne pas s'ennuyer entre deux phrases"
-    rarity: rare
-  - text: "Tricote au bar pendant ta conversation"
-    rarity: rare
-  - text: "Crochete un bonnet entre deux mojitos"
-    rarity: rare
-  - text: "Joue au baby-foot tout seul en attendant"
-    rarity: rare
-  - text: "Veut absolument que tu joues au flipper avec lui pour vérifier votre \"compatibilité\""
-    rarity: rare
-  - text: "Marque ses scores au flipper avec un Sharpie sur la machine"
-    rarity: rare
-  - text: "Bat ton record au baby et te le rappelle toute la soirée"
-    rarity: rare
-  - text: "Conteste le score au baby pendant 45 minutes"
-    rarity: rare
-  - text: "Renverse le baby-foot \"pour vérifier la planéité\""
-    rarity: rare
-  - text: "Demande au videur s'il a déjà refusé une célébrité"
-    rarity: rare
-  - text: "Demande au videur si \"on peut encore négocier le tarif d'entrée\""
-    rarity: rare
-  - text: "Demande au DJ si c'est lui sur la pochette du vinyle"
-    rarity: rare
-  - text: "Demande au DJ s'il a \"des tracks à lui\""
-    rarity: rare
-  - text: "Donne sa propre clé USB au DJ \"juste un son\""
-    rarity: rare
-  - text: "Sort un vinyle de son sac \"juste au cas où le DJ veuille bien\""
-    rarity: rare
-  - text: "Apporte son propre verre \"parce qu'il préfère la matière en cristal\""
-    rarity: rare
-  - text: "Glisse un pourboire dans la fente du jukebox \"pour booster la qualité\""
-    rarity: rare
-  - text: "Donne 50 centimes au pianiste qui ne joue pas"
-    rarity: rare
-  - text: "Lance une pétition pour faire revenir le DJ d'avant"
-    rarity: rare
-  - text: "Sort une casquette \"DJ Promo\" et la met au comptoir"
-    rarity: rare
-  - text: "Brandit son badge VIP d'un bar fermé depuis 2014"
+  # Addition (common)
+  - text: "Disparaît aux toilettes au moment où l’addition arrive"
+    rarity: common
+  - text: "Propose de diviser la note après avoir commandé deux fois plus que les autres"
+    rarity: common
+  - text: "Compte le pourboire des autres dans sa propre part"
+    rarity: common
+  - text: "Annonce « je vous fais un virement » sans demander de coordonnées"
+    rarity: common
+  - text: "Arrondit systématiquement sa part vers le bas"
+    rarity: common
+  - text: "Prend la monnaie commune pour rembourser « ses deux euros de l’autre fois »"
+    rarity: common
+  - text: "Conteste le prix imprimé sur la carte qu’il a sous les yeux"
+    rarity: common
+  - text: "Demande une réduction parce qu’il « connaît du monde ici »"
+    rarity: common
+  - text: "Pose vingt centimes en disant au serveur « ça, c’est pour toi »"
+    rarity: common
+  - text: "Recompte la note à voix haute mais oublie chaque fois son dernier verre"
+    rarity: common
+  - text: "Prétend que le cocktail de sa photo n’était pas à lui"
+    rarity: common
+  - text: "Demande au serveur de retrouver qui a bu chaque verre"
+    rarity: common
+  - text: "Veut payer séparément après avoir demandé une facture unique"
+    rarity: common
+  - text: "Refuse de payer un verre parce qu’il en a laissé une gorgée"
+    rarity: common
+  - text: "Fait sortir tout le groupe avant de chercher sa carte"
+    rarity: common
+  - text: "Compare le prix du verre à celui de la bouteille au supermarché"
+    rarity: common
+  - text: "Réclame le remboursement du citron qu’il n’a pas mangé"
+    rarity: common
+  - text: "Annonce « c’est réglé » alors qu’il n’a payé que son verre"
+    rarity: common
+  - text: "Laisse les autres couvrir le pourboire qu’il avait promis"
+    rarity: common
+  - text: "Tend une réduction expirée et accuse le serveur de manquer de souplesse"
+    rarity: common
+
+  # Tournées (common)
+  - text: "Attend que quelqu’un se lève avant d’annoncer qu’il reprendrait bien un verre"
+    rarity: common
+  - text: "Réapparaît à table pile quand les boissons de la tournée arrivent"
+    rarity: common
+  - text: "Dit « c’est ma tournée » puis demande à quelqu’un d’avancer"
+    rarity: common
+  - text: "Compte sa tournée de cafés comme trois tournées de cocktails"
+    rarity: common
+  - text: "Change de boisson pour une moins chère quand vient son tour de payer"
+    rarity: common
+  - text: "Annonce sa tournée assez bas pour que personne ne l’entende"
+    rarity: common
+  - text: "Oublie toujours la commande de la même personne"
+    rarity: common
+  - text: "Commande de l’alcool à quelqu’un qui vient de demander un soda"
+    rarity: common
+  - text: "Insiste sur « même pas une petite bière ? » après un refus"
+    rarity: common
+  - text: "Décide que les verres sans alcool ne comptent pas dans sa tournée"
+    rarity: common
+  - text: "Commande une tournée supplémentaire alors que le groupe a refusé"
+    rarity: common
+  - text: "Utilise le verre offert pour réclamer un numéro de téléphone"
+    rarity: common
+  - text: "Rappelle le prix du verre offert à chaque nouvelle conversation"
+    rarity: common
+  - text: "Choisit qui a droit à sa tournée en fonction des places à table"
+    rarity: common
+  - text: "Tend sa carte au barman seulement après qu’une autre a été débitée"
+    rarity: common
+  - text: "Dit « on alterne » après avoir déjà laissé payer trois tournées"
+    rarity: common
+  - text: "Sert tout le monde sauf la personne qui a payé la bouteille"
+    rarity: common
+  - text: "S’approprie le verre supplémentaire en disant « personne n’en voulait »"
+    rarity: common
+  - text: "Accepte deux offres de verre sans prévenir les personnes qui paient"
+    rarity: common
+  - text: "Fait trinquer le groupe une quatrième fois parce que sa vidéo n’a pas démarré"
+    rarity: common
+
+  # Places (common)
+  - text: "Réserve trois tabourets avec sa veste alors que ses amis sont déjà assis"
+    rarity: common
+  - text: "Pose son sac sur la dernière chaise libre et refuse de l’enlever"
+    rarity: common
+  - text: "S’installe à une table dont les occupants sont au comptoir"
+    rarity: common
+  - text: "Déplace les affaires des voisins pour agrandir sa place"
+    rarity: common
+  - text: "Prend une chaise occupée dès que son propriétaire se lève"
+    rarity: common
+  - text: "Recule son tabouret dans le passage et reproche aux gens de le toucher"
+    rarity: common
+  - text: "Se plante devant le comptoir après avoir reçu toute sa commande"
+    rarity: common
+  - text: "Étale son ordinateur sur une table déjà partagée avec quatre personnes"
+    rarity: common
+  - text: "Met ses pieds sur la chaise où quelqu’un essaie de s’asseoir"
+    rarity: common
+  - text: "Rapproche sa table des voisins pour écouter leur conversation"
+    rarity: common
+  - text: "Tourne le dos au groupe pour parler à la table d’à côté"
+    rarity: common
+  - text: "Bloque l’accès au porte-manteau avec ses affaires"
+    rarity: common
+  - text: "Accroche sa veste sur le dossier d’un inconnu sans demander"
+    rarity: common
+  - text: "Monopolise la prise en débranchant le téléphone déjà en charge"
+    rarity: common
+  - text: "Fait déplacer tout le groupe puis regrette la première table"
+    rarity: common
+  - text: "S’accoude dans ton assiette en te racontant son histoire"
+    rarity: common
+  - text: "S’assoit sur la banquette en laissant son sac entre deux groupes debout"
+    rarity: common
+  - text: "Prend le dessous de verre de son voisin au lieu d’en demander un"
+    rarity: common
+  - text: "Déplace une table dressée avant de demander si elle est réservée"
+    rarity: common
+  - text: "Garde une table pour dix alors que le groupe est parti à deux"
+    rarity: common
+
+  # Terrasse (common)
+  - text: "Allume sa cigarette avant la réponse à « ça vous dérange ? »"
+    rarity: common
+  - text: "Éteint sa cigarette dans le verre de quelqu’un d’autre"
+    rarity: common
+  - text: "Pose son cendrier sous le nez des voisins"
+    rarity: common
+  - text: "Souffle sa fumée vers la table qui vient de lui demander d’arrêter"
+    rarity: common
+  - text: "Repart avec le briquet qu’on lui a prêté"
+    rarity: common
+  - text: "Vide son cendrier par terre quand le serveur tourne le dos"
+    rarity: common
+  - text: "Vapote à l’intérieur juste sous le panneau d’interdiction"
+    rarity: common
+  - text: "Ouvre le parasol des voisins pour mettre sa propre table à l’ombre"
+    rarity: common
+  - text: "Pousse le pied du parasol dans le passage pour gagner dix centimètres"
+    rarity: common
+  - text: "Prend le plaid posé sur le dossier de la chaise voisine"
+    rarity: common
+  - text: "Bloque la porte avec sa chaise pour continuer à discuter dehors"
+    rarity: common
+  - text: "Laisse son chien grimper sur les chaises des autres tables"
+    rarity: common
+  - text: "Laisse sa laisse barrer tout le passage entre les tables"
+    rarity: common
+  - text: "Secoue son parapluie au-dessus des verres des voisins"
+    rarity: common
+  - text: "Se plaint du soleil après avoir exigé la seule table en plein soleil"
+    rarity: common
+  - text: "Déplace le chauffage de terrasse sans demander au personnel"
+    rarity: common
+  - text: "Parle au téléphone debout entre deux tables occupées"
+    rarity: common
+  - text: "Commente à voix haute ce que mangent les passants"
+    rarity: common
+  - text: "Laisse ses serviettes s’envoler en disant « le serveur les ramassera »"
+    rarity: common
+  - text: "Frappe à la vitre pour commander alors que le serveur est dehors"
+    rarity: common
+
+  # À grignoter (common)
+  - text: "Prend le dernier morceau de la planche sans demander aux autres"
+    rarity: common
+  - text: "Utilise ses doigts pour remettre une olive dans le bol commun"
+    rarity: common
+  - text: "Choisit les morceaux de fromage en touchant tous les autres"
+    rarity: common
+  - text: "Repose un morceau déjà mordu sur la planche à partager"
+    rarity: common
+  - text: "Commande une planche pour la table puis garde le pain devant lui"
+    rarity: common
+  - text: "Dit « je n’ai pas faim » et mange la moitié de ta portion"
+    rarity: common
+  - text: "Trempe une frite déjà mordue dans la sauce commune"
+    rarity: common
+  - text: "Met ses noyaux d’olive dans le bol des olives intactes"
+    rarity: common
+  - text: "Cache les meilleurs morceaux de la planche sous une tranche de pain"
+    rarity: common
+  - text: "Attend que la planche soit vide pour dire qu’il n’avait rien demandé"
+    rarity: common
+  - text: "Pique dans l’assiette d’un voisin de table qu’il ne connaît pas"
+    rarity: common
+  - text: "Fait tomber les miettes de son assiette sur la banquette"
+    rarity: common
+  - text: "Prend la serviette de quelqu’un pour essuyer son verre renversé"
+    rarity: common
+  - text: "Laisse son emballage de nourriture extérieure sur le plateau du serveur"
+    rarity: common
+  - text: "Déplace les déchets de sa place vers celle qui est libre"
+    rarity: common
+  - text: "Décortique les cacahuètes et laisse les coques dans le bol commun"
+    rarity: common
+  - text: "Gratte le fromage de tous les toasts pour ne manger que le pain"
+    rarity: common
+  - text: "Demande un supplément gratuit parce que la planche est déjà finie"
+    rarity: common
+  - text: "Critique la commande végétarienne tout en piochant dedans"
+    rarity: common
+  - text: "Annonce que « personne n’aime ça » pour s’attribuer un accompagnement"
+    rarity: common
+
+  # Téléphones (common)
+  - text: "Regarde des vidéos sans écouteurs par-dessus la musique du bar"
+    rarity: common
+  - text: "Lance un appel en haut-parleur au milieu de la table"
+    rarity: common
+  - text: "Filme les gens puis demande s’ils acceptent d’apparaître"
+    rarity: common
+  - text: "Publie la photo du groupe après qu’une personne a demandé de l’effacer"
+    rarity: common
+  - text: "Bloque les verres pour une photo alors que le serveur attend son plateau"
+    rarity: common
+  - text: "Te colle son flash dans les yeux pour filmer ta réaction"
+    rarity: common
+  - text: "Redemande ton avis parce qu’il lisait ses messages pendant ta réponse"
+    rarity: common
+  - text: "Pose son téléphone en équilibre sur le verre de quelqu’un d’autre"
+    rarity: common
+  - text: "Lance sa propre musique pour couvrir celle du bar"
+    rarity: common
+  - text: "Filme le barman de près après son refus"
+    rarity: common
+  - text: "Envoie un vocal en demandant à toute la table de se taire"
+    rarity: common
+  - text: "Prend ton téléphone pour publier une story sans te demander"
+    rarity: common
+  - text: "Transforme une photo demandée en séance de vingt prises"
+    rarity: common
+  - text: "Tague le bar dans un avis furieux avant d’avoir signalé le problème"
+    rarity: common
+  - text: "Montre une conversation privée au groupe sans prévenir son auteur"
+    rarity: common
+  - text: "Lit à voix haute le message qui apparaît sur le téléphone d’un voisin"
+    rarity: common
+  - text: "Demande le chargeur de quelqu’un puis le prête à une autre table"
+    rarity: common
+  - text: "Met sa lampe torche vers le visage du serveur pour l’appeler"
+    rarity: common
+  - text: "Fait un direct en passant la caméra sur les tables inconnues"
+    rarity: common
+  - text: "Exige une photo du groupe puis disparaît quand tout le monde est prêt"
+    rarity: common
+
+  # Conversations (common)
+  - text: "Dit « pas de boulot ce soir » avant de détailler sa journée au bureau"
+    rarity: common
+  - text: "Coupe une histoire pour raconter la même chose « en mieux »"
+    rarity: common
+  - text: "Corrige la personne qui raconte sa propre anecdote"
+    rarity: common
+  - text: "Explique ton métier après t’avoir demandé ce que tu fais"
+    rarity: common
+  - text: "Lance un débat puis réclame qu’on change de sujet dès qu’on le contredit"
+    rarity: common
+  - text: "Répète plus fort la blague de son voisin pour récupérer les rires"
+    rarity: common
+  - text: "Annonce une histoire « très courte » et repart à son enfance"
+    rarity: common
+  - text: "Interrompt chaque réponse à la question qu’il vient de poser"
+    rarity: common
+  - text: "Demande à un inconnu de départager une dispute dont il ne sait rien"
+    rarity: common
+  - text: "Présente quelqu’un uniquement par son salaire"
+    rarity: common
+  - text: "Fait monter le volume de sa voix à chaque hausse de la musique"
+    rarity: common
+  - text: "Te demande de garder un secret puis le raconte à la table voisine"
+    rarity: common
+  - text: "Sort « je vais être honnête » pour critiquer tout le groupe"
+    rarity: common
+  - text: "Demande un avis et explique aussitôt pourquoi il est mauvais"
+    rarity: common
+  - text: "Relance un sujet que la personne vient de refuser d’aborder"
+    rarity: common
+  - text: "Raconte une anecdote embarrassante sur quelqu’un qui lui demande d’arrêter"
+    rarity: common
+  - text: "Fait participer le serveur à un débat alors qu’il pose les verres"
+    rarity: common
+  - text: "Présente son ami comme « celui qui ne sait jamais s’amuser »"
+    rarity: common
+  - text: "Monopolise la discussion puis reproche aux autres de ne rien raconter"
+    rarity: common
+  - text: "Appelle quelqu’un par un surnom après qu’on lui a demandé de ne pas le faire"
+    rarity: common
+
+  # Karaoké (common)
+  - text: "S’inscrit au karaoké avec le nom d’un ami qui a refusé"
+    rarity: common
+  - text: "Garde le micro après la fin de sa chanson"
+    rarity: common
+  - text: "Monte chanter avec un inconnu qui ne l’a pas invité"
+    rarity: common
+  - text: "Chante dans le micro pendant le couplet de son partenaire"
+    rarity: common
+  - text: "Demande de recommencer le morceau parce qu’il a raté l’entrée"
+    rarity: common
+  - text: "Baisse le micro de son partenaire pour qu’on entende surtout sa voix"
+    rarity: common
+  - text: "Critique le chanteur précédent avant de démarrer son morceau"
+    rarity: common
+  - text: "Fait patienter la file du karaoké pour chercher les paroles sur son téléphone"
+    rarity: common
+  - text: "Change de chanson quand l’animateur vient de lancer la bande-son"
+    rarity: common
+  - text: "Hurle le refrain au visage des personnes assises devant la scène"
+    rarity: common
+  - text: "Fait des commentaires dans le second micro pendant que l’autre chante"
+    rarity: common
+  - text: "Inscrit plusieurs chansons à la suite en changeant légèrement de prénom"
+    rarity: common
+  - text: "Prend le micro de l’animateur pour annoncer sa propre prestation"
+    rarity: common
+  - text: "Décrit sa formation musicale avant même que la chanson commence"
+    rarity: common
+  - text: "Réclame des applaudissements en interrompant son morceau"
+    rarity: common
+  - text: "Passe devant la personne appelée au karaoké en prétendant qu’elle est partie"
+    rarity: common
+  - text: "Accuse le micro quand personne ne reconnaît la chanson"
+    rarity: common
+  - text: "Demande un duo puis laisse l’autre chanter les passages difficiles"
+    rarity: common
+  - text: "Ordonne aux tables qui discutent de se taire pour écouter sa chanson"
+    rarity: common
+  - text: "Rappelle pendant la chanson suivante que la sienne était plus difficile"
+    rarity: common
+
+  # Quiz et blind test (common)
+  - text: "Crie la réponse du blind test avant que son équipe ait pu écrire"
+    rarity: common
+  - text: "Cherche les réponses du quiz sur son téléphone sous la table"
+    rarity: common
+  - text: "Conteste une réponse correcte parce qu’il avait pensé à une reprise"
+    rarity: common
+  - text: "Change sa réponse après avoir entendu la correction"
+    rarity: common
+  - text: "Donne le titre à la table voisine puis lui reproche de gagner"
+    rarity: common
+  - text: "Parle au-dessus de l’extrait du blind test et demande de le repasser"
+    rarity: common
+  - text: "Annonce « trop facile » sans donner la moindre réponse"
+    rarity: common
+  - text: "Garde le stylo de l’équipe mais refuse de noter les idées des autres"
+    rarity: common
+  - text: "Inscrit sa réponse malgré l’accord de toute l’équipe sur une autre"
+    rarity: common
+  - text: "Corrige les feuilles d’une équipe adverse sans y être invité"
+    rarity: common
+  - text: "Réclame un demi-point pour une réponse sans rapport avec la question"
+    rarity: common
+  - text: "Demande à l’animateur d’accepter une réponse donnée après le temps imparti"
+    rarity: common
+  - text: "Prétend qu’il avait la bonne réponse mais qu’il ne voulait pas tout faire"
+    rarity: common
+  - text: "Conteste le score uniquement après avoir découvert son classement"
+    rarity: common
+  - text: "Se sert dans le lot de l’équipe avant l’annonce des résultats"
+    rarity: common
+  - text: "Remplace le nom choisi par son équipe par son propre prénom"
+    rarity: common
+  - text: "Refuse qu’un nouveau participe au quiz mais lui demande de payer la table"
+    rarity: common
+  - text: "Chuchote les réponses aux autres équipes après une dispute avec la sienne"
+    rarity: common
+  - text: "Interrompt chaque correction pour raconter où il a découvert la chanson"
+    rarity: common
+  - text: "Quitte le quiz avant la fin en emportant la feuille de son équipe"
+    rarity: common
+
+  # Jeux de bar (common)
+  - text: "Fait tourner les barres du baby-foot puis explique que ce n’est pas de la roulette"
+    rarity: common
+  - text: "Change les règles du baby-foot dès qu’il encaisse un but"
+    rarity: common
+  - text: "Déplace la boule blanche au billard quand l’autre regarde ailleurs"
+    rarity: common
+  - text: "Laisse sa queue de billard barrer le passage pendant qu’il discute"
+    rarity: common
+  - text: "Compte un but au baby-foot que personne d’autre n’a vu"
+    rarity: common
+  - text: "Retire un point à l’adversaire « pour la dernière fois »"
+    rarity: common
+  - text: "Garde la table de billard après sa partie en posant une pièce sans jouer"
+    rarity: common
+  - text: "Récupère les fléchettes avant que le score ait été compté"
+    rarity: common
+  - text: "Donne des conseils de billard pendant que son adversaire se prépare à tirer"
+    rarity: common
+  - text: "Souffle sur la trajectoire d’un lancer de fléchettes pour déconcentrer"
+    rarity: common
+  - text: "Prend les manettes de son coéquipier au baby-foot sans demander"
+    rarity: common
+  - text: "Secoue le flipper puis accuse la machine d’être mal réglée"
+    rarity: common
+  - text: "Refuse de rendre les accessoires du jeu tant qu’on n’accepte pas sa revanche"
+    rarity: common
+  - text: "Annonce « dernière partie » uniquement quand il vient de gagner"
+    rarity: common
+  - text: "Pose son verre sur le tapis du billard"
+    rarity: common
+  - text: "S’appuie sur la table de jeu pendant le tour de l’autre"
+    rarity: common
+  - text: "Change le score des fléchettes pendant qu’on récupère les projectiles"
+    rarity: common
+  - text: "Veut rejouer son lancer de fléchettes parce que quelqu’un est passé derrière lui"
+    rarity: common
+  - text: "Défie tout le monde au baby-foot puis trouve une excuse à chaque défaite"
+    rarity: common
+  - text: "Met sa pièce devant celles des personnes qui attendent le billard"
+    rarity: common
+
+  # Match (common)
+  - text: "Se place devant l’écran pour raconter le match à ceux qui le regardent"
+    rarity: common
+  - text: "Annonce un but depuis son téléphone avant sa diffusion à l’écran"
+    rarity: common
+  - text: "Fait un pronostic après avoir vu le résultat sur une notification"
+    rarity: common
+  - text: "Hurle sur le serveur parce que son équipe vient d’encaisser un but"
+    rarity: common
+  - text: "Demande de changer de chaîne au milieu du match suivi par tout le bar"
+    rarity: common
+  - text: "Siffle chaque ralenti en couvrant les commentaires"
+    rarity: common
+  - text: "Prend la télécommande posée derrière le comptoir sans demander"
+    rarity: common
+  - text: "Affirme que « tout le monde s’en fout » du match regardé par ses voisins"
+    rarity: common
+  - text: "Répète chaque commentaire sportif comme s’il venait de le trouver"
+    rarity: common
+  - text: "Exige qu’on se taise pour un penalty puis parle pendant la tentative"
+    rarity: common
+  - text: "Cogne sur la table et renverse les verres en célébrant une action"
+    rarity: common
+  - text: "Demande aux autres de changer de place pour garder son angle sur l’écran"
+    rarity: common
+  - text: "Filme les réactions des supporters adverses pour se moquer"
+    rarity: common
+  - text: "Dit qu’il connaît le joueur personnellement sans réussir à donner son prénom"
+    rarity: common
+  - text: "Lance un chant de supporter à chaque tentative de conversation"
+    rarity: common
+  - text: "Commente ton ignorance du sport après t’avoir empêché de poser une question"
+    rarity: common
+  - text: "Crie un faux score pour faire lever toute la terrasse"
+    rarity: common
+  - text: "Prétend soutenir l’équipe gagnante après avoir porté l’autre toute la soirée"
+    rarity: common
+  - text: "Fait écouter le commentaire radio par-dessus celui de la télévision"
+    rarity: common
+  - text: "Considère que sa place devant l’écran lui appartient même entre deux matchs"
+    rarity: common
+
+  # Toilettes et affaires (common)
+  - text: "Double la file des toilettes avec « je veux juste regarder »"
+    rarity: common
+  - text: "Bloque le lavabo pour téléphoner alors que plusieurs personnes attendent"
+    rarity: common
+  - text: "Insiste sur une poignée occupée après qu’on lui a répondu"
+    rarity: common
+  - text: "Laisse le rouleau vide posé sur celui de rechange"
+    rarity: common
+  - text: "Quitte les toilettes sans prévenir du lavabo qu’il vient de boucher"
+    rarity: common
+  - text: "Filme un miroir en cadrant toutes les personnes derrière lui"
+    rarity: common
+  - text: "Étale ses affaires sur les deux lavabos pour se préparer"
+    rarity: common
+  - text: "Entre dans la réserve malgré le panneau pour chercher les toilettes"
+    rarity: common
+  - text: "Pose son verre sur le seul distributeur de savon"
+    rarity: common
+  - text: "Abandonne ses papiers à côté de la poubelle sans les ramasser"
+    rarity: common
+  - text: "Prend toutes les serviettes en papier pour nettoyer ses chaussures"
+    rarity: common
+  - text: "Fait la conversation dans l’encadrement de la porte des toilettes"
+    rarity: common
+  - text: "Demande à garder sa place dans la file puis revient avec trois amis"
+    rarity: common
+  - text: "Confie son sac pour cinq minutes et disparaît une heure"
+    rarity: common
+  - text: "Fouille dans les manteaux sans vérifier le sien"
+    rarity: common
+  - text: "Prend le parapluie le plus neuf du porte-parapluies en disant « c’est pareil »"
+    rarity: common
+  - text: "Récupère une veste prêtée et exige qu’on la porte toute la soirée"
+    rarity: common
+  - text: "Dépose ses affaires sur le plateau réservé aux verres sales"
+    rarity: common
+  - text: "Confie son verre à une personne qui vient de dire qu’elle part"
+    rarity: common
+  - text: "Accuse le personnel d’avoir perdu son sac alors qu’il l’a prêté à son ami"
+    rarity: common
+
+  # Départ (common)
+  - text: "Annonce « on y va » puis repart discuter à une autre table"
+    rarity: common
+  - text: "Commande un dernier verre après que le groupe a mis ses manteaux"
+    rarity: common
+  - text: "Retient la porte ouverte pour finir ses adieux en plein hiver"
+    rarity: common
+  - text: "Continue de discuter pendant que les chaises sont montées sur les tables"
+    rarity: common
+  - text: "Demande si le bar ferme vraiment pendant qu’on baisse le rideau"
+    rarity: common
+  - text: "Appelle son chauffeur puis refuse de sortir quand il arrive"
+    rarity: common
+  - text: "Crie le numéro de plaque de sa voiture commandée dans tout le bar"
+    rarity: common
+  - text: "Promet de guider le groupe puis cherche seulement maintenant l’adresse"
+    rarity: common
+  - text: "Fait traverser tout le groupe pour un bar dont il n’a pas vérifié l’ouverture"
+    rarity: common
+  - text: "Insiste pour un autre bar mais refuse de choisir lequel"
+    rarity: common
+  - text: "Demande aux autres de l’attendre pendant qu’il passe dire au revoir à tout le monde"
+    rarity: common
+  - text: "Reprend une conversation après chaque tentative de départ du serveur"
+    rarity: common
+  - text: "Sort avec son verre malgré le rappel de le laisser à l’intérieur"
+    rarity: common
+  - text: "Prend un verre du bar « pour compléter la collection »"
+    rarity: common
+  - text: "Emporte le menu en disant que c’est compris dans le prix"
+    rarity: common
+  - text: "Propose un départ groupé puis part seul sans prévenir"
+    rarity: common
+  - text: "Annonce un after chez quelqu’un qui ne l’a pas proposé"
+    rarity: common
+  - text: "Reste dans l’entrée pour compter les personnes déjà dehors"
+    rarity: common
+  - text: "Demande de rouvrir le terminal après la clôture pour « juste une boisson »"
+    rarity: common
+  - text: "Réveille la rue en racontant à voix haute que le bar était trop bruyant"
+    rarity: common
+
+  # Commandes et comptoir (rare)
+  - text: "Apporte la photo d’un cocktail et refuse de dire ce qu’il contient"
+    rarity: rare
+  - text: "Demande au barman de goûter son verre pour prouver qu’il est mal dosé"
+    rarity: rare
+  - text: "Commande un cocktail signature en exigeant qu’on remplace tous les alcools"
+    rarity: rare
+  - text: "Présente un ticket d’un autre bar pour obtenir le même tarif"
+    rarity: rare
+  - text: "Demande le prix de chaque bouteille puis commande de l’eau en ricanant"
+    rarity: rare
+  - text: "Veut négocier le prix au litre de sa pinte au milieu du service"
+    rarity: rare
+  - text: "Jure qu’il connaît le patron, qui vient justement de lui demander son prénom"
+    rarity: rare
+  - text: "Montre une ancienne photo de la carte pour réclamer le tarif de l’époque"
+    rarity: rare
+  - text: "Demande à vérifier les glaçons un par un avant le service"
+    rarity: rare
+  - text: "Apporte un verre gradué pour contester le volume de son cocktail"
+    rarity: rare
+  - text: "Réclame une dégustation gratuite de toute la carte avant de choisir"
+    rarity: rare
+  - text: "Prend une paille dans le cocktail en cours de préparation pour le goûter"
+    rarity: rare
+  - text: "Dicte au barman un tutoriel vidéo au fur et à mesure de la préparation"
+    rarity: rare
+  - text: "Exige que le barman refasse le geste parce qu’il a raté sa vidéo"
+    rarity: rare
+  - text: "Déplace les bouteilles derrière le comptoir pour mieux lire les étiquettes"
+    rarity: rare
+  - text: "Se sert dans les garnitures du barman comme dans un buffet"
+    rarity: rare
+  - text: "Commente le rangement du bar et commence à déplacer les outils"
+    rarity: rare
+  - text: "Demande le prénom du serveur uniquement pour rédiger son mauvais avis"
+    rarity: rare
+  - text: "Menace de noter le bar une étoile si sa table n’a pas de cadeau"
+    rarity: rare
+  - text: "Promet une story en échange de toutes les consommations de la table"
     rarity: rare
 
-  # ============================================================
-  # LEGENDARY (60) — les moments WTF qu'on raconte 10 ans plus tard
-  # ============================================================
+  # Payer autrement (rare)
+  - text: "Propose de payer sa note en donnant un cours au patron"
+    rarity: rare
+  - text: "Présente sa carte de visite à la place de sa carte bancaire"
+    rarity: rare
+  - text: "Demande une facture gonflée pour se faire rembourser son déplacement"
+    rarity: rare
+  - text: "Ajoute sa boisson sur l’ardoise d’un habitué absent"
+    rarity: rare
+  - text: "Déclare que sa tournée doit être offerte puisqu’il a amené des clients"
+    rarity: rare
+  - text: "Demande aux autres de participer au verre qu’il leur avait offert"
+    rarity: rare
+  - text: "Lance une cagnotte pour la note sans y mettre sa propre part"
+    rarity: rare
+  - text: "Prend en photo son pourboire puis le récupère avant de partir"
+    rarity: rare
+  - text: "Demande au serveur de rendre le pourboire laissé par quelqu’un d’autre"
+    rarity: rare
+  - text: "Prétend avoir déjà payé en montrant la notification d’un achat sans rapport"
+    rarity: rare
+  - text: "Propose un objet trouvé dans sa poche pour solder la différence"
+    rarity: rare
+  - text: "Veut payer son verre en plusieurs fois devant le terminal"
+    rarity: rare
+  - text: "Conteste la tournée sur la note alors que les verres sont encore devant lui"
+    rarity: rare
+  - text: "Demande une réduction de groupe après avoir nié appartenir au groupe"
+    rarity: rare
+  - text: "Sort un calcul au centime pour prouver qu’il doit moins que son verre"
+    rarity: rare
+  - text: "Envoie la demande de remboursement avant que les boissons soient servies"
+    rarity: rare
+  - text: "Ajoute des « frais d’organisation » au remboursement de la tournée"
+    rarity: rare
+  - text: "Demande que sa note soit envoyée à son entreprise sans en donner le nom"
+    rarity: rare
+  - text: "Propose de laver les verres pour payer puis négocie le nombre de verres"
+    rarity: rare
+  - text: "Exige une carte de fidélité rétroactive pour toutes ses visites supposées"
+    rarity: rare
 
-  - text: "Saute sur la table pour danser et casse la table"
+  # Occuper les lieux (rare)
+  - text: "S’attribue une table réservée parce que son prénom ressemble à celui du panneau"
+    rarity: rare
+  - text: "Retourne le panneau « réservé » pour faire croire que la table est libre"
+    rarity: rare
+  - text: "Déplace le panneau de réservation sur une table moins bien placée"
+    rarity: rare
+  - text: "Installe un trépied dans le passage et demande aux serveurs de faire le tour"
+    rarity: rare
+  - text: "Demande à la table voisine de quitter le champ de sa vidéo"
+    rarity: rare
+  - text: "Organise une réunion de travail et demande au bar de couper la musique"
+    rarity: rare
+  - text: "Prend le tabouret du musicien pour compléter sa table"
+    rarity: rare
+  - text: "S’installe sur la petite scène pendant la pause du groupe"
+    rarity: rare
+  - text: "Déroule sa rallonge électrique entre le comptoir et sa place"
+    rarity: rare
+  - text: "Demande au personnel de garder son colis jusqu’au lendemain"
+    rarity: rare
+  - text: "Transforme une banquette en vestiaire payant pour ses amis"
+    rarity: rare
+  - text: "Utilise le seau à glace comme poubelle pour sa table"
+    rarity: rare
+  - text: "Réclame qu’on déplace le match à l’écran pour cadrer sa photo"
+    rarity: rare
+  - text: "Accroche sa propre affiche sur le mur sans demander"
+    rarity: rare
+  - text: "Colle ses autocollants promotionnels sur les dessous de verre"
+    rarity: rare
+  - text: "Lance un jeu de société sur une table occupée en déplaçant les verres des autres"
+    rarity: rare
+  - text: "S’approprie la craie de l’ardoise pour corriger la carte des boissons"
+    rarity: rare
+  - text: "Alimente son chien avec les restes pris sur les tables voisines"
+    rarity: rare
+  - text: "Emporte le cendrier de terrasse pour s’en faire un souvenir"
+    rarity: rare
+  - text: "Prend la plante du bar en affirmant que personne ne s’en occupe"
+    rarity: rare
+
+  # Animations (rare)
+  - text: "Apporte une clé USB au DJ et insiste pour écouter son morceau tout de suite"
+    rarity: rare
+  - text: "Demande au musicien de jouer moins fort pour terminer son appel"
+    rarity: rare
+  - text: "Prend le casque du DJ pour « voir ce que ça fait »"
+    rarity: rare
+  - text: "Présente sa playlist comme un sauvetage alors que la piste est pleine"
+    rarity: rare
+  - text: "Écrit son nom au feutre sur le classement affiché du billard"
+    rarity: rare
+  - text: "Essaie de recruter l’équipe gagnante du quiz en plein milieu de la finale"
+    rarity: rare
+  - text: "Propose au jury du karaoké un verre contre un meilleur classement"
+    rarity: rare
+  - text: "Demande à l’animateur de retirer une question parce qu’il ne connaît pas le sujet"
+    rarity: rare
+  - text: "Vérifie les paroles chantées par un autre pour relever ses erreurs au micro"
+    rarity: rare
+  - text: "Lance les applaudissements au milieu d’une chanson pour la faire terminer"
+    rarity: rare
+  - text: "Vient au karaoké avec une enceinte qui diffuse sa propre voix préenregistrée"
+    rarity: rare
+  - text: "S’inscrit à un duo sous deux prénoms pour avoir tout le morceau"
+    rarity: rare
+  - text: "Demande le remboursement de sa consommation parce qu’il a perdu au quiz"
+    rarity: rare
+  - text: "Réclame une revanche au billard après que la table a été rendue"
+    rarity: rare
+  - text: "Inventorie les erreurs de l’animateur sur une serviette et vient les lui lire"
+    rarity: rare
+  - text: "Répond au blind test avec le titre affiché sur l’ordinateur de l’animateur"
+    rarity: rare
+  - text: "Demande au groupe en concert de jouer sa chanson pendant les remerciements"
+    rarity: rare
+  - text: "Annonce qu’il remplace le chanteur pendant que celui-ci règle son micro"
+    rarity: rare
+  - text: "Fait passer sa vidéo de match au serveur en exigeant un avis d’arbitre"
+    rarity: rare
+  - text: "Distribue des notes aux chanteurs sur les serviettes du bar"
+    rarity: rare
+
+  # Social (rare)
+  - text: "Distribue des cartes de visite en interrompant chaque conversation"
+    rarity: rare
+  - text: "Transforme « tu fais quoi ? » en entretien pour son projet non payé"
+    rarity: rare
+  - text: "Lance un sondage commercial à table sans prévenir ses amis"
+    rarity: rare
+  - text: "Demande aux inconnus de s’abonner avant de leur dire bonjour"
+    rarity: rare
+  - text: "Enregistre la conversation pour son podcast sans avoir demandé"
+    rarity: rare
+  - text: "Présente une personne comme son associé après cinq minutes de discussion"
+    rarity: rare
+  - text: "Fait semblant de reconnaître une célébrité et refuse qu’on le corrige"
+    rarity: rare
+  - text: "Demande un autographe à un inconnu qui a déjà expliqué la confusion"
+    rarity: rare
+  - text: "Salue toutes les tables puis demande discrètement comment s’appelle le patron"
+    rarity: rare
+  - text: "Prétend avoir privatisé le bar quand les autres clients passent près de sa table"
+    rarity: rare
+  - text: "Propose un toast à son projet et demande des investissements avant de se rasseoir"
+    rarity: rare
+  - text: "Te tend son téléphone avec un avis cinq étoiles déjà rédigé pour son entreprise"
+    rarity: rare
+  - text: "Demande au serveur de livrer un message à quelqu’un qui l’a déjà éconduit"
+    rarity: rare
+  - text: "Fait appeler un ami au micro pour lui reprocher de ne pas répondre"
+    rarity: rare
+  - text: "Prend le numéro d’un groupe pour y diffuser sa publicité"
+    rarity: rare
+  - text: "Se présente avec un ami et lui demande devant toi de valider son récit"
+    rarity: rare
+  - text: "Réclame une ovation pour son anniversaire après avoir admis que ce n’est pas la bonne date"
+    rarity: rare
+  - text: "Prétend avoir inventé le cocktail imprimé sur la carte"
+    rarity: rare
+  - text: "Raconte une rencontre avec une star puis montre une photo prise dans un musée de cire"
+    rarity: rare
+  - text: "Demande à son voisin de corriger son CV pendant que celui-ci commande"
+    rarity: rare
+
+  # Terrasse et coulisses (rare)
+  - text: "Prend la raclette du serveur pour nettoyer sa table en éclaboussant les voisins"
+    rarity: rare
+  - text: "Entre derrière le bar pour récupérer lui-même son téléphone en charge"
+    rarity: rare
+  - text: "Réorganise les manteaux au vestiaire sans être du personnel"
+    rarity: rare
+  - text: "Réclame les clés des toilettes pour empêcher les autres d’y entrer"
+    rarity: rare
+  - text: "Pose un panneau « occupé » sur les toilettes afin d’y tourner sa vidéo"
+    rarity: rare
+  - text: "Pique le rouleau de papier entier pour caler sa table bancale"
+    rarity: rare
+  - text: "Lave ses chaussures dans le lavabo pendant que la file attend"
+    rarity: rare
+  - text: "S’enferme dans les toilettes avec le seul chargeur prêté à la table"
+    rarity: rare
+  - text: "Prend la caisse de verres propres pour y ranger ses achats"
+    rarity: rare
+  - text: "Demande au serveur de réceptionner sa commande de livraison de repas"
+    rarity: rare
+  - text: "Installe son propre cendrier malgré l’interdiction de fumer à sa table"
+    rarity: rare
+  - text: "Fait déplacer tout le mobilier de terrasse pour filmer une transition"
+    rarity: rare
+  - text: "Demande aux voisins de retenir leur chien pour que le sien ait toute la place"
+    rarity: rare
+  - text: "Se sert en glaçons directement dans le seau d’une table inconnue"
+    rarity: rare
+  - text: "Fouille le bac des objets trouvés à la recherche de quelque chose « d’utile »"
+    rarity: rare
+  - text: "Ouvre la porte réservée au personnel pour couper à travers le bar"
+    rarity: rare
+  - text: "Prend le balai à un employé pour lui montrer comment passer autour de sa table"
+    rarity: rare
+  - text: "Réclame un sac pour emporter les olives restées sur les tables voisines"
+    rarity: rare
+  - text: "Met son téléphone à charger sur l’enceinte du groupe en concert"
+    rarity: rare
+  - text: "Bloque l’entrée pour vendre des places à un événement qui se tient ailleurs"
+    rarity: rare
+
+  # Fin de soirée (rare)
+  - text: "Demande au patron de déplacer l’heure de fermeture parce qu’il vient d’arriver"
+    rarity: rare
+  - text: "Fait patienter le chauffeur pour aller chercher une personne qui ne vient pas"
+    rarity: rare
+  - text: "Annonce qu’il a réservé le prochain bar, puis demande au groupe lequel choisir"
+    rarity: rare
+  - text: "Organise un vote sur le prochain lieu et ignore le résultat"
+    rarity: rare
+  - text: "Prétend qu’un verre emporté est le sien malgré le logo du bar"
+    rarity: rare
+  - text: "Dévisse une plaque décorative pour en faire un souvenir"
+    rarity: rare
+  - text: "Propose au serveur de continuer à servir après avoir pointé sa fin de journée"
+    rarity: rare
+  - text: "Lance un appel collectif au bar voisin pour demander une table déjà refusée"
+    rarity: rare
+  - text: "Revient chercher un objet et s’installe pour raconter le reste de sa soirée"
+    rarity: rare
+  - text: "Prend le manteau d’un autre et réclame qu’on lui rembourse celui qu’il ne retrouve plus"
+    rarity: rare
+  - text: "Réclame au personnel une tournée parce qu’il aide à empiler deux chaises"
+    rarity: rare
+  - text: "Demande la clé du bar pour récupérer son chargeur le lendemain"
+    rarity: rare
+  - text: "Propose un after chez son ami et lui envoie l’adresse devant le groupe"
+    rarity: rare
+  - text: "Donne l’adresse du mauvais bar au chauffeur puis accuse celui-ci de s’être trompé"
+    rarity: rare
+  - text: "Empêche le groupe de partir en retenant les manteaux dans ses bras"
+    rarity: rare
+  - text: "Demande à repartir avec le panneau « dernière commande »"
+    rarity: rare
+  - text: "Fait signer une serviette au patron comme preuve qu’il sera admis la prochaine fois"
+    rarity: rare
+  - text: "Négocie un abonnement au tabouret où il a passé la soirée"
+    rarity: rare
+  - text: "Fait entrer de nouveaux amis pendant que le personnel fait sortir les clients"
+    rarity: rare
+  - text: "Recommande le bar voisin à tous ceux qui entrent après une dispute sur sa note"
+    rarity: rare
+
+  # Culot au comptoir (legendary)
+  - text: "Passe derrière le bar pour montrer au barman comment faire son métier"
     rarity: legendary
-  - text: "Casse un miroir et propose de le rembourser \"demain par virement\""
+  - text: "Se présente comme le propriétaire du bar devant le véritable propriétaire"
     rarity: legendary
-  - text: "Met le feu à une serviette pour \"faire flamber\" un cocktail qui ne se flambe pas"
+  - text: "Fait annuler une réservation en se faisant passer au téléphone pour la personne concernée"
     rarity: legendary
-  - text: "Joue avec un briquet jusqu'à se brûler un sourcil"
+  - text: "Annonce une tournée générale puis explique qu’il parlait uniquement de sa table"
     rarity: legendary
-  - text: "Allume un pétard à l'intérieur \"pour fêter ça\""
+  - text: "Demande au patron de déduire sa note du chiffre d’affaires qu’il aurait apporté"
     rarity: legendary
-  - text: "Verse de la vodka sur le comptoir et l'enflamme \"pour montrer que c'est de la vraie\""
+  - text: "Présente un faux bon de réduction écrit sur une serviette du bar"
     rarity: legendary
-  - text: "Convoque le DJ pour annoncer son anniversaire fictif"
+  - text: "Propose un partenariat influenceur avec le compte privé de ses douze abonnés"
     rarity: legendary
-  - text: "Convoque tout le bar au micro pour faire sa demande en mariage"
+  - text: "Demande au barman de former son remplaçant pour qu’il puisse partir avec lui"
     rarity: legendary
-  - text: "Se prend un râteau public pendant sa demande en mariage"
+  - text: "Exige que le serveur le raccompagne chez lui après son service"
     rarity: legendary
-  - text: "Demande en mariage la serveuse au bout de 2 heures"
+  - text: "Sert des clients derrière le bar puis demande à garder les pourboires"
     rarity: legendary
-  - text: "Vomit sur le DJ en plein set"
+  - text: "Déclare une table « espace VIP » avec la corde du vestiaire"
     rarity: legendary
-  - text: "Vomit dans son propre sac à main et continue la soirée"
+  - text: "Exige qu’on fasse partir une table parce qu’il vient ici depuis plus longtemps"
     rarity: legendary
-  - text: "S'endort sur le comptoir et bave sur le bras du voisin"
+  - text: "Présente son ami comme le nouvel artiste de la soirée sans en avoir parlé au patron"
     rarity: legendary
-  - text: "Pisse dans la plante verte décorative"
+  - text: "Réclame le micro pour lancer sa campagne aux élections municipales"
     rarity: legendary
-  - text: "Pisse dans le seau à champagne d'une autre table"
+  - text: "Fait visiter le bar à des inconnus comme s’il en était le gérant"
     rarity: legendary
-  - text: "Confond la sortie avec la cuisine et atterrit en plein service"
+  - text: "Lance une collecte pour payer sa note en prétendant soutenir le bar"
     rarity: legendary
-  - text: "Tombe dans la cave en cherchant les toilettes"
+  - text: "Propose au patron d’annuler sa note contre le nom d’une prétendue célébrité à sa table"
     rarity: legendary
-  - text: "Tombe sur le DJ booth et coupe la musique pendant 8 minutes"
+  - text: "Exige de voir les images de vidéosurveillance pour prouver qu’il a attendu trop longtemps"
     rarity: legendary
-  - text: "Débranche les enceintes pour ramener \"le silence important\""
+  - text: "Réclame le remboursement de toute la table parce que son verre est absent de la photo"
     rarity: legendary
-  - text: "Prend le micro pour faire un discours politique improvisé"
+  - text: "Rassemble les serveurs pour leur expliquer comment ils devraient se répartir les tables"
     rarity: legendary
-  - text: "Annonce sa candidature aux municipales depuis le karaoké"
+
+  # La scène (legendary)
+  - text: "Utilise son passage au karaoké pour annoncer sa démission au micro"
     rarity: legendary
-  - text: "Lit son CV intégral au micro du karaoké"
+  - text: "Lit son CV au micro du karaoké et demande qui recrute"
     rarity: legendary
-  - text: "Demande à parler à \"tout le monde\" pour s'excuser d'avoir pété"
+  - text: "Interrompt le concert pour faire la publicité de son propre groupe"
     rarity: legendary
-  - text: "Roule sous une banquette et y reste 30 minutes sans réaction"
+  - text: "Lance une demande en mariage pendant la chanson d’un inconnu sans l’avoir prévenu"
     rarity: legendary
-  - text: "Se réveille le lendemain dans la chambre froide du bar"
+  - text: "Prend le micro pour régler publiquement une histoire de remboursement entre amis"
     rarity: legendary
-  - text: "Repart par accident avec la caisse enregistreuse sous le bras"
+  - text: "Se proclame nouvel animateur du quiz pendant que l’animateur corrige les feuilles"
     rarity: legendary
-  - text: "Confond les clés du bar avec ses clés et part en fermant tout"
+  - text: "Réclame une standing ovation avant d’avoir chanté la première note"
     rarity: legendary
-  - text: "Donne sa carte bleue au DJ comme pourboire \"pour la soirée\""
+  - text: "Fait un discours de victoire au blind test alors que son équipe est dernière"
     rarity: legendary
-  - text: "Met sa carte vitale dans le terminal en hurlant que ça marche pas"
+  - text: "Réclame le micro pour annoncer qu’il est le seul habitué à faire vivre ce bar"
     rarity: legendary
-  - text: "Paye en pièces de 10 centimes pendant 8 minutes intégrales"
+  - text: "Annonce son propre rappel et remonte chanter malgré la fin du karaoké"
     rarity: legendary
-  - text: "Paye un cocktail avec un chèque (signé)"
+  - text: "Déclare le tournoi de billard truqué et lance sa remise de prix parallèle"
     rarity: legendary
-  - text: "Sort un Travellers Cheque de 1998 \"qui doit valoir quelque chose\""
+  - text: "Demande au DJ de passer son vocal de rupture comme prochain morceau"
     rarity: legendary
-  - text: "Échange une bague de famille contre 3 verres"
+  - text: "Branche sa guitare pendant la pause du groupe sans en demander l’autorisation"
     rarity: legendary
-  - text: "Joue son téléphone à pile ou face contre un inconnu"
+  - text: "Prend le micro pour demander qu’on supprime toutes les photos où il apparaît"
     rarity: legendary
-  - text: "Parie sa carte de transport sur un baby-foot"
+  - text: "Présente son diaporama de vacances sur l’écran pendant la pause du match"
     rarity: legendary
-  - text: "Pose son chien en collatéral pour un dernier verre"
+  - text: "Prend la place du jury au karaoké et commence à éliminer les participants"
     rarity: legendary
-  - text: "Quitte le bar par la fenêtre des toilettes au lieu de la porte"
+  - text: "Fait lever tout le bar pour son anniversaire puis lance un discours de vente"
     rarity: legendary
-  - text: "Sort par la cuisine avec une bouteille \"par habitude\""
+  - text: "Arrive au blind test avec un règlement imprimé de sa propre rédaction"
     rarity: legendary
-  - text: "Tente d'embaucher le serveur \"à un meilleur tarif\""
+  - text: "Annonce les résultats du quiz au micro avec le nom de son équipe à chaque place"
     rarity: legendary
-  - text: "Fait une offre d'achat sur le bar à 2h du matin"
+  - text: "Se lance dans une conférence sur le vin pendant que le pianiste joue encore"
     rarity: legendary
-  - text: "Propose au patron de racheter son bar avec un crédit revolving"
+
+  # À raconter demain (legendary)
+  - text: "Repart avec une chaise du bar en affirmant qu’il l’avait apportée"
     rarity: legendary
-  - text: "Veut négocier un partenariat avec le barman à 4h du mat"
+  - text: "Fait envoyer sa note à une table inconnue en prétendant qu’on l’a invité"
     rarity: legendary
-  - text: "Demande à dormir derrière le comptoir \"juste cette nuit\""
+  - text: "Propose au DJ de jouer gratuitement à son mariage après avoir critiqué tout son set"
     rarity: legendary
-  - text: "Demande à louer le baby-foot pour la nuit"
+  - text: "S’installe à la table d’un anniversaire inconnu et réclame sa part du gâteau"
     rarity: legendary
-  - text: "Sort une moto de la salle \"qu'il avait rentrée plus tôt en douce\""
+  - text: "Se fait passer pour un membre du personnel pour faire entrer ses amis"
     rarity: legendary
-  - text: "Apporte un karaoké portable et coupe la sono officielle"
+  - text: "Fait appeler le patron chez lui pour contester l’heure de fermeture"
     rarity: legendary
-  - text: "Sort un saxophone du sac et lance un solo improvisé"
+  - text: "Usurpe la réservation d’un groupe puis refuse de partir quand celui-ci arrive"
     rarity: legendary
-  - text: "Sort un harmonica et joue \"Imagine\" pendant 12 minutes"
+  - text: "Demande au personnel de sortir un client simplement parce qu’il n’aime pas son équipe"
     rarity: legendary
-  - text: "Sort une guitare de son sac à dos et lance un solo improvisé"
+  - text: "Demande un remboursement parce que son rendez-vous s’est mal passé"
     rarity: legendary
-  - text: "Repart avec une affiche encadrée décrochée du mur du bar à 4h du mat"
+  - text: "Annonce aux nouveaux clients que le bar est complet pour garder de la place à ses amis"
     rarity: legendary
-  - text: "Improvise un cours de salsa au milieu de la salle, sans musique"
+  - text: "Se fait passer pour l’organisateur du quiz afin de récupérer le lot des gagnants"
     rarity: legendary
-  - text: "Apprend à un enfant comment commander une bière \"pour la culture\""
+  - text: "Demande au serveur de justifier chaque minute de son attente sur la note"
     rarity: legendary
-  - text: "Fait des prédictions tarot sur tous les inconnus avec un vrai jeu"
+  - text: "Fait signer une pétition pour imposer sa playlist pendant la soirée"
     rarity: legendary
-  - text: "Te fait un test de personnalité écrit sur sous-bock"
+  - text: "Propose au serveur une commission pour envoyer les clients dans le bar de son ami"
     rarity: legendary
-  - text: "T'analyse ton écriture sur la note \"et voit ton avenir\""
+  - text: "Emporte l’ardoise du menu parce que son prénom figure dans le cocktail du jour"
     rarity: legendary
-  - text: "Repart avec le panneau \"toilettes\" sous le bras"
+  - text: "Prétend être critique gastronomique et exige de choisir à l’avance la réponse à son avis"
     rarity: legendary
-  - text: "Repart avec une plante verte du bar \"qu'on lui a offerte\""
+  - text: "Fait lire son mauvais avis au micro avant d’exiger les applaudissements de la salle"
     rarity: legendary
-  - text: "Repart avec un cadre photo accroché au mur"
+  - text: "Fait payer une entrée à ses amis pour une soirée dont l’accès est gratuit"
     rarity: legendary
-  - text: "Décroche le drapeau accroché au-dessus du bar pour s'en faire une cape"
+  - text: "Annonce un after ouvert à tous au domicile du patron sans l’avoir consulté"
     rarity: legendary
-  - text: "Convainc le bar entier de sortir manger un kebab puis disparaît"
+  - text: "Propose de retirer son avis négatif uniquement si le patron le rembourse en espèces"
     rarity: legendary

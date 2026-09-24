@@ -1,1157 +1,1058 @@
+# 500 situations autonomes : 300 common, 140 rare, 60 legendary.
 theme:
   name: "Repas de famille"
   slug: "repas-de-famille"
-  description: "Le bingo officiel du dimanche midi. Cochez les cases à mesure que la cocotte chauffe."
+  description: "De l’apéro qui s’éternise aux adieux sur le pas de la porte. La famille fournit les cases."
   emoji: "🍽️"
 
 red_flags:
 
-  # =====================================================================
-  # COMMON (300) — Les grands classiques universels
-  # Le truc qui arrive à TOUS les repas de famille
-  # =====================================================================
-
-  - text: "Quelqu'un dit \"on est combien à table déjà ?\" trois fois"
+  # Arrivée et installation
+  - text: "Arrive les mains vides et demande ce qu’il y a de prévu pour l’apéro"
     rarity: common
-  - text: "La table est trop petite, on rajoute une planche"
+  - text: "Annonce son retard à l’heure où tout le monde devait être à table"
     rarity: common
-  - text: "Il manque une chaise, on prend celle du bureau"
+  - text: "Se plaint d’avoir raté l’apéro après être arrivé une heure en retard"
     rarity: common
-  - text: "Le plus jeune est exilé sur un tabouret"
+  - text: "Déplace les marques-places pour retrouver « sa » chaise"
     rarity: common
-  - text: "Mamie a mis trois fois trop de couverts"
+  - text: "Garde son manteau sur la dernière chaise libre"
     rarity: common
-  - text: "Le pain est posé à l'envers, quelqu'un panique"
+  - text: "Entre en annonçant qu’il ne pourra pas rester, puis refuse de partir"
     rarity: common
-  - text: "Une serviette en tissu sortie pour l'occasion"
+  - text: "Compare la déco aux photos de sa dernière visite pour prouver que c’était mieux avant"
     rarity: common
-  - text: "Les verres sont dépareillés mais \"ça fait rien\""
+  - text: "Inspecte la table avant même de saluer les hôtes"
     rarity: common
-  - text: "Le tire-bouchon a disparu trois fois en quinze minutes"
+  - text: "Demande pourquoi une personne absente n’a pas été invitée"
     rarity: common
-  - text: "Personne ne trouve l'ouvre-boîte"
+  - text: "Arrive avec quelqu’un de plus sans avoir prévenu"
     rarity: common
-  - text: "L'apéro est prévu à 12h, on passe à table à 14h30"
+  - text: "Explique depuis l’entrée comment il aurait organisé la pièce"
     rarity: common
-  - text: "Trois packs de chips entamés et un seul fini"
+  - text: "Confisque la meilleure chaise au nom de son ancienneté"
     rarity: common
-  - text: "Les cacahuètes sont déjà rances mais personne ne le dit"
+  - text: "Commente le prix du bouquet qu’une autre personne a apporté"
     rarity: common
-  - text: "Le saucisson est coupé trop épais"
+  - text: "Se fait servir avant d’avoir posé son sac"
     rarity: common
-  - text: "Le saucisson est coupé trop fin"
+  - text: "Bloque l’entrée pour raconter tout son trajet"
     rarity: common
-  - text: "Quelqu'un mange tout le bout du saucisson"
+  - text: "Refuse la place proposée puis reproche aux autres de s’être assis"
     rarity: common
-  - text: "Tonton ouvre une bouteille \"juste pour goûter\""
+  - text: "Ouvre les placards en cherchant son verre « habituel »"
     rarity: common
-  - text: "Le rosé est pas assez frais, débat de 10 minutes"
+  - text: "Dépose son téléphone à charger à la place d’un couvert"
     rarity: common
-  - text: "Les glaçons fondent trop vite \"c'est ce frigo de m...\""
+  - text: "Fait déplacer trois personnes pour ne pas être près de la fenêtre"
     rarity: common
-  - text: "On sort le service \"des grands jours\" pour 6 personnes"
-    rarity: common
-  - text: "La nappe a une tache de l'année dernière"
-    rarity: common
-  - text: "\"Tu te souviens du repas de Noël 2017 ?\""
-    rarity: common
-  - text: "Mamie raconte la même anecdote pour la 400ème fois"
-    rarity: common
-  - text: "Personne n'ose lui dire qu'on connaît"
-    rarity: common
-  - text: "Papy s'endort entre l'entrée et le plat"
-    rarity: common
-  - text: "Papy ronfle au dessert, on baisse la voix"
-    rarity: common
-  - text: "On sort les photos de quand t'étais petit"
-    rarity: common
-  - text: "Une photo où t'es à poil dans le bain ressort"
-    rarity: common
-  - text: "\"Tu as MAIGRI toi non ?\""
-    rarity: common
-  - text: "\"Tu as GROSSI toi non ?\""
-    rarity: common
-  - text: "\"Tu as une mine fatiguée, tu dors bien ?\""
-    rarity: common
-  - text: "\"Et toujours pas de copain/copine ?\""
-    rarity: common
-  - text: "\"C'est pour quand les enfants ?\""
-    rarity: common
-  - text: "\"Le deuxième c'est pour bientôt ?\""
-    rarity: common
-  - text: "\"Et le travail ça va ?\" suivi de zéro écoute"
-    rarity: common
-  - text: "Quelqu'un demande ce que tu fais dans la vie pour la 6ème fois"
-    rarity: common
-  - text: "Tu réexpliques ton métier à un tonton qui s'en fout"
-    rarity: common
-  - text: "\"Mais ça gagne bien ton truc ?\""
-    rarity: common
-  - text: "Comparaison directe avec ton cousin qui a \"mieux réussi\""
-    rarity: common
-  - text: "Le cousin médecin est cité comme exemple"
-    rarity: common
-  - text: "Le cousin ingénieur est cité comme exemple"
-    rarity: common
-  - text: "Le cousin notaire est cité comme exemple"
-    rarity: common
-  - text: "\"C'est pas un vrai métier ça\""
-    rarity: common
-  - text: "\"De mon temps on travaillait dur\""
-    rarity: common
-  - text: "Quelqu'un râle sur la jeunesse d'aujourd'hui"
-    rarity: common
-  - text: "\"Vous êtes tous sur vos téléphones\""
-    rarity: common
-  - text: "Un ado répond \"mouais\" 14 fois de suite"
-    rarity: common
-  - text: "Un ado a les écouteurs sous la table"
-    rarity: common
-  - text: "Un ado regarde TikTok pendant l'entrée"
-    rarity: common
-  - text: "\"Range ton téléphone à table !\""
-    rarity: common
-  - text: "Un parent prend une photo du plat avant de manger"
-    rarity: common
-  - text: "Quelqu'un poste sur Facebook \"belle journée en famille\""
-    rarity: common
-  - text: "L'entrée arrive 1h après l'apéro"
-    rarity: common
-  - text: "Les œufs mimosa sont tièdes"
-    rarity: common
-  - text: "Les radis sont là pour faire joli, personne y touche"
-    rarity: common
-  - text: "Le beurre est trop dur pour les radis"
-    rarity: common
-  - text: "Quelqu'un râle parce qu'il manque le sel"
-    rarity: common
-  - text: "On cherche la salière 5 minutes"
-    rarity: common
-  - text: "Le moulin à poivre est cassé depuis 2014"
-    rarity: common
-  - text: "Quelqu'un laisse tomber sa fourchette"
-    rarity: common
-  - text: "On va lui chercher une fourchette propre, ça prend 4 min"
-    rarity: common
-  - text: "Le chien attend sous la table comme un sniper"
-    rarity: common
-  - text: "Quelqu'un donne en douce au chien"
-    rarity: common
-  - text: "\"Arrête de donner au chien il va vomir\""
-    rarity: common
-  - text: "Le chien vomit 20 minutes plus tard"
-    rarity: common
-  - text: "Le chat saute sur la table"
-    rarity: common
-  - text: "Le chat lèche le beurre, personne le voit"
-    rarity: common
-  - text: "Tu vois le chat lécher le beurre, tu te tais"
-    rarity: common
-  - text: "Maman insiste pour resservir une troisième fois"
-    rarity: common
-  - text: "\"Mange, t'es maigre comme un clou\""
-    rarity: common
-  - text: "\"Tu manges rien tu es malade ?\""
-    rarity: common
-  - text: "On te ressert d'autorité, tu n'as rien demandé"
-    rarity: common
-  - text: "\"Finis ton assiette, pense aux enfants qui ont faim\""
-    rarity: common
-  - text: "Mamie a fait à manger pour 30, on est 9"
-    rarity: common
-  - text: "\"Y'aura plein de restes c'est pas grave\""
-    rarity: common
-  - text: "On repart avec 4 tupperwares dépareillés"
-    rarity: common
-  - text: "Un tupperware n'a pas de couvercle, on improvise avec du film"
-    rarity: common
-  - text: "Le rôti est légèrement trop cuit"
-    rarity: common
-  - text: "Le rôti est franchement trop cuit"
-    rarity: common
-  - text: "\"Il est un peu sec mais avec la sauce ça passe\""
-    rarity: common
-  - text: "La sauce a fait des grumeaux"
-    rarity: common
-  - text: "On ressort la sauce du tiroir, c'est de la sauce industrielle"
-    rarity: common
-  - text: "\"J'ai mis un peu de Maggi pour relever\""
-    rarity: common
-  - text: "Les pommes de terre sont collées au fond du plat"
-    rarity: common
-  - text: "Les haricots verts sont mous"
-    rarity: common
-  - text: "Les petits pois sont en boîte mais \"on dirait pas\""
-    rarity: common
-  - text: "Quelqu'un mange juste les pâtes \"sans sauce\""
-    rarity: common
-  - text: "L'enfant ne mange QUE les pâtes au beurre"
-    rarity: common
-  - text: "L'enfant ne veut pas que les aliments se touchent"
-    rarity: common
-  - text: "Un enfant pleure parce qu'il y a du persil dessus"
-    rarity: common
-  - text: "On enlève les oignons un par un dans son assiette"
-    rarity: common
-  - text: "\"Goûte au moins, tu vas voir c'est bon\""
-    rarity: common
-  - text: "Un enfant fait \"beurk\" devant tout le monde"
-    rarity: common
-  - text: "Une dispute parents/enfant sur le brocoli"
-    rarity: common
-  - text: "On menace de plus de dessert"
-    rarity: common
-  - text: "Le mot \"piquette\" est prononcé"
-    rarity: common
-  - text: "\"Il est bouchonné ce vin non ?\""
-    rarity: common
-  - text: "On débouche une autre bouteille \"au cas où\""
-    rarity: common
-  - text: "Tonton sert des verres beaucoup trop pleins"
-    rarity: common
-  - text: "Quelqu'un renverse son verre de vin"
-    rarity: common
-  - text: "On met du sel sur la tache \"ça enlève\""
-    rarity: common
-  - text: "Le sel n'enlève rien, on le savait"
-    rarity: common
-  - text: "Une bouteille d'eau gazeuse explose en s'ouvrant"
-    rarity: common
-  - text: "Quelqu'un boit dans le mauvais verre"
-    rarity: common
-  - text: "Débat sur \"c'est qui qui a bu mon verre ?\""
-    rarity: common
-  - text: "\"Coupe le pain s'il te plaît\""
-    rarity: common
-  - text: "Tu coupes le pain trop épais, on te juge"
-    rarity: common
-  - text: "Tu coupes le pain trop fin, on te juge"
-    rarity: common
-  - text: "Tu retournes le pain par accident"
-    rarity: common
-  - text: "Mamie remet le pain à l'endroit en silence"
-    rarity: common
-  - text: "Le pain est trop dur, on le scie"
-    rarity: common
-  - text: "On ressort la baguette de la veille \"elle est encore bonne\""
-    rarity: common
-  - text: "Quelqu'un saucette comme un porc"
-    rarity: common
-  - text: "On commente la sauce \"c'est ta meilleure\""
-    rarity: common
-  - text: "On demande la recette en sachant qu'on la fera jamais"
-    rarity: common
-  - text: "\"C'est ma grand-mère qui me l'a apprise\""
-    rarity: common
-  - text: "Pause de 30 minutes entre le plat et le fromage"
-    rarity: common
-  - text: "Le fromage sort 1h avant pour \"être à température\""
-    rarity: common
-  - text: "Le camembert n'est pas assez fait"
-    rarity: common
-  - text: "Le camembert est BEAUCOUP trop fait"
-    rarity: common
-  - text: "\"Ça pue mais c'est ça qui est bon\""
-    rarity: common
-  - text: "Quelqu'un coupe la pointe du camembert"
-    rarity: common
-  - text: "Drame du \"on coupe pas la pointe !!!\""
-    rarity: common
-  - text: "Un débat éclate sur la bonne façon de couper le brie"
-    rarity: common
-  - text: "Le couteau à fromage est utilisé pour le pain"
-    rarity: common
-  - text: "Tonton parle politique pendant le fromage"
-    rarity: common
-  - text: "Tonton commence par \"moi je suis pas raciste mais\""
-    rarity: common
-  - text: "Quelqu'un change de sujet rapidement"
-    rarity: common
-  - text: "\"On va pas refaire le monde hein\""
-    rarity: common
-  - text: "Un débat sur les impôts éclate"
-    rarity: common
-  - text: "Un débat sur les retraites éclate"
-    rarity: common
-  - text: "Quelqu'un cite BFM comme source"
-    rarity: common
-  - text: "\"Je l'ai vu sur Facebook\""
-    rarity: common
-  - text: "Maman tente de calmer le jeu"
-    rarity: common
-  - text: "\"Bon les enfants, on est en famille\""
-    rarity: common
-  - text: "Un silence gênant après une phrase de tonton"
-    rarity: common
-  - text: "Quelqu'un demande \"qui veut du café ?\" pour sauver l'ambiance"
-    rarity: common
-  - text: "Le café arrive 45 minutes après la demande"
-    rarity: common
-  - text: "La cafetière fait un bruit de fin du monde"
-    rarity: common
-  - text: "Le décaféiné est mélangé avec le normal \"par erreur\""
-    rarity: common
-  - text: "On cherche le sucre 8 minutes"
-    rarity: common
-  - text: "Il reste 2 carrés de sucre pour 7 personnes"
-    rarity: common
-  - text: "Mamie sort des chocolats périmés depuis Noël"
-    rarity: common
-  - text: "On voit la date mais on dit rien"
-    rarity: common
-  - text: "Le digestif sort \"juste pour les hommes\""
-    rarity: common
-  - text: "Drame féministe en sourdine"
-    rarity: common
-  - text: "La poire \"que tu vas voir, elle décape\""
-    rarity: common
-  - text: "Tonton a sa propre bouteille planquée"
-    rarity: common
-  - text: "\"C'est moi qui l'ai fait avec les poires du jardin\""
-    rarity: common
-  - text: "Personne ose dire que c'est imbuvable"
-    rarity: common
-  - text: "Les enfants partent jouer sans débarrasser"
-    rarity: common
-  - text: "Toujours les mêmes qui débarrassent"
-    rarity: common
-  - text: "\"Tu m'aides à débarrasser ?\""
-    rarity: common
-  - text: "Les hommes restent à table pendant que les femmes débarrassent"
-    rarity: common
-  - text: "Quelqu'un fait remarquer que c'est sexiste"
-    rarity: common
-  - text: "On ignore la remarque"
-    rarity: common
-  - text: "Le lave-vaisselle est mal rangé, débat"
-    rarity: common
-  - text: "\"Mais on met pas les couteaux pointe en haut !!!\""
-    rarity: common
-  - text: "Quelqu'un rerange le lave-vaisselle après toi"
-    rarity: common
-  - text: "Tu remarques mais tu dis rien"
-    rarity: common
-  - text: "Un cousin disparaît juste avant la vaisselle"
-    rarity: common
-  - text: "Un cousin s'est endormi sur le canapé pile au moment du café"
-    rarity: common
-  - text: "Personne le réveille, la salope"
-    rarity: common
-  - text: "On regarde un programme nul à la télé en bruit de fond"
-    rarity: common
-  - text: "Les Douze Coups de Midi tournent dans le vide"
-    rarity: common
-  - text: "Quelqu'un connaît toutes les réponses du jeu télé"
-    rarity: common
-  - text: "Mamie commente Jean-Luc Reichmann"
-    rarity: common
-  - text: "Papy parle plus fort que la télé"
-    rarity: common
-  - text: "Le volume monte, monte, monte"
-    rarity: common
-  - text: "Quelqu'un éteint la télé sans demander, drame"
-    rarity: common
-  - text: "Un cousin a apporté une plante \"pour faire plaisir\""
-    rarity: common
-  - text: "La plante est moche, mamie fait semblant d'aimer"
-    rarity: common
-  - text: "On parle de quelqu'un qui n'est pas là"
-    rarity: common
-  - text: "On parle MAL de quelqu'un qui n'est pas là"
-    rarity: common
-  - text: "\"Heureusement qu'elle est pas venue\""
-    rarity: common
-  - text: "Le téléphone fixe sonne, c'est la voisine"
-    rarity: common
-  - text: "Mamie part 25 minutes au téléphone"
-    rarity: common
-  - text: "On l'entend dire \"je peux pas parler là on est à table\" pendant 20 min"
-    rarity: common
-  - text: "Une dispute entre frères/sœurs ressort de 1998"
-    rarity: common
-  - text: "\"Mais c'est toi qui avais cassé le vase !\""
-    rarity: common
-  - text: "Maman tranche \"j'avais dit qu'on en parlait plus\""
-    rarity: common
-  - text: "Un cousin parle bitcoin"
-    rarity: common
-  - text: "Personne comprend, tout le monde fait oui de la tête"
-    rarity: common
-  - text: "Quelqu'un parle de son régime"
-    rarity: common
-  - text: "\"Moi je mange plus de gluten\""
-    rarity: common
-  - text: "Mamie est vexée par le régime sans gluten"
-    rarity: common
-  - text: "\"De mon temps on mangeait de tout\""
-    rarity: common
-  - text: "Quelqu'un demande s'il y a du porc \"pour Sarah\""
-    rarity: common
-  - text: "On a oublié que Sarah était végétarienne"
-    rarity: common
-  - text: "Sarah mange des haricots verts en silence"
-    rarity: common
-  - text: "\"Mais le poulet c'est pas vraiment de la viande si ?\""
-    rarity: common
-  - text: "Le frigo est ouvert 47 fois en deux heures"
-    rarity: common
-  - text: "Un enfant demande à goûter le vin"
-    rarity: common
-  - text: "Papy lui en donne en cachette"
-    rarity: common
-  - text: "L'enfant fait une grimace épique"
-    rarity: common
-  - text: "Tonton imite l'enfant pendant 3 minutes"
-    rarity: common
-  - text: "Quelqu'un raconte une blague de tonton"
-    rarity: common
-  - text: "La même blague que l'année dernière"
-    rarity: common
-  - text: "Personne rit sauf lui"
-    rarity: common
-  - text: "Il rit tout seul \"vous avez pas compris\""
-    rarity: common
-  - text: "Il réexplique la blague, c'est encore moins drôle"
-    rarity: common
-  - text: "Maman demande quand on rentre toutes les 30 minutes"
-    rarity: common
-  - text: "\"Reste encore un peu, on a pas vu les enfants\""
-    rarity: common
-  - text: "Le départ prend 47 minutes"
-    rarity: common
-  - text: "Trois \"allez on y va\" avant de vraiment partir"
-    rarity: common
-  - text: "Tu es sur le pas de la porte, manteau enfilé, depuis 20 min"
-    rarity: common
-  - text: "Mamie te court après pour donner des restes"
-    rarity: common
-  - text: "Tu repars avec un poulet entier emballé dans du film"
-    rarity: common
-  - text: "On t'a glissé un Tupperware de soupe sans prévenir"
-    rarity: common
-  - text: "Mamie te donne 20 balles \"pour l'essence\""
-    rarity: common
-  - text: "Tu refuses, elle insiste, tu prends"
-    rarity: common
-  - text: "Bisous obligatoires à 14 personnes"
-    rarity: common
-  - text: "Un cousin t'embrasse sur la bouche par accident"
-    rarity: common
-  - text: "Quelqu'un fait \"on s'embrasse plus avec le Covid ?\""
-    rarity: common
-  - text: "On rit jaune, on s'embrasse quand même"
-    rarity: common
-  - text: "On part en oubliant un enfant aux toilettes"
-    rarity: common
-  - text: "Demi-tour pour récupérer un Tupperware oublié"
-    rarity: common
-  - text: "Mamie agite un torchon depuis le perron"
-    rarity: common
-  - text: "Mamie agite encore le torchon quand on est au bout de la rue"
-    rarity: common
-  - text: "Quelqu'un râle dans la voiture sur le retour"
-    rarity: common
-  - text: "\"On est plus jamais là pour le réveillon\""
-    rarity: common
-  - text: "Débrief intégral du repas dans la voiture"
-    rarity: common
-  - text: "\"T'as vu ce qu'elle a dit tata ?!\""
-    rarity: common
-  - text: "On critique mamie qu'on adore en vrai"
-    rarity: common
-  - text: "Un commentaire sur la cuisson du rôti pour la troisième fois"
-    rarity: common
-  - text: "L'apéro déborde sur le plat, on a plus faim"
-    rarity: common
-  - text: "Personne mange l'entrée, on a trop grignoté"
-    rarity: common
-  - text: "Mamie est vexée \"j'ai préparé pour rien\""
-    rarity: common
-  - text: "On reprend de l'entrée par culpabilité"
-    rarity: common
-  - text: "Tu es ballonné dès la deuxième assiette"
-    rarity: common
-  - text: "Tu desserres ton pantalon en douce sous la table"
-    rarity: common
-  - text: "Quelqu'un dit \"j'en peux plus\" et reprend du gratin"
-    rarity: common
-  - text: "On attend 1h avant le dessert pour \"laisser descendre\""
-    rarity: common
-  - text: "Le dessert sort \"je t'ai fait ton préféré\""
-    rarity: common
-  - text: "Ce n'est plus ton préféré depuis 15 ans"
-    rarity: common
-  - text: "Tu manges quand même par gentillesse"
-    rarity: common
-  - text: "La tarte aux pommes a une pâte un peu pâle"
-    rarity: common
-  - text: "\"Le four marche pas comme avant\""
-    rarity: common
-  - text: "On parle DU four pendant 15 minutes"
-    rarity: common
-  - text: "On parle du nouveau four à acheter pendant 20 minutes"
-    rarity: common
-  - text: "Comparaison Darty vs Boulanger"
-    rarity: common
-  - text: "Tonton donne un avis non-sollicité sur les électroménagers"
-    rarity: common
-  - text: "Discussion sur le prix de l'essence"
-    rarity: common
-  - text: "Discussion sur le prix du gasoil"
-    rarity: common
-  - text: "Discussion sur le prix des courses \"c'est plus possible\""
-    rarity: common
-  - text: "\"Le beurre a doublé en deux ans\""
-    rarity: common
-  - text: "Quelqu'un évoque LIDL avec passion"
-    rarity: common
-  - text: "Débat Lidl vs Leclerc qui dégénère légèrement"
-    rarity: common
-  - text: "Un cousin défend Carrefour contre tous"
-    rarity: common
-  - text: "On parle des bouchons sur le périph en arrivant"
-    rarity: common
-  - text: "On reparle des bouchons en partant"
-    rarity: common
-  - text: "Itinéraire alternatif débattu pendant 12 minutes"
-    rarity: common
-  - text: "Tonton sort sa carte routière de 2003"
-    rarity: common
-  - text: "\"Avec Waze t'es au courant ou pas ?\""
-    rarity: common
-  - text: "Papy ne fait pas confiance au GPS"
-    rarity: common
-  - text: "Papy ne fait pas confiance aux radars"
-    rarity: common
-  - text: "Tonton n'a jamais eu de point retiré, soi-disant"
-    rarity: common
-  - text: "On parle de la météo pendant 8 minutes"
-    rarity: common
-  - text: "\"Il fait pas chaud pour la saison\""
-    rarity: common
-  - text: "\"Il fait trop chaud pour la saison\""
-    rarity: common
-  - text: "\"Il y a plus de saisons\""
-    rarity: common
-  - text: "Débat climatique avorté en 12 secondes"
-    rarity: common
-  - text: "Mamie a chaud, ouvre la fenêtre"
-    rarity: common
-  - text: "Papy a froid, ferme la fenêtre"
-    rarity: common
-  - text: "Cycle infini fenêtre ouverte/fermée"
-    rarity: common
-  - text: "Le ventilateur fait un bruit bizarre"
-    rarity: common
-  - text: "Le ventilateur s'arrête mystérieusement"
-    rarity: common
-  - text: "Une mouche tourne autour de la table"
-    rarity: common
-  - text: "Tonton tente de l'écraser avec sa main"
-    rarity: common
-  - text: "Tonton la rate 4 fois"
-    rarity: common
-  - text: "Mamie sort la tapette à mouche \"de papy\""
-    rarity: common
-  - text: "Une guêpe entre dans la pièce, panique générale"
-    rarity: common
-  - text: "Quelqu'un est allergique aux guêpes \"ça déclenche un choc\""
-    rarity: common
-  - text: "On débat sur \"il faut bouger ou pas bouger\""
-    rarity: common
-  - text: "La guêpe se pose dans la confiture"
-    rarity: common
-  - text: "On ne mange plus la confiture"
-    rarity: common
-  - text: "Un enfant tombe de sa chaise"
-    rarity: common
-  - text: "L'enfant rit avant de pleurer"
-    rarity: common
-  - text: "Drame de 4 minutes pour un genou rougi"
-    rarity: common
-  - text: "Mamie sort l'arnica de 1987"
-    rarity: common
-  - text: "On met un pansement \"juste pour faire plaisir\""
-    rarity: common
-  - text: "Un enfant a fait pipi sur lui sans rien dire"
-    rarity: common
-  - text: "Le parent panique \"où sont les rechanges ?!\""
-    rarity: common
-  - text: "Mamie sort un short à fleurs des années 90"
-    rarity: common
-  - text: "L'enfant est habillé en mini-Pierre Bachelet"
-    rarity: common
-  - text: "Quelqu'un demande la wifi en arrivant"
-    rarity: common
-  - text: "Le mot de passe wifi est écrit sur un post-it depuis 2016"
-    rarity: common
-  - text: "Le mot de passe wifi ne marche pas"
-    rarity: common
-  - text: "Personne sait comment redémarrer la box"
-    rarity: common
-  - text: "Tonton tape sur la box \"ça aide\""
-    rarity: common
-  - text: "Mamie ne sait pas ce qu'est la wifi"
-    rarity: common
-  - text: "Papy demande \"c'est quoi un mégaoctet ?\""
-    rarity: common
-  - text: "On finit par expliquer Internet à mamie"
-    rarity: common
-  - text: "Mamie ne comprend pas mais hoche la tête"
-    rarity: common
-  - text: "Quelqu'un est en retard de 45 minutes"
-    rarity: common
-  - text: "\"Il y avait des bouchons\" 100% du temps"
-    rarity: common
-  - text: "On a commencé sans eux \"pour pas que ça refroidisse\""
-    rarity: common
-  - text: "L'apéro était fini quand ils sont arrivés"
-    rarity: common
-  - text: "Le retardataire râle qu'on l'a pas attendu"
-    rarity: common
-  - text: "Quelqu'un n'est pas venu \"il avait un truc\""
-    rarity: common
-  - text: "Personne sait ce qu'il avait vraiment"
-    rarity: common
-  - text: "On suppose qu'il a un nouveau copain/copine"
-    rarity: common
-  - text: "Spéculations familiales pendant le café"
-    rarity: common
-  - text: "Quelqu'un a apporté un dessert maison \"juste au cas où\""
-    rarity: common
-  - text: "Mamie est légèrement vexée par le dessert apporté"
-    rarity: common
-  - text: "Les deux desserts sont sortis, on culpabilise"
-    rarity: common
-  - text: "On goûte les deux \"pour faire plaisir\""
-    rarity: common
-  - text: "On commente la pâte du gâteau apporté \"un peu sèche\""
-    rarity: common
-  - text: "Mamie sort SON gâteau victorieusement"
-    rarity: common
-  - text: "Tonton boit cul sec son verre de vin"
-    rarity: common
-  - text: "Tonton se ressert dans la foulée"
-    rarity: common
-  - text: "Tonton parle de plus en plus fort"
-    rarity: common
-  - text: "Tonton commence à \"refaire le monde\""
-    rarity: common
-  - text: "Tonton a un avis très tranché sur Macron"
-    rarity: common
-  - text: "Tonton a un avis très tranché sur Mélenchon"
-    rarity: common
-  - text: "Tonton a un avis très tranché sur Le Pen"
-    rarity: common
-  - text: "Tonton a juste un avis tranché sur tout"
-    rarity: common
-  - text: "Quelqu'un essaie de changer de sujet, échec"
-    rarity: common
-  - text: "Tata sort \"mais bon, c'est pas grave\""
-    rarity: common
-  - text: "Tata noie tout dans \"c'est pas grave\""
-    rarity: common
-  - text: "Mamie sort une boîte de gâteaux secs des années 80"
-    rarity: common
-  - text: "Les gâteaux sont mous comme des chaussons"
-    rarity: common
-  - text: "Personne en mange, mamie ne le remarque pas"
-    rarity: common
-  - text: "Le four sonne au mauvais moment"
-    rarity: common
-  - text: "Quelqu'un brûle quelque chose dans la cuisine"
-    rarity: common
-  - text: "Détecteur de fumée déclenché, panique"
-    rarity: common
-  - text: "On agite un torchon devant le détecteur"
-    rarity: common
-  - text: "Quelqu'un dit \"ça sent le brûlé non ?\""
-    rarity: common
-  - text: "Réponse \"non non c'est juste le four\""
-    rarity: common
-  - text: "Mamie a oublié les pommes de terre au four"
-    rarity: common
-  - text: "On les mange charbonnées \"c'est croquant\""
-    rarity: common
-  - text: "Un cousin propose de filmer un truc \"pour l'IG story\""
-    rarity: common
-  - text: "Mamie demande à être taguée alors qu'elle a pas Instagram"
-    rarity: common
-  - text: "On explique encore Instagram à mamie"
-    rarity: common
-  - text: "On explique TikTok à papy"
-    rarity: common
-  - text: "Papy dit \"je préfère le téléphone\""
-    rarity: common
-  - text: "Quelqu'un trouve un cheveu dans son assiette"
-    rarity: common
-  - text: "Personne n'ose le dire"
-    rarity: common
-  - text: "On le pose discrètement au bord de la nappe"
-    rarity: common
-  - text: "Le sachet de pain de mie est resté ouvert depuis hier"
-    rarity: common
-  - text: "Le beurre a un goût de frigo"
-    rarity: common
-  - text: "Le frigo a une odeur \"depuis qu'on a coupé l'oignon\""
-    rarity: common
-  - text: "Quelqu'un range le frigo en commentant tout"
-    rarity: common
-  - text: "\"Mais c'est de quand ce yaourt ?!\""
-    rarity: common
-  - text: "Mamie défend le yaourt périmé \"il est encore bon\""
-    rarity: common
-  - text: "On sort la moutarde, le bouchon est crouté"
-    rarity: common
-  - text: "Personne ne nettoie le bouchon de la moutarde"
-    rarity: common
-  - text: "Tonton tape la bouteille de ketchup au mauvais moment"
-    rarity: common
-  - text: "La salade est trop assaisonnée"
-    rarity: common
-  - text: "La salade n'est pas assez assaisonnée"
-    rarity: common
-  - text: "Drame autour de \"qui a fait la vinaigrette\""
-    rarity: common
-  - text: "Quelqu'un fait sa vinaigrette dans son assiette"
-    rarity: common
-  - text: "Tonton met du sucre dans sa vinaigrette, scandale"
+  - text: "Pose ses clés sur le plat d’apéritif encore emballé"
     rarity: common
 
-  # =====================================================================
-  # RARE (140) — Plus pointus, plus piquants, plus spécifiques
-  # Le truc qui arrive régulièrement mais qui te marque
-  # =====================================================================
+  # Apéritif
+  - text: "Replonge sa chips mordue dans la sauce commune"
+    rarity: common
+  - text: "Garde le bol d’olives devant lui jusqu’à ce qu’il soit vide"
+    rarity: common
+  - text: "Remet un biscuit goûté dans le plat"
+    rarity: common
+  - text: "Mange la garniture des toasts et repose le pain"
+    rarity: common
+  - text: "Annonce « on passe à table » puis ouvre une nouvelle bouteille"
+    rarity: common
+  - text: "Compte les verres de chacun à voix haute"
+    rarity: common
+  - text: "Ressert du vin malgré un refus clairement formulé"
+    rarity: common
+  - text: "Demande pourquoi tu ne bois pas devant toute la table"
+    rarity: common
+  - text: "Présente le sans-alcool comme une boisson pour enfants"
+    rarity: common
+  - text: "Verse un fond de bouteille dans ton verre sans te demander"
+    rarity: common
+  - text: "Utilise son verre sale pour goûter toutes les bouteilles"
+    rarity: common
+  - text: "Sert les autres avec sa main posée sur le goulot"
+    rarity: common
+  - text: "Critique les chips alors qu’il a fini le paquet"
+    rarity: common
+  - text: "Choisit tous les toasts au saumon et laisse le reste"
+    rarity: common
+  - text: "Essuie ses doigts sur la nappe après les cacahuètes"
+    rarity: common
+  - text: "Fait la liste des bouteilles qu’il a apportées et de leur prix"
+    rarity: common
+  - text: "Cache les bons biscuits derrière lui « pour plus tard »"
+    rarity: common
+  - text: "Explique le vin pendant que tout le monde attend d’être servi"
+    rarity: common
+  - text: "Débouche la bouteille réservée au dessert sans demander"
+    rarity: common
+  - text: "Transforme la demande d’un verre d’eau en débat sur ton mode de vie"
+    rarity: common
 
-  - text: "Le copain/copine officiel(le) rencontre la famille pour la première fois"
-    rarity: rare
-  - text: "On lui pose 14 questions de suite à l'apéro"
-    rarity: rare
-  - text: "Mamie demande sa religion en deuxième question"
-    rarity: rare
-  - text: "Mamie demande \"d'où viennent vos parents ?\" avec ce sourire-là"
-    rarity: rare
-  - text: "Tonton fait un compliment maladroit sur \"votre origine\""
-    rarity: rare
-  - text: "Le copain/copine fait semblant de rire"
-    rarity: rare
-  - text: "Tu transpires en parallèle"
-    rarity: rare
-  - text: "Un débriefing tendu prévu en rentrant"
-    rarity: rare
-  - text: "Tonton fait une remarque limite sexiste, sa femme soupire"
-    rarity: rare
-  - text: "Sa femme dit \"tu commences hein\""
-    rarity: rare
-  - text: "Tonton enchaîne quand même"
-    rarity: rare
-  - text: "Une vieille rancune entre tata et belle-tata refait surface"
-    rarity: rare
-  - text: "Maman les sépare physiquement à la cuisine"
-    rarity: rare
-  - text: "Quelqu'un évoque l'héritage \"sans en parler vraiment\""
-    rarity: rare
-  - text: "Quelqu'un évoque la maison de mamie qu'il faudra vendre \"un jour\""
-    rarity: rare
-  - text: "Mamie comprend très bien qu'on parle d'elle"
-    rarity: rare
-  - text: "Mamie part faire la vaisselle vexée"
-    rarity: rare
-  - text: "Personne ose la suivre"
-    rarity: rare
-  - text: "Une cousine annonce sa grossesse à l'apéro"
-    rarity: rare
-  - text: "Mamie pleure de joie, mais bizarrement"
-    rarity: rare
-  - text: "Tata commente \"ah enfin, on commençait à se demander\""
-    rarity: rare
-  - text: "Drame intérieur chez la cousine"
-    rarity: rare
-  - text: "Quelqu'un annonce un divorce entre la poire et le fromage"
-    rarity: rare
-  - text: "Tonton dit \"ah bon ? je l'aimais bien moi\""
-    rarity: rare
-  - text: "Mamie demande \"mais pourquoi ?\" trois fois"
-    rarity: rare
-  - text: "Le café devient extrêmement silencieux"
-    rarity: rare
-  - text: "Quelqu'un fond en larmes, on fait semblant de pas voir"
-    rarity: rare
-  - text: "Quelqu'un sort fumer en plein milieu du plat"
-    rarity: rare
-  - text: "Une dispute commence dehors, on l'entend depuis la cuisine"
-    rarity: rare
-  - text: "Le couple en crise se redispute en revenant"
-    rarity: rare
-  - text: "Tonton se ressert un quatrième verre de vin avant l'entrée"
-    rarity: rare
-  - text: "Tata cache la bouteille discrètement"
-    rarity: rare
-  - text: "Tonton la retrouve, drame muet"
-    rarity: rare
-  - text: "Un enfant répète une grossièreté entendue dans la voiture"
-    rarity: rare
-  - text: "Le parent rougit jusqu'aux oreilles"
-    rarity: rare
-  - text: "Mamie réprimande \"on dit pas ça à table\""
-    rarity: rare
-  - text: "L'enfant le redit pour vérifier"
-    rarity: rare
-  - text: "Quelqu'un se met à pleurer pour une raison qu'il refuse de dire"
-    rarity: rare
-  - text: "Trois personnes vont \"voir si ça va\" successivement"
-    rarity: rare
-  - text: "Personne ne sait toujours pas ce qu'il s'est passé"
-    rarity: rare
-  - text: "Une révélation familiale tombe au dessert"
-    rarity: rare
-  - text: "\"Tu savais pas que tonton avait un fils caché ?\""
-    rarity: rare
-  - text: "Demi-frère mentionné comme une banalité"
-    rarity: rare
-  - text: "Tu apprends que ton oncle a fait de la prison"
-    rarity: rare
-  - text: "Tu apprends que ton parrain a été en cure de désintox"
-    rarity: rare
-  - text: "Tu apprends qu'un cousin a tenté de se suicider en 2009"
-    rarity: rare
-  - text: "Tout le monde le savait sauf toi"
-    rarity: rare
-  - text: "Le chien mange un os de poulet, scène de panique vétérinaire"
-    rarity: rare
-  - text: "Discussion vétérinaire de 25 minutes pendant le fromage"
-    rarity: rare
-  - text: "Tonton rote très fort, personne ne réagit"
-    rarity: rare
-  - text: "Tonton lâche une caisse audible, sa femme soupire profondément"
-    rarity: rare
-  - text: "Tonton dit \"ça vient du ventre c'est sain\""
-    rarity: rare
-  - text: "Un enfant rit aux larmes du pet de tonton"
-    rarity: rare
-  - text: "L'enfant essaie de péter à son tour pendant 15 min"
-    rarity: rare
-  - text: "Tata fait un commentaire passif-agressif sur ta maison"
-    rarity: rare
-  - text: "Tata fait une visite \"j'ai vu ta cuisine, c'est lumineux quand même\""
-    rarity: rare
-  - text: "Tu décodes l'insulte avec 12 secondes de retard"
-    rarity: rare
-  - text: "Mamie te demande pourquoi tu n'es pas marié(e)"
-    rarity: rare
-  - text: "Mamie te demande pourquoi tu es marié(e) avec lui/elle"
-    rarity: rare
-  - text: "On parle ouvertement de la santé prostatique de papy"
-    rarity: rare
-  - text: "On parle des problèmes intestinaux de mamie au dessert"
-    rarity: rare
-  - text: "Tata détaille sa coloscopie pendant le café"
-    rarity: rare
-  - text: "On parle d'une opération de la hanche pendant 18 minutes"
-    rarity: rare
-  - text: "Comparaison de cicatrices, des manches sont remontées"
-    rarity: rare
-  - text: "Papy montre sa cicatrice de 1972"
-    rarity: rare
-  - text: "On compare les chirurgiens \"le mien était excellent\""
-    rarity: rare
-  - text: "On parle de l'EHPAD pour mamie sans qu'elle soit prévenue"
-    rarity: rare
-  - text: "Mamie revient au moment exact où on parle de l'EHPAD"
-    rarity: rare
-  - text: "Silence atomique"
-    rarity: rare
-  - text: "Tonton complotiste sort sa nouvelle théorie"
-    rarity: rare
-  - text: "\"Vous saviez que les chemtrails…\""
-    rarity: rare
-  - text: "\"Vous saviez que la 5G…\""
-    rarity: rare
-  - text: "Une jeune cousine ose contredire tonton avec des sources"
-    rarity: rare
-  - text: "Tonton la traite de \"tu es endoctrinée par les médias\""
-    rarity: rare
-  - text: "Maman lance \"qui veut du fromage ?\" en SOS"
-    rarity: rare
-  - text: "Quelqu'un fait son coming out à table"
-    rarity: rare
-  - text: "Mamie répond \"je m'en doutais ma chérie\""
-    rarity: rare
-  - text: "Tonton dit un truc gênant, tout le monde le foudroie du regard"
-    rarity: rare
-  - text: "Le coming out est ENFIN officiel après 10 ans de \"colocation\""
-    rarity: rare
-  - text: "Quelqu'un annonce qu'il déménage à l'étranger"
-    rarity: rare
-  - text: "Mamie pleure dramatiquement \"je te reverrai jamais\""
-    rarity: rare
-  - text: "Tu pars à 30 minutes en train"
-    rarity: rare
-  - text: "Une cousine fait un régime cétogène et l'explique à TOUT le monde"
-    rarity: rare
-  - text: "On l'écoute pendant 22 minutes"
-    rarity: rare
-  - text: "Quelqu'un est sous antidépresseurs et le dit en blaguant"
-    rarity: rare
-  - text: "Personne ne sait quoi répondre"
-    rarity: rare
-  - text: "Mamie dit \"de mon temps on n'avait pas de dépression\""
-    rarity: rare
-  - text: "Une dispute oncle/neveu sur la gestion de sa carrière"
-    rarity: rare
-  - text: "L'oncle propose un \"vrai métier\" pour la 12ème fois"
-    rarity: rare
-  - text: "Quelqu'un sort une vieille VHS \"on regarde ?\""
-    rarity: rare
-  - text: "Le magnétoscope marche à moitié, scènes pixellisées"
-    rarity: rare
-  - text: "Toi à 4 ans complètement nu(e) à l'écran"
-    rarity: rare
-  - text: "Ton copain/copine voit la VHS, t'es mort"
-    rarity: rare
-  - text: "Mamie ressort un album de photos avec des morts dedans"
-    rarity: rare
-  - text: "\"Lui, il est mort en 89, tu le savais ?\""
-    rarity: rare
-  - text: "Tu apprends qu'un cousin a fait son service militaire en Allemagne"
-    rarity: rare
-  - text: "Anecdote militaire de papy de 35 minutes"
-    rarity: rare
-  - text: "Personne n'ose interrompre papy"
-    rarity: rare
-  - text: "Papy s'arrête au milieu, oublie où il en était"
-    rarity: rare
-  - text: "Papy reprend une autre histoire militaire"
-    rarity: rare
-  - text: "Une cousine ado a un suçon dans le cou, mamie le fixe"
-    rarity: rare
-  - text: "La cousine remonte son col en sueur"
-    rarity: rare
-  - text: "Mamie demande \"c'est quoi cette tache ?\""
-    rarity: rare
-  - text: "On change de sujet TRÈS vite"
-    rarity: rare
-  - text: "Un cousin amène sa nouvelle copine et on la confond avec l'ancienne"
-    rarity: rare
-  - text: "Personne n'a retenu son prénom"
-    rarity: rare
-  - text: "On l'appelle \"euh, toi\" pendant tout le repas"
-    rarity: rare
-  - text: "Tonton lui dit \"on s'attache pas trop hein\""
-    rarity: rare
-  - text: "Tata ressort une assiette ébréchée \"spécialement pour toi\""
-    rarity: rare
-  - text: "Le placard à pharmacie de mamie est ouvert pendant le repas"
-    rarity: rare
-  - text: "On compte 42 médicaments différents"
-    rarity: rare
-  - text: "Mamie en prend trois pendant le café \"sans me souvenir lequel\""
-    rarity: rare
-  - text: "Discussion sur ses ordonnances de 30 minutes"
-    rarity: rare
-  - text: "Quelqu'un a apporté du vin \"qu'il a fait lui-même\""
-    rarity: rare
-  - text: "Le vin est imbuvable"
-    rarity: rare
-  - text: "Personne ne le dit, on remplit les verres dans le pot des plantes"
-    rarity: rare
-  - text: "On tente la vodka maison à la mirabelle"
-    rarity: rare
-  - text: "L'alcool brûle l'œsophage et fait pleurer un cousin"
-    rarity: rare
-  - text: "Quelqu'un parle du chien mort en 2003 et pleure"
-    rarity: rare
-  - text: "Mamie sort la photo du chien mort de son sac"
-    rarity: rare
-  - text: "Mamie a la photo du chien mort en fond d'écran"
-    rarity: rare
-  - text: "Quelqu'un casse un verre du service \"des grands-parents\""
-    rarity: rare
-  - text: "Mamie fait \"c'est pas grave\" mais elle est dévastée"
-    rarity: rare
-  - text: "On retrouve un morceau du verre 2 ans plus tard"
-    rarity: rare
-  - text: "Un débat sur \"qui a hérité du buffet en chêne\" éclate"
-    rarity: rare
-  - text: "Une lettre du notaire est mentionnée à voix basse"
-    rarity: rare
-  - text: "Tata sort une feuille pliée de son sac \"j'ai noté qui prend quoi\""
-    rarity: rare
-  - text: "Mamie est encore vivante, c'est très bizarre"
-    rarity: rare
-  - text: "Une cousine fait du yoga et propose une séance d'étirement après le repas"
-    rarity: rare
-  - text: "Personne ne participe, elle s'étire seule au salon"
-    rarity: rare
-  - text: "Quelqu'un fait une crise d'angoisse aux toilettes"
-    rarity: rare
-  - text: "On la cherche pendant 12 minutes"
-    rarity: rare
-  - text: "Elle revient en disant \"j'avais besoin d'un peu d'air\""
-    rarity: rare
-  - text: "Tonton tente une blague raciste, gros silence"
-    rarity: rare
-  - text: "Sa femme dit \"on en avait parlé Jean-Michel\""
-    rarity: rare
-  - text: "Une cousine se lève et part dans la chambre"
-    rarity: rare
-  - text: "Tonton fait \"bah quoi, c'est juste une blague\""
-    rarity: rare
-  - text: "On parle des séjours en cure thermale de mamie"
-    rarity: rare
-  - text: "Mamie a un nouveau \"ami\" rencontré en cure"
-    rarity: rare
-  - text: "Tata est convaincue que c'est un escroc"
-    rarity: rare
-  - text: "Mamie dit \"il a été très gentil avec moi\""
-    rarity: rare
-  - text: "On fouille discrètement son carnet de chèques"
-    rarity: rare
-  - text: "Un cousin est devenu vegan et le défend pendant 30 minutes"
-    rarity: rare
-  - text: "Tonton sort \"les plantes aussi ça souffre\""
-    rarity: rare
-  - text: "Papy mange un steak en regardant fixement le cousin vegan"
-    rarity: rare
-  - text: "Quelqu'un demande s'il y a une caméra cachée \"c'est trop\""
-    rarity: rare
-  - text: "Une cousine se fait offrir un cadeau par mamie devant tout le monde"
-    rarity: rare
-  - text: "Personne d'autre n'a de cadeau, malaise total"
-    rarity: rare
-  - text: "\"C'est parce qu'elle a réussi son examen\""
+  # Service et portions
+  - text: "Te ressert après ton troisième « non merci »"
+    rarity: common
+  - text: "Commente la taille de ton assiette avant que tu commences"
+    rarity: common
+  - text: "Compte les pommes de terre dans les assiettes des autres"
+    rarity: common
+  - text: "Prend la dernière portion sans demander si tout le monde a été servi"
+    rarity: common
+  - text: "Se sert directement avec sa fourchette déjà utilisée"
+    rarity: common
+  - text: "Intercepte le plat pour se resservir avant son premier tour"
+    rarity: common
+  - text: "Dit « je prends un petit morceau » et emporte le tiers du rôti"
+    rarity: common
+  - text: "Te reproche de ne pas goûter un plat dont tu as signalé un ingrédient gênant"
+    rarity: common
+  - text: "Prend la louche de sauce et la garde à côté de son assiette"
+    rarity: common
+  - text: "Sert tout le monde sauf la personne qui vient d’aider en cuisine"
+    rarity: common
+  - text: "Réserve les meilleurs morceaux à ceux qui ne sont pas encore arrivés"
+    rarity: common
+  - text: "Critique le service depuis sa chaise sans jamais se lever"
+    rarity: common
+  - text: "Pose son assiette sale sur le plat encore plein"
+    rarity: common
+  - text: "Demande une autre cuisson quand tout le monde est servi"
+    rarity: common
+  - text: "Déplace les légumes de son assiette vers la tienne sans prévenir"
+    rarity: common
+  - text: "Répond « ça ne compte pas » quand tu rappelles que tu as déjà été resservi"
+    rarity: common
+  - text: "Attend que tu te serves pour annoncer que cette part était réservée"
+    rarity: common
+  - text: "Te fait culpabiliser avec le temps passé à préparer le plat"
+    rarity: common
+  - text: "Récupère le pain dans ta corbeille sans demander de le faire passer"
+    rarity: common
+  - text: "Reproche au dernier servi de manger trop lentement"
+    rarity: common
+
+  # Cuisine et recettes
+  - text: "Sale le plat avant de l’avoir goûté"
+    rarity: common
+  - text: "Déclare que sa recette est meilleure dès la première bouchée"
+    rarity: common
+  - text: "Demande la recette pour expliquer ce qu’il aurait changé"
+    rarity: common
+  - text: "Commente la cuisson assez fort pour être entendu depuis la cuisine"
+    rarity: common
+  - text: "Refuse de croire qu’un bon plat puisse être acheté tout prêt"
+    rarity: common
+  - text: "Cherche l’emballage pour vérifier si le dessert est vraiment maison"
+    rarity: common
+  - text: "Compare chaque plat avec celui de la personne absente"
+    rarity: common
+  - text: "Dit « pour une première fois, ça va » à la personne qui cuisine depuis des années"
+    rarity: common
+  - text: "Ajoute du piment dans tout le plat sans consulter personne"
+    rarity: common
+  - text: "Raconte sa version de la recette pendant qu’on remercie la personne qui a cuisiné"
+    rarity: common
+  - text: "Ouvre le four pour vérifier après qu’on lui a demandé de le laisser fermé"
+    rarity: common
+  - text: "Soulève tous les couvercles puis demande pourquoi ça refroidit"
+    rarity: common
+  - text: "Traite le temps de cuisson comme un concours qu’il doit gagner"
+    rarity: common
+  - text: "Propose du ketchup pour « sauver » la sauce devant la personne qui l’a faite"
+    rarity: common
+  - text: "Annonce l’ingrédient qu’il déteste à chaque bouchée"
+    rarity: common
+  - text: "Félicite le plat puis précise « pour une fois »"
+    rarity: common
+  - text: "Exige de connaître la marque de chaque ingrédient"
+    rarity: common
+  - text: "Demande « c’est vraiment du beurre ? » en inspectant sa tartine"
+    rarity: common
+  - text: "Décrit longuement le restaurant qui faisait le même plat en mieux"
+    rarity: common
+  - text: "Affirme que « ça manque de quelque chose » sans jamais préciser quoi"
+    rarity: common
+
+  # Conversation
+  - text: "Pose une question puis coupe la réponse pour parler de lui"
+    rarity: common
+  - text: "Répond à une question adressée à quelqu’un d’autre"
+    rarity: common
+  - text: "Raconte la chute pendant que tu installes ton anecdote"
+    rarity: common
+  - text: "Reprend ton histoire en prétendant mieux s’en souvenir"
+    rarity: common
+  - text: "Hausse la voix pour couvrir la conversation d’à côté"
+    rarity: common
+  - text: "Dit « rapidement » avant un récit sans fin"
+    rarity: common
+  - text: "Recommence son anecdote pour la personne qui revient de la cuisine"
+    rarity: common
+  - text: "Coupe une confidence avec « moi, c’était pire »"
+    rarity: common
+  - text: "Corrige un détail de date qui ne change rien à l’histoire"
+    rarity: common
+  - text: "Parle de toi à la troisième personne alors que tu es à table"
+    rarity: common
+  - text: "Demande « tu m’écoutes ? » sans avoir laissé personne parler"
+    rarity: common
+  - text: "Relance exactement le sujet qu’on venait de réussir à quitter"
+    rarity: common
+  - text: "T’explique ce que tu voulais dire malgré ta correction"
+    rarity: common
+  - text: "Répond « on sait » avant la fin de ta première phrase"
+    rarity: common
+  - text: "Fait patienter toute la table pour retrouver un nom sans importance"
+    rarity: common
+  - text: "Commente à voix haute la conversation privée de son voisin"
+    rarity: common
+  - text: "Raconte l’anecdote gênante que tu lui avais demandé de garder pour lui"
+    rarity: common
+  - text: "Demande ton avis puis explique que tu n’as pas assez de recul"
+    rarity: common
+  - text: "Refuse de laisser parler quelqu’un qui n’était pas là « au début »"
+    rarity: common
+  - text: "Transforme chaque silence en interrogation sur la vie d’un absent"
+    rarity: common
+
+  # Questions intrusives
+  - text: "Demande « c’est pour quand les enfants ? » avant la fin de l’entrée"
+    rarity: common
+  - text: "Enchaîne sur le deuxième enfant après avoir obtenu une réponse sur le premier"
+    rarity: common
+  - text: "Demande ton salaire devant toute la table"
+    rarity: common
+  - text: "Veut savoir combien tu paies ton logement au centime près"
+    rarity: common
+  - text: "Prend ton verre sans alcool comme une annonce à commenter"
+    rarity: common
+  - text: "Compare ton parcours avec celui du cousin « qui a mieux réussi »"
+    rarity: common
+  - text: "Commente ton poids comme si c’était la météo"
+    rarity: common
+  - text: "Demande pourquoi tu es toujours célibataire après t’avoir dit bonjour"
+    rarity: common
+  - text: "Relance une question personnelle après ton « je préfère ne pas en parler »"
+    rarity: common
+  - text: "Raconte ta rupture aux personnes qui viennent d’arriver"
+    rarity: common
+  - text: "Demande si ton couple est « sérieux cette fois »"
+    rarity: common
+  - text: "Annonce une nouvelle te concernant avant que tu aies pu le faire"
+    rarity: common
+  - text: "Interroge ton partenaire sur tes défauts devant toi"
+    rarity: common
+  - text: "Réclame une explication sur ton absence au repas précédent"
+    rarity: common
+  - text: "Ouvre par « sans indiscrétion » avant la question la plus indiscrète du repas"
+    rarity: common
+  - text: "Commente ce que tu manges puis s’étonne que tu changes de sujet"
+    rarity: common
+  - text: "Déduit tes revenus du téléphone posé sur la table"
+    rarity: common
+  - text: "Demande si tu as « vraiment les moyens » de tes vacances"
+    rarity: common
+  - text: "Propose de te présenter quelqu’un pendant que ton partenaire est assis à côté"
+    rarity: common
+  - text: "Conseille un changement de vie sans avoir écouté ta situation"
+    rarity: common
+
+  # Travail et réussite
+  - text: "Te demande ton métier pour la sixième fois puis n’écoute pas"
+    rarity: common
+  - text: "Résume le télétravail à « rester tranquille à la maison »"
+    rarity: common
+  - text: "Compare ton salaire à celui d’une connaissance dont il ne sait pas le métier"
+    rarity: common
+  - text: "Déclare que ton travail n’est « pas un vrai métier »"
+    rarity: common
+  - text: "Tend son ordinateur au membre de la famille qui travaille dans l’informatique"
+    rarity: common
+  - text: "Demande une consultation gratuite entre le plat et le fromage"
+    rarity: common
+  - text: "Se sert du repas pour te proposer un travail non payé"
+    rarity: common
+  - text: "T’explique comment faire ton métier à partir d’une émission"
+    rarity: common
+  - text: "Confond tes horaires souples avec une disponibilité permanente"
+    rarity: common
+  - text: "Répond à ta bonne nouvelle par « tu aurais pu obtenir mieux »"
+    rarity: common
+  - text: "Demande combien rapporte ton activité avant de demander si elle te plaît"
+    rarity: common
+  - text: "Annonce aux autres une promotion que tu n’as jamais eue"
+    rarity: common
+  - text: "Parle de ton employeur comme s’il connaissait personnellement la direction"
+    rarity: common
+  - text: "Te propose de négocier ton salaire à ta place"
+    rarity: common
+  - text: "Déclare tes études inutiles en passant le plat"
+    rarity: common
+  - text: "Compare les diplômes des cousins comme un classement"
+    rarity: common
+  - text: "Te demande de corriger son CV avant le dessert"
+    rarity: common
+  - text: "Explique qu’un loisir devrait devenir rentable"
+    rarity: common
+  - text: "Utilise ton métier pour t’attribuer une corvée pendant le repas"
+    rarity: common
+  - text: "Demande quand tu vas trouver un « poste stable » après ta réponse détaillée"
+    rarity: common
+
+  # Débats
+  - text: "Commence par « je ne veux pas parler politique » et lance le sujet"
+    rarity: common
+  - text: "Cite « une étude » sans jamais savoir laquelle"
+    rarity: common
+  - text: "Répond à une source par « c’est bien ce qu’ils veulent te faire croire »"
+    rarity: common
+  - text: "Change de sujet dès qu’on vérifie le chiffre qu’il vient d’avancer"
+    rarity: common
+  - text: "Prend l’absence de réponse pour un accord général"
+    rarity: common
+  - text: "Déclare que personne n’a d’humour après sa remarque blessante"
+    rarity: common
+  - text: "Explique sa blague ratée jusqu’à ce que quelqu’un rie par politesse"
+    rarity: common
+  - text: "Utilise « on ne peut plus rien dire » pour reprendre exactement sa phrase"
+    rarity: common
+  - text: "Attribue le même avis à toute une génération autour de la table"
+    rarity: common
+  - text: "Fait voter la table pour décider qui a raison"
+    rarity: common
+  - text: "Raconte une rumeur comme s’il l’avait vue lui-même"
+    rarity: common
+  - text: "Dit « je respecte tous les avis » puis coupe celui qui diffère"
+    rarity: common
+  - text: "Appelle « bon sens » ce qu’il refuse d’expliquer"
+    rarity: common
+  - text: "Augmente le volume dès qu’il manque d’arguments"
+    rarity: common
+  - text: "Déclare le débat terminé juste après sa propre conclusion"
+    rarity: common
+  - text: "Rappelle l’âge de la personne qui vient de le contredire"
+    rarity: common
+  - text: "Sort son téléphone pour trouver une preuve et ignore les résultats contraires"
+    rarity: common
+  - text: "Accuse tout le monde de suivre les médias puis cite sa chaîne préférée"
+    rarity: common
+  - text: "Transforme une question sur le menu en discours politique"
+    rarity: common
+  - text: "Demande à la personne silencieuse de choisir son camp"
+    rarity: common
+
+  # Téléphones et photos
+  - text: "Lance une vidéo à plein volume au milieu d’une conversation"
+    rarity: common
+  - text: "Regarde son écran pendant toute la réponse à sa question"
+    rarity: common
+  - text: "Photographie le plat pendant que les autres attendent de se servir"
+    rarity: common
+  - text: "Poste la photo de groupe avant de demander l’accord"
+    rarity: common
+  - text: "Fait recommencer la photo parce qu’il n’aime pas sa propre tête"
+    rarity: common
+  - text: "Lit à voix haute un message privé reçu pendant le repas"
+    rarity: common
+  - text: "Passe un appel en haut-parleur depuis la table"
+    rarity: common
+  - text: "Reproche les téléphones aux autres tout en consultant le sien"
+    rarity: common
+  - text: "Fait circuler un téléphone avec une vidéo trop longue pour un tour de table"
+    rarity: common
+  - text: "Zoome sur le visage de quelqu’un pour le montrer aux autres"
+    rarity: common
+  - text: "Tague une personne qui a demandé à ne pas apparaître"
+    rarity: common
+  - text: "Photographie les assiettes pour commenter qui n’a pas fini"
+    rarity: common
+  - text: "Interrompt le service pour demander le mot de passe du wifi"
+    rarity: common
+  - text: "Filme ta réaction avant de t’annoncer une nouvelle"
+    rarity: common
+  - text: "Fait la photo « spontanée » après avoir placé tout le monde"
+    rarity: common
+  - text: "Montre une photo puis fait défiler tes autres images sans permission"
+    rarity: common
+  - text: "Corrige la légende d’une photo au lieu d’aider à débarrasser"
+    rarity: common
+  - text: "Répond à ses messages sous la table avec le son du clavier activé"
+    rarity: common
+  - text: "Demande un sourire à quelqu’un qu’il vient de vexer"
+    rarity: common
+  - text: "Diffuse la musique de son téléphone par-dessus celle déjà en cours"
+    rarity: common
+
+  # Enfants et leçons
+  - text: "Donne des conseils d’éducation après dix minutes de visite"
+    rarity: common
+  - text: "Contredit un parent devant son enfant pour avoir le dernier mot"
+    rarity: common
+  - text: "Promet un dessert à un enfant puis laisse les parents gérer"
+    rarity: common
+  - text: "Compare les notes des enfants devant eux"
+    rarity: common
+  - text: "Fait raconter à un enfant une anecdote qu’il trouve gênante"
+    rarity: common
+  - text: "Demande un bisou après un refus clairement exprimé"
+    rarity: common
+  - text: "Corrige la tenue d’un enfant à chaque passage"
+    rarity: common
+  - text: "Parle d’un enfant comme s’il n’était pas assis juste là"
+    rarity: common
+  - text: "Attribue une mauvaise humeur à « l’éducation d’aujourd’hui »"
+    rarity: common
+  - text: "Prend l’enfant à témoin pour gagner un débat entre adultes"
+    rarity: common
+  - text: "Interrompt le repas pour faire réciter les résultats scolaires"
+    rarity: common
+  - text: "Insiste pour que l’enfant refasse son spectacle devant les retardataires"
+    rarity: common
+  - text: "Distribue des bonbons après qu’on lui a demandé d’attendre le dessert"
+    rarity: common
+  - text: "Demande à un enfant lequel de ses parents cuisine le mieux"
+    rarity: common
+  - text: "Commente le prénom d’un enfant devant lui comme si le choix restait ouvert"
+    rarity: common
+  - text: "Réclame le calme aux enfants en parlant plus fort qu’eux"
+    rarity: common
+  - text: "Explique que « chez moi, ça ne se passerait pas comme ça »"
+    rarity: common
+  - text: "Confie la surveillance des enfants à la plus jeune personne sans lui demander"
+    rarity: common
+  - text: "Ressort une bêtise ancienne chaque fois que l’enfant prend la parole"
+    rarity: common
+  - text: "Se sert d’un enfant pour transmettre une pique à ses parents"
+    rarity: common
+
+  # Mémoire familiale
+  - text: "Ressort une dispute de vingt ans comme si elle datait d’hier"
+    rarity: common
+  - text: "Rappelle qui a cassé un vase avant même le premier verre"
+    rarity: common
+  - text: "Présente une version héroïque d’une histoire que tout le monde a vécue"
+    rarity: common
+  - text: "Refuse d’admettre que l’anecdote concerne un autre cousin"
+    rarity: common
+  - text: "Corrige le prénom de ton partenaire avec celui de ton ex"
+    rarity: common
+  - text: "Ressort ton surnom d’enfance après que tu as demandé d’arrêter"
+    rarity: common
+  - text: "Présente tes erreurs de jeunesse à la personne que tu viens de présenter"
+    rarity: common
+  - text: "Raconte trois fois que personne ne lui téléphone jamais"
+    rarity: common
+  - text: "Dit « on ne tient pas les comptes » puis récite toutes les invitations"
+    rarity: common
+  - text: "Énumère les cadeaux qu’il a offerts depuis dix ans"
+    rarity: common
+  - text: "Reproche une place à table au mariage d’un cousin absent"
+    rarity: common
+  - text: "Décrit le repas précédent comme une catastrophe devant les mêmes hôtes"
+    rarity: common
+  - text: "Compare les desserts au gâteau d’une personne qui n’est pas là pour répondre"
+    rarity: common
+  - text: "Affirme que toute la famille partage son souvenir contesté"
+    rarity: common
+  - text: "Se déclare seul dépositaire de la « vraie » recette familiale"
+    rarity: common
+  - text: "Sort une vieille photo pour prouver que tu avais tort sur un détail"
+    rarity: common
+  - text: "Rappelle une promesse faite à huit ans comme un engagement actuel"
+    rarity: common
+  - text: "Parle d’une personne absente puis demande que ça reste entre vous"
+    rarity: common
+  - text: "Prétend être le seul à entretenir les liens pendant le repas organisé par un autre"
+    rarity: common
+  - text: "Fait la liste de ceux qui n’ont pas souhaité son anniversaire"
+    rarity: common
+
+  # Fromage et dessert
+  - text: "Coupe tout le cœur du fromage et laisse la croûte aux suivants"
+    rarity: common
+  - text: "Garde le plateau de fromages hors de portée de ses voisins"
+    rarity: common
+  - text: "Transforme la découpe du brie en examen oral"
+    rarity: common
+  - text: "Annonce qu’il n’aime pas le gâteau au moment où on l’apporte"
+    rarity: common
+  - text: "Prend la décoration comestible avant que tout le monde ait vu le dessert"
+    rarity: common
+  - text: "Coupe sa part deux fois plus grosse que celles qu’il sert"
+    rarity: common
+  - text: "Demande « qui a fait le dessert ? » uniquement après l’avoir critiqué"
+    rarity: common
+  - text: "Cache la dernière part pour l’emporter sans demander"
+    rarity: common
+  - text: "Lèche la cuillère de service et la replante dans la mousse"
+    rarity: common
+  - text: "Prend un morceau dans l’assiette de son voisin pour « juste goûter »"
+    rarity: common
+  - text: "Compare les deux desserts apportés comme un jury de concours"
+    rarity: common
+  - text: "Annonce le nombre de calories pendant que tu prends une part"
+    rarity: common
+  - text: "Te sert un dessert que tu as refusé parce qu’il « sait que tu aimes ça »"
+    rarity: common
+  - text: "Réclame du café puis disparaît pendant qu’il est préparé"
+    rarity: common
+  - text: "Fait changer de tasse trois fois pour obtenir sa préférée"
+    rarity: common
+  - text: "Utilise son couteau à fromage dans le beurre du dessert"
+    rarity: common
+  - text: "Demande du sucre puis commente la quantité prise par les autres"
+    rarity: common
+  - text: "Se réserve les meilleurs chocolats avant de faire passer la boîte"
+    rarity: common
+  - text: "Garde la cuillère à glace plongée dans l’eau sale pour le suivant"
+    rarity: common
+  - text: "Refuse le dessert puis mange la moitié de celui de son voisin"
+    rarity: common
+
+  # Débarrassage
+  - text: "Disparaît au moment exact où les assiettes commencent à s’empiler"
+    rarity: common
+  - text: "Dit « je vais aider » sans quitter sa chaise"
+    rarity: common
+  - text: "Fait remarquer qui aide depuis le canapé"
+    rarity: common
+  - text: "Déplace son assiette de dix centimètres et considère avoir débarrassé"
+    rarity: common
+  - text: "Réorganise tout le lave-vaisselle après ton passage en soupirant"
+    rarity: common
+  - text: "Prétend ne pas savoir où va la vaisselle après vingt repas au même endroit"
+    rarity: common
+  - text: "Empile les couverts au-dessus des restes de sauce"
+    rarity: common
+  - text: "Demande un café à la personne qui a déjà les mains dans la vaisselle"
+    rarity: common
+  - text: "Appelle ça « aider » alors qu’il vit dans la maison"
+    rarity: common
+  - text: "Distribue les tâches et s’attribue la surveillance du match"
+    rarity: common
+  - text: "Quitte la cuisine dès qu’il faut nettoyer les plats"
+    rarity: common
+  - text: "Laisse sa serviette sale dans une assiette encore pleine"
+    rarity: common
+  - text: "Sèche un verre puis raconte qu’il a fait toute la vaisselle"
+    rarity: common
+  - text: "Pose les plats sales sur le plan de travail qui vient d’être nettoyé"
+    rarity: common
+  - text: "Décide qu’un invité doit débarrasser parce qu’il a peu cuisiné"
+    rarity: common
+  - text: "Range les restes dans des boîtes sans demander à qui ils sont destinés"
+    rarity: common
+  - text: "Jette une sauce encore prévue pour le service suivant"
+    rarity: common
+  - text: "Part se laver les mains et revient seulement quand tout est terminé"
+    rarity: common
+  - text: "Pose une nouvelle tasse sale dans l’évier juste avant ton dernier rinçage"
+    rarity: common
+  - text: "Reproche la lenteur du rangement en continuant de manger à table"
+    rarity: common
+
+  # Départ et restes
+  - text: "Lance une nouvelle anecdote une fois tout le monde en manteau"
+    rarity: common
+  - text: "Répète « je ne vous retiens pas » en bloquant le passage"
+    rarity: common
+  - text: "Insiste pour donner des restes après un refus"
+    rarity: common
+  - text: "Glisse un plat dans ton sac sans vérifier qu’il ferme"
+    rarity: common
+  - text: "Exige le retour d’une boîte prêtée il y a six mois au moment des adieux"
+    rarity: common
+  - text: "Charge ton sac de nourriture alors que tu repars à pied"
+    rarity: common
+  - text: "Te reproche de partir tôt après sept heures à table"
+    rarity: common
+  - text: "Redemande un café une fois les machines nettoyées"
+    rarity: common
+  - text: "Critique le repas sur le perron assez fort pour être entendu des hôtes"
+    rarity: common
+  - text: "Répond « on verra » quand on demande qui rendra les plats"
+    rarity: common
+  - text: "Fait commenter ton itinéraire par toute la famille sur le pas de la porte"
+    rarity: common
+  - text: "T’attribue un détour pour raccompagner quelqu’un sans te demander"
+    rarity: common
+  - text: "Ouvre le coffre de ta voiture pour y ajouter des restes"
+    rarity: common
+  - text: "Emporte le plat entier alors qu’on proposait une portion"
+    rarity: common
+  - text: "Récupère la bouteille qu’il avait apportée parce qu’elle n’a pas été ouverte"
+    rarity: common
+  - text: "Réserve les restes pour lui avant que les hôtes aient choisi"
+    rarity: common
+  - text: "Donne une boîte qui fuit en promettant que « ça tient debout »"
+    rarity: common
+  - text: "Envoie « bien rentrés ? » alors que tu es encore dans l’allée"
+    rarity: common
+  - text: "Attend le départ d’un invité pour commenter tout son comportement"
+    rarity: common
+  - text: "Refait les adieux individuellement après la photo de départ"
+    rarity: common
+
+  # Manières bien personnelles
+  - text: "Décide qui doit ouvrir ou fermer la fenêtre sans écouter les voisins"
+    rarity: common
+  - text: "Monte la télévision pour couvrir les conversations"
+    rarity: common
+  - text: "Lance le match sur l’écran pendant le toast d’un autre"
+    rarity: common
+  - text: "Garde les coudes devant les couverts de son voisin"
+    rarity: common
+  - text: "Pose ses noyaux d’olives dans la soucoupe de quelqu’un d’autre"
+    rarity: common
+  - text: "Se cure les dents en racontant son histoire"
+    rarity: common
+  - text: "Goûte la sauce avec son doigt devant tout le monde"
+    rarity: common
+  - text: "Essuie un verre avec sa serviette déjà utilisée et le tend à un invité"
+    rarity: common
+  - text: "Laisse la porte du jardin ouverte puis se plaint du froid"
+    rarity: common
+  - text: "Donne à manger au chien après la demande d’arrêter"
+    rarity: common
+  - text: "Dépose la laisse du chien sur la table dressée"
+    rarity: common
+  - text: "Corrige la tenue des invités alors qu’ils viennent de s’asseoir"
+    rarity: common
+  - text: "Exige le silence pour entendre une publicité à la télé"
+    rarity: common
+  - text: "Fume à la fenêtre en renvoyant la fumée vers la table"
+    rarity: common
+  - text: "Demande de fermer la fenêtre juste après avoir fumé"
+    rarity: common
+  - text: "Déplace le plat chaud sans prévenir la personne en train de se servir"
+    rarity: common
+  - text: "Gratte une tache sur sa veste avec le couteau de service puis le repose"
+    rarity: common
+  - text: "Nettoie une tache en frottant avec la serviette de son voisin"
+    rarity: common
+  - text: "Allume une bougie parfumée juste sous le nez de la personne qui mange"
+    rarity: common
+  - text: "Éteint la lumière en sortant alors que quelqu’un finit son assiette"
+    rarity: common
+
+  # Le premier repas
+  - text: "Présente ton partenaire comme « le nouveau » pendant tout le repas"
+    rarity: rare
+  - text: "Demande à ton partenaire ce que ses parents gagnent"
+    rarity: rare
+  - text: "Sort la photo de ton ex pour demander une comparaison"
+    rarity: rare
+  - text: "Interroge la nouvelle personne sur sa religion avant de lui proposer à boire"
+    rarity: rare
+  - text: "Dit « tu parles bien français » à quelqu’un qui vient de dire être né à côté"
+    rarity: rare
+  - text: "Demande le nom complet d’un invité pour le chercher en ligne devant lui"
+    rarity: rare
+  - text: "Explique à la nouvelle personne quel membre de la famille éviter"
+    rarity: rare
+  - text: "Lui donne immédiatement un surnom qu’elle vient de refuser"
+    rarity: rare
+  - text: "Lui pose une question et se retourne pour demander à la famille si la réponse convient"
+    rarity: rare
+  - text: "Présente toutes tes anciennes relations comme une visite guidée"
+    rarity: rare
+  - text: "Précise à ton partenaire qu’ici « il faut mériter sa place »"
+    rarity: rare
+  - text: "Demande à l’invité de départager une dispute qu’il ne comprend pas"
+    rarity: rare
+  - text: "Demande au nouveau partenaire ce qu’il changerait chez toi en priorité"
+    rarity: rare
+  - text: "Raconte à ton partenaire comment il aurait choisi quelqu’un d’autre pour toi"
+    rarity: rare
+  - text: "S’adresse à l’invité uniquement par « et toi, là »"
+    rarity: rare
+  - text: "Lui demande de raconter un secret sur toi avant le fromage"
+    rarity: rare
+  - text: "Déclare que l’invité ressemble au bon profil « sur le papier »"
+    rarity: rare
+  - text: "Teste le nouvel invité sur les dates d’anniversaire de la famille"
+    rarity: rare
+  - text: "Demande au nouvel invité de photographier la famille sans l’inclure sur aucun cliché"
+    rarity: rare
+  - text: "Demande à l’invité d’où il vient « vraiment » après sa première réponse"
     rarity: rare
 
-  # =====================================================================
-  # LEGENDARY (60) — Le grand n'importe quoi
-  # Le truc qui devient une LÉGENDE familiale, raconté pendant 20 ans
-  # =====================================================================
+  # Arts de la table
+  - text: "Apporte son propre sel et explique que celui des hôtes est mauvais"
+    rarity: rare
+  - text: "Sort son couteau personnel et critique tous ceux du service"
+    rarity: rare
+  - text: "Déplace les bouteilles apportées par les autres derrière les siennes"
+    rarity: rare
+  - text: "Met un repère sur la bouteille pour vérifier ce que les autres boivent"
+    rarity: rare
+  - text: "Rectifie la place des verres au milieu du service"
+    rarity: rare
+  - text: "Cache les assiettes ébréchées sous celles des invités qu’il apprécie le moins"
+    rarity: rare
+  - text: "Garde une bonne bouteille sous sa chaise pour ne pas la partager"
+    rarity: rare
+  - text: "Apporte son repas sans prévenir et demande qu’on le cuisine en priorité"
+    rarity: rare
+  - text: "Échange sa part de viande avec celle d’un voisin distrait"
+    rarity: rare
+  - text: "Prend un plat déjà servi pour le repasser au four selon son goût"
+    rarity: rare
+  - text: "Remplace la sauce en cuisine sans prévenir la personne qui l’a préparée"
+    rarity: rare
+  - text: "Présente un gâteau acheté comme une recette secrète malgré l’étiquette dessous"
+    rarity: rare
+  - text: "Recouvre de chantilly le dessert apporté par un autre sans demander"
+    rarity: rare
+  - text: "Apporte un thermomètre et contrôle le rôti de son hôte"
+    rarity: rare
+  - text: "Demande qu’on pèse sa part de dessert après l’avoir fait recouper"
+    rarity: rare
+  - text: "Verse le fond de plusieurs verres dans la bouteille à conserver"
+    rarity: rare
+  - text: "Retire les ingrédients de tout le saladier au lieu de sa seule assiette"
+    rarity: rare
+  - text: "Vide la sauce dans l’évier pour « alléger » le plat"
+    rarity: rare
+  - text: "Met les serviettes de ses voisins sur ses genoux pour protéger son pantalon"
+    rarity: rare
+  - text: "Emballe sa part à emporter avant le premier service"
+    rarity: rare
 
-  - text: "Mamie ressort le service en porcelaine \"mais une assiette est cassée\""
+  # Petites hiérarchies
+  - text: "Explique que certains ont droit au bon vin parce qu’ils savent l’apprécier"
+    rarity: rare
+  - text: "Sert les fonds des bouteilles aux retardataires et garde celle qui vient d’être ouverte"
+    rarity: rare
+  - text: "Annonce devant la table combien chacun a dépensé pour le repas"
+    rarity: rare
+  - text: "Distribue les portions selon l’aide apportée en cuisine"
+    rarity: rare
+  - text: "Demande aux célibataires de changer de place pour compléter « les couples »"
+    rarity: rare
+  - text: "Place un adulte à la table des enfants puis lui demande pourquoi il est vexé"
+    rarity: rare
+  - text: "Offre un cadeau à un seul cousin en expliquant que les autres l’ont moins mérité"
+    rarity: rare
+  - text: "Fait lever un invité pour installer quelqu’un de « plus proche de la famille »"
+    rarity: rare
+  - text: "Réserve le café de qualité aux invités qu’il veut impressionner"
+    rarity: rare
+  - text: "Refuse à une personne le plat qu’il lui avait demandé d’apporter"
+    rarity: rare
+  - text: "Énumère les membres de la famille « qui comptent vraiment »"
+    rarity: rare
+  - text: "Annonce qu’un partenaire n’est pas encore assez ancien pour la photo"
+    rarity: rare
+  - text: "Demande aux mêmes personnes de servir pendant que les autres portent un toast"
+    rarity: rare
+  - text: "Attribue des places numérotées et refuse d’expliquer son classement"
+    rarity: rare
+  - text: "Fait débarrasser le nouvel invité pour voir « s’il est bien élevé »"
+    rarity: rare
+  - text: "Compare publiquement la valeur des cadeaux reçus"
+    rarity: rare
+  - text: "Propose les restes dans l’ordre de ses préférences familiales"
+    rarity: rare
+  - text: "Prétend qu’il n’y a plus de place puis en trouve une pour son invité préféré"
+    rarity: rare
+  - text: "Fait un toast en nommant tout le monde sauf la personne qui a cuisiné"
+    rarity: rare
+  - text: "Décide que ceux qui ne boivent pas doivent automatiquement ramener les autres"
+    rarity: rare
+
+  # Divulgations et sous-entendus
+  - text: "Annonce une grossesse qui ne lui appartient pas au moment du toast"
+    rarity: rare
+  - text: "Sort le montant d’un héritage pour gagner une dispute sur le menu"
+    rarity: rare
+  - text: "Décrit la maison d’un proche comme un bien à se partager pendant qu’il est à table"
+    rarity: rare
+  - text: "Lit une conversation familiale privée pour prouver que quelqu’un ment"
+    rarity: rare
+  - text: "Révèle le prix d’un cadeau devant la personne qui vient de l’offrir"
+    rarity: rare
+  - text: "Transforme le refus d’un verre en vote sur une grossesse supposée"
+    rarity: rare
+  - text: "Présente comme une annonce officielle une rumeur qu’il vient d’inventer"
+    rarity: rare
+  - text: "Demande à la table pourquoi un couple ne dort plus ensemble"
+    rarity: rare
+  - text: "Déclare qu’il avait toujours su qu’un couple se séparerait"
+    rarity: rare
+  - text: "Raconte les difficultés financières d’un absent entre deux bouchées"
+    rarity: rare
+  - text: "Parle de la vente de la maison familiale sans consulter la personne qui y vit"
+    rarity: rare
+  - text: "Fait passer une lettre privée autour de la table"
+    rarity: rare
+  - text: "Explique que le compliment qu’il vient de faire était « surtout pour encourager »"
+    rarity: rare
+  - text: "Félicite une réussite avec « on n’y croyait plus »"
+    rarity: rare
+  - text: "Rapporte une critique en précisant qui l’a dite et demande de rester discret"
+    rarity: rare
+  - text: "Profite de la personne sortie en cuisine pour analyser son couple"
+    rarity: rare
+  - text: "Affirme qu’un absent ne manque à personne juste avant son arrivée"
+    rarity: rare
+  - text: "Déclare « ça reste dans la famille » alors qu’il filme la table"
+    rarity: rare
+  - text: "Présente tes choix de vie comme le sujet du prochain débat"
+    rarity: rare
+  - text: "Te demande de justifier un divorce devant la personne qui t’accompagne"
+    rarity: rare
+
+  # Le repas détourné
+  - text: "Sort des brochures commerciales entre le plat et le fromage"
+    rarity: rare
+  - text: "Transforme le café en démonstration de produits qu’il vend"
+    rarity: rare
+  - text: "Demande à chacun son adresse e-mail pour envoyer son offre professionnelle"
+    rarity: rare
+  - text: "Lance un recrutement pour son entreprise à la table des cousins"
+    rarity: rare
+  - text: "Promet une réduction familiale puis annonce le tarif normal"
+    rarity: rare
+  - text: "Sort ses devis de travaux et exige que la table compare"
+    rarity: rare
+  - text: "Demande au médecin de la famille d’examiner des photos pendant le dessert"
+    rarity: rare
+  - text: "Te demande de publier un avis cinq étoiles pour son commerce avant le dessert"
+    rarity: rare
+  - text: "Fait passer un contrat à signer en même temps que la corbeille à pain"
+    rarity: rare
+  - text: "Demande de financer sa cagnotte personnelle avant de faire passer le café"
+    rarity: rare
+  - text: "Demande un avis gratuit à chaque personne sur une question de son métier"
+    rarity: rare
+  - text: "Lance une visio avec un absent sans prévenir les personnes filmées"
+    rarity: rare
+  - text: "Appelle un adversaire du débat pour lui faire entendre toute la table"
+    rarity: rare
+  - text: "Diffuse sa dernière vidéo et refuse de servir le dessert avant la fin"
+    rarity: rare
+  - text: "Transforme le toast en bilan de ses ventes du trimestre"
+    rarity: rare
+  - text: "Répartit les corvées de son déménagement pendant le fromage"
+    rarity: rare
+  - text: "Sort son agenda pour attribuer des jours de garde aux proches"
+    rarity: rare
+  - text: "Demande un virement devant tout le monde pour forcer une réponse"
+    rarity: rare
+  - text: "Réserve au téléphone une activité au nom de tous avant de demander qui vient"
+    rarity: rare
+  - text: "Fait jouer son message vocal à un proche absent pour lui prouver qu’on parle de lui"
+    rarity: rare
+
+  # Preuves à l’appui
+  - text: "Sort un ticket vieux de dix ans pour réclamer le prix d’un repas"
+    rarity: rare
+  - text: "Apporte un album ouvert exactement à la photo que tu détestes"
+    rarity: rare
+  - text: "Affiche sur sa tablette le classement des meilleurs salaires de vos métiers"
+    rarity: rare
+  - text: "Dessine l’arbre généalogique pour décider qui peut donner son avis"
+    rarity: rare
+  - text: "Fait écouter une note vocale censée rester privée"
+    rarity: rare
+  - text: "Imprime une recette pour corriger la personne qui vient de cuisiner"
+    rarity: rare
+  - text: "Sort un tableau des invitations pour démontrer que c’était le tour de quelqu’un d’autre"
+    rarity: rare
+  - text: "Photographie les places à table pour conserver une preuve du traitement reçu"
+    rarity: rare
+  - text: "Chronomètre le temps de parole de son voisin avec son téléphone"
+    rarity: rare
+  - text: "Retrouve un ancien message et le lit sans la réponse qui change tout"
+    rarity: rare
+  - text: "Vérifie le prix de la bouteille offerte en scannant son code-barres"
+    rarity: rare
+  - text: "Compare ton cadeau avec les prix d’occasion en plein repas"
+    rarity: rare
+  - text: "Imprime un itinéraire pour contester ton explication du retard"
+    rarity: rare
+  - text: "Fait chercher une information à un enfant puis conteste le résultat"
+    rarity: rare
+  - text: "Prend en photo les restes pour dire que les hôtes avaient trop prévu"
+    rarity: rare
+  - text: "Montre une capture d’écran pour prouver que tu étais disponible dimanche dernier"
+    rarity: rare
+  - text: "Sort une liste de griefs pliée dans sa serviette"
+    rarity: rare
+  - text: "Rejoue une dispute ancienne en attribuant les rôles aux convives"
+    rarity: rare
+  - text: "Demande à l’assistant vocal de trancher puis reformule jusqu’à obtenir son avis"
+    rarity: rare
+  - text: "Écrit les promesses faites à table et demande les signatures au café"
+    rarity: rare
+
+  # Jusqu’au pas de la porte
+  - text: "Met le gâteau apporté par un invité dans son propre sac de restes"
+    rarity: rare
+  - text: "Récupère tous les chocolats offerts aux hôtes pour ses collègues"
+    rarity: rare
+  - text: "Échange discrètement sa boîte abîmée contre une neuve des hôtes"
+    rarity: rare
+  - text: "Vide les fleurs de leur vase pour repartir avec le vase"
+    rarity: rare
+  - text: "Emporte une chaise en expliquant qu’elle ne servait pas aujourd’hui"
+    rarity: rare
+  - text: "Remplit sa gourde avec la bouteille réservée pour une autre occasion"
+    rarity: rare
+  - text: "Met les couverts du repas dans sa boîte à emporter"
+    rarity: rare
+  - text: "Demande qu’on lui rende la part non bue de la bouteille qu’il a offerte"
+    rarity: rare
+  - text: "Réclame le remboursement du dessert dont il a mangé la moitié"
+    rarity: rare
+  - text: "Fait ouvrir les boîtes des autres pour comparer la répartition des restes"
+    rarity: rare
+  - text: "S’attribue le départ en dernier pour repartir avec tout ce qui reste"
+    rarity: rare
+  - text: "Annonce son prochain séjour chez les hôtes en mettant son manteau"
+    rarity: rare
+  - text: "Invite à son tour des amis chez les hôtes pour le week-end suivant"
+    rarity: rare
+  - text: "Glisse ses propres déchets dans le sac de restes d’un autre"
+    rarity: rare
+  - text: "Demande aux hôtes de livrer chez lui la boîte qu’il a oubliée"
+    rarity: rare
+  - text: "Réclame un cadeau offert autrefois en le voyant dans le salon"
+    rarity: rare
+  - text: "Cache les clés de voiture pour empêcher le départ « trop tôt »"
+    rarity: rare
+  - text: "Propose de prolonger la soirée et laisse les hôtes payer les pizzas"
+    rarity: rare
+  - text: "Fait réserver un taxi par son hôte puis attend qu’il le paie"
+    rarity: rare
+  - text: "Photographie les sacs des invités pour savoir qui a emporté quoi"
+    rarity: rare
+
+  # L’organisation prend le pouvoir
+  - text: "Arrive avec des marques-places pour refaire le plan de table choisi par les hôtes"
     rarity: legendary
-  - text: "Tonton a apporté son propre couteau \"pour la viande\""
+  - text: "Présente comme son cadeau le bouquet qu’il vient de trouver dans l’entrée des hôtes"
     rarity: legendary
-  - text: "Tonton se coupe avec son propre couteau, sang sur la nappe blanche"
+  - text: "Envoie une facture par convive avant même que le café soit servi"
     rarity: legendary
-  - text: "Le SAMU est appelé pour une fausse alerte cardiaque"
+  - text: "Annonce un supplément pour les personnes qui se sont resservies"
     rarity: legendary
-  - text: "Le SAMU est appelé pour une VRAIE alerte cardiaque"
+  - text: "Confisque tous les téléphones dans une boîte puis garde le sien pour les photos"
     rarity: legendary
-  - text: "Les pompiers arrivent en plein dessert"
+  - text: "Apporte un micro pour être certain de ne plus être interrompu"
     rarity: legendary
-  - text: "On fait visiter la maison aux pompiers \"c'est une vieille bâtisse\""
+  - text: "Demande de voter à main levée pour retirer un invité du groupe familial"
     rarity: legendary
-  - text: "Un pompier reste dîner \"y'a plus rien à faire\""
+  - text: "Fait réciter des excuses à un adulte devant la table avant de le laisser se servir"
     rarity: legendary
-  - text: "Quelqu'un avoue être amoureux de sa belle-sœur, à table, pour de vrai"
+  - text: "Projette les dépenses familiales sur la télévision pendant le dessert"
     rarity: legendary
-  - text: "Le mari laisse tomber sa fourchette, on entend juste le tintement"
+  - text: "Organise une inspection des sacs pour retrouver une petite cuillère"
     rarity: legendary
-  - text: "Mamie pose lentement son verre"
+  - text: "Retire la rallonge de la table pour signifier aux invités que le repas est terminé"
     rarity: legendary
-  - text: "Quelqu'un fait une demande en mariage entre l'entrée et le plat"
+  - text: "Présente un calendrier imposé de tous les repas familiaux de l’année"
     rarity: legendary
-  - text: "C'est refusé devant tout le monde"
+  - text: "Attribue des notes aux plats sur un tableau devant la personne qui a cuisiné"
     rarity: legendary
-  - text: "Le repas continue \"comme si de rien\""
+  - text: "Fait croire aux retardataires que le repas est annulé pour garder leurs parts"
     rarity: legendary
-  - text: "Tonton renverse une bouteille entière sur la robe blanche de tata"
+  - text: "Fait appeler le boulanger pour se plaindre du gâteau que les hôtes viennent d’offrir"
     rarity: legendary
-  - text: "Mamie tombe sur les genoux et personne sait s'il faut rire ou appeler"
+  - text: "Dépose les cadeaux des personnes absentes sur la table pour les redistribuer aux présents"
     rarity: legendary
-  - text: "Un cousin ramène un enfant que personne ne connaît \"voici Mathis\""
+  - text: "Demande aux convives de financer le lave-vaisselle parce qu’ils l’ont utilisé"
     rarity: legendary
-  - text: "Mathis a 4 ans, le cousin n'a jamais parlé de Mathis"
+  - text: "Lance un vote pour choisir le prénom d’un enfant sans l’accord de ses parents"
     rarity: legendary
-  - text: "Le test ADN est évoqué au dessert"
+  - text: "Vide le lave-vaisselle déjà rangé pour montrer devant tous que personne ne sait le remplir"
     rarity: legendary
-  - text: "Le chien meurt pendant le repas"
+  - text: "Vérifie les remboursements sur son téléphone avant d’autoriser le service du dessert"
     rarity: legendary
-  - text: "On enterre le chien dans le jardin, en costume du dimanche"
+
+  # Le grand moment de solitude
+  - text: "Projette un diaporama des anciennes relations de la personne venue en couple"
     rarity: legendary
-  - text: "Mamie commence un discours \"avant que je parte\""
+  - text: "Organise une rencontre amoureuse surprise pour le seul célibataire du repas"
     rarity: legendary
-  - text: "Mamie fait son testament oral devant tout le monde"
+  - text: "Invite ton ex sans prévenir pour voir « si vous pouvez vous reparler »"
     rarity: legendary
-  - text: "Tonton pleure pour la première fois depuis 1983"
+  - text: "Met en scène une réconciliation surprise entre deux personnes qui l’avaient refusée"
     rarity: legendary
-  - text: "Une bagarre éclate entre tonton et papy, vraies baffes"
+  - text: "Lit à table le brouillon de message qu’un proche lui avait confié pour avis"
     rarity: legendary
-  - text: "Les enfants regardent la scène en mangeant des chips"
+  - text: "Annonce ses fiançailles pendant le toast d’anniversaire de quelqu’un d’autre"
     rarity: legendary
-  - text: "Mamie se met entre les deux \"j'ai déjà perdu un fils ça suffit\""
+  - text: "Demande aux convives de comparer les deux partenaires successifs assis à table"
     rarity: legendary
-  - text: "Personne savait qu'il y avait un autre fils"
+  - text: "Organise un vote pour savoir quel cousin a le mieux réussi sa vie"
     rarity: legendary
-  - text: "Un cousin avoue qu'il a été en prison \"juste 6 mois\""
+  - text: "Diffuse le repas en direct et annonce seulement après que tout le monde est filmé"
     rarity: legendary
-  - text: "Personne ne savait, sauf mamie qui hoche la tête"
+  - text: "Récite un discours préparé sur les défauts de chaque membre de la famille"
     rarity: legendary
-  - text: "Un huissier sonne au milieu du fromage"
+  - text: "Apporte une liste des objets de la maison qu’il souhaite recevoir en héritage"
     rarity: legendary
-  - text: "L'huissier reste pour le café \"vous m'inviteriez bien ?\""
+  - text: "Sort une photo d’un invité barrée pour illustrer son nouveau plan de table"
     rarity: legendary
-  - text: "Tonton fait un AVC entre la salade et le fromage"
+  - text: "Fait venir une connaissance pour réfuter ton métier devant toute la famille"
     rarity: legendary
-  - text: "Tonton va bien finalement \"c'était juste l'émotion\""
+  - text: "Refait lire son discours de remerciement jusqu’à ce que tout le monde applaudisse assez fort"
     rarity: legendary
-  - text: "Le cocker mange l'entrée entière dans la cuisine, scène inoubliable"
+  - text: "Lance un karaoké de deux heures et cache la télécommande pour empêcher l’arrêt"
     rarity: legendary
-  - text: "Le rôti tombe sur le sol, mamie le ramasse \"ça se voit pas\""
+  - text: "Annonce qu’il a inscrit tous les convives à sa vente de produits à domicile"
     rarity: legendary
-  - text: "On comprend après coup qu'on a mangé un rôti tombé par terre"
+  - text: "Apporte des cadeaux étiquetés selon un classement de ses proches préférés"
     rarity: legendary
-  - text: "Le four prend feu pendant le repas, tonton éteint avec du vin"
+  - text: "Fait applaudir chaque annonce personnelle sauf celle qu’il désapprouve"
     rarity: legendary
-  - text: "Tonton vide une bouteille de Bourgueil 1989 sur des flammes"
+  - text: "Appelle un absent sur haut-parleur pour lui demander de justifier son absence"
     rarity: legendary
-  - text: "Une cousine accouche dans la salle de bain"
+  - text: "Distribue un livret des dettes familiales qu’il a rédigé pour l’occasion"
     rarity: legendary
-  - text: "Un bébé arrive entre la dinde et la bûche, en plein 25 décembre"
+
+  # L’invité devient propriétaire
+  - text: "Fait livrer son repas préféré pour toute la table après avoir critiqué le menu"
     rarity: legendary
-  - text: "Le prénom du bébé sera celui du repas du jour"
+  - text: "Renvoie le traiteur choisi par les hôtes et annonce qu’il a une meilleure idée"
     rarity: legendary
-  - text: "Papy meurt à table, tout le monde croit qu'il dort"
+  - text: "Fait venir dix amis après avoir assuré aux hôtes qu’il venait seul"
     rarity: legendary
-  - text: "On le découvre au moment du café, le repas a continué"
+  - text: "Déplace tous les meubles du salon pour « améliorer la circulation » entre deux plats"
     rarity: legendary
-  - text: "Un cousin avoue avoir piqué dans la caisse du resto familial"
+  - text: "Fait disparaître le dessert des hôtes pour servir uniquement celui qu’il a apporté"
     rarity: legendary
-  - text: "Mamie sort un fusil de chasse pour menacer le voisin"
+  - text: "Présente la personne qui a cuisiné comme son aide et prend les compliments sur le repas"
     rarity: legendary
-  - text: "Mamie tire sur la pelouse \"juste pour faire peur\""
+  - text: "Réserve le repas suivant chez les mêmes hôtes et envoie déjà les invitations"
     rarity: legendary
-  - text: "Un voisin appelle la gendarmerie, mamie passe la nuit en cellule"
+  - text: "Commande un nouveau service de table avec le compte ouvert sur l’ordinateur des hôtes"
     rarity: legendary
-  - text: "On fait quand même le café avant d'aller la chercher"
+  - text: "Fait venir le voisin pour lui prouver devant la famille qu’il cuisine mieux que lui"
     rarity: legendary
-  - text: "Une dispute déclenche la révélation que tata a couché avec le mari de tata 2"
+  - text: "Emballe toutes les bouteilles restantes en affirmant avoir financé l’ambiance"
     rarity: legendary
-  - text: "Tata 2 retourne la table, littéralement"
+  - text: "Coupe le gâteau d’anniversaire pour goûter avant que la personne fêtée ait soufflé ses bougies"
     rarity: legendary
-  - text: "Le rôti finit accroché au lustre"
+  - text: "Prend les clés de la cave pour constituer son propre panier de départ"
     rarity: legendary
-  - text: "On en parle encore 22 ans après comme du \"repas du lustre\""
+  - text: "Remplace la musique par une publicité enregistrée pour son entreprise"
     rarity: legendary
-  - text: "Le voisin frappe à la porte parce que \"votre dispute s'entend jusqu'à la rue\""
+  - text: "Fait payer les restes aux autres invités dans la cuisine des hôtes"
     rarity: legendary
-  - text: "On invite le voisin à finir le repas"
+  - text: "Réserve un photographe à domicile et transmet la facture aux organisateurs"
     rarity: legendary
-  - text: "Le voisin reste pour Noël prochain et le suivant"
+  - text: "Demande aux hôtes de quitter leur place pour tenir la caméra de son discours"
     rarity: legendary
-  - text: "Tonton avoue qu'il n'est pas le père biologique de son fils"
+  - text: "Transforme la fin du repas en visite immobilière avec des inconnus qu’il a invités"
     rarity: legendary
-  - text: "Le fils a 47 ans, il l'apprend à ce repas"
+  - text: "Ouvre les cadeaux destinés à quelqu’un d’autre pour commenter leur qualité"
     rarity: legendary
-  - text: "Une mortelle alerte au gaz vide la maison entre la poire et le fromage"
+  - text: "Attribue les chambres aux invités alors que personne n’a proposé de les héberger"
     rarity: legendary
-  - text: "On finit le repas dans le jardin, en plein janvier, en doudoune"
-    rarity: legendary
-  - text: "Quelqu'un manque s'étouffer avec une arête, manœuvre de Heimlich réussie par mamie"
-    rarity: legendary
-  - text: "Mamie devient une héroïne, on en parle à chaque repas pendant 10 ans"
-    rarity: legendary
-  - text: "Un cambriolage a lieu pendant le repas, on l'apprend au dessert"
-    rarity: legendary
-  - text: "Les voleurs ont laissé un mot \"merci pour la dinde dans le frigo\""
+  - text: "Arrive avec des valises et explique au dessert qu’il comptait dormir ici toute la semaine"
     rarity: legendary

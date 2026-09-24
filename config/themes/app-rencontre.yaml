@@ -1,1180 +1,1012 @@
 theme:
-  name: Applications de rencontre
-  slug: apps-rencontre
+  name: "Applications de rencontre"
+  slug: "apps-rencontre"
   emoji: "❤️"
 
 red_flags:
-  # ============================================================
-  # COMMON (~300) — les classiques que tout le monde a vus
-  # ============================================================
 
-  # --- Photos de profil ---
-  - text: "Tient un poisson qu'il vient de pêcher"
+  # common (300)
+  - text: "Six photos de groupe, toujours un groupe différent"
     rarity: common
-  - text: "Selfie torse nu devant le miroir de la salle de bain"
+  - text: "Écrit « pas de filtres » avec des oreilles de chien sur chaque photo"
     rarity: common
-  - text: "Photo de groupe en première position, mystère sur lequel c'est"
+  - text: "Toutes les photos cachent le visage, la bio exige de la transparence"
     rarity: common
-  - text: "Pose à côté d'une Lamborghini clairement pas la sienne"
+  - text: "Met une photo de couple en précisant « la personne à côté ne compte pas »"
     rarity: common
-  - text: "Photo en costume au mariage de son cousin"
+  - text: "A recadré son ex mais laissé la légende « mon amour »"
     rarity: common
-  - text: "Toutes les photos datent manifestement d'avant 2019"
+  - text: "Affiche trois âges différents entre la bio et les réponses du profil"
     rarity: common
-  - text: "Photo avec un tigre drogué en Thaïlande"
+  - text: "Annonce des photos récentes avec une date de dix ans en filigrane"
     rarity: common
-  - text: "Photo avec une silhouette floutée à côté de lui (l'ex)"
+  - text: "Utilise la photo d’une célébrité et te reproche de ne pas faire confiance"
     rarity: common
-  - text: "Photo de profil principale = un paysage"
+  - text: "Met sa voiture en photo puis demande pourquoi tu ne complimentes pas son visage"
     rarity: common
-  - text: "Photo avec un neveu/nièce pour faire « j'aime les enfants »"
+  - text: "Affiche son salaire à la place de sa description"
     rarity: common
-  - text: "Photo « candide » qui a clairement été shootée 47 fois"
+  - text: "La bio dit « sans enfants », le message dit « les miens ne vivent pas chez moi »"
     rarity: common
-  - text: "Lunettes de soleil sur les 6 photos"
+  - text: "Écrit « célibataire » puis précise « uniquement sur cette appli »"
     rarity: common
-  - text: "Filtre Snapchat oreilles de chien sur la moitié des photos"
+  - text: "Se dit non-fumeur et exige que tu ignores la cigarette de chaque photo"
     rarity: common
-  - text: "Photo salle de sport, miroir, débardeur trop large"
+  - text: "Annonce vivre près de chez toi puis admet avoir changé sa localisation"
     rarity: common
-  - text: "Cocktail à Bali, 2019, jamais retournée"
+  - text: "A repris une bio qui mentionne un prénom différent du sien"
     rarity: common
-  - text: "Sommet de montagne, bras en V, vibes « je suis quelqu'un de complet »"
+  - text: "Le profil dit chercher du sérieux, le message dit « j’ai coché au hasard »"
     rarity: common
-  - text: "Photo de dos face à un coucher de soleil"
+  - text: "A laissé « insérer une anecdote personnelle ici » dans sa bio"
     rarity: common
-  - text: "Photo prise dans un avion avec le verre de champagne business class"
+  - text: "Met le logo de son entreprise sur toutes ses photos de profil"
     rarity: common
-  - text: "Bébé dans les bras qui n'est manifestement pas le sien"
+  - text: "Présente sa photo générée par IA comme une photo de vacances"
     rarity: common
-  - text: "Une seule photo et elle est floue"
+  - text: "Précise que son âge est faux mais refuse de donner le vrai"
     rarity: common
-  - text: "Photo prise par une autre meuf, on voit son ombre au sol"
+  - text: "Met un lien commercial à la place de chacune de ses réponses"
     rarity: common
-  - text: "Selfie au volant en train de conduire"
+  - text: "Affiche « diplômé de la vie » puis exige ton niveau d’études"
     rarity: common
-  - text: "Toutes les photos en noir et blanc, on dirait un avis de décès"
+  - text: "Sa seule photo est un QR code vers son compte payant"
     rarity: common
-  - text: "Photo où l'autre personne a clairement été croppée à la serpe"
+  - text: "Prétend être vérifié en ajoutant lui-même une coche bleue à sa photo"
     rarity: common
-  - text: "Bouteille d'alcool bien visible au premier plan"
+  - text: "Écrit « aucune retouche » alors que le fond se tord autour de son visage"
     rarity: common
-  - text: "Visage retouché à mort, les yeux ne sont plus alignés"
+  - text: "Sa bio commence par une liste de gens qu’il déteste"
     rarity: common
-  - text: "Photo en boîte de nuit, bouche qui fait des bisous"
+  - text: "« Pas de prise de tête » suivi de quinze règles à respecter"
     rarity: common
-  - text: "Tient un chien qui n'est manifestement pas le sien"
+  - text: "« Demande-moi » puis répond que tes questions sont banales"
     rarity: common
-  - text: "Photo de famille où il faut le repérer comme un Où est Charlie"
+  - text: "Se présente par « tu n’es probablement pas à la hauteur »"
     rarity: common
-  - text: "Sandales avec chaussettes assumées en photo principale"
+  - text: "Demande une lettre de motivation dans la bio, n’a pas rempli son prénom"
     rarity: common
-  - text: "Photo prise par sa mère, on devine"
+  - text: "« Je ne fais jamais le premier pas » comme unique effort de présentation"
     rarity: common
-  - text: "Selfie dans le miroir avec le téléphone qui couvre la moitié du visage"
+  - text: "Écrit « soyez intéressants » et laisse toutes ses réponses vides"
     rarity: common
-  - text: "Photo en mode pseudo-intellectuel avec un livre clairement jamais ouvert"
+  - text: "Sa bio est uniquement une plainte contre ses précédents matchs"
     rarity: common
-  - text: "Pose à côté d'un piano qu'il ne sait pas jouer"
+  - text: "« Si tu ne réponds pas en une heure, ne like pas »"
     rarity: common
-  - text: "Photo Halloween d'il y a 4 ans en costume de banane"
+  - text: "Prévient qu’un match vaut consentement à recevoir ses appels"
     rarity: common
-  - text: "Photo dans un musée mais il regarde son téléphone"
+  - text: "« Pas ici pour parler », sans accepter aucune proposition de rencontre"
     rarity: common
-  - text: "Photo de plat au resto en première position"
+  - text: "Met « humour obligatoire » puis une liste de blagues interdites"
     rarity: common
-  - text: "Photo avec une moto qui n'est pas la sienne"
+  - text: "« Je ne suis jamais ici », suivi de reproches sur ton délai de réponse"
     rarity: common
-  - text: "Photo en mode « j'ai sauté en parachute une fois »"
+  - text: "Demande de lire toute sa bio puis pose une question déjà répondue dans la tienne"
     rarity: common
-  - text: "Photo où il fait semblant de rire pour la 8e fois"
+  - text: "Se décrit comme mystérieux pour refuser de répondre aux questions les plus simples"
     rarity: common
-  - text: "Photo dans un escape room avec ses 4 collègues"
+  - text: "Écrit « aucun jugement » puis classe les métiers qu’il accepte"
     rarity: common
-  - text: "Photo avec un sabre laser, comic-con 2018"
+  - text: "Se présente comme ouvert d’esprit et interdit tout désaccord dans sa bio"
     rarity: common
-  - text: "Photo coupé en haut, on voit pas le crâne"
+  - text: "« Pas de drame », suivi d’un règlement de comptes avec son ex"
     rarity: common
-  - text: "Photo de profil en uniforme militaire"
+  - text: "La bio contient plus de consignes pour toi que d’informations sur lui"
     rarity: common
-  - text: "Photo avec une raquette de tennis comme si c'était une personnalité"
+  - text: "Met « à découvrir » dans toutes les rubriques et te reproche ton profil vague"
     rarity: common
-  - text: "Photo retouchée Snapchat avec yeux verts alors qu'il les a marrons"
+  - text: "Précise « pas désespéré au point d’être ici » tout en t’écrivant"
     rarity: common
-  - text: "Photo où la qualité ressemble à un fax de 1996"
+  - text: "Sa description compare les rencontres à un catalogue de produits"
     rarity: common
-  - text: "Photo avec son chat, son chat, encore son chat, et lui flou au fond"
+  - text: "Met son nombre de matchs dans sa bio comme une note de satisfaction"
     rarity: common
-  - text: "Photo en blouse blanche pour bien signaler qu'il est médecin"
+  - text: "« Je réponds seulement si ça vaut mon temps »"
     rarity: common
-  - text: "Photo dans la voiture de son père"
+  - text: "La bio annonce qu’il corrigera tes fautes avant de lire tes messages"
     rarity: common
-
-  # --- Bios ---
-  - text: "« Demande-moi » comme seule bio"
+  - text: "Exige un loisir commun mais refuse d’essayer un des tiens"
     rarity: common
-  - text: "« Pas de prise de tête »"
+  - text: "Demande que tu sois disponible tous les soirs sans donner ses disponibilités"
     rarity: common
-  - text: "« À toi de me dire »"
+  - text: "Liste une taille minimum puis te reproche d’avoir des critères"
     rarity: common
-  - text: "« 1m85 parce qu'apparemment c'est important »"
+  - text: "Demande quelqu’un d’indépendant qui organise tout pour lui"
     rarity: common
-  - text: "« Si tu lis cette bio, c'est déjà un bon début »"
+  - text: "Exige de la ponctualité dans les réponses mais annonce répondre quand il veut"
     rarity: common
-  - text: "Cite Bukowski en bio"
+  - text: "« Pas de matérialistes », suivi du revenu minimum attendu"
     rarity: common
-  - text: "« Épicurien » écrit avec gravité"
+  - text: "Veut quelqu’un de spontané qui respecte son planning à la minute"
     rarity: common
-  - text: "« J'aime voyager » sans aucune autre précision"
+  - text: "Écrit que son partenaire devra arrêter les applis dès le premier match"
     rarity: common
-  - text: "Liste de 12 emojis sans contexte (🍕✈️🎬📚🍷🐶🎵☀️🍣🎾🌍🍻)"
+  - text: "Exige des photos sans filtre tout en refusant d’envoyer la sienne"
     rarity: common
-  - text: "« No drama »"
+  - text: "Annonce que tes amis devront lui plaire pour que ça fonctionne"
     rarity: common
-  - text: "« Carpe diem »"
+  - text: "Demande une vie passionnante mais une disponibilité permanente"
     rarity: common
-  - text: "« Authentique et bienveillant »"
+  - text: "Veut quelqu’un qui voyage beaucoup et ne sorte jamais sans lui"
     rarity: common
-  - text: "« Je ne sais pas quoi mettre »"
+  - text: "Précise que ses opinions ne sont pas négociables, les tiennes oui"
     rarity: common
-  - text: "« Pas là pour perdre du temps »"
+  - text: "Liste les quartiers où tu dois habiter pour mériter une réponse"
     rarity: common
-  - text: "« Looking for my partner in crime »"
+  - text: "Demande d’être diverti mais prévient qu’il déteste les questions"
     rarity: common
-  - text: "« Si tu veux savoir, demande »"
+  - text: "Exige que tu aimes son animal tout en dénigrant le tien"
     rarity: common
-  - text: "Met sa taille en première ligne"
+  - text: "Interdit les photos de soirée mais ne parle que de ses nuits en club"
     rarity: common
-  - text: "Met sa profession en majuscules : INGÉNIEUR"
+  - text: "« Pas de gens superficiels », suivi d’une liste de critères physiques"
     rarity: common
-  - text: "« Que les vraies »"
+  - text: "Demande de l’ambition puis se plaint que ton travail te prend du temps"
     rarity: common
-  - text: "Bio entièrement en anglais alors qu'il vit à Limoges"
+  - text: "Prévient que ses passions passeront toujours avant tes contraintes"
     rarity: common
-  - text: "« Foodie »"
+  - text: "Veut quelqu’un sans bagage émotionnel et raconte toutes ses ruptures en bio"
     rarity: common
-  - text: "« PhD en mémologie »"
+  - text: "Cherche une personne « simple » puis détaille un programme de couple complet"
     rarity: common
-  - text: "« Sapiosexuelle »"
+  - text: "Exige de savoir cuisiner et annonce ne jamais faire la vaisselle"
     rarity: common
-  - text: "« Je préfère discuter en vrai »"
+  - text: "« Pas de personnes jalouses », mais réclame l’accès à ton téléphone"
     rarity: common
-  - text: "« Cherche LA personne »"
+  - text: "Demande quelqu’un qui le remette en question « mais sans le contredire »"
     rarity: common
-  - text: "« Plus là pour les jeux »"
+  - text: "« Mes ex te diraient que tu as de la chance »"
     rarity: common
-  - text: "Met son MBTI : ENTJ-A (et y tient)"
+  - text: "Se qualifie de personne rare et te demande de le remercier pour le match"
     rarity: common
-  - text: "« Vierge ascendant Capricorne, ne me parle pas si tu sais pas ce que ça veut dire »"
+  - text: "T’explique combien d’autres personnes aimeraient être à ta place"
     rarity: common
-  - text: "« Pas de Lion sorry »"
+  - text: "Annonce que son attention est un privilège"
     rarity: common
-  - text: "Met son école en bio (« HEC 21 »)"
+  - text: "Dit « je ne suis pas comme les autres » en insultant tous tes autres matchs"
     rarity: common
-  - text: "« Tu dois aimer les chats » à l'impératif"
+  - text: "Se félicite d’avoir des valeurs parce qu’il a répondu à ton bonjour"
     rarity: common
-  - text: "Met « 1m80 » en gras alors qu'il fait clairement 1m73"
+  - text: "Compare son profil à une édition limitée"
     rarity: common
-  - text: "Met sa salle de sport en bio"
+  - text: "Dit avoir quitté l’appli pour toi alors que vous venez de matcher"
     rarity: common
-  - text: "« Plus de patience pour les bots »"
+  - text: "T’assure être très drôle puis exige que tu valides sa première blague"
     rarity: common
-  - text: "« Mes amis disent que je suis cool » (les amis ont menti)"
+  - text: "Annonce qu’il est trop honnête pour avoir à s’excuser"
     rarity: common
-  - text: "« Pas du tout sur les apps d'habitude »"
+  - text: "Se décrit comme empathique puis se moque de ton ressenti"
     rarity: common
-  - text: "« Ma mère m'a inscrit »"
+  - text: "Met sa modestie en avant en citant tous ceux qui le jalousent"
     rarity: common
-  - text: "« Je teste juste l'app »"
+  - text: "Dit que tous ses ex veulent revenir, sans que tu aies posé la question"
     rarity: common
-  - text: "« Mes potes m'ont mis là pour rigoler »"
+  - text: "Précise que sa mère a déjà validé sa bio comme argument de séduction"
     rarity: common
-  - text: "« Cherche femme féminine »"
+  - text: "Présente sa froideur comme la preuve de sa grande valeur"
     rarity: common
-  - text: "« Pas pour Netflix and chill »"
+  - text: "Dit qu’il a trop de choix pour faire des efforts"
     rarity: common
-  - text: "« Pour Netflix and chill »"
+  - text: "Se donne une note sur dix puis t’explique pourquoi elle est objective"
     rarity: common
-  - text: "Met le drapeau de son pays d'origine 4 fois"
+  - text: "Affirme être une belle occasion à ne pas laisser passer"
     rarity: common
-  - text: "« 50% Français 50% Italien 100% Charmeur »"
+  - text: "Annonce que tu comprendras son potentiel quand tu verras sa voiture"
     rarity: common
-  - text: "« Mon chien passe avant tout, sache-le »"
+  - text: "Te demande si son diplôme t’impressionne"
     rarity: common
-  - text: "« Si t'es pas drôle, swipe gauche »"
+  - text: "Se vante de ne jamais lire les profils avant de liker"
     rarity: common
-  - text: "« Cherche ma reine »"
+  - text: "Décrit son abonnement payant comme un investissement dont tu es le retour"
     rarity: common
-  - text: "« Plus là pour les enfantillages »"
+  - text: "T’explique qu’il ne devrait pas avoir besoin de se présenter"
     rarity: common
-  - text: "Liste les signes astro qu'il refuse"
+  - text: "Se présente comme le remède à toutes tes mauvaises rencontres"
     rarity: common
-  - text: "« Tu dois aimer les randos »"
+  - text: "Annonce qu’il va t’apprendre ce qu’est une vraie relation"
     rarity: common
-
-  # --- Premiers messages ---
-  - text: "Premier message : « Coucou »"
+  - text: "Premier message copié-collé avec le mauvais prénom"
     rarity: common
-  - text: "Premier message : « cc »"
+  - text: "Ouvre par un compliment suivi de « mais tu pourrais faire un effort sur la photo »"
     rarity: common
-  - text: "Premier message : « ça va ? »"
+  - text: "T’envoie « alors, on ne dit pas bonjour ? » sans avoir dit bonjour"
     rarity: common
-  - text: "Premier message : « Tu fais quoi dans la vie ? »"
+  - text: "Premier message : « Convaincs-moi de rester sur cette appli »"
     rarity: common
-  - text: "Premier message : « Salut bg »"
+  - text: "Te demande ton numéro puis se vexe que tu préfères discuter ici"
     rarity: common
-  - text: "Premier message : « T'as Snap ? »"
+  - text: "Commence par réclamer une photo que tu as déjà refusé d’envoyer"
     rarity: common
-  - text: "Premier message : « T'es trop belle »"
+  - text: "T’envoie un classement de tes photos au lieu de se présenter"
     rarity: common
-  - text: "Premier message à 23h47"
+  - text: "Ouvre par « je ne date pas ton genre d’habitude, mais bon »"
     rarity: common
-  - text: "Vocal de 4 minutes en premier message"
+  - text: "Commence par t’expliquer ce qui ne va pas dans ta bio"
     rarity: common
-  - text: "Photo en premier message"
+  - text: "Dit « tu as gagné » pour annoncer le match"
     rarity: common
-  - text: "« Salut, tu cherches quoi sur l'app ? »"
+  - text: "Premier message : « Pourquoi quelqu’un comme toi est encore célibataire ? »"
     rarity: common
-  - text: "« On se voit ce soir ? » avant même de se présenter"
+  - text: "Envoie un lien vers ses produits avant même de dire bonjour"
     rarity: common
-  - text: "« Tu m'envoies une photo récente ? »"
+  - text: "T’interpelle avec un surnom que tu viens de demander d’éviter"
     rarity: common
-  - text: "Demande direct le numéro au 2e message"
+  - text: "Ouvre par une devinette puis refuse toute conversation avant la bonne réponse"
     rarity: common
-  - text: "« Hey, je dois t'avouer un truc » comme phrase d'ouverture"
+  - text: "T’envoie le même compliment sur deux applis avec deux prénoms différents"
     rarity: common
-  - text: "Premier message qui mentionne déjà le mariage en blague (mais à moitié)"
+  - text: "Te demande de saluer ses efforts parce qu’il a écrit plus de trois mots"
     rarity: common
-  - text: "Compliment uniquement physique en premier message"
+  - text: "Te demande de remercier pour le super-like"
     rarity: common
-  - text: "« Salut princesse »"
+  - text: "Commence par le montant de son salaire et demande le tien"
     rarity: common
-  - text: "« Salut mademoiselle »"
+  - text: "T’envoie « tu as de la concurrence » avec une capture de ses matchs"
     rarity: common
-  - text: "Phrase de drague trouvée sur Reddit, mot pour mot"
+  - text: "Premier message : « Tu peux faire mieux que tes photos »"
     rarity: common
-  - text: "Premier message en anglais alors que le profil est en français"
+  - text: "Dit t’avoir choisi malgré l’avis défavorable de ses amis"
     rarity: common
-  - text: "Premier message qui commence par « Désolé pour le retard, je viens de voir le match »"
+  - text: "Ouvre en insultant les personnes qui n’ont pas répondu avant toi"
     rarity: common
-  - text: "« Hey ! Beau profil 👀 »"
+  - text: "Te demande si tu es toujours aussi difficile avant ta première réponse"
     rarity: common
-  - text: "Aucune ponctuation, aucune majuscule, aucun espoir"
+  - text: "Commence par « ne prends pas la grosse tête parce que je t’écris »"
     rarity: common
-  - text: "« Hello miss »"
+  - text: "Envoie une phrase de drague puis exige une note pour sa performance"
     rarity: common
-  - text: "« Tu m'as tapé dans l'œil 😉 »"
+  - text: "Demande ton âge, ta ville et ton métier alors que tout est dans la première ligne"
     rarity: common
-  - text: "« Belle gueule »"
+  - text: "Pose cinq questions puis ignore toutes tes réponses"
     rarity: common
-  - text: "Premier message + emoji aubergine la même seconde"
+  - text: "Répond « devine » quand tu demandes son prénom"
     rarity: common
-  - text: "« Tu fais quoi de beau ce week-end ? » à 14h un mardi"
+  - text: "Transforme une question sur son travail en concours de prestige"
     rarity: common
-  - text: "« Slt ça dit quoi »"
+  - text: "Demande ton salaire pour savoir si la conversation vaut la peine"
     rarity: common
-
-  # --- Comportement de chat ---
-  - text: "Vu sans réponse pendant 4 jours"
+  - text: "Te fait justifier pourquoi ton dernier couple s’est terminé"
     rarity: common
-  - text: "Répond uniquement en monosyllabes"
+  - text: "Demande combien de personnes t’ont rejeté avant de matcher avec lui"
     rarity: common
-  - text: "Écrit en abrégé extrême : kr, kfr, ms, tkt, jpp"
+  - text: "Pose une question personnelle puis refuse de répondre à la même"
     rarity: common
-  - text: "Propose un appel vocal au 5e message"
+  - text: "Te demande une qualité et rejette ta réponse comme trop banale"
     rarity: common
-  - text: "Disparaît une semaine puis « hey désolé j'avais pas vu »"
+  - text: "Demande tes défauts et les ressort à chaque désaccord"
     rarity: common
-  - text: "Ghoste sans raison après 3 messages bien"
+  - text: "Te fait choisir entre tes amis et une relation encore inexistante"
     rarity: common
-  - text: "Lit les messages mais arrête de répondre dès qu'on parle de se voir"
+  - text: "Demande ton adresse précise alors que tu proposes seulement un quartier"
     rarity: common
-  - text: "Demande Insta après 4 messages"
+  - text: "Veut savoir pourquoi tu étais connecté sans lui répondre"
     rarity: common
-  - text: "Met « haha » partout sans rien de drôle dans la conv"
+  - text: "T’interroge sur chaque personne visible dans tes photos"
     rarity: common
-  - text: "Faute d'orthographe sur la moitié des mots"
+  - text: "Demande qui a pris une photo pour vérifier si c’était un ex"
     rarity: common
-  - text: "Ne pose jamais de question en retour"
+  - text: "Te demande de prouver que la personne de ta bio n’est pas encore dans ta vie"
     rarity: common
-  - text: "Pose uniquement des questions sans rien partager"
+  - text: "Te fait passer un quiz sur sa bio au lieu de discuter"
     rarity: common
-  - text: "Répond systématiquement à 1h du mat"
+  - text: "Demande un résumé de ta vie sentimentale « sans rien oublier »"
     rarity: common
-  - text: "Demande l'âge alors que c'est dans le profil"
+  - text: "Te demande si tes amis le trouveraient assez bien pour toi"
     rarity: common
-  - text: "Demande la ville alors que c'est dans le profil"
+  - text: "Exige le nom de ton employeur sans expliquer pourquoi"
     rarity: common
-  - text: "Reformule sans cesse ce qu'on dit pour gagner du temps"
+  - text: "Demande ton budget vacances avant de demander tes envies"
     rarity: common
-  - text: "Met « 😂 » à des trucs pas drôles"
+  - text: "Te demande ce que tu peux lui apporter « en termes concrets »"
     rarity: common
-  - text: "Réponses toutes en émojis, comme un rébus"
+  - text: "Veut connaître tes horaires pour organiser quand tu devras répondre"
     rarity: common
-  - text: "« Lol » comme seule réponse à un long message"
+  - text: "Insiste pour connaître un détail que tu as dit vouloir garder privé"
     rarity: common
-  - text: "Tape « D'accord. » avec un point final, mode notaire"
+  - text: "Demande une liste de tes autres matchs et de leurs métiers"
     rarity: common
-  - text: "Répond une semaine plus tard avec « Sorry j'avais pas vu »"
+  - text: "Répond à tes questions mais n’en pose jamais une en retour"
     rarity: common
-  - text: "Demande à se voir avant même d'avoir parlé"
+  - text: "Réagit par « haha » quand tu dis que quelque chose t’a blessé"
     rarity: common
-  - text: "Veut absolument passer sur WhatsApp dès le 2e message"
+  - text: "Corrige tes virgules au lieu de répondre au fond du message"
     rarity: common
-  - text: "Conversation entièrement portée par toi, lui répond OK"
+  - text: "Ne répond qu’aux compliments et laisse toutes les questions de côté"
     rarity: common
-  - text: "Te répond en mode « interview RH »"
+  - text: "Transforme chaque sujet en anecdote sur lui"
     rarity: common
-  - text: "Pas une seule blague en 30 messages"
+  - text: "Fait semblant d’avoir lu un message puis demande exactement ce qu’il contient"
     rarity: common
-  - text: "Te corrige tes fautes d'orthographe"
+  - text: "Répond à ton avis par un lien censé te remettre dans le droit chemin"
     rarity: common
-  - text: "Réagit à un message par 👍 et c'est tout"
+  - text: "Efface ses messages pour nier ce qu’il vient de dire"
     rarity: common
-  - text: "Mode : double-texte agressif si tu mets 3h à répondre"
+  - text: "Change de sujet dès que tu relèves une contradiction"
     rarity: common
-  - text: "Te rappelle qu'il a aussi swipé d'autres filles"
+  - text: "Répond « trop long » au message qu’il t’a demandé de détailler"
     rarity: common
-
-  # --- Stéréotypes / autopromotion suspecte ---
-  - text: "« Je suis pas comme les autres mecs de Tinder »"
+  - text: "T’envoie une réponse où apparaît encore « voici un message de flirt naturel »"
     rarity: common
-  - text: "« T'es la première fille à qui je swipe à droite »"
+  - text: "Te recopie ta propre phrase comme si c’était son idée"
     rarity: common
-  - text: "« J'ai téléchargé l'app pour rigoler »"
+  - text: "Envoie un message pour un autre match puis te reproche de l’avoir remarqué"
     rarity: common
-  - text: "« Je préfère les vraies rencontres »"
+  - text: "Te reproche d’écrire trop puis se plaint que tes réponses soient courtes"
     rarity: common
-  - text: "« Je suis pas du genre à rester sur les apps »"
+  - text: "Te demande une anecdote et répond qu’il en connaît une meilleure"
     rarity: common
-  - text: "« Je suis quelqu'un de simple »"
+  - text: "Transforme ton loisir en débat sur son utilité"
     rarity: common
-  - text: "« Je sais ce que je veux »"
+  - text: "Rit de ta blague puis explique pourquoi elle est mal construite"
     rarity: common
-  - text: "« Je suis quelqu'un de carré »"
+  - text: "Cite un de tes messages hors contexte pour gagner une dispute"
     rarity: common
-  - text: "« Je suis attentionné »" 
+  - text: "Te reproche un ton qu’il a lui-même inventé en lisant"
     rarity: common
-  - text: "« Je suis hyper drôle » (suivi d'un silence terrifiant)"
+  - text: "Répond par un mème chaque fois que tu poses une question précise"
     rarity: common
-  - text: "« Mes ex disent que je suis le meilleur copain du monde »"
+  - text: "Dit « je n’ai pas lu mais » avant de te donner tort"
     rarity: common
-  - text: "« Je suis pas jaloux mais... »"
+  - text: "Répond « tu sais très bien pourquoi » au lieu d’expliquer son reproche"
     rarity: common
-  - text: "« Je suis vieux jeu »"
+  - text: "Termine chaque désaccord par « tu apprendras à me connaître »"
     rarity: common
-  - text: "« Je suis très indépendant »"
+  - text: "Te demande de réécrire ton message « avec plus d’enthousiasme »"
     rarity: common
-  - text: "« Je suis quelqu'un de spirituel »"
+  - text: "Prétend que toute critique de sa part est un compliment mal compris"
     rarity: common
-  - text: "« Je suis très sociable »"
+  - text: "Envoie un vocal de huit minutes et te reproche de ne pas l’écouter au travail"
     rarity: common
-  - text: "« On me dit souvent que je ressemble à [acteur connu] »"
+  - text: "Te demande une réponse écrite mais ne répond lui-même qu’en audio"
     rarity: common
-  - text: "« J'ai pas de filtre »"
+  - text: "Lance un appel sans prévenir après ton message « je suis en réunion »"
     rarity: common
-  - text: "« Je dis ce que je pense »"
+  - text: "Rappelle immédiatement après que tu as décliné son appel"
     rarity: common
-  - text: "« On m'a déjà dit que j'étais intimidant »"
+  - text: "Exige une visio au milieu de la nuit pour « être rassuré »"
     rarity: common
-
-  # --- Critères / exigences ---
-  - text: "Bio = liste de 15 critères genre fiche de poste"
+  - text: "Te demande d’allumer ta caméra en laissant la sienne éteinte"
     rarity: common
-  - text: "« Pas de fumeurs » avec une photo cigarette à la main"
+  - text: "Enregistre votre appel sans te prévenir puis t’en envoie un extrait"
     rarity: common
-  - text: "« 1m80 minimum » écrit en gras"
+  - text: "Te fait écouter ses amis commenter ta photo pendant l’appel"
     rarity: common
-  - text: "Mentionne le sport comme critère obligatoire"
+  - text: "Invite un ami dans la visio sans te le dire"
     rarity: common
-  - text: "« Si tu veux des enfants, passe ton chemin »"
+  - text: "Te demande de répéter un compliment pour pouvoir l’enregistrer"
     rarity: common
-  - text: "« Si tu veux pas d'enfants, passe ton chemin »"
+  - text: "Parle à quelqu’un d’autre pendant votre appel puis te reproche ton silence"
     rarity: common
-  - text: "Mentionne sa religion en gros caractères"
+  - text: "Te fait regarder sa séance de sport en visio au lieu de discuter"
     rarity: common
-  - text: "« Pas de chiens, pas de chats, pas de drama »"
+  - text: "T’envoie dix vocaux puis exige une réponse à chacun dans l’ordre"
     rarity: common
-  - text: "Liste des villes acceptées comme un dépliant SNCF"
+  - text: "Envoie un vocal presque inaudible et refuse de résumer"
     rarity: common
-  - text: "« Cherche femme intelligente » (sous-entendu : pas comme les autres)"
+  - text: "Démarre un appel vidéo après que tu as demandé à rester à l’écrit"
     rarity: common
-  - text: "« Pas pour les vegans »"
+  - text: "Te fait écouter les vocaux privés de ses anciens matchs"
     rarity: common
-  - text: "« 25-30 ans » alors qu'il en a 38"
+  - text: "Te demande de filmer ton appartement pour voir « ton niveau de vie »"
     rarity: common
-  - text: "Précise son revenu attendu chez l'autre"
+  - text: "Exige une photo prise maintenant avec un geste imposé"
     rarity: common
-  - text: "« Femmes féminines uniquement »"
+  - text: "Se moque de ta voix au premier vocal puis te demande d’en envoyer un autre"
     rarity: common
-  - text: "« Hommes virils uniquement »"
+  - text: "T’envoie un message éphémère puis t’accuse de ne pas avoir bien lu"
     rarity: common
-  - text: "« Pas de toutous » dans la bio"
+  - text: "Réclame une explication parce que tu as mis un vocal en vitesse accélérée"
     rarity: common
-  - text: "« Pas de gauchistes » écrit comme un prénom"
+  - text: "Te demande de couper ton activité pour écouter immédiatement son audio"
     rarity: common
-  - text: "« Tu dois cuisiner »"
+  - text: "Garde son micro ouvert devant la télévision et te reproche de ne pas comprendre"
     rarity: common
-  - text: "« Pas de tatouages » alors qu'il est tatoué"
+  - text: "Termine un appel dès que tu commences à raconter ta journée"
     rarity: common
-  - text: "« Doit aimer la mer »"
+  - text: "Te demande de filmer tes amis pour vérifier avec qui tu es"
     rarity: common
-
-  # --- Communication style ---
-  - text: "Vocaux de 8 minutes systématiquement"
+  - text: "Envoie « ??? » deux minutes après son premier message"
     rarity: common
-  - text: "Refuse d'appeler avant de se voir, mais te bombarde de vocaux"
+  - text: "T’écrit « tu pourrais faire un effort » pendant tes heures de travail"
     rarity: common
-  - text: "Snap qui disparaît immédiatement après envoi"
+  - text: "Compte le temps entre tes réponses et t’envoie les résultats"
     rarity: common
-  - text: "Répond toujours après 23h"
+  - text: "Te reproche d’avoir regardé une story avant de lui répondre"
     rarity: common
-  - text: "Demande FaceTime à 1h du matin"
+  - text: "Demande des captures d’écran pour prouver que tu étais occupé"
     rarity: common
-  - text: "Te tag dans des memes au bout de 2 messages"
+  - text: "Annonce qu’il te fait un test en arrêtant volontairement de répondre"
     rarity: common
-  - text: "Te raconte sa journée minute par minute"
+  - text: "Te punit d’un délai de réponse en annonçant qu’il attendra deux fois plus"
     rarity: common
-  - text: "Sort des pavés Instagram-philosophiques"
+  - text: "Exige un bonjour tous les matins avant même votre première rencontre"
     rarity: common
-  - text: "Réponds 24h après avec un pavé qui s'auto-justifie"
+  - text: "Te demande d’activer les confirmations de lecture pour lui"
     rarity: common
-  - text: "« Je suis pas du genre à textoter »"
+  - text: "Interprète ton statut en ligne comme une promesse de disponibilité"
     rarity: common
-  - text: "Envoie 5 messages d'affilée sans laisser le temps de répondre"
+  - text: "T’accuse de jouer avec lui parce que tu veux prendre le temps de discuter"
     rarity: common
-  - text: "Rigole de ses propres blagues avec des « MDR »"
+  - text: "Réclame ta localisation en direct pour prouver que tu es chez toi"
     rarity: common
-  - text: "Met des « ... » à la fin de chaque phrase, mode mystérieux"
+  - text: "Te demande de supprimer les photos avec des amis d’un autre genre"
     rarity: common
-  - text: "Écrit comme s'il dictait à Siri en marchant"
+  - text: "Considère votre match comme un engagement d’exclusivité immédiat"
     rarity: common
-  - text: "Utilise « bb » au 2e message"
+  - text: "Veut valider la tenue de ta prochaine sortie entre amis"
     rarity: common
-  - text: "Utilise « ma belle » au 1er message"
+  - text: "Se vexe que tu ne lui racontes pas une soirée prévue avant votre match"
     rarity: common
-  - text: "Te donne un surnom qu'il a inventé"
+  - text: "Appelle « manque de respect » le fait de garder tes notifications coupées"
     rarity: common
-  - text: "Fais des références à des conversations qu'on n'a jamais eues"
+  - text: "Te demande tes mots de passe en présentant ça comme de la confiance"
     rarity: common
-  - text: "Te lit à 5h du matin et tu vois la double check bleue"
+  - text: "T’envoie une capture de ton activité pour contester ton emploi du temps"
     rarity: common
-  - text: "Te répond toujours par audio même quand tu écris"
+  - text: "Te reproche de changer une photo de profil depuis votre match"
     rarity: common
-
-  # --- Catfishing / honnêteté ---
-  - text: "Photo qui date manifestement d'avant l'iPhone 6"
+  - text: "Demande à qui s’adresse ta story alors qu’elle ne parle de personne"
     rarity: common
-  - text: "Profil dit 28 ans, le visage en a 38"
+  - text: "Insiste pour savoir si tu parles à d’autres gens après que tu as refusé ce sujet"
     rarity: common
-  - text: "Profil dit 1m85, à l'IRL c'est 1m74 grand max"
+  - text: "Te fait promettre de répondre avant de te dire ce qu’il veut"
     rarity: common
-  - text: "Photo principale ≠ visage IRL"
+  - text: "Transforme « je suis fatigué » en accusation de désintérêt"
     rarity: common
-  - text: "Toutes les photos sous le même angle pour cacher la calvitie"
+  - text: "T’envoie un compte à rebours avant de supprimer le match"
     rarity: common
-  - text: "Une seule photo et c'est un dessin"
+  - text: "Propose uniquement son appartement malgré ta demande d’un lieu public"
     rarity: common
-  - text: "Bio dit « entrepreneur » sans nom de boîte"
+  - text: "Change le lieu quatre fois sans vérifier si tu peux suivre"
     rarity: common
-  - text: "Dit « consultant » comme si ça expliquait tout"
+  - text: "Refuse toutes tes propositions puis te reproche de ne rien organiser"
     rarity: common
-  - text: "« Je travaille dans la finance »"
+  - text: "Te donne une adresse mais refuse de dire ce que vous allez y faire"
     rarity: common
-  - text: "« Je voyage beaucoup pour le travail »"
+  - text: "Annonce que tu dois traverser la ville parce qu’il n’aime pas se déplacer"
     rarity: common
-  - text: "« J'ai une affaire » prononcé avec mystère"
+  - text: "Veut fixer un rendez-vous mais refuse de donner une heure"
     rarity: common
-  - text: "Mentionne un side hustle au lieu d'un vrai job"
+  - text: "Te demande de réserver puis ne répond plus aux questions nécessaires"
     rarity: common
-  - text: "« Trader indépendant »"
+  - text: "Propose « maintenant » et t’accuse de manquer de spontanéité si tu travailles"
     rarity: common
-  - text: "Photos du profil = 5 angles du même selfie"
+  - text: "Insiste pour venir te chercher malgré ton souhait d’arriver de ton côté"
     rarity: common
-  - text: "Photo de groupe x4, on n'est sûr du visage qu'au RDV"
+  - text: "Prévoit toute ta soirée alors que tu as proposé un café d’une heure"
     rarity: common
-  - text: "Filtre Instagram à mort, IRL c'est plus le même humain"
+  - text: "Te demande de payer les billets avant d’avoir confirmé sa disponibilité"
     rarity: common
-  - text: "Toutes les photos prises avec lunettes pour cacher les cernes"
+  - text: "Te donne un code vestimentaire sans te donner le lieu"
     rarity: common
-  - text: "Aucune photo en pied"
+  - text: "Impose un restaurant cher et te reproche de demander la carte"
     rarity: common
-  - text: "Aucune photo de face"
+  - text: "Demande que tu annules une soirée déjà prévue pour votre première rencontre"
     rarity: common
-  - text: "Photos retouchées, on dirait un avatar IA"
+  - text: "Refuse un lieu accessible en disant que ton confort complique tout"
     rarity: common
-
-  # --- Comportement de RDV ---
-  - text: "Propose direct chez lui pour un premier RDV"
+  - text: "Propose une randonnée après que tu as expliqué ne pas vouloir cette activité"
     rarity: common
-  - text: "Propose un café à 22h"
+  - text: "Veut choisir ton plat avant même d’avoir réservé le restaurant"
     rarity: common
-  - text: "Change le lieu 4 fois dans la journée"
+  - text: "Te demande de lui envoyer de l’argent pour son trajet avant de se rencontrer"
     rarity: common
-  - text: "Demande à splitter alors qu'il avait promis d'inviter"
+  - text: "Réserve pour vous deux sans attendre ta réponse puis réclame ta part"
     rarity: common
-  - text: "Arrive 35 minutes en retard sans s'excuser"
+  - text: "Te propose une heure où tu as déjà dit être indisponible trois fois"
     rarity: common
-  - text: "Sort le téléphone toutes les 3 minutes"
+  - text: "Te demande de trouver une solution pour son transport, sa réservation et sa garde de chien"
     rarity: common
-  - text: "Parle de son ex pendant 80% du RDV"
+  - text: "Annonce que ses amis décideront du lieu de votre premier rendez-vous"
     rarity: common
-  - text: "Ne pose aucune question pendant tout le RDV"
+  - text: "Te fait promettre de rester la nuit avant d’accepter un café"
     rarity: common
-  - text: "Annule 2h avant"
+  - text: "Te demande d’apporter un cadeau pour prouver ton sérieux dès la première rencontre"
     rarity: common
-  - text: "Bouge le RDV de 4 jours puis ghoste"
+  - text: "Veut que tu poses un jour de congé pour ne pas changer son planning"
     rarity: common
-  - text: "Confirme le matin pour ghoster le soir"
+  - text: "Annule pour la troisième fois sans jamais proposer un autre créneau"
     rarity: common
-  - text: "Boit 4 bières alors que toi t'en es à un demi"
+  - text: "Confirme le matin puis ne répond plus quand tu demandes où aller"
     rarity: common
-  - text: "Te tutoie au RDV alors qu'il vouvoyait sur l'app"
+  - text: "Revient après deux mois par « tu boudes ? »"
     rarity: common
-  - text: "Commande sans demander si tu as choisi"
+  - text: "Disparaît à chaque proposition concrète puis reproche que vous ne vous voyiez pas"
     rarity: common
-  - text: "Te fait un check à la fin du RDV"
+  - text: "Supprime le match puis te reproche sur un autre réseau de ne pas répondre"
     rarity: common
-  - text: "Propose direct un 2e verre dans son appart"
+  - text: "Revient avec la même phrase d’ouverture comme si vous n’aviez jamais parlé"
     rarity: common
-  - text: "Sort une histoire de fric à régler en plein RDV"
+  - text: "Explique son silence par « je voulais voir si tu tiendrais à moi »"
     rarity: common
-  - text: "Vapote en faisant des cercles avec la fumée pendant qu'il parle"
+  - text: "T’annonce qu’il te garde sous le coude au cas où une autre rencontre échoue"
     rarity: common
-  - text: "Demande au serveur de raconter une blague pour briser la glace"
+  - text: "Reprend une conversation en te racontant pourquoi son autre option n’a pas marché"
     rarity: common
-  - text: "Te fait essayer son plat sans demander"
+  - text: "Te renvoie « dernier message » pour la quatrième fois"
     rarity: common
-  - text: "Insiste pour que tu prennes un dessert qu'il pourra goûter"
+  - text: "Dit supprimer l’appli chaque semaine pour obtenir ton numéro"
     rarity: common
-  - text: "Te demande de poser pour Insta avant de t'avoir dit bonjour"
+  - text: "Promet une réponse le soir puis se vexe de ta simple relance le lendemain"
     rarity: common
-  - text: "Garde sa casquette à l'intérieur"
+  - text: "Te demande de patienter pendant qu’il compare ses autres matchs"
     rarity: common
-  - text: "Garde ses Bluetooth dans les oreilles tout le RDV"
+  - text: "Reprend contact uniquement pour te demander un service professionnel"
     rarity: common
-  - text: "Calque ses commandes sur les tiennes pour avoir l'air complice"
+  - text: "Après ton refus poli, exige un compte rendu de ce qu’il doit améliorer"
     rarity: common
-  - text: "Fait celui qui hésite et finit par prendre un kebab"
+  - text: "Te demande de le recommander à une amie si tu n’es pas intéressé"
     rarity: common
-  - text: "Range tout dans son sac avant même que l'addition arrive"
+  - text: "Insulte ton profil juste après avoir dit qu’il était parfait"
     rarity: common
-  - text: "Calcule les pourboires à 0,01€ près"
+  - text: "Te reproche d’avoir accepté le match si tu refuses son invitation immédiate"
     rarity: common
-  - text: "Demande au serveur si on peut « avoir un meilleur prix »"
+  - text: "T’envoie ses nouveaux matchs pour te rendre jaloux"
     rarity: common
-  - text: "Te raccompagne mais en marchant 4 mètres derrière toi"
+  - text: "Demande à un ami de t’écrire pour obtenir une réponse"
     rarity: common
-
-  # --- Commons additionnels : photos, bios, RDV, comportements ---
-  - text: "Photo dans un escalator, mode « j'avais rien d'autre »"
+  - text: "Utilise une autre appli pour continuer après ton refus explicite"
     rarity: common
-  - text: "Photo où il pose en costume de sport sur la moquette de son salon"
+  - text: "Se présente comme un nouveau match alors que tu reconnais sa bio et vos messages"
     rarity: common
-  - text: "Photo en boîte avec les yeux fermés sur 3 photos sur 4"
+  - text: "Te relance avec une fausse urgence puis admet vouloir attirer ton attention"
     rarity: common
-  - text: "Photo où il porte 5 colliers, 2 bracelets, 3 bagues"
+  - text: "Annonce qu’il pardonne ton silence alors que tu avais clairement clos la conversation"
     rarity: common
-  - text: "Photo prise par drone (oui, juste lui sur une plage vide)"
+  - text: "Te demande de justifier ton refus jusqu’à ce qu’il soit d’accord avec tes raisons"
     rarity: common
-  - text: "Photo où on devine que c'était une vidéo et il a screenshoté"
+  - text: "Te dit adorer ton livre préféré puis te demande de quoi il parle"
     rarity: common
-  - text: "Photo dans le métro avec des AirPods et un livre ouvert sur les genoux"
+  - text: "Prétend pratiquer ton sport puis copie une définition pour répondre à ta question"
     rarity: common
-  - text: "Photo où il imite la pose de Cristiano Ronaldo"
+  - text: "T’annonce une passion commune qui change dès que tu changes de sujet"
     rarity: common
-  - text: "Photo dans un sauna, serviette autour de la taille"
+  - text: "Se moque de ta musique et t’envoie une playlist pour « corriger ça »"
     rarity: common
-  - text: "Photo en train de jouer du djembé"
+  - text: "Refuse de parler tant que tu n’as pas regardé la vidéo de son influenceur préféré"
     rarity: common
-  - text: "« Cherche femme drôle » (lui n'a fait rire personne en 12 messages)"
+  - text: "Transforme un échange sur les voyages en concours du nombre de pays visités"
     rarity: common
-  - text: "« Pas de relation toxique » (a posté un mémorial à son ex en story)"
+  - text: "Te demande ton signe puis annonce que tes réponses ne comptent plus"
     rarity: common
-  - text: "Bio : « Aime les chiens, les enfants, les voyages, les rires »"
+  - text: "Prédit ta personnalité à partir de ton prénom et rejette tes corrections"
     rarity: common
-  - text: "Bio : « Liste de mes hobbies : lire, cuisiner, voyager »"
+  - text: "T’attribue les habitudes de son ex parce que vous faites le même métier"
     rarity: common
-  - text: "Bio en mode CV : nom, âge, taille, profession, fumeur ou non"
+  - text: "Dit chercher une personne curieuse puis refuse d’expliquer ses références"
     rarity: common
-  - text: "Bio termine par « Si tu veux savoir le reste... »"
+  - text: "Te propose de débattre et qualifie ton premier désaccord de red flag"
     rarity: common
-  - text: "Bio = uniquement la traduction de son prénom dans 4 langues"
+  - text: "Présente chaque préférence différente de la sienne comme un manque de culture"
     rarity: common
-  - text: "« Je suis quelqu'un de positif »"
+  - text: "T’explique que tes études ne servent à rien après avoir demandé ton diplôme"
     rarity: common
-  - text: "« Pas pour les princesses »"
+  - text: "Décrète que tes amis célibataires sont responsables de ton célibat"
     rarity: common
-  - text: "« Pas pour les bobos »"
+  - text: "Te demande de le féliciter pour avoir refusé un autre match"
     rarity: common
-  - text: "« Que les ambitieuses »"
+  - text: "Parle de ses rendez-vous comme d’un rendement à améliorer"
     rarity: common
-  - text: "Bio : « Tu peux pas comprendre, t'es pas marseillais/parisien/lyonnais »"
+  - text: "T’envoie ses statistiques de séduction pour justifier qu’il a toujours raison"
     rarity: common
-  - text: "Premier message : « Hey toi 👋 »"
+  - text: "Prétend connaître tes besoins mieux que toi après trois messages"
     rarity: common
-  - text: "Premier message : « Wow »"
+  - text: "Qualifie de trahison le fait que tu n’aimes pas sa série préférée"
     rarity: common
-  - text: "Premier message : « 🥵 »"
+  - text: "Veut que tu défendes son opinion dans une dispute où tu n’étais pas présent"
     rarity: common
-  - text: "Premier message : « Belle, intelligente et drôle, c'est rare »"
+  - text: "Te demande d’envoyer un compliment à son ami pour prouver qu’il plaît"
     rarity: common
-  - text: "Premier message : « Tu m'aurais souri dans la rue, j'aurais pas osé »"
+  - text: "Pose une question piège puis annonce que tu as échoué"
     rarity: common
-  - text: "Premier message : « Y a écrit quoi sur ton t-shirt photo 3 ? »"
+  - text: "Transforme ton désaccord en preuve que tu as peur de t’attacher"
     rarity: common
-  - text: "Met « 😏 » à la fin de chaque message"
+  - text: "Dit « je suis trop gentil » pour justifier une insulte à ses anciens matchs"
     rarity: common
-  - text: "Demande des photos qui n'existent pas dans le profil (« en pied »)"
-    rarity: common
-  - text: "Te chope sur 3 apps en même temps avec le même opener"
-    rarity: common
-  - text: "Te répond uniquement les soirs de week-end après 22h"
-    rarity: common
-  - text: "Te like la story d'un ami commun pendant qu'il t'ignore en DM"
-    rarity: common
-  - text: "Lit le message à 14h, répond à 23h « la journée a été chargée »"
-    rarity: common
-  - text: "T'envoie un meme à la place de répondre à ta question"
-    rarity: common
-  - text: "Te dit « tu es chiante » au 5e message en mode taquin (c'est pas taquin)"
-    rarity: common
-  - text: "« Ah on m'a dit que t'étais sympa » (par qui ?)"
-    rarity: common
-  - text: "« Y a un truc en toi qui... bref »"
-    rarity: common
-  - text: "Te demande de deviner son prénom"
-    rarity: common
-  - text: "Met sa main devant la caméra à chaque vidéo qu'il envoie"
-    rarity: common
-  - text: "Tu lui demandes son métier, il répond « devine »"
-    rarity: common
-  - text: "Au RDV, demande au serveur de prendre une photo « pour Insta »"
-    rarity: common
-  - text: "Au RDV, mentionne 4 fois qu'il fait du sport"
-    rarity: common
-  - text: "Au RDV, te demande si t'es « plus ville ou nature »"
-    rarity: common
-  - text: "Au RDV, regarde ses notifs comme si la mairie l'appelait"
-    rarity: common
-  - text: "Au RDV, sort sa carte d'identité « pour preuve »"
-    rarity: common
-  - text: "Au RDV, te demande si t'as eu beaucoup de matchs cette semaine"
-    rarity: common
-  - text: "Au RDV, mentionne son loyer pour montrer qu'il s'en sort"
-    rarity: common
-  - text: "Au RDV, raconte la même anecdote 3 fois en 2h"
-    rarity: common
-  - text: "Au RDV, fait le test du « si t'étais un animal »"
-    rarity: common
-  - text: "Au RDV, sort une métaphore qui ne tient pas debout"
-    rarity: common
-  - text: "Au RDV, parle à la 3e personne de lui-même une fois"
-    rarity: common
-  - text: "Au RDV, mentionne au moins une fois Joe Rogan"
-    rarity: common
-  - text: "Au RDV, t'explique ce qu'est l'IA pendant 20 minutes"
-    rarity: common
-  - text: "Au RDV, t'explique le bitcoin alors que tu n'as rien demandé"
-    rarity: common
-  - text: "Au RDV, demande l'addition au moment où t'as la bouche pleine"
-    rarity: common
-  - text: "Au RDV, propose un Uber Pool pour rentrer ensemble"
-    rarity: common
-  - text: "Au RDV, attend dehors pour pas payer le couvert"
-    rarity: common
-  - text: "Au RDV, drague ouvertement la copine d'à côté en mode « je te taquine »"
-    rarity: common
-  - text: "Au RDV, paye en pièces de 5 et 10 centimes"
-    rarity: common
-  - text: "Au RDV, prend une photo de l'addition « pour ses notes »"
+  - text: "Affirme que tu lui dois une chance parce qu’il a pris le temps d’écrire"
     rarity: common
 
-  # ============================================================
-  # RARE (~140) — plus subtil, plus tordu, plus spécifique
-  # ============================================================
-
-  # --- Photos / profils ---
-  - text: "Photo de mariage où il porte clairement une alliance qui dépasse du gant"
+  # rare (140)
+  - text: "A ajouté des témoignages de ses ex à la place des réponses du profil"
     rarity: rare
-  - text: "Photo où il tient un bouquet de fleurs avec dédicace floutée"
+  - text: "Présente son profil comme une candidature avec un salaire souhaité"
     rarity: rare
-  - text: "Pose devant un Range Rover dont la plaque a été pixelisée"
+  - text: "Affiche une capture de son solde bancaire pour remplacer sa personnalité"
     rarity: rare
-  - text: "Photo dans une église, pas pour la déco"
+  - text: "Utilise les mêmes photos sur deux profils avec deux histoires différentes"
     rarity: rare
-  - text: "A une photo où on voit clairement qu'il photoshope ses abdos"
+  - text: "A mis une annonce de location dans sa bio pour rentabiliser ses matchs"
     rarity: rare
-  - text: "Photo de profil ou il porte un t-shirt à l'effigie de lui-même"
+  - text: "Écrit que le premier café sera un entretien avant d’accéder au vrai rendez-vous"
     rarity: rare
-  - text: "Met une photo de lui enfant pour les feels (tu dois deviner que c'est lui)"
+  - text: "Précise que sa mère lit les conversations et peut intervenir"
     rarity: rare
-  - text: "Met une photo de Robert Pattinson en blague (on y croit pas)"
+  - text: "A mis un lien vers un formulaire obligatoire avant de discuter"
     rarity: rare
-  - text: "Photo où il pose à côté d'une œuvre d'art en l'expliquant à voix haute"
+  - text: "Annonce des frais d’annulation dans sa bio"
     rarity: rare
-  - text: "Photo de lui dans un avion avec deux billets bien visibles"
+  - text: "Écrit que ses matchs doivent contribuer à son abonnement premium"
     rarity: rare
-  - text: "Photo de lui en costume devant un tribunal"
+  - text: "Se déclare célibataire « du lundi au jeudi »"
     rarity: rare
-  - text: "Photo où il porte une chemise hawaïenne qu'on retrouvera lors du RDV"
+  - text: "Publie une grille tarifaire des sorties qu’il accepte"
     rarity: rare
-  - text: "Photo de profil avec un AirPod dans une oreille seulement"
+  - text: "Ajoute une liste noire de prénoms d’ex dans son profil"
     rarity: rare
-
-  # --- Bios / phrases tordues ---
-  - text: "« Polyamoureux mais sache qu'avec toi ce serait différent »"
+  - text: "Se présente comme influenceur et demande un nombre minimum d’abonnés"
     rarity: rare
-  - text: "« Je cherche quelqu'un qui me challenge »"
+  - text: "A remplacé sa bio par un appel à parrainer son application"
     rarity: rare
-  - text: "« Je suis très ambitieuse, j'ai besoin d'un partenaire à la hauteur »"
+  - text: "Met un lien vers un sondage pour choisir sa prochaine photo"
     rarity: rare
-  - text: "Bio qui mentionne directement son thérapeute « il dit que je suis prêt »"
+  - text: "Précise qu’il ne répond qu’aux profils validés par son coach"
     rarity: rare
-  - text: "« Je viens de sortir d'une grosse rupture, soyez doux »"
+  - text: "Se donne un faux titre professionnel puis demande de ne pas vérifier"
     rarity: rare
-  - text: "« Je crois pas en l'amour mais essaie quand même »"
+  - text: "La bio contient un code promo et précise « sentiments non inclus »"
     rarity: rare
-  - text: "« Je préfère être seul que mal accompagné » (l'a dit à toutes les filles ce mois)"
+  - text: "Publie une capture de compliments en laissant les prénoms des autres matchs visibles"
     rarity: rare
-  - text: "« Mon dernier ex est venu se plaindre à mes parents »"
+  - text: "Te demande de noter son profil avant d’accepter de parler du tien"
     rarity: rare
-  - text: "« Cherche femme qui supporte mes 4 chats »"
+  - text: "T’envoie sa grille d’évaluation et annonce dans quelles colonnes tu perds des points"
     rarity: rare
-  - text: "« Cherche celle qui acceptera ma mère »"
+  - text: "Te fait passer un test de personnalité dont seules ses réponses seraient correctes"
     rarity: rare
-  - text: "Liste les Big 5 de la personnalité comme si c'était CV"
+  - text: "Demande une vidéo de présentation d’une minute comme pour un recrutement"
     rarity: rare
-  - text: "« Je médite 2h par jour, n'attendez pas que je réponde vite »"
+  - text: "Exige une photo de tes diplômes pour vérifier la ligne sur tes études"
     rarity: rare
-  - text: "« Sober curious »"
+  - text: "Te demande les liens des profils de tes ex pour « comprendre le marché »"
     rarity: rare
-  - text: "« Je manifeste l'âme sœur, donc tu es là pour une raison »"
+  - text: "Veut connaître ton patrimoine avant de décider si vous avez des valeurs communes"
     rarity: rare
-  - text: "« Mercure rétrograde, je triche un peu en swipant »"
+  - text: "Demande une photo de ton dressing pour évaluer votre compatibilité"
     rarity: rare
-  - text: "« Je ne supporte pas les fausses énergies »"
+  - text: "Veut une capture de ton agenda pour choisir lui-même tes disponibilités"
     rarity: rare
-  - text: "Met sa fréquence vibratoire en bio comme si c'était sa taille"
+  - text: "Te demande de relire le CV d’un autre match pour les comparer"
     rarity: rare
-  - text: "« Cherche flamme jumelle, swipez à droite si vous savez ce que ça veut dire »"
+  - text: "Propose une période d’essai de conversation avec un bilan le dimanche"
     rarity: rare
-  - text: "« Je n'ai jamais aimé personne avant »"
+  - text: "Attribue un coefficient à chacune de tes réponses sur tes loisirs"
     rarity: rare
-  - text: "« Mon thème astral dit que c'est le moment »"
+  - text: "T’envoie un score de compatibilité calculé sans te poser de questions"
     rarity: rare
-  - text: "« Healing journey en cours »"
+  - text: "Te demande de remplir une fiche sur ta famille avant de donner son prénom"
     rarity: rare
-  - text: "Met « ENM friendly » sans expliquer"
+  - text: "Veut une recommandation écrite d’un ami pour confirmer que tu es agréable"
     rarity: rare
-
-  # --- Comportements de chat tordus ---
-  - text: "Te demande des news de ton ex au 4e message"
+  - text: "Te demande ton relevé de notes pour vérifier que tu es vraiment curieux"
     rarity: rare
-  - text: "Connaît déjà ton lieu de travail sans que tu l'aies dit"
+  - text: "Te fait expliquer pourquoi tu serais mieux que ses trois autres options"
     rarity: rare
-  - text: "Mentionne par hasard le nom de ta meilleure amie"
+  - text: "T’envoie une énigme et annonce qu’une erreur supprimera le match"
     rarity: rare
-  - text: "Te dit « je sais qu'on s'est jamais vus mais... »"
+  - text: "Exige une photo de tes courses pour vérifier ton hygiène de vie"
     rarity: rare
-  - text: "Te demande de lui décrire physiquement ta sœur"
+  - text: "Demande une réponse manuscrite parce que « les vrais efforts se voient »"
     rarity: rare
-  - text: "Te demande tes mensurations « pour savoir »"
+  - text: "T’envoie un compliment sur une photo que tu as retirée avant votre match"
     rarity: rare
-  - text: "Te demande si t'as déjà trompé quelqu'un en 3e question"
+  - text: "Partage une capture de la consigne donnée à l’IA pour te séduire"
     rarity: rare
-  - text: "« Tu m'as déjà vu quelque part avant ? »"
+  - text: "Te demande de choisir entre trois réponses générées pour ton propre message"
     rarity: rare
-  - text: "« On dirait que tu me caches quelque chose » au 5e message"
+  - text: "T’envoie par erreur un message où il se vante auprès d’un ami de pouvoir te manipuler"
     rarity: rare
-  - text: "T'envoie un test de personnalité qu'il a fait en mode « réponds-y »"
+  - text: "Transfère son message d’amour au lieu de l’écrire, avec le nom d’un autre match"
     rarity: rare
-  - text: "Te demande de noter sa photo sur 10"
+  - text: "Te demande de trier ses conversations pour retrouver celle dont il veut te parler"
     rarity: rare
-  - text: "Te dit « je sens qu'on va se marier »"
+  - text: "Utilise exactement ta bio comme sa nouvelle bio et nie l’avoir copiée"
     rarity: rare
-  - text: "Mentionne ses parents au 3e message"
+  - text: "T’explique que son assistant écrit les messages tant que le match n’est pas sérieux"
     rarity: rare
-  - text: "Te parle de ses enfants alors qu'il en avait pas mentionné"
+  - text: "Te fait parler avec un ami chargé de vérifier ton potentiel"
     rarity: rare
-  - text: "« Je crois que je tombe amoureux » (vous avez échangé 6 messages)"
+  - text: "Répond à tes questions par les extraits numérotés d’un document de présentation"
     rarity: rare
-  - text: "« Tu m'as guéri d'un truc »"
+  - text: "Programme un message romantique qui arrive avec « rappel automatique » en tête"
     rarity: rare
-  - text: "« Je peux te demander un truc bizarre ? »"
+  - text: "T’envoie une proposition de rendez-vous avec une date déjà passée et un autre prénom"
     rarity: rare
-  - text: "Te demande si tu serais d'accord pour tatouer son nom (on est au message 8)"
+  - text: "Dit avoir écrit un poème pour toi en laissant un prénom différent dans les rimes"
     rarity: rare
-  - text: "Veut faire un appel vidéo à 2h du mat « pour vérifier »"
+  - text: "Réutilise une anecdote de ta bio en affirmant qu’elle lui est arrivée"
     rarity: rare
-  - text: "Te demande de prouver que t'es pas un bot par une photo très spécifique"
+  - text: "T’envoie la capture d’un groupe où ses amis rédigent ses réponses à ta place"
     rarity: rare
-  - text: "Te dit « tu me rappelles ma mère » (et il le pense en compliment)"
+  - text: "Affirme avoir inventé sa phrase de drague alors que tu lui avais envoyée"
     rarity: rare
-
-  # --- Tendances cringe ---
-  - text: "Utilise « vibes » dans chaque message"
+  - text: "Copie un compliment dans une langue qu’il ne comprend pas et te demande de traduire"
     rarity: rare
-  - text: "Parle de son « féminin sacré »"
+  - text: "Te demande de répondre selon un scénario qu’il veut tester sur ses prochains matchs"
     rarity: rare
-  - text: "Parle de son « masculin sacré »"
+  - text: "T’envoie un résumé automatique de votre conversation avec la rubrique « objections »"
     rarity: rare
-  - text: "« J'ai fait un cacao ceremony hier »"
+  - text: "Partage sa méthode pour parler à dix matchs en même temps en disant que tu es spécial"
     rarity: rare
-  - text: "Mentionne ses « ouvertures de chakra »"
+  - text: "Te propose un rendez-vous et joint un lien pour acheter son cours en ligne"
     rarity: rare
-  - text: "« Je suis sur le bon timeline »"
+  - text: "Transforme ton intérêt pour son travail en demande de devis gratuit"
     rarity: rare
-  - text: "« On vibre pas sur la même fréquence, désolé »"
+  - text: "Te demande de créer son logo avant votre premier café"
     rarity: rare
-  - text: "« Mon coach holistique dit que tu es un test »"
+  - text: "T’invite à une visio à deux puis envoie un lien vers une présentation commerciale"
     rarity: rare
-  - text: "Mentionne une retraite Vipassana au 1er message"
+  - text: "Demande que tu achètes son produit pour lui montrer que tu crois en lui"
     rarity: rare
-  - text: "Te parle de l'effet Mandela en voulant flirter"
+  - text: "T’offre un code promo pour sa formation en guise de compliment"
     rarity: rare
-  - text: "« J'ai tiré tes cartes, ça matche »"
+  - text: "Propose de vous rencontrer uniquement si tu invites deux amis à sa réunion"
     rarity: rare
-  - text: "Te demande ton thème astral complet avant de répondre"
+  - text: "Te demande ton CV et te redirige vers son cabinet de recrutement"
     rarity: rare
-  - text: "Te dit qu'il a vu votre relation en rêve"
+  - text: "T’envoie une opportunité d’investissement entre deux cœurs"
     rarity: rare
-  - text: "Mentionne ses vies antérieures en flirtant"
+  - text: "Te demande de publier son projet sur tes réseaux avant de se voir"
     rarity: rare
-  - text: "Met une story de Sadhguru en mode philosophe"
+  - text: "Prétend que vous avez matché grâce au destin puis propose une consultation payante"
     rarity: rare
-
-  # --- Crypto / business / MLM ---
-  - text: "Te propose de « build wealth together »"
+  - text: "Te demande un virement pour « réserver votre connexion »"
     rarity: rare
-  - text: "Mentionne son portefeuille crypto en 4e message"
+  - text: "Veut emprunter ton compte pour profiter d’un bonus de parrainage"
     rarity: rare
-  - text: "« Tu connais le e-commerce de niche ? »"
+  - text: "Te propose de financer son billet de train sans accepter de fixer une date"
     rarity: rare
-  - text: "Veut t'inscrire à sa formation en 5 messages"
+  - text: "T’invite à voter pour sa marque à un concours avant de poursuivre la discussion"
     rarity: rare
-  - text: "« Je peux te montrer un truc qui va changer ta vie »"
+  - text: "Te demande de devenir client pour avoir une raison professionnelle de se rencontrer"
     rarity: rare
-  - text: "« On peut s'entraider professionnellement »"
+  - text: "Propose de rédiger ton profil contre paiement après l’avoir critiqué"
     rarity: rare
-  - text: "Te demande si tu connais le dropshipping"
+  - text: "Demande une carte cadeau pour prouver que tu n’es pas un faux profil"
     rarity: rare
-  - text: "Mentionne « le système » comme un complot"
+  - text: "T’envoie un panier en ligne déjà rempli avec ton prénom dans l’adresse de livraison"
     rarity: rare
-  - text: "Te parle de copy trading entre 2 emojis cœur"
+  - text: "Te propose un café gratuit si tu laisses un avis sur une prestation jamais reçue"
     rarity: rare
-  - text: "« Je gagne 15K par mois, et toi ? »"
+  - text: "Te demande de parler sous un autre prénom pour que son partenaire ne reconnaisse pas tes notifications"
     rarity: rare
-  - text: "Te demande si t'es ouverte à des opportunités"
+  - text: "Explique que son couple est ouvert mais interdit d’en parler à l’autre personne"
     rarity: rare
-  - text: "« Je viens d'investir dans un projet de NFT »"
+  - text: "Veut une promesse de fidélité pendant qu’il continue ses autres rencontres"
     rarity: rare
-  - text: "Te mentionne Bitcoin sans qu'on lui demande rien"
+  - text: "T’envoie une photo de son alliance en précisant qu’elle est seulement administrative"
     rarity: rare
-  - text: "Te dit qu'il se forme à devenir « high value man »"
+  - text: "Annonce qu’il supprimera l’appli si tu lui rembourses l’abonnement restant"
     rarity: rare
-  - text: "Cite Tony Robbins / Tate / Hormozi en mode mentor"
+  - text: "Demande que tu supprimes les photos où apparaît ton ex, puis refuse de faire pareil"
     rarity: rare
-
-  # --- Couples / non-monogamie suspecte ---
-  - text: "Bio dit « relation libre, demande-moi »"
+  - text: "Te fait écrire ton premier message de rupture au cas où"
     rarity: rare
-  - text: "Profil de couple, photo « unicorn hunting »"
+  - text: "Envoie la liste des personnes que tu devras arrêter de suivre si ça devient sérieux"
     rarity: rare
-  - text: "« Ma copine est ouverte mais elle ne sait pas encore »"
+  - text: "Veut que tu bloques un ami parce qu’il trouve son commentaire trop chaleureux"
     rarity: rare
-  - text: "« On est en pause »"
+  - text: "Te demande d’envoyer une fausse déclaration pour rendre son ex jaloux"
     rarity: rare
-  - text: "« On dort plus dans la même chambre depuis un mois »"
+  - text: "Te fait comparer ton profil à celui de son ex et choisir qui est le mieux"
     rarity: rare
-  - text: "« Officiellement célibataire dans 2 mois »"
+  - text: "T’annonce une rencontre avec sa famille avant même votre premier rendez-vous"
     rarity: rare
-  - text: "« On gère, t'inquiète »"
+  - text: "Te demande de rassurer sa mère par téléphone avant d’accepter un café"
     rarity: rare
-  - text: "Photo de profil prise par sa copine actuelle (devine c'est laquelle)"
+  - text: "Veut choisir qui aura le droit de savoir que vous vous êtes rencontrés sur une appli"
     rarity: rare
-  - text: "« On est polyamoureux mais elle gère la jalousie pas pour moi »"
+  - text: "Annonce que ses amis voteront sur le maintien de votre match"
     rarity: rare
-  - text: "Te demande de garder le secret avant même de se voir"
+  - text: "T’envoie une autorisation à remplir pour publier vos futurs messages"
     rarity: rare
-
-  # --- Stalking light ---
-  - text: "« J'ai vu que t'avais commenté chez X, je connais X »"
+  - text: "Te demande de participer au cadeau d’anniversaire de sa mère avant de vous rencontrer"
     rarity: rare
-  - text: "« Je suis passé devant ton bureau »"
+  - text: "Choisit déjà les prénoms de vos enfants et conteste ton droit de refuser"
     rarity: rare
-  - text: "Connaît le prénom de ton chat sans que tu lui aies dit"
+  - text: "T’annonce que tes vacances doivent s’adapter aux siennes alors que vous ne vous êtes jamais vus"
     rarity: rare
-  - text: "Te suit déjà sur 3 réseaux avant le 1er message"
+  - text: "Te demande de cacher que tu as des enfants pour plaire à sa famille"
     rarity: rare
-  - text: "Mentionne un détail de ta story Insta privée"
+  - text: "Cite un ancien message public de toi pour lancer un procès sur tes goûts"
     rarity: rare
-  - text: "« On était au même mariage en 2022 »"
+  - text: "T’envoie la capture de tes abonnements en demandant des explications ligne par ligne"
     rarity: rare
-  - text: "Connaît le prénom de ta meilleure amie via LinkedIn"
+  - text: "A retrouvé ton profil professionnel et critique ton parcours en guise d’ouverture"
     rarity: rare
-  - text: "Cite une phrase d'un tweet que t'as fait en 2018"
+  - text: "Contacte ton collègue pour vérifier ton emploi du temps"
     rarity: rare
-  - text: "Te dit « tu vis au 3e étage non ? »"
+  - text: "T’annonce avoir interrogé un ami commun sans te demander"
     rarity: rare
-  - text: "« J'ai un pote qui te connaît bien »"
+  - text: "Envoie une capture d’une vieille photo de famille pour demander qui est chaque personne"
     rarity: rare
-
-  # --- Generation gap / écarts d'âge ---
-  - text: "45 ans, swipe que des 22-26"
+  - text: "Demande à te joindre sur ton adresse professionnelle après ton refus de donner ton numéro"
     rarity: rare
-  - text: "Met « age is just a number »"
+  - text: "Crée un autre compte pour vérifier si tu réponds plus vite à quelqu’un d’autre"
     rarity: rare
-  - text: "« Les filles de mon âge sont fades »"
+  - text: "Te fait parler à un faux rival puis avoue que c’était un test"
     rarity: rare
-  - text: "« Je préfère les femmes plus jeunes pour la fertilité »"
+  - text: "Compare l’heure de ta story à ton message « je vais dormir »"
     rarity: rare
-  - text: "« 20 ans de différence on s'en fout »"
+  - text: "Annonce avoir conservé toutes tes photos pour pouvoir suivre les changements"
     rarity: rare
-  - text: "Mentionne « daddy energy » en 1er message"
+  - text: "Te demande de laisser ta caméra allumée pendant que tu travailles"
     rarity: rare
-  - text: "Te tutoie alors qu'il a l'âge de ton oncle"
+  - text: "Insiste pour voir la pièce entière en visio afin de vérifier que tu es seul"
     rarity: rare
-  - text: "Glisse en bio « je préserve mon capital sympathie »"
+  - text: "Commente un changement de distance sur l’appli comme une faute à expliquer"
     rarity: rare
-
-  # --- Spotify / Insta révélateurs ---
-  - text: "Spotify lié, top artist : Booba"
+  - text: "Te reproche d’avoir aimé une publication avant votre premier échange"
     rarity: rare
-  - text: "Spotify lié, top : Indila depuis 8 ans"
+  - text: "Envoie un montage de tes heures de connexion pour prouver que tu avais du temps"
     rarity: rare
-  - text: "Top track : « Je l'aime à mourir » version Shakira"
+  - text: "Demande une capture de ta liste d’amis proches"
     rarity: rare
-  - text: "Insta lié, photos uniquement de plats au resto"
+  - text: "Contacte un autre de tes matchs pour comparer vos conversations"
     rarity: rare
-  - text: "Insta lié et compte privé (pour swiper en paix)"
+  - text: "T’accuse de mentir parce qu’une ancienne photo ne correspond pas à ta bio actuelle"
     rarity: rare
-  - text: "Spotify Top : Joyce Jonathan, et il l'assume"
+  - text: "Te demande de conserver une photo de profil qu’il préfère malgré ton envie de changer"
     rarity: rare
-  - text: "Spotify Top : podcasts uniquement, et que des podcasts d'hommes"
+  - text: "T’envoie une invitation d’agenda avec une amende prévue en cas d’annulation"
     rarity: rare
-  - text: "Top artist : Damso, mais il « écoute pour les prods »"
+  - text: "Veut faire valider le café par son coach avant de te donner une réponse"
     rarity: rare
-  - text: "Top track : Adele, version pleurer dans la voiture"
+  - text: "Demande à ton ami d’organiser votre premier rendez-vous parce que tu poses trop de questions"
     rarity: rare
-
-  # --- App-specific et meta ---
-  - text: "« Je n'utilise que Hinge parce que c'est plus sérieux »"
+  - text: "Propose un rendez-vous à son mariage en précisant que « c’est compliqué »"
     rarity: rare
-  - text: "« Tinder c'est mort, je suis ici par défaut »"
+  - text: "T’invite chez ses parents et précise qu’ils ont déjà préparé ta chambre"
     rarity: rare
-  - text: "Met sur Bumble qu'il préfère que ce soit le mec qui parle"
+  - text: "Te demande de venir à un déménagement en présentant ça comme un premier rendez-vous"
     rarity: rare
-  - text: "Sur Hinge, prompts copiés/collés d'autres profils virals"
+  - text: "Annonce une rencontre romantique qui est en fait son événement de réseautage"
     rarity: rare
-  - text: "Sur Hinge, « we'll get along if » + « tu as un caractère doux »"
+  - text: "Veut que tu passes le prendre à l’aéroport avant votre premier café"
     rarity: rare
-  - text: "Mentionne qu'il a payé Tinder Gold (et te le dit en argument)"
+  - text: "Te demande d’héberger son chien en attendant votre rencontre"
     rarity: rare
-  - text: "« Je t'ai super-liké, dis merci »"
+  - text: "T’envoie une liste de cadeaux acceptables pour votre premier verre"
     rarity: rare
-  - text: "« Tu as un boost ? Je te vois souvent en haut »"
+  - text: "Te propose de faire son état des lieux ensemble avant votre premier verre"
     rarity: rare
-  - text: "Met une vidéo Hinge de lui en train de jouer de la guitare"
+  - text: "Veut que tu achètes une tenue imposée pour vos futures photos"
+    rarity: rare
+  - text: "Demande une caution avant de confirmer le restaurant"
+    rarity: rare
+  - text: "Organise votre première rencontre via un sondage envoyé à ses autres matchs"
+    rarity: rare
+  - text: "Te propose une séance de photos de couple comme première rencontre, sans te laisser choisir"
+    rarity: rare
+  - text: "T’envoie un itinéraire de week-end et t’attribue déjà la moitié du budget"
+    rarity: rare
+  - text: "Demande que tu inventes une histoire de rencontre pour ses parents avant même le premier café"
+    rarity: rare
+  - text: "Propose une première rencontre pendant son appel de travail « pour optimiser »"
+    rarity: rare
+  - text: "Te fait réserver plusieurs horaires puis choisit celui qui reste après ses autres rendez-vous"
+    rarity: rare
+  - text: "Annonce que votre premier café sera filmé pour sa chaîne sans demander ton accord"
     rarity: rare
 
-  # --- Voyageur / entrepreneur ---
-  - text: "Bio = « passionné de voyages » avec UNIQUEMENT des photos en Asie du Sud-Est"
-    rarity: rare
-  - text: "« Digital nomad » qui vit en fait chez ses parents"
-    rarity: rare
-  - text: "Mentionne 47 pays visités en bio"
-    rarity: rare
-  - text: "Photo dans des bars d'aéroport comme si c'était un personnalité"
-    rarity: rare
-  - text: "« Je travaille de partout » (depuis le canapé de sa mère)"
-    rarity: rare
-  - text: "« CEO et founder » d'une boîte qui n'a pas de site"
-    rarity: rare
-  - text: "« Investisseur » sans aucune précision"
-    rarity: rare
-  - text: "Bio : « business owner » + photo de la voiture de son père"
-    rarity: rare
-  - text: "Met « founder x3 » en bio (les 3 boîtes ont fermé en 6 mois)"
-    rarity: rare
-
-  # --- Comportement post-RDV ---
-  - text: "Texto le lendemain pour demander si tu lui as transmis une MST"
-    rarity: rare
-  - text: "Te bloque sur l'app mais te suit sur Insta"
-    rarity: rare
-  - text: "Demande à venir chez toi pour le 2e RDV alors qu'il a pas matché"
-    rarity: rare
-  - text: "Te texte 2 mois après comme si rien"
-    rarity: rare
-  - text: "Te like une photo Insta de 2019 à 3h du mat"
-    rarity: rare
-  - text: "Te recroise sur une autre app en se présentant comme un nouveau"
-    rarity: rare
-  - text: "T'écrit une lettre manuscrite (vous ne vous êtes vus qu'une fois)"
-    rarity: rare
-  - text: "Te demande un retour détaillé sur sa performance"
-    rarity: rare
-  - text: "Te demande tes coordonnées bancaires pour te rembourser le café (50 cts)"
-    rarity: rare
-
-  # --- Phrases bateau version pro ---
-  - text: "« Je cherche quelqu'un de simple, pas comme les Parisiennes »"
-    rarity: rare
-  - text: "« Je suis quelqu'un de loyal, c'est rare »"
-    rarity: rare
-  - text: "« Je suis old school, j'ouvre les portes »"
-    rarity: rare
-  - text: "« Je suis un gentleman, c'est démodé »"
-    rarity: rare
-  - text: "« J'ai des valeurs que les hommes de notre génération ont perdues »"
-    rarity: rare
-  - text: "« Les vrais hommes se font rares » (parle de lui)"
-    rarity: rare
-  - text: "« Je traite la femme comme une princesse » (sous-entendu : et toi ce sera la pression)"
-    rarity: rare
-  - text: "« Je préfère voir vite si ça matche, je perds pas de temps »"
-    rarity: rare
-
-  # --- Edge cases sociaux ---
-  - text: "Photo où il pose avec un chien d'une autre fille (qu'il a clairement détouré)"
-    rarity: rare
-  - text: "Te dit qu'il connaît la propriétaire du bar et veut un traitement spécial"
-    rarity: rare
-  - text: "Demande au serveur si tu peux avoir un meilleur prix « parce qu'il connaît »"
-    rarity: rare
-  - text: "Drague le ou la serveuse devant toi"
-    rarity: rare
-  - text: "Critique le serveur dès le 1er verre"
-    rarity: rare
-  - text: "Mentionne 3 fois qu'il connaît du monde"
-    rarity: rare
-  - text: "Cite son influenceur préféré comme s'il était proche"
-    rarity: rare
-  - text: "Mentionne qu'il a été à TEDx (sans préciser qu'il était dans le public)"
-    rarity: rare
-
-  # ============================================================
-  # LEGENDARY (~60) — les histoires qu'on raconte au resto
-  # ============================================================
-
-  - text: "Premier message : « Je crois que tu es la mère de mes 6 futurs enfants »"
+  # legendary (60)
+  - text: "T’envoie un diaporama sur votre couple et demande ce que tu peux améliorer d’ici le rendez-vous"
     rarity: legendary
-  - text: "Bio : « Je n'ai jamais embrassé personne mais je suis prêt à m'engager »"
+  - text: "Ajoute ta photo à un faire-part et demande si tes parents peuvent financer la réception"
     rarity: legendary
-  - text: "Demande à voir tes pieds dès le 2e message « pour valider »"
+  - text: "T’envoie son annonce immobilière et demande quand tu peux emménager"
     rarity: legendary
-  - text: "Bio entièrement en latin"
+  - text: "Propose à tes autres matchs de rejoindre un groupe pour « clarifier la concurrence »"
     rarity: legendary
-  - text: "Te dit qu'il a fait analyser ton thème astral par son rabbin / chaman / coach"
+  - text: "T’envoie une demande de remboursement pour le temps passé à te séduire"
     rarity: legendary
-  - text: "« Mon ex me harcèle encore mais c'est cool »"
+  - text: "Te demande de payer un acompte sur vos futures vacances avant le premier appel"
     rarity: legendary
-  - text: "« Je veux qu'on se voie ce soir, mais après 2h du matin »"
+  - text: "Sa mère prend la main sur son compte pour te faire passer l’entretien final"
     rarity: legendary
-  - text: "Te fait passer un test psychologique en 12 questions avant le RDV"
+  - text: "T’annonce que tu discutais avec son employé chargé de sélectionner ses rendez-vous"
     rarity: legendary
-  - text: "Bio : « cherche femme, dépôt de garantie possible »"
+  - text: "Te propose de devenir arbitre dans un groupe qui note les messages de ses autres matchs"
     rarity: legendary
-  - text: "Premier RDV au cimetière (« c'est calme, on peut parler »)"
+  - text: "Te demande de recommander son profil à ton ex parce que vous avez forcément les mêmes goûts"
     rarity: legendary
-  - text: "Premier RDV : son enterrement de vie de garçon (il ne te l'a pas dit)"
+  - text: "T’invite dans un groupe nommé à vos deux prénoms avec ses parents déjà dedans"
     rarity: legendary
-  - text: "Te demande de signer un NDA avant le 2e RDV"
+  - text: "Te demande d’annoncer vos fiançailles pour rendre son ex jaloux avant même de vous voir"
     rarity: legendary
-  - text: "Photo principale : lui à son propre baptême adulte (il a 33 ans)"
+  - text: "Joint à son premier message une liste de mariage et demande ce que tu comptes offrir"
     rarity: legendary
-  - text: "Bio dit « je suis encore officiellement marié mais on signe les papiers vendredi »"
+  - text: "A créé un compte de couple avec ta photo avant de te demander ton avis"
     rarity: legendary
-  - text: "Te raconte son agression de cette nuit pendant le 1er café"
+  - text: "Te transmet un planning de garde pour son chien en précisant que ton tour commence lundi"
     rarity: legendary
-  - text: "Te montre les vidéos de son ex pleurant après la rupture"
+  - text: "A donné ton adresse comme destination de ses cartons sans te demander"
     rarity: legendary
-  - text: "Te demande si tu peux héberger sa mère pendant un mois (au RDV)"
+  - text: "Te demande de payer les frais de déplacement de son coach pour votre premier café"
     rarity: legendary
-  - text: "Sort un PowerPoint du futur de votre couple au 2e RDV"
+  - text: "Utilise le compte officiel de son entreprise pour te relancer après ton refus"
     rarity: legendary
-  - text: "« Mon ex est dans le coma à cause de moi mais c'était un accident »"
+  - text: "Veut t’ajouter à son abonnement familial et réclame un an de participation avant la rencontre"
     rarity: legendary
-  - text: "Te propose mariage en 4 messages (il pense pas que c'est trop)"
+  - text: "Te demande une attestation de ton ex prouvant que la rupture n’était pas de ta faute"
     rarity: legendary
-  - text: "Bio : « si on matche, je viens te chercher, donne-moi ton adresse »"
+  - text: "Te demande d’appeler son partenaire pour négocier votre premier rendez-vous"
     rarity: legendary
-  - text: "Te dit qu'il a déjà choisi le prénom de votre fille"
+  - text: "A demandé à son ex d’écrire le message d’ouverture et laisse sa signature"
     rarity: legendary
-  - text: "Te demande de t'habiller comme son ex pour le 1er RDV"
+  - text: "T’envoie le numéro de trois anciennes relations et te demande de faire sa promotion auprès d’elles"
     rarity: legendary
-  - text: "Vient au RDV avec son meilleur ami « pour valider »"
+  - text: "Demande que vous échangiez vos bulletins de salaire avant vos numéros de téléphone"
     rarity: legendary
-  - text: "Vient au RDV avec sa mère « parce qu'elle voulait te connaître »"
+  - text: "Propose que ton premier rendez-vous consiste à gérer son stand commercial"
     rarity: legendary
-  - text: "Te dit qu'il a posté un avis sur ton profil sur un forum d'hommes"
+  - text: "Te demande d’enregistrer un témoignage sur votre couple alors que vous n’avez jamais parlé"
     rarity: legendary
-  - text: "Au RDV, sort un classeur avec des photos de toutes ses ex"
+  - text: "Annonce une soirée de speed dating où tous les invités viennent pour lui"
     rarity: legendary
-  - text: "Te demande de noter le RDV sur 10 et te le facture si tu mets moins de 7"
+  - text: "Te propose un statut de partenaire officiel en échange d’un investissement dans sa société"
     rarity: legendary
-  - text: "Pendant le RDV, prend des notes dans un carnet « pour son journal »"
+  - text: "Inscrit ton numéro comme contact de ses parents et te dit de répondre comme si vous étiez ensemble"
     rarity: legendary
-  - text: "Te raconte qu'il a été enlevé par les extra-terrestres (il est sérieux)"
+  - text: "T’envoie un programme de rénovation de son appartement en t’attribuant déjà les week-ends"
     rarity: legendary
-  - text: "Mentionne sa secte au 3e message en mode « tu vas adorer »"
+  - text: "Te demande de créer un faux profil pour piéger son partenaire actuel"
     rarity: legendary
-  - text: "Veut te montrer son arme à feu en photo « pour faire connaissance »"
+  - text: "Publie votre conversation sur son compte professionnel comme exemple de vente réussie"
     rarity: legendary
-  - text: "Bio : « je vis avec mes parents et ma femme »"
+  - text: "Te demande d’apparaître comme partenaire sur son dossier de prêt"
     rarity: legendary
-  - text: "Premier message : « Tu as l'air d'une femme qui sait se taire »"
+  - text: "T’envoie une photo d’un tatouage à ton prénom et réclame le remboursement si tu ne viens pas"
     rarity: legendary
-  - text: "Te demande ton groupe sanguin avant de se voir"
+  - text: "Propose une réunion avec vos deux familles pour décider si vous pouvez prendre un café"
     rarity: legendary
-  - text: "T'envoie son arbre généalogique au 5e message"
+  - text: "Te demande de te présenter à son groupe d’amis lors d’une visio de sélection"
     rarity: legendary
-  - text: "Te dit qu'il est en plein rituel de séparation avec son ex et tu fais partie du protocole"
+  - text: "T’envoie une facture de fleurs que tu n’as ni reçues ni demandées"
     rarity: legendary
-  - text: "Bio : « cherche reine, prière de joindre lettre de motivation »"
+  - text: "Te demande d’ouvrir un compte bancaire commun pour prouver que tu crois en votre avenir"
     rarity: legendary
-  - text: "Premier RDV chez ses parents qui ont déjà mis la table pour 4"
+  - text: "Te demande de choisir tes futures photos de couple dans des montages faits avec son ex"
     rarity: legendary
-  - text: "Photo de lui posant fièrement à côté de son arbre généalogique imprimé en A0"
+  - text: "Te transmet les messages d’un autre match pour que tu écrives ses réponses à sa place"
     rarity: legendary
-  - text: "Bio mentionne son IBAN « pour gagner du temps »"
+  - text: "Te propose de financer son rendez-vous avec une autre personne pour prouver que tu n’es pas jaloux"
     rarity: legendary
-  - text: "Te dit qu'il fait partie d'un programme de protection des témoins (et te raconte tout)"
+  - text: "Propose à ton ami commun une commission s’il te convainc d’accepter un rendez-vous"
     rarity: legendary
-  - text: "Au 1er RDV, sort un anneau et précise que c'est « juste pour voir ta réaction »"
+  - text: "Te demande de te faire passer pour son ex afin de rassurer sa mère sur votre différence d’âge"
     rarity: legendary
-  - text: "Te demande de prouver ta fidélité avant le 1er bisou par un test ADN"
+  - text: "T’annonce que son ami le remplacera au premier café pour vérifier que tu vaux le déplacement"
     rarity: legendary
-  - text: "Photo de profil : lui devant le tableau des stats de ses matches précédents"
+  - text: "T’envoie une liste de salles de mariage à appeler pour lui comparer les tarifs"
     rarity: legendary
-  - text: "Bio dit qu'il cherche une « gestante »"
+  - text: "Te demande de contribuer à sa pension de chien « puisque tu feras bientôt partie de la famille »"
     rarity: legendary
-  - text: "Te dit qu'il a survécu à 3 mariages mais que toi c'est différent"
+  - text: "Propose un appel avec son ex chargé de répondre aux questions sur sa vie de couple"
     rarity: legendary
-  - text: "Vient au RDV avec son chien... et le prénom du chien c'est ton prénom"
+  - text: "Te demande de couvrir un impayé au restaurant pour qu’il puisse t’y inviter"
     rarity: legendary
-  - text: "Mentionne en passant qu'il a fondé une religion"
+  - text: "Te demande de louer une voiture de luxe pour ne pas détonner sur ses photos"
     rarity: legendary
-  - text: "Bio dit « cherche héritière, échanges en nature possibles »"
+  - text: "Te demande d’organiser une soirée avec tes amis pour qu’il choisisse parmi vous"
     rarity: legendary
-  - text: "Te dit qu'il est descendant direct de Louis XIV (il a des « preuves »)"
+  - text: "A annoncé votre relation à son employeur pour justifier une demande de mutation"
     rarity: legendary
-  - text: "Au RDV, te présente comme sa fiancée à un parfait inconnu"
+  - text: "Te demande de jouer sa fiancée en visio pour obtenir une remise sur une salle de réception"
     rarity: legendary
-  - text: "Te demande au RDV si tu connais quelqu'un d'intéressant à lui présenter"
+  - text: "T’envoie le budget de son divorce en demandant ce que tu peux avancer"
     rarity: legendary
-  - text: "Te demande au RDV s'il peut filmer pour TikTok « première impression »"
+  - text: "Te demande de prêter ton compte de rencontre à son ami déjà banni"
     rarity: legendary
-  - text: "T'envoie une copie de son casier judiciaire pour « être transparent »"
+  - text: "Te propose de racheter les cadeaux de son ex pour commencer votre relation sans gaspillage"
     rarity: legendary
-  - text: "Te dit que sa mère a déjà préparé sa chambre pour toi"
+  - text: "A donné ton numéro à son partenaire en lui affirmant que tu confirmeras sa version"
     rarity: legendary
-  - text: "Bio dit qu'il a été élu « célibataire de l'année » dans son village"
+  - text: "T’envoie un album intitulé « nous » composé de montages avec tes photos de profil"
     rarity: legendary
-  - text: "T'envoie un contrat moral signé en 8 exemplaires au 4e message"
+  - text: "Te propose un rendez-vous gratuit si tu acceptes d’être figurant dans sa publicité"
     rarity: legendary
-  - text: "Premier RDV : il a réservé une table pour 3, la 3e chaise est pour son meilleur ami « qui doit valider »"
+  - text: "Demande à parler à ton responsable pour qu’il te libère le soir de votre premier café"
     rarity: legendary
-  - text: "Te dit que ton chat est l'incarnation de sa grand-mère"
+  - text: "A acheté deux billets à ton nom et menace de les facturer si tu refuses de venir"
     rarity: legendary
