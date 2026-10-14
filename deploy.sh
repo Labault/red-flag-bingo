@@ -11,13 +11,27 @@ COMPOSE_FILE="compose.prod.yaml"
 ENV_FILE=".env.prod.local"
 HEALTH_RETRIES=20
 
-dc()  { docker compose -f "$COMPOSE_FILE" --env-file "$ENV_FILE" "$@"; }
+dc() { docker compose -f "$COMPOSE_FILE" --env-file "$ENV_FILE" "$@"; }
 log() { echo "[$(date '+%H:%M:%S')] [rfb] $*"; }
 
-[ -f "$ENV_FILE" ] || { log "ERREUR : $ENV_FILE introuvable"; exit 1; }
+[ -f "$ENV_FILE" ] || {
+    log "ERREUR : $ENV_FILE introuvable"
+    exit 1
+}
 
 log "Build des images…"
 dc build --pull
+
+# Validate module provisioning before replacing the running web container.
+# Synthetic keys, isolated network and disposable storage: no production data.
+log "Validation de la configuration FrankenPHP…"
+docker run --rm --network none --memory 192m --cpus 1 \
+    -e APP_DOMAIN=rfb.invalid \
+    -e MERCURE_JWT_ALG=HS256 \
+    -e "MERCURE_PUBLISHER_JWT_KEY=$(printf '%032d' 0)" \
+    -e "MERCURE_SUBSCRIBER_JWT_KEY=$(printf '%032d' 1)" \
+    --entrypoint frankenphp rfb-app:latest \
+    validate --config /etc/frankenphp/Caddyfile --adapter caddyfile
 
 log "Migrations Doctrine…"
 dc run --rm app bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration
@@ -37,14 +51,14 @@ dc exec -T app bin/console cache:warmup --env=prod --no-debug
 # Pas de route /health dédiée : on vérifie que la home répond 200 (l'image
 # runtime embarque curl, cf HEALTHCHECK du Dockerfile.prod).
 log "Healthcheck → http://localhost/"
-for i in $(seq 1 "$HEALTH_RETRIES"); do
-  if dc exec -T app curl -fsS -o /dev/null http://localhost/; then
-    log "Healthy ✓"
-    docker image prune -f >/dev/null 2>&1 || true
-    log "Déploiement terminé ✓"
-    exit 0
-  fi
-  sleep 3
+for _attempt in $(seq 1 "$HEALTH_RETRIES"); do
+    if dc exec -T app curl -fsS -o /dev/null http://localhost/; then
+        log "Healthy ✓"
+        docker image prune -f >/dev/null 2>&1 || true
+        log "Déploiement terminé ✓"
+        exit 0
+    fi
+    sleep 3
 done
 
 log "ÉCHEC : l'app ne répond pas après $((HEALTH_RETRIES * 3))s ✗"

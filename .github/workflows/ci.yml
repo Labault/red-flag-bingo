@@ -14,6 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Deployment configuration guard
+        run: bash tests/Integration/deploy-config-guard.sh
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:

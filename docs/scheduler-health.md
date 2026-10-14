@@ -25,3 +25,23 @@ Expected result: `healthy`, with PID 1 consuming `scheduler_default`. No web,
 database or shared-proxy replacement is needed. The hourly worker restart
 from `--time-limit=3600` remains normal behaviour. A healthcheck failure signals
 an alert; Docker does not automatically restart a running unhealthy container.
+
+## Production runtime compatibility
+
+Both production Dockerfile stages pin FrankenPHP 1.12.7 / PHP 8.4 by the
+multiarchitecture manifest digest from the previous successful deployment.
+The moving `1-php8.4` tag selected FrankenPHP 1.13 / Mercure 1.0 on 14 October
+2026. That hub rejected the existing top-level JWT directives and prevented
+startup. Returning to the verified base preserves the current Mercure client
+and token contract; a Mercure 1.0 migration needs a separate coordinated change.
+
+After building, `deploy.sh` validates the actual image's Caddy configuration
+in a disposable container before migrations or web replacement. It uses
+synthetic keys, no network and no production volumes. An incompatible hub
+configuration must fail at this gate while the existing web keeps running.
+The probe is a configuration check, not a complete application readiness test.
+
+For a future base update, resolve and review its digest, rerun this startup
+check and verify Mercure client compatibility before deployment. The
+[official Mercure upgrade guide](https://mercure.rocks/docs/UPGRADE) explains
+the coordinated token and subscription changes required by version 1.0.
