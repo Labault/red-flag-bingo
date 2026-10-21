@@ -1,5 +1,14 @@
 # Red Flag Bingo
 
+## Critical PHP update, 21 October 2026
+
+The runtime requires **PHP 8.4.27 or later in the same minor branch** to fix
+CVE-2026-109618 and CVE-2026-109619. Image builds reject an older base. Once the
+official image includes the fixes, fetch the base with `--pull` and refresh its
+digest where pinned. Verify the running PHP version in every web and background
+container after replacement. A rejected build or an updated tag does not certify
+a patched production runtime.
+
 > The dating red flags you saw coming, now a competitive sport.
 
 **Live demo → [redflagbingo.fun](https://redflagbingo.fun)**

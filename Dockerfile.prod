@@ -3,8 +3,11 @@
 # ============================================================================
 FROM dunglas/frankenphp:1.12.7-php8.4@sha256:001fa7c93639df3fb09bed304156b9891baec124d883f25c9160ce50b96df60a AS builder
 
+# CVE-2026-109618 / CVE-2026-109619: refuse a vulnerable cached or upstream base.
+
 # Extensions PHP (mêmes qu'en dev + ce qu'il faut pour build)
-RUN install-php-extensions \
+RUN php -r 'if (PHP_VERSION_ID < 80427) { fwrite(STDERR, "PHP >= 8.4.27 required (CVE-2026-109618, CVE-2026-109619)\n"); exit(1); }' \
+    && install-php-extensions \
     pdo_pgsql \
     intl \
     zip \
@@ -66,8 +69,11 @@ RUN php bin/console cache:clear --env=prod --no-debug \
 # ============================================================================
 FROM dunglas/frankenphp:1.12.7-php8.4@sha256:001fa7c93639df3fb09bed304156b9891baec124d883f25c9160ce50b96df60a AS runtime
 
+# CVE-2026-109618 / CVE-2026-109619: refuse a vulnerable cached or upstream base.
+
 # Mêmes extensions qu'en dev (PAS de mode dev d'opcache)
-RUN install-php-extensions \
+RUN php -r 'if (PHP_VERSION_ID < 80427) { fwrite(STDERR, "PHP >= 8.4.27 required (CVE-2026-109618, CVE-2026-109619)\n"); exit(1); }' \
+    && install-php-extensions \
     pdo_pgsql \
     intl \
     zip \
