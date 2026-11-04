@@ -186,3 +186,27 @@ Secrets (`APP_SECRET`, `MERCURE_JWT_SECRET`, `POSTGRES_PASSWORD`,
 ## License
 
 All rights reserved.
+
+## PHP runtime security
+
+Base images are pinned by digest and require **PHP 8.4.27 or later in the selected
+minor branch** to fix CVE-2026-109618 and CVE-2026-109619. Builds reject an older
+runtime. Native upload progress is disabled (`session.upload_progress.enabled=0`)
+following the additional CVE-2026-115560 advisory. Application uploads still work.
+
+Before an approved deployment, rebuild with the patched bases and run the project
+checks. After replacement, inspect `PHP_VERSION` and
+`ini_get('session.upload_progress.enabled')` in every web and background container;
+upload progress must be disabled. For FrankenPHP, also inspect the embedded runtime
+with `frankenphp php-cli`. Then run the documented health checks. A successful build
+does not establish that production has been patched.
+
+FrankenPHP 1.13.4 embeds Mercure 1.x. `protocol_version_compatibility 8` explicitly
+retains the application’s 0.x protocol. Check server startup, publishing and event
+reception before deployment.
+
+[PHP advisory](https://www.php.net/archive/2026.php).
+
+Future security releases require refreshing the digest: `build --pull` does not
+change a pinned reference. Docker image updates are not configured in Dependabot
+for this repository, so digest refreshes remain manual.

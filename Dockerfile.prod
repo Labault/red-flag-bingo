@@ -1,7 +1,11 @@
 # ============================================================================
 # STAGE 1 — BUILDER : composer + assets
 # ============================================================================
-FROM dunglas/frankenphp:1.12.7-php8.4@sha256:001fa7c93639df3fb09bed304156b9891baec124d883f25c9160ce50b96df60a AS builder
+FROM dunglas/frankenphp:1-php8.4@sha256:afc8e39e245f0f8084fa47ac55070c9da088bee472fa71ca291f703bdd47f4cc AS builder
+
+# CVE-2026-109618 / CVE-2026-109619: reject a vulnerable PHP base.
+RUN php -r 'if (PHP_VERSION_ID < 80427) { fwrite(STDERR, "PHP >= 8.4.27 required (CVE-2026-109618, CVE-2026-109619)\n"); exit(1); }' \
+    && printf 'session.upload_progress.enabled=0\n' > /usr/local/etc/php/conf.d/zz-php-security.ini
 
 # Extensions PHP (mêmes qu'en dev + ce qu'il faut pour build)
 RUN install-php-extensions \
@@ -64,7 +68,11 @@ RUN php bin/console cache:clear --env=prod --no-debug \
 # ============================================================================
 # STAGE 2 — RUNTIME : image finale légère
 # ============================================================================
-FROM dunglas/frankenphp:1.12.7-php8.4@sha256:001fa7c93639df3fb09bed304156b9891baec124d883f25c9160ce50b96df60a AS runtime
+FROM dunglas/frankenphp:1-php8.4@sha256:afc8e39e245f0f8084fa47ac55070c9da088bee472fa71ca291f703bdd47f4cc AS runtime
+
+# CVE-2026-109618 / CVE-2026-109619: reject a vulnerable PHP base.
+RUN php -r 'if (PHP_VERSION_ID < 80427) { fwrite(STDERR, "PHP >= 8.4.27 required (CVE-2026-109618, CVE-2026-109619)\n"); exit(1); }' \
+    && printf 'session.upload_progress.enabled=0\n' > /usr/local/etc/php/conf.d/zz-php-security.ini
 
 # Mêmes extensions qu'en dev (PAS de mode dev d'opcache)
 RUN install-php-extensions \

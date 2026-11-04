@@ -12,6 +12,7 @@
 
 	# Mercure intégré : un seul process, un seul port HTTP interne
 	mercure {
+		protocol_version_compatibility 8
 		publisher_jwt {env.MERCURE_PUBLISHER_JWT_KEY} {env.MERCURE_JWT_ALG}
 		subscriber_jwt {env.MERCURE_SUBSCRIBER_JWT_KEY} {env.MERCURE_JWT_ALG}
 		# CORS : restreint à ton propre domaine en prod (au lieu de * en dev)
